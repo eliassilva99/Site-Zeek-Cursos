@@ -1,0 +1,2092 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    text-align: center;
+    overflow-x: hidden;
+    height: 150vh;
+}
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    margin-bottom: 20px;
+  }
+
+header {
+    background: linear-gradient(#00137a, #011796);
+    width: 100%;
+}
+
+.tabelaCabecalho {
+    width: 100%;
+    margin: auto;
+}
+
+.menuPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoMenu {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-inline: 1.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+a:hover {
+    color: #0084ff;
+    transition: 0.5s;
+}
+
+.tamanhoColunaImagemLogoZeek {
+    width: 100%;
+}
+
+.imagemLogo {
+    width: 200px;
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.escolhaProfissao {
+    color: #000d58;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0, 0.15);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.tabelaCursosDestaque {
+    width: 60%;
+    margin: auto;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 30px;
+}
+
+.espacoTabela {
+    border-radius: 20px;
+}
+
+.imagemPropaganda {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 0px;
+}
+
+.tituloCursosDestaque {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    padding-right: 15px;
+    padding-left: 15px;
+    transition: 0.5s;
+}
+
+.tituloCursosDestaque:hover {
+    color: #0084ff;
+    transition: 0.5s;
+}
+
+.justificarTexto {
+    text-align: justify;
+}
+
+.editarLink {
+    text-decoration: none;
+}
+
+.imagemPropaganda:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.botaoTodosOsCursos {
+    width: 200px;
+    height: 50px;
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #000d58;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
+}
+
+.botaoTodosOsCursos a {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.5s;
+}
+
+.botaoTodosOsCursos a:hover {
+    color: #0075fc;
+    transition: 0.5s;
+}
+
+.fundoDiferenciais {
+    background: #0075fc;
+}
+
+
+
+.diferenciais {
+    color: rgb(255, 251, 0);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.tabelaDiferenciais {
+    width: 80%;
+    margin: auto;
+    table-layout: fixed;
+}
+
+.imagemDiferenciais {
+    width: 90px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.5s;
+}
+
+.imagemDiferenciais:hover {
+    width: 92px;
+    transition: 0.2s;
+}
+
+
+.tituloDiferenciais {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tabelaVideosDiferenciais {
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+
+.bordaVideosDiferenciais {
+    border-radius: 30px;
+    padding: 0px 10px 10px 10px;
+}
+
+.tabela4pilares{
+    table-layout: fixed;
+    width: 80%;
+    margin: auto;
+}
+
+.imagem4pilares{
+    width: 100%;
+    transition: 0.5s;
+}
+.imagem4pilares:hover{
+    width: 101%;
+    transition: 0.2s;
+}
+
+.carousel-container {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel img {
+    width: 35%; /* Alterado para 50% para exibir apenas 2 imagens por vez */
+    height: auto;
+    transition: 0.8s;
+  }
+
+  .carousel img:hover {
+    width: 37%; /* Alterado para 50% para exibir apenas 2 imagens por vez */
+    transition: 0.8s;
+}
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+
+  .prev { left: 0; }
+  .next { right: 0; }
+
+  .fundoImagensDescalvado{
+    background-color: #0075fc;
+    width: 97%;
+    margin: auto;
+    border-radius: 40px;
+  }
+
+  .carousel-container2 {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+  }
+
+  .carousel2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel2 img {
+    width: 45%; /* Alterado para 50% para exibir apenas 2 imagens por vez */
+    height: auto;
+    padding-inline: 5px;
+    border-radius: 5%;
+  }
+
+  .prev2, .next2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+
+  .prev2 { left: 0; }
+  .next2 { right: 0; }
+
+  .fundoImagensIbate{
+    background-color: #e93fb6;
+    width: 97%;
+    margin: auto;
+    border-radius: 40px;
+  }
+
+  .carousel-container3 {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+  }
+
+  .carousel3 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel3 img {
+    width: 45%; /* Alterado para 50% para exibir apenas 2 imagens por vez */
+    height: auto;
+    padding-inline: 5px;
+    border-radius: 5%;
+  }
+
+  .prev3, .next3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+
+  .prev3 { left: 0; }
+  .next3 { right: 0; }
+
+  .fundoImagensRibeirao{
+    background-color: #26c440;
+    width: 97%;
+    margin: auto;
+    border-radius: 40px;
+  }
+
+  .carousel-container4 {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+  }
+
+  .carousel4 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel4 img {
+    width: 45%; /* Alterado para 50% para exibir apenas 2 imagens por vez */
+    height: auto;
+    padding-inline: 5px;
+    border-radius: 5%;
+  }
+
+  .prev4, .next4 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+
+  .prev4 { left: 0; }
+  .next4 { right: 0; }
+  
+
+.depoimentos {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    color: #000730;
+}
+
+.depoimentos h4 {
+    padding-top: 15px;
+}
+
+.tabelaDepoimentosPrimeiro {
+    width: 100%;
+    margin: auto;
+    table-layout: fixed;
+}
+
+.imagemDepoimentos {
+    width: 10%;
+}
+
+.tabelaDepoimentosPrimeiro h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.tabelaDepoimentosPrimeiro h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.tabelaDepoimentosSegundo {
+    width: 60%;
+    margin: auto;
+    table-layout: fixed;
+}
+
+.tabelaDepoimentosSegundo h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.tabelaDepoimentosSegundo h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.atendimentoPersonalizado {
+    padding-top: 40px;
+    color: #000730;
+}
+
+.tituloAtendimentoPersonalizado {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subtituloAtendimentoPersonalizado {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+
+.bordaTabelaAtendimento {
+    background-color: #0075fc;
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.formAtendimento {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.labelAtendimento {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.inputCaixa {
+    outline: none;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 7px;
+    font-size: 18px;
+    color: #000000;
+    width: 60%;
+    text-align: center;
+}
+
+.botaoIniciarAtendimento {
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #000730;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.espacoBotaoIniciarAtendimento{
+    padding-top: 20px;
+}
+
+.botaoIniciarAtendimento:hover {
+    color: #0075fc;
+    transition: 1s;
+}
+
+.rodape {
+    padding-top: 50px;
+    background: #d7f4f8;
+}
+
+.espacamento {
+    padding-bottom: 50px;
+}
+
+.tituloRodape {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+.tituloRodape h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: black;
+}
+
+.tabelaRodape {
+    width: 97%;
+    table-layout: fixed;
+}
+
+.tabelaRodape h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: black;
+}
+
+.tabelaRodape h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.tabelaRodape h4 {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    color: black;
+    transition: 0.5s;
+}
+
+.tabelaRodape h4:hover {
+    color: #0075fc;
+    transition: 1s;
+}
+
+
+hr {
+    border: none;
+    border-top: 2px solid black;
+    margin-inline: 90px;
+}
+
+section.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider-content {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input,
+.img-mobile {
+    display: none;
+}
+
+.slide-box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1.5s;
+}
+
+.slide-box img {
+    width: 100%;
+}
+
+.nav-manual,
+.nav-auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 26%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn,
+.nav-auto div {
+    border: 1px solid #ffffff;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: #000730;
+}
+
+#radio1:checked~.nav-auto .auto-btn1,
+#radio2:checked~.nav-auto .auto-btn2,
+#radio3:checked~.nav-auto .auto-btn3 {
+    background-color: #000730;
+}
+
+#radio1:checked~.primeiro {
+    margin-left: 0%;
+}
+
+#radio2:checked~.primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked~.primeiro {
+    margin-left: -50%;
+}
+
+.todosOsCursos {
+    background-color: #e9fcff;
+}
+
+.escolhaEducacao {
+    padding-top: 25px;
+    padding-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: black;
+}
+
+.tecnologiaEInformática {
+    padding-top: 25px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    color: #000d58;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tabelaTodosOsCursosInformatica {
+    width: 90%;
+    margin: auto;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 30px;
+}
+
+.tabelaTodosOsCursosIngles {
+    width: 65%;
+    margin: auto;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 30px;
+}
+
+
+.tabelaTodosOsCursosAdministracao {
+    width: 90%;
+    margin: auto;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 30px;
+}
+
+.tabelaTodosOsCursosRobotica {
+    width: 90%;
+    margin: auto;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 30px;
+}
+
+.imagemTodosOsCursos {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.imagemTodosOsCursos:hover {
+    width: 102%;
+    opacity: 90%;
+    transition: 0.2s;
+}
+
+.tituloTodosOsCursos {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: black;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.tabelaTodosOsCursosDoisCursos {
+    width: 45%;
+    margin: auto;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 30px;
+    padding-bottom: 20px;
+}
+
+
+.imagemTodosOsCursosDoisCursos {
+    width: 100%;
+}
+
+.tituloTodosOsCursosDoisCursos {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #000730;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.imagemTodosOsCursosIngles {
+    width: 100%;
+}
+
+.tituloTodosOsCursosIngles {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #000730;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.tituloNossaHistoria {
+    color: #000d58;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.tituloSobreNos {
+    font-family: 'Montserrat', sans-serif;
+    color: #000730;
+    padding-top: 35px;
+    text-align: center;
+}
+
+.tabelaTextoZeek {
+    width: 75%;
+    margin: auto;
+    background-color: #0075fc;
+    padding: 20px;
+    text-align: justify;
+    color: white;
+    border-radius: 40px;
+}
+
+.tabelaTextoZeek h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    padding-inline: 50px;
+}
+
+.imagemTextoZeek {
+    width: 100%;
+}
+
+.CantoImagensFotosZeek {
+    padding-inline: 60px;
+    padding-bottom: 20px;
+}
+
+.timeline {
+    width: 100%;
+
+}
+
+.contato {
+    background-color: #f0f0f0;
+    font-size: 2px;
+}
+
+
+.tituloCidade {
+    color: #000d58;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0, 0.15);
+    padding-top: 20px;
+    padding-left: 170px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: left;
+}
+
+.tabelaContato {
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    table-layout: fixed;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tabelaContato h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 25px;
+}
+
+.tabelaContato h4 {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.imagemContato {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 40px;
+}
+
+.imagemEscolaContato {
+    width: 80%;
+    padding-inline: 10px;
+    border-radius: 10%;
+    box-shadow: 2px 2px 4px rgb(5, 5, 10, 0.5);
+}
+
+.fundoTabelaCursoIndividual {
+    background-color: #0075fc;
+}
+
+.tabelaCursoIndividual {
+    width: 85%;
+    margin: auto;
+    border-collapse: separate;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    table-layout: fixed;
+}
+
+.imagemCursoIndividual {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.tabelaCursoIndividual h1 {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    text-align: left;
+    color: black;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: white;
+}
+
+.tabelaCursoIndividual h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    color: black;
+    padding-right: 50px;
+    padding-left: 5px;
+    color: white;
+}
+
+.divAgendarAula {
+    padding-top: 20px;
+}
+
+
+.botaoAgendarAula a {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding-inline: 5px;
+    transition: 0.5s;
+}
+
+.botaoAgendarAula a:hover {
+    color: white;
+    transition: 0.2s;
+}
+
+.informacoesCurso {
+    width: 100%;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 30px;
+    text-align: left;
+}
+
+.informacoesCurso {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    color: black;
+    table-layout: fixed;
+    text-align: center;
+}
+
+.hrInformacoesCurso {
+    border: none;
+    border-top: 2px solid black;
+    margin-inline: 500px;
+}
+
+.informacoesCurso h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: left;
+    color: #000730;
+    vertical-align: middle;
+}
+
+.informacoesCurso h4 {
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: #000730;
+    vertical-align: middle;
+}
+
+.imagemInformacaoCurso {
+    width: 100px;
+    padding-inline: 20px;
+}
+
+.tabelaDescricaoCurso {
+    width: 70%;
+    table-layout: fixed;
+    padding-bottom: 50px;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    text-align: justify;
+    color: black;
+}
+
+.tabelaDescricaoCurso h1 {
+    padding-inline: 25px;
+}
+
+.imagemDescricaoCurso {
+    width: 100%;
+    padding-inline: 25px;
+    border-radius: 10%;
+    margin: auto;
+}
+
+.ondeVoceVaiEstudar {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    vertical-align: middle;
+}
+
+.imagemPessoaCurso {
+    width: 80%;
+}
+
+.fundoTabelaConteudoProgramatico {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #0075fc;
+    color: white;
+    border-radius: 25px;
+}
+
+.tituloConteudoProgramatico {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.informacoesConteudoProgramatico {
+    width: 95%;
+    font-family: 'Open Sans', sans-serif;
+    border-collapse: collapse;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    table-layout: fixed;
+}
+
+.informacoesConteudoProgramatico td {
+    text-align: center;
+    margin: auto;
+}
+
+.informacoesConteudoProgramatico h3 {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+
+.imagemConteudoProgramatico {
+    margin: auto;
+    width: 35%;
+    padding-bottom: 10px;
+    padding-inline: 0;
+}
+
+.agendarAulaExperimental {
+    width: 90%;
+    background-color: #ff9100;
+    border-radius: 15px;
+    margin-left: auto;
+}
+
+.agendarAulaExperimental h1 {
+    font-size: 30px;
+    padding-inline: 5%;
+    padding-top: 15px;
+    margin: auto;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #000730;
+}
+
+.agendarAulaExperimental h4 {
+    font-size: 20px;
+    padding-inline: 15%;
+    margin: auto;
+    text-align: center;
+    color: #000d58;
+}
+
+.labelAtendimentoAgendarAula {
+    font-size: 15px;
+    margin: auto;
+    text-align: center;
+    color: black;
+    border-radius: 200px;
+    display: block;
+    padding-top: 20px;
+}
+
+.tabelaOqueVaiAprender {
+    width: 85%;
+    margin: auto;
+    table-layout: fixed;
+}
+
+.tabelaOqueVaiAprender h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    color: #000730;
+    padding-inline: 20px;
+    text-align: left;
+}
+
+.tabelaOqueVaiAprender h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #000d58;
+    padding-inline: 10px;
+    text-align: left;
+}
+
+.imagensOqueVaiAprender {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.imagensEscolaOndeVaiEstudar {
+    width: 100%;
+    border-radius: 3%;
+    padding-inline: 5px;
+}
+
+.tabelaFotosEscolaDescalvado {
+    width: 95%;
+    margin: auto;
+    table-layout: fixed;
+    background-color: #0075fc;
+    padding-inline: 30px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+}
+
+.tabelaFotosEscolaIbate {
+    width: 95%;
+    margin: auto;
+    table-layout: fixed;
+    background-color: #e93fb6;
+    padding-inline: 30px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+}
+
+.tabelaFotosEscolaRibeirao {
+    width: 95%;
+    margin: auto;
+    table-layout: fixed;
+    background-color: #26c440;
+    padding-inline: 30px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+}
+
+.tabelaFotosEscolaTituloCidade {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.fundoEmpresa {
+    background-color: #0084ff;
+}
+
+.capaCruzeiro {
+    width: 100%;
+}
+
+.tabelaCruzeiro {
+    width: 100%;
+    margin: auto;
+    table-layout: fixed;
+    padding: 0px;
+}
+
+.imagemCruzeiro {
+    width: 100%;
+}
+
+.tabelaTextoCruzeiro {
+    width: 75%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    margin: auto;
+    background-color: #000d58;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-inline: 50px;
+    text-align: justify;
+    color: white;
+    border-radius: 40px;
+}
+
+.imagemEmpresa {
+    width: 100%;
+}
+
+.fundoDiferenciais2 {
+    background-color: #0075fc;
+}
+
+.imagem10diferenciais {
+    width: 100%;
+}
+
+.tabelaDiferenciais2 {
+    width: 80%;
+    margin: auto;
+    table-layout: fixed;
+}
+
+.imagemDiferenciais2 {
+    width: 90px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.tituloDiferenciais2 {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tabelaVideosDiferenciais2 {
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+
+.bordaVideosDiferenciais2 {
+    border-radius: 30px;
+    padding: 0px 10px 10px 10px;
+}
+
+.tabelaCursosCruzeiro {
+    width: 90%;
+    margin: auto;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 30px;
+}
+
+.imagemCursosCruzeiro {
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.imagemCursosCruzeiro:hover {
+    width: 102%;
+    opacity: 90%;
+    transition: 0.2s;
+}
+
+.tabelaMenusCruzeiro {
+    width: 10%;
+    margin: auto;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+
+.tabelaMenusCruzeiro td {
+    width: 80%;
+    border-radius: 30%;
+    font-size: 15px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+
+.menuCruzeiroSelecionado {
+    background-color: #41a3ff;
+}
+
+.tabelaMenusCruzeiro td:hover {
+    opacity: 90%;
+    background-color: #0084ff;
+}
+
+.editarLinkCruzeiro {
+    text-decoration: none;
+    color: #000000;
+    transition: 0.5s;
+}
+
+.editarLinkCruzeiro:hover {
+    color: #000000;
+    transition: 0.2s;
+}
+
+.tabelaIniciarMatricula {
+    background-color: white;
+    margin: auto;
+    width: 70%;
+    border-radius: 15px;
+    table-layout: fixed;
+}
+
+.tabelaIniciarMatricula td {
+    padding-inline: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.facaSuaMatricula {
+    padding-top: 25px;
+    padding-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #000730;
+}
+
+.facaSuaMatriculasubtitulo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-inline: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #000730;
+}
+
+.selecionarCidade {
+    width: 270px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #0075fc;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.botaoIniciarMatricula {
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    width: 220px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #ff9100;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.botaoIniciarMatricula:hover {
+    color: #000c4e;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+
+
+@media(max-width: 768px) {
+    .textoMenu {
+        padding-inline: 4px;
+        font-size: 6px;
+    }
+
+    .imagemLogo {
+        width: 0px;
+    }
+
+    .escolhaProfissao {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 8px;
+        padding-inline: 40px;
+    }
+
+    .tabelaCursosDestaque {
+        width: 97%;
+        border-spacing: 1px;
+    }
+
+    .botaoTodosOsCursos {
+        width: 120px;
+        height: 30px;
+        font-size: 8px;
+        border-radius: 10px;
+    }
+
+    .diferenciais {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .tabelaDiferenciais {
+        width: 100%;
+    }
+
+    .imagemDiferenciais {
+        width: 40px;
+    }
+
+    .tituloDiferenciais {
+        font-size: 6px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .tabelaVideosDiferenciais {
+        width: 100%;
+    }
+
+    .bordaVideosDiferenciais {
+        border-radius: 10%;
+    }
+
+    .depoimentos {
+        font-size: 8px;
+        padding-inline: 20px;
+    }
+
+    .depoimentos h4 {
+        padding-top: 5px;
+        font-size: 10px;
+    }
+
+
+    .tabelaDepoimentosPrimeiro h1 {
+        font-size: 10px;
+        padding-left: 1%;
+    }
+
+    .tabelaDepoimentosPrimeiro h3 {
+        font-size: 10px;
+        padding-left: 10%;
+    }
+
+    .tabelaIniciarMatricula {
+        width: 97%;
+    }
+    
+    .tabelaIniciarMatricula td {
+        padding-inline: 2px;
+    }
+    
+    .facaSuaMatricula {
+        padding-top: 10px;
+        padding-bottom: 2px;
+        font-size: 15px;
+    }
+    
+    .facaSuaMatriculasubtitulo {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-inline: 5px;
+        font-size: 9px;
+    }
+    
+    .selecionarCidade {
+        width: 110px;
+        height: 20px;
+        border-radius: 5px;;
+        font-size: 7px;
+    }
+    
+    .botaoIniciarMatricula {
+        width: 110px;
+        height: 20px;
+        border-radius: 5px;
+        font-size: 7px;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .botaoIniciarMatricula:hover {
+        color: #000c4e;
+        font-size: 8px;
+        transition: 0.2s;
+    }
+
+    .tituloAtendimentoPersonalizado {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        padding-inline: 20px;
+    }
+
+    .subtituloAtendimentoPersonalizado {
+        padding-top: 5px;
+        padding-bottom: 30px;
+        font-size: 12px;
+        padding-inline: 50px;
+    }
+
+    .labelAtendimento {
+        font-size: 12px;
+
+    }
+
+    .bordaTabelaAtendimento {
+        border-radius: 15px;
+        width: 97%;
+    }
+
+    .inputCaixa {
+        padding: 1px;
+        font-size: 8px;
+        width: 90%;
+
+    }
+
+    .botaoIniciarAtendimento {
+        width: 50px;
+        height: 20px;
+        font-size: 7px;
+    }
+
+    .rodape {
+        padding-top: 20px;
+    }
+
+    .tituloRodape {
+        font-size: 10px;
+    }
+
+    .tituloRodape h4 {
+        font-size: 12px;
+    }
+
+    .tabelaRodape {
+        width: 100%;
+    }
+
+    .tabelaRodape h2 {
+        font-size: 10px;
+        margin: auto;
+    }
+
+    .tabelaRodape h3 {
+        font-size: 8px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    .tabelaRodape h4 {
+        font-size: 10px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    hr {
+        margin-inline: 10px;
+    }
+
+    .todosOsCursos {
+        background-color: #e9fcff;
+    }
+
+    .escolhaEducacao {
+        padding-top: 20px;
+        font-size: 17px;
+        padding-inline: 30px;
+    }
+
+    .tecnologiaEInformática {
+        padding-top: 2px;
+        font-size: 12px;
+    }
+
+    .tabelaTodosOsCursosInformatica {
+        width: 97%;
+        border-spacing: 3px;
+    }
+
+
+    .tabelaTodosOsCursosAdministracao {
+        width: 97%;
+        border-spacing: 3px;
+    }
+
+    .tabelaTodosOsCursosRobotica {
+        width: 97%;
+        border-spacing: 3px;
+    }
+
+    .tabelaTodosOsCursosIngles {
+        width: 70%;
+        border-spacing: 3px;
+    }
+
+    .tituloTodosOsCursos {
+        width: 100%;
+        height: 50px;
+        margin: auto;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        color: black;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .tabelaTodosOsCursosDoisCursos {
+        width: 48%;
+        border-spacing: 3px;
+        padding-bottom: 1px;
+    }
+
+    .tituloTodosOsCursosDoisCursos {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        color: #000730;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+
+    .tituloTodosOsCursosIngles {
+        width: 100%;
+        height: 50px;
+        margin: auto;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        color: #000730;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .tituloNossaHistoria {
+        color: #000d58;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 35px;
+        text-align: left;
+        padding-left: 10%;
+    }
+
+    .tituloSobreNos {
+        font-family: 'Montserrat', sans-serif;
+        color: #000730;
+        padding-top: 35px;
+        text-align: center;
+    }
+
+    .tabelaTextoZeek {
+        width: 75%;
+        margin: auto;
+        background-color: #0075fc;
+        padding: 20px;
+        text-align: justify;
+        color: white;
+        border-radius: 40px;
+    }
+
+    .tabelaTextoZeek h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        padding-inline: 50px;
+    }
+
+    .imagemTextoZeek {
+        width: 100%;
+    }
+
+    .CantoImagensFotosZeek {
+        padding-inline: 60px;
+        padding-bottom: 20px;
+    }
+
+    .timeline {
+        width: 100%;
+
+    }
+
+    .contato {
+        background-color: #f0f0f0;
+    }
+
+    .tituloCidade {
+        padding-left: 17px;
+        font-size: 15px;
+    }
+
+    .tabelaContato {
+        width: 97%;
+    }
+
+    .espacamento {
+        padding-bottom: 1px;
+    }
+
+    .tabelaContato h2 {
+        padding-left: 10px;
+        padding-right: 0px;
+        font-size: 10px;
+    }
+
+    .tabelaContato h4 {
+        padding-left: 10px;
+        font-size: 8px;
+        text-align: left;
+    }
+
+    .imagemContato {
+        width: 20px;
+    }
+
+    .informacoesTabelaContato{
+        font-size: px;
+    }
+
+    .imagemEscolaContato {
+        width: 100%;
+    }
+
+    .fundoTabelaCursoIndividual {
+        background-color: #0075fc;
+    }
+
+    .tabelaCursoIndividual {
+        width: 97%;
+    }
+
+    .tabelaCursoIndividual h1 {
+        font-size: 12px;
+        padding-right: 2px;
+        padding-left: 2px;
+        color: white;
+    }
+
+    .tabelaCursoIndividual h3 {
+        font-size: 8px;
+        padding-right: 20px;
+    }
+
+    .divAgendarAula {
+        padding-top: 20px;
+    }
+
+
+    .botaoAgendarAula a {
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        padding-inline: 5px;
+    }
+
+    .botaoAgendarAula a:hover {
+        color: white;
+        transition: 0.2s;
+    }
+
+    .informacoesCurso {
+        border-spacing: 2px;
+    }
+
+    .informacoesCurso {
+        font-size: 15px;
+    }
+
+    .hrInformacoesCurso {
+        margin-inline: 50px;
+    }
+
+    .informacoesCurso h3 {
+        font-size: 8px;
+    }
+
+    .informacoesCurso h4 {
+        font-size: 7px;
+    }
+
+
+    .imagemInformacaoCurso {
+        width: 30px;
+        padding-inline: 2px;
+    }
+
+    .tabelaDescricaoCurso {
+        width: 90%;
+        table-layout: fixed;
+        padding-bottom: 50px;
+        margin: auto;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 10px;
+        text-align: justify;
+        color: black;
+    }
+
+    .tabelaDescricaoCurso h1 {
+        padding-inline: 25px;
+    }
+
+    .imagemDescricaoCurso {
+        width: 100%;
+        padding-inline: 25px;
+        border-radius: 10%;
+        margin: auto;
+    }
+
+    .ondeVoceVaiEstudar {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        color: black;
+        vertical-align: middle;
+    }
+
+    .imagemPessoaCurso {
+        width: 100%;
+    }
+
+    .fundoTabelaConteudoProgramatico {
+        width: 90%;
+        margin: auto;
+        border-collapse: collapse;
+        background-color: #0075fc;
+        color: white;
+        border-radius: 25px;
+    }
+
+    .tituloConteudoProgramatico {
+        font-size: 15px;
+    }
+
+    .informacoesConteudoProgramatico {
+        width: 97%;
+        font-size: 4px;
+    }
+
+    .informacoesConteudoProgramatico td {
+        text-align: center;
+        margin: auto;
+    }
+
+    .informacoesConteudoProgramatico h3 {
+        text-align: left;
+        padding-bottom: 3px;
+    }
+
+
+    .imagemConteudoProgramatico {
+        width: 30%;
+        padding-bottom: 1px;
+    }
+
+    .agendarAulaExperimental {
+        width: 100%;
+        background-color: #ff9100;
+        border-radius: 10px;
+    }
+
+    .agendarAulaExperimental h1 {
+        font-size: 7px;
+        padding-inline: 0%;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    .agendarAulaExperimental h4 {
+        font-size: 7px;
+        padding-inline: 1%;
+    }
+
+    .labelAtendimentoAgendarAula {
+        font-size: 6px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .tabelaOqueVaiAprender {
+        width: 97%;
+    }
+
+    .tabelaOqueVaiAprender h1 {
+        font-size: 15px;
+        padding-inline: 5px;
+    }
+
+    .tabelaOqueVaiAprender h3 {
+        font-size: 8px;
+    }
+
+    .imagensOqueVaiAprender {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+
+    .imagensEscolaOndeVaiEstudar {
+        border-radius: 10%;
+        padding-inline: 0.5px;
+    }
+
+    .tabelaFotosEscolaDescalvado {
+        width: 97%;
+        padding-inline: 2px;
+        border-radius: 15px;
+    }
+
+    .tabelaFotosEscolaIbate {
+        width: 97%;
+        padding-inline: 2px;
+        border-radius: 15px;
+    }
+
+    .tabelaFotosEscolaRibeirao {
+        width: 97%;
+        padding-inline: 2px;
+        border-radius: 15px;
+    }
+
+    .tabelaFotosEscolaTituloCidade {
+        font-size: 15px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .fundoEmpresa {
+        background-color: #0084ff;
+    }
+
+    .capaCruzeiro {
+        width: 100%;
+    }
+
+    .tabelaCruzeiro {
+        width: 100%;
+        margin: auto;
+        table-layout: fixed;
+        padding: 0px;
+    }
+
+    .imagemCruzeiro {
+        width: 100%;
+    }
+
+    .tabelaTextoCruzeiro {
+        width: 75%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        margin: auto;
+        background-color: #000d58;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-inline: 50px;
+        text-align: justify;
+        color: white;
+        border-radius: 40px;
+    }
+
+    .numeroPagina{
+        font-size: 10px;
+        color: #000000;
+    }
+
+    .imagemEmpresa {
+        width: 100%;
+    }
+
+    .fundoDiferenciais2 {
+        background-color: #0075fc;
+    }
+
+    .imagem10diferenciais {
+        width: 100%;
+    }
+
+    .tabelaDiferenciais2 {
+        width: 80%;
+        margin: auto;
+        table-layout: fixed;
+    }
+
+    .imagemDiferenciais2 {
+        width: 90px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .tituloDiferenciais2 {
+        font-size: 17px;
+        color: rgb(255, 255, 255);
+        font-family: 'Open Sans', sans-serif;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .tabelaVideosDiferenciais2 {
+        width: 50%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        table-layout: fixed;
+    }
+
+    .bordaVideosDiferenciais2 {
+        border-radius: 30px;
+        padding: 0px 10px 10px 10px;
+    }
+
+    .tabelaCursosCruzeiro {
+        width: 97%;
+        border-spacing: 3px;
+    }
+
+    .imagemCursosCruzeiro {
+        border-radius: 5px;
+    }
+
+    .imagemCursosCruzeiro:hover {
+        width: 102%;
+        opacity: 90%;
+        transition: 0.2s;
+    }
+
+    .tabelaMenusCruzeiro {
+        width: 30%;
+        margin: auto;
+        table-layout: fixed;
+        border-collapse: separate;
+        border-spacing: 10px;
+    }
+
+    .numeroPagina{
+        font-size: 8px;
+        color: #000000;
+    }
+
+    .tabelaMenusCruzeiro td {
+        width: 80%;
+        border-radius: 25%;
+        font-size: 15px;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        border: 1px solid black;
+    }
+
+    .menuCruzeiroSelecionado {
+        background-color: #41a3ff;
+    }
+
+    .tabelaMenusCruzeiro td:hover {
+        opacity: 90%;
+        background-color: #0084ff;
+    }
+
+    .editarLinkCruzeiro {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .editarLinkCruzeiro:hover {
+        color: #000000;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .img-desktop {
+        display: none;
+    }
+
+    .img-mobile {
+        display: block;
+    }
+
+    .nav-auto,
+    .nav-manual {
+        margin-top: 25%;
+    }
+
+    .nav-manual .manual-btn,
+    .nav-auto div {
+        border: 1px solid #ffffff;
+        padding: 4px;
+    }
+}
+
+.bordaMatricula{
+    border: 2px solid #000000;
+    border-radius: 20px;
+    padding: 15px;
+}

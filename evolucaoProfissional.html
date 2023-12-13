@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/zeekinha.ico" type="image/x-icon">
+    <title>Zeek Cursos</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <table class="tabelaCabecalho">
+                <tr>
+                    <th>
+                        <a href="home.html">
+                            <img class="imagemLogo" src="./img/zeekLogo.png" alt="Zeek Cursos">
+                        </a>
+                    </th>
+                    <th>
+                        <div class="menuPrincipal">
+                            <a class="textoMenu" href="home.html">HOME</a>
+                            <a class="textoMenu" href="sobreNos.html">SOBRE NÓS</a>
+                            <a class="textoMenu" href="diferenciais.html">DIFERENCIAIS</a>
+                            <a class="textoMenu" href="cursos.html">CURSOS</a>
+                            <a class="textoMenu" href="javascript:abrirJanela('https://app3.evoluaeducacao.com.br')">ÁREA DO ALUNO</a>
+                            <a class="textoMenu" href="cruzeiroDoSul.html">POLOS CRUZEIRO DO SUL</a>
+                            <a class="textoMenu" href="contato.html">CONTATO</a>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <main>
+        <div class="fundoTabelaCursoIndividual">
+            <table class="tabelaCursoIndividual">
+                <td>
+                    <h1>
+                        EVOLUÇÃO PESSOAL <br> E PROFISSIONAL
+                    </h1><br>
+                    <H3>
+                        Nesta Formação, o aluno terá contato com os softwares essenciais para facilitar o seu dia a dia
+                        no comércio e estará apto a ocupar vagas de Auxiliar de Escritório, Auxiliar Administrativo,
+                        Atendente, Recepcionista, Balconista, Auxiliar Contábil, Assistente de Telemarketing, Vendedor.
+                    </H3>
+                </td>
+                <td>
+                    <img src="./img/Imagens Módulos/evolucaoProfissional.jpg" class="imagemCursoIndividual">
+                </td>
+            </table>
+        </div>
+        <div>
+            <h1 class="informacoesCurso"><br>
+                INFORMAÇÕES DO CURSO
+            </h1><br>
+            <hr class="hrInformacoesCurso"><br>
+            <table class="informacoesCurso">
+                <td>
+                    <img src="./img/Pessoas/evolucao.png" class="imagemPessoaCurso">
+                </td>
+                <td>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/ampulheta.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Horário Flexível
+                                <h4>
+                                    Manhã, tarde e noite.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/calendarioAzul.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Tempo de Duração
+                                <h4>
+                                    14 Meses.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/horarioFlexivelAzul.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Carga Horária
+                                <h4>
+                                    112 Horas.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/certificadoAzul.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Certificado
+                                <h4>
+                                    Qualificação profissional com validade nacional.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/apostila.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Material Didático
+                                <h4>
+                                    5 Apostilas
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                </td>
+                <td>
+                    <div class="agendarAulaExperimental">
+                        <h1>AGENDE SUA AULA EXPERIMENTAL!</h1>
+                        <h4>Preencha o formulário abaixo e entraremos em contato com você!
+                        </h4>
+                        <div>
+                            <form class="formAtendimento" id="meuFormulario">
+                                <label class="labelAtendimentoAgendarAula" for="nome">Nome:</label>
+                                <input class="inputCaixa" type="text" id="nome" name="nome" required>
+
+                                <label class="labelAtendimentoAgendarAula" for="curso">Curso:</label>
+                                <input class="inputCaixa" type="text" id="curso" name="curso" required>
+
+                                <label class="labelAtendimentoAgendarAula" for="cidade">Cidade:</label>
+                                <select class="inputCaixa" id="cidade" name="cidade" required>
+                                    <option value="" disabled selected>Selecione a cidade</option>
+                                    <option value="descalvado">Descalvado</option>
+                                    <option value="ibate">Ibaté</option>
+                                    <option value="ribeirao_bonito">Ribeirão Bonito</option>
+                                </select>
+
+
+                                <div class="espacoBotaoIniciarAtendimento">
+                                    <button class="botaoIniciarAtendimento" type="button"
+                                        onclick="enviarWhatsapp()">Agendar!</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="espacamento">
+
+                        </div>
+                    </div>
+                </td>
+            </table>
+        </div>
+        <table class="fundoTabelaConteudoProgramatico">
+            <tr>
+                <td>
+                    <h1 class="tituloConteudoProgramatico"><br>
+                        CONTEÚDO PROGRAMÁTICO
+                    </h1><br>
+                    <hr class="hrInformacoesCurso"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="informacoesConteudoProgramatico">
+                        <tr>                            <td>
+                                <img src="./img/Módulos/desenvolvimentoProfissional.png"
+                                    class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Desenvolvimento Profissional
+                                </h3>
+                            </td>
+                            <td>
+                                <img src="./img/Módulos/compromissoComoSucesso.png" class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Compromisso com o Sucesso
+                                </h3>
+                            </td>
+                            <td>
+                                <img src="./img/Módulos/empreendedorDeSucesso.png" class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Empreendedor de Sucesso
+                                </h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./img/Módulos/criatividadeNoAmbienteDeTrabalho.png"
+                                    class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Criatividade no Ambiente de Trabalho
+                                </h3>
+                            </td>
+                            <td>
+                                <img src="./img/Módulos/liderDoAmanha.png" class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Lider do Amanhã
+                                </h3>
+                            </td>
+                            <td>
+                                <img src="./img/Módulos/trabalhoEmEquipe.png" class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Trabalho em Equipe
+                                </h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./img/Módulos/dezManeirasDeVenderUmaIdeia.png"
+                                    class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Dez Maneiras de Vender uma Ideia
+                                </h3>
+                            </td>
+                            <td>
+                                <img src="./img/Módulos/estrategiasDeSucessoParaLidarComConflitos.png"
+                                    class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Estratégias de Sucesso para Lidar com Conflitos
+                                </h3>
+                            </td>
+                            <td>
+                                <img src="./img/Módulos/excelenciaNoAtendimentoAoCliente.png"
+                                    class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Excelência no Atendimento ao Cliente
+                                </h3>
+                            </td>
+                        </tr>
+                    </table><br>
+                </td>
+            </tr>
+        </table>
+        <h1 class="informacoesCurso"><br>
+            O QUE VOCÊ VAI APRENDER?
+        </h1><br>
+        <hr class="hrInformacoesCurso"><br>
+        <table class="tabelaOqueVaiAprender">
+            <tr>
+                <td>
+                    <h1>Desenvolvimento Profissional</h1><br>
+                    <h3>Oferecemos ferramentas e estratégias para aprimorar habilidades
+                        interpessoais, liderança, comunicação eficaz e gestão do tempo. Desenvolva uma mentalidade
+                        proativa e construa uma base sólida para o sucesso em sua carreira. Com instrutores
+                        especializados e abordagem prática, nosso curso proporciona uma jornada de autodescoberta e
+                        crescimento profissional. Esteja preparado para se destacar no mercado de trabalho e alcançar
+                        seus objetivos com confiança.</h3>
+                </td>
+                <td>
+                    <img src="./img/Imagens Módulos/desenvolvimentoProfissional.jpg" class="imagensOqueVaiAprender">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./img/Imagens Módulos/compromissoComOSucesso.jpg" class="imagensOqueVaiAprender">
+                </td>
+                <td>
+                    <h1>Compromisso com o Sucesso</h1><br>
+                    <h3>Oferece estratégias comprovadas para definir metas, superar desafios e construir uma mentalidade
+                        de sucesso. Desde a definição de objetivos claros até a gestão eficaz do tempo e o
+                        desenvolvimento de habilidades de resiliência, este curso capacita os participantes a alcançarem
+                        o sucesso em suas vidas pessoais e profissionais. Seja o arquiteto do seu próprio sucesso com
+                        este curso envolvente e prático, projetado para inspirar e capacitar.</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>Empreendedor de Sucesso</h1><br>
+                    <h3>Oferece uma jornada prática para desenvolver as habilidades essenciais para prosperar no mundo
+                        dos negócios. Desde a concepção de ideias inovadoras até a gestão eficiente de recursos e
+                        estratégias de marketing, este curso proporciona as ferramentas necessárias para construir e
+                        expandir empreendimentos com confiança. Guiado por especialistas experientes, prepare-se para
+                        transformar sua visão em realidade e se destacar como um empreendedor de sucesso.</h3>
+                </td>
+                <td>
+                    <img src="./img/Imagens Módulos/empreendedorDeSucesso.jpg" class="imagensOqueVaiAprender">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./img/Imagens Módulos/criatividadeNoAmbienteDeTrabalho.jpg"
+                        class="imagensOqueVaiAprender">
+                </td>
+                <td>
+                    <h1>Criatividade no Ambiente de Trabalho</h1><br>
+                    <h3>Explore métodos inovadores para estimular a criatividade, resolvendo desafios e impulsionando a
+                        inovação. Este curso prático oferece ferramentas para inspirar a originalidade, promover a
+                        colaboração e cultivar um ambiente propício à criatividade. Guiados por instrutores experientes,
+                        os participantes aprenderão a aplicar ideias criativas em projetos práticos, transformando o
+                        local de trabalho em um hub de inovação. Esteja preparado para desbloquear seu potencial
+                        criativo e elevar o desempenho da sua equipe.</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>Líder do Amanhã</h1><br>
+                    <h3>Treinamento prático em habilidades de liderança, comunicação eficaz, tomada de decisões
+                        estratégicas e gestão de equipes. Guiados por especialistas no campo, os participantes
+                        desenvolverão uma mentalidade visionária e adquirirão as ferramentas necessárias para enfrentar
+                        os desafios em constante evolução do ambiente profissional. Este curso é a chave para cultivar
+                        líderes inspiradores, prontos para moldar o futuro e conduzir suas equipes ao sucesso.</h3>
+                </td>
+                <td>
+                    <img src="./img/Imagens Módulos/LiderDoAmanha.jpg" class="imagensOqueVaiAprender">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./img/Imagens Módulos/trabalhoemEquipoe.jpg" class="imagensOqueVaiAprender">
+                </td>
+                <td>
+                    <h1>Trabalho em Equipe</h1><br>
+                    <h3>Explore estratégias eficazes para promover a colaboração, a comunicação e a resolução de
+                        conflitos dentro de uma equipe. Os participantes aprenderão a maximizar a sinergia do grupo,
+                        identificar papéis individuais e criar um ambiente positivo e produtivo. Com instrutores
+                        experientes, este curso é a chave para fortalecer a coesão e o desempenho de equipes, preparando
+                        os profissionais para alcançar objetivos comuns com eficácia.</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>Dez Maneiras de Vender uma Ideia</h1><br>
+                    <h3>Oferece estratégias práticas e comprovadas para comunicar suas ideias de maneira convincente.
+                        Desde técnicas de apresentação impactantes até habilidades de storytelling envolvente, os
+                        participantes aprenderão a vender suas ideias de forma eficaz. Com instrutores experientes, este
+                        curso é a chave para aprimorar sua capacidade de influenciar positivamente colegas, clientes e
+                        parceiros, destacando-se como um comunicador persuasivo e eficiente.</h3>
+                </td>
+                <td>
+                    <img src="./img/Imagens Módulos/dezManeirasdeVenderUmaIdeia.jpg" class="imagensOqueVaiAprender">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./img/Imagens Módulos/estrategiasParaLidarComConflitos.jpg"
+                        class="imagensOqueVaiAprender">
+                </td>
+                <td>
+                    <h1>Estratégias de Sucesso para Lidar com Conflitos</h1><br>
+                    <h3>Oferece habilidades essenciais para resolver disputas de maneira construtiva. Desde a
+                        identificação de fontes de conflito até técnicas de comunicação eficaz, os participantes
+                        aprenderão a transformar desafios em oportunidades de colaboração. Com instrutores experientes,
+                        este curso é a chave para aprimorar as habilidades de gestão de conflitos e cultivar um ambiente
+                        de trabalho positivo e produtivo.</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>Excelência no Atendimento ao Cliente</h1><br>
+                    <h3>Oferece técnicas comprovadas para construir relacionamentos positivos, resolver problemas de
+                        forma eficaz e elevar o padrão de atendimento. Desde a comunicação empática até estratégias de
+                        resolução de conflitos, os participantes aprenderão a criar experiências memoráveis para os
+                        clientes. Com instrutores experientes, este curso é a chave para transformar o atendimento ao
+                        cliente em um diferencial competitivo, impulsionando a satisfação e fidelização.</h3>
+                </td>
+                <td>
+                    <img src="./img/Imagens Módulos/excelenciaNoAtendimentoAoCliente.jpg"
+                        class="imagensOqueVaiAprender">
+                </td>
+            </tr>
+        </table>
+        <table class="tabelaIniciarMatricula">
+            <tr>
+                <td>
+                    <div class="bordaMatricula">
+                        <h1 class="facaSuaMatricula">
+                            MATRICULE-SE!
+                        </h1>
+                        <h4 class="facaSuaMatriculasubtitulo">
+                            Inicie o atendimento e tenha acesso a informações exclusivas com nossa consultora.
+                        </h4>
+                        <select id="seletorCidades" onchange="mostrarBotao()" class="selecionarCidade">
+                            <option value="">Selecione sua cidade!</option>
+                            <option value="descalvado">Descalvado</option>
+                            <option value="ibate">Ibaté</option>
+                            <option value="ribeirao_bonito">Ribeirão Bonito</option>
+                        </select>
+                        <br><br>
+                        <button class="botaoIniciarMatricula" id="btnIniciarMatricula" onclick="abrirMatricula()">
+                            Iniciar Atendimento</button><br>
+                    </div>
+                </td>
+                <td>
+                    <img src="./img/Pessoas/iniciarMatricula.png" class="imagemCursoIndividual">
+                </td>
+            </tr>
+        </table>
+    </main>
+    <footer class="rodape">
+        <div class="tituloRodape">
+            <h1>CONTAMOS COM 3 POLOS!</h1><br>
+            <h4>Encontre a escola mais perto de você!</h4><br>
+            <hr><br>
+        </div>
+
+        <div class="fundoImagensDescalvado">
+            <h1 class="tabelaFotosEscolaTituloCidade">DESCALVADO</h1>
+            <div class="carousel-container2">
+                <div class="carousel2">
+                  <img src="./img/OndeVaiEstudar/descalvado1.jpg" alt="Imagem 1">
+                  <img src="./img/OndeVaiEstudar/descalvado2.jpg" alt="Imagem 2">
+                  <img src="./img/OndeVaiEstudar/descalvado3.jpg" alt="Imagem 3">
+                  <img src="./img/OndeVaiEstudar/descalvado4.jpg" alt="Imagem 4">
+                  <img src="./img/OndeVaiEstudar/descalvado5.jpg" alt="Imagem 5">
+                  <img src="./img/OndeVaiEstudar/descalvado6.jpg" alt="Imagem 6">
+                </div>
+                <button class="prev2" onclick="prevSlide2()">❮</button>
+                <button class="next2" onclick="nextSlide2()">❯</button>
+              </div><br>
+        </div>
+        <br>
+        <div class="fundoImagensIbate">
+            <h1 class="tabelaFotosEscolaTituloCidade">IBATÉ</h1>
+            <div class="carousel-container3">
+                <div class="carousel3">
+                  <img src="./img/OndeVaiEstudar/ibate1.jpg" alt="Imagem 1">
+                  <img src="./img/OndeVaiEstudar/ibate2.jpg" alt="Imagem 2">
+                  <img src="./img/OndeVaiEstudar/ibate3.jpg" alt="Imagem 3">
+                  <img src="./img/OndeVaiEstudar/ibate4.jpg" alt="Imagem 4">
+                  <img src="./img/OndeVaiEstudar/ibate5.jpg" alt="Imagem 5">
+                  <img src="./img/OndeVaiEstudar/ibate6.jpg" alt="Imagem 6">
+                </div>
+                <button class="prev3" onclick="prevSlide3()">❮</button>
+                <button class="next3" onclick="nextSlide3()">❯</button>
+              </div><br>
+        </div>
+        <br>
+        <div class="fundoImagensRibeirao">
+            <h1 class="tabelaFotosEscolaTituloCidade">RIBEIRÃO BONITO</h1>
+            <div class="carousel-container4">
+                <div class="carousel4">
+                  <img src="./img/OndeVaiEstudar/ribeirao1.jpg" alt="Imagem 1">
+                  <img src="./img/OndeVaiEstudar/ribeirao2.jpg" alt="Imagem 2">
+                  <img src="./img/OndeVaiEstudar/ribeirao3.jpg" alt="Imagem 3">
+                  <img src="./img/OndeVaiEstudar/ribeirao4.jpg" alt="Imagem 4">
+                  <img src="./img/OndeVaiEstudar/ribeirao5.jpg" alt="Imagem 5">
+                  <img src="./img/OndeVaiEstudar/ribeirao6.jpg" alt="Imagem 6">
+                </div>
+                <button class="prev4" onclick="prevSlide4()">❮</button>
+                <button class="next4" onclick="nextSlide4()">❯</button>
+              </div><br>
+        </div>
+
+        <script src="carousel.js"></script>
+        <script>
+            initializeCarousel('carousel2', 'prev2', 'next2', 7, 2);
+            initializeCarousel('carousel3', 'prev3', 'next3', 7, 2);
+            initializeCarousel('carousel4', 'prev4', 'next4', 7, 2);
+        </script>
+        <br>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

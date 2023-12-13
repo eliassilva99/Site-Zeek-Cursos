@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/zeekinha.ico" type="image/x-icon">
+    <title>Zeek Cursos</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <table class="tabelaCabecalho">
+                <tr>
+                    <th>
+                        <a href="home.html">
+                            <img class="imagemLogo" src="./img/zeekLogo.png" alt="Zeek Cursos">
+                        </a>
+                    </th>
+                    <th>
+                        <div class="menuPrincipal">
+                            <a class="textoMenu" href="home.html">HOME</a>
+                            <a class="textoMenu" href="sobreNos.html">SOBRE NÓS</a>
+                            <a class="textoMenu" href="diferenciais.html">DIFERENCIAIS</a>
+                            <a class="textoMenu" href="cursos.html">CURSOS</a>
+                            <a class="textoMenu" href="javascript:abrirJanela('https://app3.evoluaeducacao.com.br')">ÁREA DO ALUNO</a>
+                            <a class="textoMenu" href="cruzeiroDoSul.html">POLOS CRUZEIRO DO SUL</a>
+                            <a class="textoMenu" href="contato.html">CONTATO</a>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <main>
+        <div class="fundoTabelaCursoIndividual">
+            <table class="tabelaCursoIndividual">
+                <td>
+                    <h1>
+                        EXCEL AVANÇADO
+                    </h1><br>
+                    <H3>
+                        Saber utilizar o Excel é uma necessidade curricular, pois ele é uma ferramenta bastante usada, independentemente da área de atuação.
+                    </H3>
+                </td>
+                <td>
+                    <img src="./img/CapaCursos/excel.jpg" class="imagemCursoIndividual">
+                </td>
+            </table>
+        </div>
+        <div>
+            <h1 class="informacoesCurso"><br>
+                INFORMAÇÕES DO CURSO
+            </h1><br>
+            <hr class="hrInformacoesCurso"><br>
+            <table class="informacoesCurso">
+                <td>
+                    <img src="./img/Pessoas/excel.png" class="imagemPessoaCurso">
+                </td>
+                <td>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/ampulheta.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Horário Flexível
+                                <h4>
+                                    Manhã, tarde e noite.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/calendarioAzul.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Tempo de Duração
+                                <h4>
+                                    7 Meses.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/horarioFlexivelAzul.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Carga Horária
+                                <h4>
+                                    56 Horas.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/certificadoAzul.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Certificado
+                                <h4>
+                                    Qualificação profissional com validade nacional.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/apostila.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Material Didático
+                                <h4>
+                                    3 Apostilas
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                </td>
+                <td>
+                    <div class="agendarAulaExperimental">
+                        <h1>AGENDE SUA AULA EXPERIMENTAL!</h1>
+                        <h4>Preencha o formulário abaixo e entraremos em contato com você!
+                        </h4>
+                        <div>
+                            <form class="formAtendimento" id="meuFormulario">
+                                <label class="labelAtendimentoAgendarAula" for="nome">Nome:</label>
+                                <input class="inputCaixa" type="text" id="nome" name="nome" required>
+
+                                <label class="labelAtendimentoAgendarAula" for="curso">Curso:</label>
+                                <input class="inputCaixa" type="text" id="curso" name="curso" required>
+
+                                <label class="labelAtendimentoAgendarAula" for="cidade">Cidade:</label>
+                                <select class="inputCaixa" id="cidade" name="cidade" required>
+                                    <option value="" disabled selected>Selecione a cidade</option>
+                                    <option value="descalvado">Descalvado</option>
+                                    <option value="ibate">Ibaté</option>
+                                    <option value="ribeirao_bonito">Ribeirão Bonito</option>
+                                </select>
+
+
+                                <div class="espacoBotaoIniciarAtendimento">
+                                    <button class="botaoIniciarAtendimento" type="button"
+                                        onclick="enviarWhatsapp()">Agendar!</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="espacamento">
+
+                        </div>
+                    </div>
+                </td>
+            </table>
+        </div>
+        <table class="fundoTabelaConteudoProgramatico">
+            <tr>
+                <td>
+                    <h1 class="tituloConteudoProgramatico"><br>
+                        CONTEÚDO PROGRAMÁTICO
+                    </h1><br>
+                    <hr class="hrInformacoesCurso"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="informacoesConteudoProgramatico">
+                        <tr>
+                            <td>
+                                <img src="./img/Módulos/excel.png" class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Excel - Essencial
+                                </h3>
+                            </td>
+                            <td>
+                                <img src="./img/Módulos/excel.png" class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Excel - Intermediário
+                                </h3>
+                            </td>
+                            <td>
+                                <img src="./img/Módulos/excel.png" class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Excel - Avançado
+                                </h3>
+                            </td>
+                            <td>
+                                <img src="./img/Módulos/matematica.png" class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Matemática Financeira na HP 12C
+                                </h3>
+                            </td>
+                        </tr>
+                    </table><br>
+                </td>
+            </tr>
+        </table>
+        <h1 class="informacoesCurso"><br>
+            O QUE VOCÊ VAI APRENDER?
+        </h1><br>
+        <hr class="hrInformacoesCurso"><br>
+        <table class="tabelaOqueVaiAprender">
+            <tr>
+                <td>
+                    <h1>Dominio do Excel</h1><br>
+                    <h3>O software otimiza as atividades dentro de uma empresa, tornando quem o domina um profissional
+                        mais cobiçado pelo mercado de trabalho.</h3>
+                </td>
+                <td>
+                    <img src="./img/O que vai aprender/Excel.png" class="imagensOqueVaiAprender">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./img/Imagens Módulos/excelIntermediario.jpg" class="imagensOqueVaiAprender">
+                </td>
+                <td>
+                    <h1>Excel - Intermediário</h1><br>
+                    <h3>Os alunos aprenderão técnicas avançadas de formatação, a utilizar funções mais complexas,
+                        trabalhar com tabelas dinâmicas e gráficos avançados. Além disso, o curso aborda a automação de
+                        tarefas por meio de macros e fornece uma compreensão mais profunda das capacidades do Excel para
+                        análise de dados.</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>Excel - Avançado</h1><br>
+                    <h3>O curso de Excel Avançado é projetado para usuários experientes que buscam um domínio completo
+                        das funcionalidades avançadas do Excel. Os participantes aprenderão a criar modelos financeiros
+                        complexos, realizar análises de cenários, consolidar dados de várias fontes e usar ferramentas
+                        avançadas de solução de problemas. O curso também explora recursos avançados de automação,
+                        programação em VBA (Visual Basic for Applications) e estratégias para otimizar fluxos de
+                        trabalho complexos, capacitando os alunos a enfrentar desafios analíticos mais sofisticados.
+                    </h3>
+                </td>
+                <td>
+                    <img src="./img/Imagens Módulos/excelAvancado.jpg" class="imagensOqueVaiAprender">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./img/O que vai aprender/calculadora.jpg" class="imagensOqueVaiAprender">
+                </td>
+                <td>
+                    <h1>Calculadora HP 12C</h1><br>
+                    <h3> As calculadoras financeiras são projetadas especificamente para realizar cálculos financeiros complexos de forma eficiente e rápida. Isso economiza tempo e minimiza erros em comparação com cálculos manuais.</h3>
+                </td>
+            </tr>
+
+        </table>
+
+        <table class="tabelaIniciarMatricula">
+            <tr>
+                <td>
+                    <div class="bordaMatricula">
+                        <h1 class="facaSuaMatricula">
+                            MATRICULE-SE!
+                        </h1>
+                        <h4 class="facaSuaMatriculasubtitulo">
+                            Inicie o atendimento e tenha acesso a informações exclusivas com nossa consultora.
+                        </h4>
+                        <select id="seletorCidades" onchange="mostrarBotao()" class="selecionarCidade">
+                            <option value="">Selecione sua cidade!</option>
+                            <option value="descalvado">Descalvado</option>
+                            <option value="ibate">Ibaté</option>
+                            <option value="ribeirao_bonito">Ribeirão Bonito</option>
+                        </select>
+                        <br><br>
+                        <button class="botaoIniciarMatricula" id="btnIniciarMatricula" onclick="abrirMatricula()">
+                            Iniciar Atendimento</button><br>
+                    </div>
+                </td>
+                <td>
+                    <img src="./img/Pessoas/iniciarMatricula.png" class="imagemCursoIndividual">
+                </td>
+            </tr>
+        </table>
+    </main>
+    <footer class="rodape">
+        <div class="tituloRodape">
+            <h1>CONTAMOS COM 3 POLOS!</h1><br>
+            <h4>Encontre a escola mais perto de você!</h4><br>
+            <hr><br>
+        </div>
+
+        <div class="fundoImagensDescalvado">
+            <h1 class="tabelaFotosEscolaTituloCidade">DESCALVADO</h1>
+            <div class="carousel-container2">
+                <div class="carousel2">
+                  <img src="./img/OndeVaiEstudar/descalvado1.jpg" alt="Imagem 1">
+                  <img src="./img/OndeVaiEstudar/descalvado2.jpg" alt="Imagem 2">
+                  <img src="./img/OndeVaiEstudar/descalvado3.jpg" alt="Imagem 3">
+                  <img src="./img/OndeVaiEstudar/descalvado4.jpg" alt="Imagem 4">
+                  <img src="./img/OndeVaiEstudar/descalvado5.jpg" alt="Imagem 5">
+                  <img src="./img/OndeVaiEstudar/descalvado6.jpg" alt="Imagem 6">
+                </div>
+                <button class="prev2" onclick="prevSlide2()">❮</button>
+                <button class="next2" onclick="nextSlide2()">❯</button>
+              </div><br>
+        </div>
+        <br>
+        <div class="fundoImagensIbate">
+            <h1 class="tabelaFotosEscolaTituloCidade">IBATÉ</h1>
+            <div class="carousel-container3">
+                <div class="carousel3">
+                  <img src="./img/OndeVaiEstudar/ibate1.jpg" alt="Imagem 1">
+                  <img src="./img/OndeVaiEstudar/ibate2.jpg" alt="Imagem 2">
+                  <img src="./img/OndeVaiEstudar/ibate3.jpg" alt="Imagem 3">
+                  <img src="./img/OndeVaiEstudar/ibate4.jpg" alt="Imagem 4">
+                  <img src="./img/OndeVaiEstudar/ibate5.jpg" alt="Imagem 5">
+                  <img src="./img/OndeVaiEstudar/ibate6.jpg" alt="Imagem 6">
+                </div>
+                <button class="prev3" onclick="prevSlide3()">❮</button>
+                <button class="next3" onclick="nextSlide3()">❯</button>
+              </div><br>
+        </div>
+        <br>
+        <div class="fundoImagensRibeirao">
+            <h1 class="tabelaFotosEscolaTituloCidade">RIBEIRÃO BONITO</h1>
+            <div class="carousel-container4">
+                <div class="carousel4">
+                  <img src="./img/OndeVaiEstudar/ribeirao1.jpg" alt="Imagem 1">
+                  <img src="./img/OndeVaiEstudar/ribeirao2.jpg" alt="Imagem 2">
+                  <img src="./img/OndeVaiEstudar/ribeirao3.jpg" alt="Imagem 3">
+                  <img src="./img/OndeVaiEstudar/ribeirao4.jpg" alt="Imagem 4">
+                  <img src="./img/OndeVaiEstudar/ribeirao5.jpg" alt="Imagem 5">
+                  <img src="./img/OndeVaiEstudar/ribeirao6.jpg" alt="Imagem 6">
+                </div>
+                <button class="prev4" onclick="prevSlide4()">❮</button>
+                <button class="next4" onclick="nextSlide4()">❯</button>
+              </div><br>
+        </div>
+
+        <script src="carousel.js"></script>
+        <script>
+            initializeCarousel('carousel2', 'prev2', 'next2', 7, 2);
+            initializeCarousel('carousel3', 'prev3', 'next3', 7, 2);
+            initializeCarousel('carousel4', 'prev4', 'next4', 7, 2);
+        </script>
+        <br>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

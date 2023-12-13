@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/zeekinha.ico" type="image/x-icon">
+    <title>Zeek Cursos</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <table class="tabelaCabecalho">
+                <tr>
+                    <th>
+                        <a href="home.html">
+                            <img class="imagemLogo" src="./img/zeekLogo.png" alt="Zeek Cursos">
+                        </a>
+                    </th>
+                    <th>
+                        <div class="menuPrincipal">
+                            <a class="textoMenu" href="home.html">HOME</a>
+                            <a class="textoMenu" href="sobreNos.html">SOBRE NÓS</a>
+                            <a class="textoMenu" href="diferenciais.html">DIFERENCIAIS</a>
+                            <a class="textoMenu" href="cursos.html">CURSOS</a>
+                            <a class="textoMenu"
+                                href="javascript:abrirJanela('https://app3.evoluaeducacao.com.br')">ÁREA DO ALUNO</a>
+                            <a class="textoMenu" href="cruzeiroDoSul.html">POLOS CRUZEIRO DO SUL</a>
+                            <a class="textoMenu" href="contato.html">CONTATO</a>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <main>
+        <div class="scroll-reveal">
+            <div class="fundoTabelaCursoIndividual">
+                <table class="tabelaCursoIndividual">
+                    <td>
+                        <h1>
+                            INFORMÁTICA APLICADA
+                        </h1><br>
+                        <H3>
+                            Uma das melhores formas de se introduzir na área de informática de uma maneira prática e
+                            fácil,
+                            aqui você conhecerá os fundamentos para utilizar um computador.
+                        </H3>
+                    </td>
+                    <td>
+                        <img src="./img/CapaCursos/informatica.jpg" class="imagemCursoIndividual">
+                    </td>
+                </table>
+            </div>
+        </div>
+        <div class="scroll-reveal">
+            <h1 class="informacoesCurso"><br>
+                INFORMAÇÕES DO CURSO
+            </h1><br>
+            <hr class="hrInformacoesCurso"><br>
+            <table class="informacoesCurso">
+                <td>
+                    <img src="./img/Pessoas/informatica.png" class="imagemPessoaCurso">
+                </td>
+                <td>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/ampulheta.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Horário Flexível
+                                <h4>
+                                    Manhã, tarde e noite.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/calendarioAzul.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Tempo de Duração
+                                <h4>
+                                    14 Meses.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/horarioFlexivelAzul.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Carga Horária
+                                <h4>
+                                    112 Horas.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/certificadoAzul.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Certificado
+                                <h4>
+                                    Qualificação profissional com validade nacional.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/apostila.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Material Didático
+                                <h4>
+                                    5 Apostilas
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                </td>
+                <td>
+                    <div class="agendarAulaExperimental">
+                        <h1>AGENDE SUA AULA EXPERIMENTAL!</h1>
+                        <h4>Preencha o formulário abaixo e entraremos em contato com você!
+                        </h4>
+                        <div>
+                            <form class="formAtendimento" id="meuFormulario">
+                                <label class="labelAtendimentoAgendarAula" for="nome">Nome:</label>
+                                <input class="inputCaixa" type="text" id="nome" name="nome" required>
+
+                                <label class="labelAtendimentoAgendarAula" for="curso">Curso:</label>
+                                <input class="inputCaixa" type="text" id="curso" name="curso" required>
+
+                                <label class="labelAtendimentoAgendarAula" for="cidade">Cidade:</label>
+                                <select class="inputCaixa" id="cidade" name="cidade" required>
+                                    <option value="" disabled selected>Selecione a cidade</option>
+                                    <option value="descalvado">Descalvado</option>
+                                    <option value="ibate">Ibaté</option>
+                                    <option value="ribeirao_bonito">Ribeirão Bonito</option>
+                                </select>
+
+
+                                <div class="espacoBotaoIniciarAtendimento">
+                                    <button class="botaoIniciarAtendimento" type="button"
+                                        onclick="enviarWhatsapp()">Agendar!</button>
+                                </div>
+                            </form>
+
+                        </div>
+
+                        <div class="espacamento">
+
+                        </div>
+                    </div>
+                </td>
+            </table>
+        </div>
+        <div class="scroll-reveal">
+            <table class="fundoTabelaConteudoProgramatico">
+                <tr>
+                    <td>
+                        <h1 class="tituloConteudoProgramatico"><br>
+                            CONTEÚDO PROGRAMÁTICO
+                        </h1><br>
+                        <hr class="hrInformacoesCurso"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="informacoesConteudoProgramatico">
+                            <tr>
+                                <td>
+                                    <img src="./img/Módulos/introducao.png" class="imagemConteudoProgramatico">
+                                </td>
+                                <td>
+                                    <h3>
+                                        Introdução à informática
+                                    </h3>
+                                </td>
+                                <td>
+                                    <img src="./img/Módulos/windows.png" class="imagemConteudoProgramatico">
+                                </td>
+                                <td>
+                                    <h3>
+                                        Windows 11 - Essencial
+                                    </h3>
+                                </td>
+                                <td>
+                                    <img src="./img/Módulos/internet.png" class="imagemConteudoProgramatico">
+                                </td>
+                                <td>
+                                    <h3>
+                                        Internet, Redes Sociais e Aplicativos
+                                    </h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="./img/Módulos/word.png" class="imagemConteudoProgramatico">
+                                </td>
+                                <td>
+                                    <h3>
+                                        Word - Essencial
+                                    </h3>
+                                </td>
+                                <td>
+                                    <img src="./img/Módulos/powerPoint.png" class="imagemConteudoProgramatico">
+                                </td>
+                                <td>
+                                    <h3>
+                                        PowerPoint - Essencial
+                                    </h3>
+                                </td>
+                                <td>
+                                    <img src="./img/Módulos/excel.png" class="imagemConteudoProgramatico">
+                                </td>
+                                <td>
+                                    <h3>
+                                        Excel - Essencial
+                                    </h3>
+                                </td>
+                            </tr>
+                        </table><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="scroll-reveal">
+            <h1 class="informacoesCurso"><br>
+                O QUE VOCÊ VAI APRENDER?
+            </h1><br>
+            <hr class="hrInformacoesCurso"><br>
+        </div>
+        <div class="scroll-reveal"></div>
+        <table class="tabelaOqueVaiAprender">
+
+            <tr>
+                <td>
+                    <div class="scroll-reveal">
+                        <h1>Alfabetização Digital</h1><br>
+                        <h3>Aprender os conceitos básicos de informática ajuda a desenvolver alfabetização digital,
+                            permitindo que você compreenda e utilize tecnologias de maneira eficaz.</h3>
+                    </div>
+                </td>
+                <td>
+                    <div class="scroll-reveal">
+                        <img src="./img/O que vai aprender/informatica.png" class="imagensOqueVaiAprender">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="scroll-reveal">
+                        <img src="./img/O que vai aprender/windows.png" class="imagensOqueVaiAprender">
+                    </div>
+                </td>
+                <td>
+                    <div class="scroll-reveal">
+                        <h1>Uso Eficiente do Computador</h1><br>
+                        <h3>Entender o Windows permite que você utilize eficientemente um computador baseado nesse
+                            sistema
+                            operacional, facilitando a navegação, a execução de programas e a realização de tarefas
+                            cotidianas.</h3>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="scroll-reveal">
+                        <h1>Internet, Redes Sociais e Aplicativos</h1><br>
+                        <h3>Oferece uma visão abrangente e prática das principais ferramentas digitais utilizadas no
+                            ambiente profissional. Os alunos aprenderão a navegar eficientemente na Internet,
+                            explorar redes sociais e utilizar aplicativos
+                            relevantes para otimizar tarefas, processos de trabalho e abordará estratégias para o
+                            uso responsável e seguro da Internet
+                    </div>
+                    </h3>
+                </td>
+                <td>
+                    <div class="scroll-reveal">
+                        <img src="./img/Imagens Módulos/internet.jpg" class="imagensOqueVaiAprender">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="scroll-reveal">
+                        <img src="./img/O que vai aprender/Word.png" class="imagensOqueVaiAprender">
+                    </div>
+                </td>
+                <td>
+                    <div class="scroll-reveal">
+                        <h1>Usar todo potencial do Word</h1><br>
+                        <h3>Torne-se mais produtivo e eficiente. Aprenda a usar todo o potencial do Word de forma
+                            simples e
+                            intuitiva.</h3>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="scroll-reveal">
+                        <h1>Apresentações profissionais</h1><br>
+                        <h3>A capacidade de criar apresentações profissionais é valiosa no mundo corporativo.
+                            Conhecimento
+                            em PowerPoint pode ajudar a melhorar a qualidade das apresentações em reuniões de negócios,
+                            conferências e treinamentos.</h3>
+                    </div>
+                </td>
+                <td>
+                    <div class="scroll-reveal">
+                        <img src="./img/O que vai aprender/powerPoint.png" class="imagensOqueVaiAprender">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="scroll-reveal">
+                        <img src="./img/O que vai aprender/Excel.png" class="imagensOqueVaiAprender">
+                    </div>
+                </td>
+                <td>
+                    <div class="scroll-reveal">
+                        <h1>Dominio do Excel</h1><br>
+                        <h3>O software otimiza as atividades dentro de uma empresa, tornando quem o domina um
+                            profissional
+                            mais cobiçado pelo mercado de trabalho.</h3>
+                    </div>
+                </td>
+            </tr>
+        </table><br>
+        <div class="scroll-reveal">
+            <table class="tabelaIniciarMatricula">
+                <tr>
+                    <td>
+                        <div class="bordaMatricula">
+                            <h1 class="facaSuaMatricula">
+                                MATRICULE-SE!
+                            </h1>
+                            <h4 class="facaSuaMatriculasubtitulo">
+                                Inicie o atendimento e tenha acesso a informações exclusivas com nossa consultora.
+                            </h4>
+                            <select id="seletorCidades" onchange="mostrarBotao()" class="selecionarCidade">
+                                <option value="">Selecione sua cidade!</option>
+                                <option value="descalvado">Descalvado</option>
+                                <option value="ibate">Ibaté</option>
+                                <option value="ribeirao_bonito">Ribeirão Bonito</option>
+                            </select>
+                            <br><br>
+                            <button class="botaoIniciarMatricula" id="btnIniciarMatricula" onclick="abrirMatricula()">
+                                Iniciar Atendimento</button><br>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="./img/Pessoas/iniciarMatricula.png" class="imagemCursoIndividual">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="scroll-reveal">
+            <div class="tituloRodape">
+                <h1>CONTAMOS COM 3 POLOS!</h1><br>
+                <h4>Encontre a escola mais perto de você!</h4><br>
+                <hr><br>
+            </div>
+        </div>
+        <div class="fundoImagensDescalvado">
+            <h1 class="tabelaFotosEscolaTituloCidade">DESCALVADO</h1>
+            <div class="carousel-container2">
+                <div class="carousel2">
+                    <img src="./img/OndeVaiEstudar/descalvado1.jpg" alt="Imagem 1">
+                    <img src="./img/OndeVaiEstudar/descalvado2.jpg" alt="Imagem 2">
+                    <img src="./img/OndeVaiEstudar/descalvado3.jpg" alt="Imagem 3">
+                    <img src="./img/OndeVaiEstudar/descalvado4.jpg" alt="Imagem 4">
+                    <img src="./img/OndeVaiEstudar/descalvado5.jpg" alt="Imagem 5">
+                    <img src="./img/OndeVaiEstudar/descalvado6.jpg" alt="Imagem 6">
+                </div>
+                <button class="prev2" onclick="prevSlide2()">❮</button>
+                <button class="next2" onclick="nextSlide2()">❯</button>
+            </div><br>
+        </div>
+        <br>
+        <div class="fundoImagensIbate">
+            <h1 class="tabelaFotosEscolaTituloCidade">IBATÉ</h1>
+            <div class="carousel-container3">
+                <div class="carousel3">
+                    <img src="./img/OndeVaiEstudar/ibate1.jpg" alt="Imagem 1">
+                    <img src="./img/OndeVaiEstudar/ibate2.jpg" alt="Imagem 2">
+                    <img src="./img/OndeVaiEstudar/ibate3.jpg" alt="Imagem 3">
+                    <img src="./img/OndeVaiEstudar/ibate4.jpg" alt="Imagem 4">
+                    <img src="./img/OndeVaiEstudar/ibate5.jpg" alt="Imagem 5">
+                    <img src="./img/OndeVaiEstudar/ibate6.jpg" alt="Imagem 6">
+                </div>
+                <button class="prev3" onclick="prevSlide3()">❮</button>
+                <button class="next3" onclick="nextSlide3()">❯</button>
+            </div><br>
+        </div>
+        <br>
+        <div class="fundoImagensRibeirao">
+            <h1 class="tabelaFotosEscolaTituloCidade">RIBEIRÃO BONITO</h1>
+            <div class="carousel-container4">
+                <div class="carousel4">
+                    <img src="./img/OndeVaiEstudar/ribeirao1.jpg" alt="Imagem 1">
+                    <img src="./img/OndeVaiEstudar/ribeirao2.jpg" alt="Imagem 2">
+                    <img src="./img/OndeVaiEstudar/ribeirao3.jpg" alt="Imagem 3">
+                    <img src="./img/OndeVaiEstudar/ribeirao4.jpg" alt="Imagem 4">
+                    <img src="./img/OndeVaiEstudar/ribeirao5.jpg" alt="Imagem 5">
+                    <img src="./img/OndeVaiEstudar/ribeirao6.jpg" alt="Imagem 6">
+                </div>
+                <button class="prev4" onclick="prevSlide4()">❮</button>
+                <button class="next4" onclick="nextSlide4()">❯</button>
+            </div><br>
+        </div>
+
+        <script src="carousel.js"></script>
+        <script>
+            initializeCarousel('carousel2', 'prev2', 'next2', 7, 2);
+            initializeCarousel('carousel3', 'prev3', 'next3', 7, 2);
+            initializeCarousel('carousel4', 'prev4', 'next4', 7, 2);
+        </script>
+        <br>
+    </footer>
+    <script src="script.js"></script>
+    <script src="scrollReveal.js"></script>
+</body>
+
+</html>

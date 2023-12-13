@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/zeekinha.ico" type="image/x-icon">
+    <title>Zeek Cursos</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <table class="tabelaCabecalho">
+                <tr>
+                    <th>
+                        <a href="home.html">
+                            <img class="imagemLogo" src="./img/zeekLogo.png" alt="Zeek Cursos">
+                        </a>
+                    </th>
+                    <th>
+                        <div class="menuPrincipal">
+                            <a class="textoMenu" href="home.html">HOME</a>
+                            <a class="textoMenu" href="sobreNos.html">SOBRE NÓS</a>
+                            <a class="textoMenu" href="diferenciais.html">DIFERENCIAIS</a>
+                            <a class="textoMenu" href="cursos.html">CURSOS</a>
+                            <a class="textoMenu" href="javascript:abrirJanela('https://app3.evoluaeducacao.com.br')">ÁREA DO ALUNO</a>
+                            <a class="textoMenu" href="cruzeiroDoSul.html">POLOS CRUZEIRO DO SUL</a>
+                            <a class="textoMenu" href="contato.html">CONTATO</a>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <main>
+        <div class="fundoTabelaCursoIndividual">
+            <table class="tabelaCursoIndividual">
+                <td>
+                    <h1>
+                        ROBÓTICA ARDUINO
+                    </h1><br>
+                    <h3>
+                        O Curso de Robótica com Arduino oferece uma imersão profunda na integração da
+                        plataforma Arduino com a robótica. Destinado a entusiastas, estudantes e profissionais que
+                        desejam ampliar suas habilidades, este curso abrange desde os fundamentos até projetos
+                        avançados, capacitando os participantes a desenvolverem robôs autônomos e sistemas interativos.
+                    </h3>
+                </td>
+                <td>
+                    <img src="./img/Imagens Módulos/roboticaArduino.jpg" class="imagemCursoIndividual">
+                </td>
+            </table>
+        </div>
+        <div>
+            <h1 class="informacoesCurso"><br>
+                INFORMAÇÕES DO CURSO
+            </h1><br>
+            <hr class="hrInformacoesCurso"><br>
+            <table class="informacoesCurso">
+                <td>
+                    <img src="./img/Pessoas/roboticaArduino.png" class="imagemPessoaCurso">
+                </td>
+                <td>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/ampulheta.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Horário Flexível
+                                <h4>
+                                    Manhã, tarde e noite.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/calendarioAzul.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Tempo de Duração
+                                <h4>
+                                    14 Meses.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/horarioFlexivelAzul.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Carga Horária
+                                <h4>
+                                    112 Horas.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/certificadoAzul.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Certificado
+                                <h4>
+                                    Qualificação profissional com validade nacional.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/apostila.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Material Didático
+                                <h4>
+                                    5 Apostilas
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                </td>
+                <td>
+                    <div class="agendarAulaExperimental">
+                        <h1>AGENDE SUA AULA EXPERIMENTAL!</h1>
+                        <h4>Preencha o formulário abaixo e entraremos em contato com você!
+                        </h4>
+                        <div>
+                            <form class="formAtendimento" id="meuFormulario">
+                                <label class="labelAtendimentoAgendarAula" for="nome">Nome:</label>
+                                <input class="inputCaixa" type="text" id="nome" name="nome" required>
+
+                                <label class="labelAtendimentoAgendarAula" for="curso">Curso:</label>
+                                <input class="inputCaixa" type="text" id="curso" name="curso" required>
+
+                                <label class="labelAtendimentoAgendarAula" for="cidade">Cidade:</label>
+                                <select class="inputCaixa" id="cidade" name="cidade" required>
+                                    <option value="" disabled selected>Selecione a cidade</option>
+                                    <option value="descalvado">Descalvado</option>
+                                    <option value="ibate">Ibaté</option>
+                                    <option value="ribeirao_bonito">Ribeirão Bonito</option>
+                                </select>
+
+
+                                <div class="espacoBotaoIniciarAtendimento">
+                                    <button class="botaoIniciarAtendimento" type="button"
+                                        onclick="enviarWhatsapp()">Agendar!</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="espacamento">
+
+                        </div>
+                    </div>
+                </td>
+            </table>
+        </div>
+        <table class="fundoTabelaConteudoProgramatico">
+            <tr>
+                <td>
+                    <h1 class="tituloConteudoProgramatico"><br>
+                        CONTEÚDO PROGRAMÁTICO
+                    </h1><br>
+                    <hr class="hrInformacoesCurso"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="informacoesConteudoProgramatico">
+                        <tr>
+                            <td>
+                                <img src="./img/Módulos/arduino.png" class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Arduino I
+                                </h3>
+                            </td>
+                            <td>
+                                <img src="./img/Módulos/arduino2.png" class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Arduino II
+                                </h3>
+                            </td>
+                            <td>
+                                <img src="./img/Módulos/arduino3.png" class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Arduino II
+                                </h3>
+                            </td>
+                        </tr>
+                    </table><br>
+                </td>
+            </tr>
+        </table>
+        <h1 class="informacoesCurso"><br>
+            O QUE VOCÊ VAI APRENDER?
+        </h1><br>
+        <hr class="hrInformacoesCurso"><br>
+        <table class="tabelaOqueVaiAprender">
+            <tr>
+                <td>
+                    <h1> Fundamentos em Robótica com Arduino</h1><br>
+                    <h3>Explore os fundamentos da robótica utilizando a plataforma Arduino. Este módulo introdutório
+                        abrange desde a configuração básica do Arduino até a programação de movimentos simples. Ideal
+                        para iniciantes, proporciona uma base sólida para a jornada na robótica.</h3>
+                </td>
+                <td>
+                    <img src="./img/Imagens Módulos/arduino1.jpg" class="imagensOqueVaiAprender">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./img/Imagens Módulos/arduino2.jpg" class="imagensOqueVaiAprender">
+                </td>
+                <td>
+                    <h1>Programação Avançada e Integração de Sensores</h1><br>
+                    <h3>Aprofunde-se na programação avançada do Arduino e integração de sensores. Este módulo amplia as
+                        habilidades, explorando algoritmos avançados, controle de atuadores e a incorporação de sensores
+                        para tomada de decisões. Prepara os participantes para projetos mais complexos.</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>Projetos Avançados e Automação</h1><br>
+                    <h3>O módulo avançado foca em projetos robustos e automação utilizando o Arduino. Os participantes
+                        mergulharão em comunicação sem fio, visão computacional e controle de sistemas mais complexos.
+                        </h3>
+                </td>
+                <td>
+                    <img src="./img/Imagens Módulos/arduino3.jpg" class="imagensOqueVaiAprender">
+                </td>
+            </tr>
+        </table>
+
+        <table class="tabelaIniciarMatricula">
+            <tr>
+                <td>
+                    <div class="bordaMatricula">
+                        <h1 class="facaSuaMatricula">
+                            MATRICULE-SE!
+                        </h1>
+                        <h4 class="facaSuaMatriculasubtitulo">
+                            Inicie o atendimento e tenha acesso a informações exclusivas com nossa consultora.
+                        </h4>
+                        <select id="seletorCidades" onchange="mostrarBotao()" class="selecionarCidade">
+                            <option value="">Selecione sua cidade!</option>
+                            <option value="descalvado">Descalvado</option>
+                            <option value="ibate">Ibaté</option>
+                            <option value="ribeirao_bonito">Ribeirão Bonito</option>
+                        </select>
+                        <br><br>
+                        <button class="botaoIniciarMatricula" id="btnIniciarMatricula" onclick="abrirMatricula()">
+                            Iniciar Atendimento</button><br>
+                    </div>
+                </td>
+                <td>
+                    <img src="./img/Pessoas/iniciarMatricula.png" class="imagemCursoIndividual">
+                </td>
+            </tr>
+        </table>
+    </main>
+    <footer class="rodape">
+        <div class="tituloRodape">
+            <h1>CONTAMOS COM 3 POLOS!</h1><br>
+            <h4>Encontre a escola mais perto de você!</h4><br>
+            <hr><br>
+        </div>
+
+        <div class="fundoImagensDescalvado">
+            <h1 class="tabelaFotosEscolaTituloCidade">DESCALVADO</h1>
+            <div class="carousel-container2">
+                <div class="carousel2">
+                  <img src="./img/OndeVaiEstudar/descalvado1.jpg" alt="Imagem 1">
+                  <img src="./img/OndeVaiEstudar/descalvado2.jpg" alt="Imagem 2">
+                  <img src="./img/OndeVaiEstudar/descalvado3.jpg" alt="Imagem 3">
+                  <img src="./img/OndeVaiEstudar/descalvado4.jpg" alt="Imagem 4">
+                  <img src="./img/OndeVaiEstudar/descalvado5.jpg" alt="Imagem 5">
+                  <img src="./img/OndeVaiEstudar/descalvado6.jpg" alt="Imagem 6">
+                </div>
+                <button class="prev2" onclick="prevSlide2()">❮</button>
+                <button class="next2" onclick="nextSlide2()">❯</button>
+              </div><br>
+        </div>
+        <br>
+        <div class="fundoImagensIbate">
+            <h1 class="tabelaFotosEscolaTituloCidade">IBATÉ</h1>
+            <div class="carousel-container3">
+                <div class="carousel3">
+                  <img src="./img/OndeVaiEstudar/ibate1.jpg" alt="Imagem 1">
+                  <img src="./img/OndeVaiEstudar/ibate2.jpg" alt="Imagem 2">
+                  <img src="./img/OndeVaiEstudar/ibate3.jpg" alt="Imagem 3">
+                  <img src="./img/OndeVaiEstudar/ibate4.jpg" alt="Imagem 4">
+                  <img src="./img/OndeVaiEstudar/ibate5.jpg" alt="Imagem 5">
+                  <img src="./img/OndeVaiEstudar/ibate6.jpg" alt="Imagem 6">
+                </div>
+                <button class="prev3" onclick="prevSlide3()">❮</button>
+                <button class="next3" onclick="nextSlide3()">❯</button>
+              </div><br>
+        </div>
+        <br>
+        <div class="fundoImagensRibeirao">
+            <h1 class="tabelaFotosEscolaTituloCidade">RIBEIRÃO BONITO</h1>
+            <div class="carousel-container4">
+                <div class="carousel4">
+                  <img src="./img/OndeVaiEstudar/ribeirao1.jpg" alt="Imagem 1">
+                  <img src="./img/OndeVaiEstudar/ribeirao2.jpg" alt="Imagem 2">
+                  <img src="./img/OndeVaiEstudar/ribeirao3.jpg" alt="Imagem 3">
+                  <img src="./img/OndeVaiEstudar/ribeirao4.jpg" alt="Imagem 4">
+                  <img src="./img/OndeVaiEstudar/ribeirao5.jpg" alt="Imagem 5">
+                  <img src="./img/OndeVaiEstudar/ribeirao6.jpg" alt="Imagem 6">
+                </div>
+                <button class="prev4" onclick="prevSlide4()">❮</button>
+                <button class="next4" onclick="nextSlide4()">❯</button>
+              </div><br>
+        </div>
+
+        <script src="carousel.js"></script>
+        <script>
+            initializeCarousel('carousel2', 'prev2', 'next2', 7, 2);
+            initializeCarousel('carousel3', 'prev3', 'next3', 7, 2);
+            initializeCarousel('carousel4', 'prev4', 'next4', 7, 2);
+        </script>
+        <br>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
