@@ -8,17 +8,17 @@ function initializeCarousel(carouselClassName, prevButtonClassName, nextButtonCl
     let currentIndex = 0;
 
     function updateCarousel() {
-        const translateValue = -currentIndex * (100 / (totalSlides - visibleSlides + 1));
+        const translateValue = -currentIndex * (100 / totalSlides);
         carousel.style.transform = `translateX(${translateValue}%)`;
     }
 
     function nextSlide() {
-        currentIndex = (currentIndex + 1) % (totalSlides - visibleSlides + 6.2);
+        currentIndex = (currentIndex + 1) % totalSlides;
         updateCarousel();
     }
 
     function prevSlide() {
-        currentIndex = (currentIndex - 1 + totalSlides - visibleSlides + 6.2) % (totalSlides - visibleSlides + 1);
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
         updateCarousel();
     }
 

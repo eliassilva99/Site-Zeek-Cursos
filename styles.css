@@ -145,6 +145,72 @@ a:hover {
     background: #0075fc;
 }
 
+.tabelaImagensDiferenciais{
+    width: 75%;
+    margin: auto;
+    table-layout: fixed;
+    padding-bottom: 70px;
+    padding-top: 20px;
+}
+
+.tabelaImagensDiferenciais2{
+    width: 98%;
+    margin: auto;
+    table-layout: fixed;
+    padding-bottom: 70px;
+}
+
+.tituloTabelaDiferenciais{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    color: #FBFB00;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.imagensTabelaDiferenciais{
+    width: 98%;
+    margin: auto;
+    transition: opacity 0.5s;
+    border-radius: 10px;
+}
+
+
+.diferencial {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+}
+
+.imagemAdicional {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.diferencial:hover .imagemAdicional {
+    opacity: 1;
+}
+
+.tabelaImagensDiferenciais h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    color: #000730;
+    padding-inline: 20px;
+    text-align: center;
+}
+
+.tabelaImagensDiferenciais h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #000d58;
+    padding-inline: 10px;
+    text-align: center;
+}
 
 
 .diferenciais {
@@ -251,13 +317,12 @@ a:hover {
 
   .fundoImagensDescalvado{
     background-color: #0075fc;
-    width: 97%;
+    width: 100%;
     margin: auto;
-    border-radius: 40px;
   }
 
   .carousel-container2 {
-    width: 80%;
+    width: 100%;
     overflow: hidden;
     position: relative;
     margin: auto;
@@ -269,7 +334,7 @@ a:hover {
   }
 
   .carousel2 img {
-    width: 45%; /* Alterado para 50% para exibir apenas 2 imagens por vez */
+    width: 30.5%; /* Alterado para 50% para exibir apenas 2 imagens por vez */
     height: auto;
     padding-inline: 5px;
     border-radius: 5%;
@@ -292,13 +357,12 @@ a:hover {
 
   .fundoImagensIbate{
     background-color: #e93fb6;
-    width: 97%;
+    width: 100%;
     margin: auto;
-    border-radius: 40px;
   }
 
   .carousel-container3 {
-    width: 80%;
+    width: 100%;
     overflow: hidden;
     position: relative;
     margin: auto;
@@ -310,7 +374,7 @@ a:hover {
   }
 
   .carousel3 img {
-    width: 45%; /* Alterado para 50% para exibir apenas 2 imagens por vez */
+    width: 30.5%; /* Alterado para 50% para exibir apenas 2 imagens por vez */
     height: auto;
     padding-inline: 5px;
     border-radius: 5%;
@@ -333,13 +397,12 @@ a:hover {
 
   .fundoImagensRibeirao{
     background-color: #26c440;
-    width: 97%;
+    width: 100%;
     margin: auto;
-    border-radius: 40px;
   }
 
   .carousel-container4 {
-    width: 80%;
+    width: 100%;
     overflow: hidden;
     position: relative;
     margin: auto;
@@ -351,7 +414,7 @@ a:hover {
   }
 
   .carousel4 img {
-    width: 45%; /* Alterado para 50% para exibir apenas 2 imagens por vez */
+    width: 30.5%; /* Alterado para 50% para exibir apenas 2 imagens por vez */
     height: auto;
     padding-inline: 5px;
     border-radius: 5%;
@@ -1182,6 +1245,7 @@ section.slider {
 .imagemEmpresa {
     width: 100%;
 }
+
 
 .fundoDiferenciais2 {
     background-color: #0075fc;

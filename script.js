@@ -101,78 +101,78 @@ const prevButton2 = document.querySelector('.prev2');
 const nextButton2 = document.querySelector('.next2');
 
 let currentIndex2 = 0;
-const totalSlides2 = 7;
-const visibleSlides2 = 2; // Alterado para exibir apenas 2 imagens por vez
+const totalSlides2 = 6;
 
 function updateCarousel2() {
-    const translateValue2 = -currentIndex2 * (100 / (totalSlides2 - visibleSlides2 + 1));
+    const translateValue2 = -currentIndex2 * (100 / totalSlides2);
     carousel2.style.transform = `translateX(${translateValue2}%)`;
 }
 
 function nextSlide2() {
-    currentIndex2 = (currentIndex2 + 1) % (totalSlides2 - visibleSlides2 + 6.2);
+    currentIndex2 = (currentIndex2 + 1) % totalSlides2;
     updateCarousel2();
 }
 
 function prevSlide2() {
-    currentIndex2 = (currentIndex2 - 1 + totalSlides2 - visibleSlides2 + 6.2) % (totalSlides2 - visibleSlides2 + 1);
+    currentIndex2 = (currentIndex2 - 1 + totalSlides2) % totalSlides2;
     updateCarousel2();
 }
 
-// Automação: Mudar automaticamente os slides a cada 3 segundos (3000 milissegundos)
-setInterval(nextSlide2, 3000);
+// Automação: Mudar automaticamente os slides a cada 2.5 segundos (2500 milissegundos)
+setInterval(nextSlide2, 2500);
+
 
 const carousel3 = document.querySelector('.carousel3');
 const prevButton3 = document.querySelector('.prev3');
 const nextButton3 = document.querySelector('.next3');
 
 let currentIndex3 = 0;
-const totalSlides3 = 7;
-const visibleSlides3 = 2; // Alterado para exibir apenas 2 imagens por vez
+const totalSlides3 = 6;
 
 function updateCarousel3() {
-    const translateValue3 = -currentIndex3 * (100 / (totalSlides3 - visibleSlides3 + 1));
+    const translateValue3 = -currentIndex3 * (100 / totalSlides3);
     carousel3.style.transform = `translateX(${translateValue3}%)`;
 }
 
 function nextSlide3() {
-    currentIndex3 = (currentIndex3 + 1) % (totalSlides3 - visibleSlides3 + 6.2);
+    currentIndex3 = (currentIndex3 + 1) % totalSlides3;
     updateCarousel3();
 }
 
 function prevSlide3() {
-    currentIndex3 = (currentIndex3 - 1 + totalSlides3 - visibleSlides3 + 6.2) % (totalSlides3 - visibleSlides3 + 1);
+    currentIndex3 = (currentIndex3 - 1 + totalSlides3) % totalSlides3;
     updateCarousel3();
 }
 
-// Automação: Mudar automaticamente os slides a cada 3 segundos (3000 milissegundos)
-setInterval(nextSlide3, 3000);
+// Automação: Mudar automaticamente os slides a cada 2.5 segundos (2500 milissegundos)
+setInterval(nextSlide3, 2500);
+
 
 const carousel4 = document.querySelector('.carousel4');
 const prevButton4 = document.querySelector('.prev4');
 const nextButton4 = document.querySelector('.next4');
 
 let currentIndex4 = 0;
-const totalSlides4 = 7;
-const visibleSlides4 = 2; // Alterado para exibir apenas 4 imagens por vez
+const totalSlides4 = 6;
 
 function updateCarousel4() {
-    const translateValue4 = -currentIndex4 * (100 / (totalSlides4 - visibleSlides4 + 1));
+    const translateValue4 = -currentIndex4 * (100 / totalSlides4);
     carousel4.style.transform = `translateX(${translateValue4}%)`;
 }
 
 function nextSlide4() {
-    currentIndex4 = (currentIndex4 + 1) % (totalSlides4 - visibleSlides4 + 6.2);
+    currentIndex4 = (currentIndex4 + 1) % totalSlides4;
     updateCarousel4();
 }
 
 function prevSlide4() {
-    currentIndex4 = (currentIndex4 - 1 + totalSlides4 - visibleSlides4 + 6.2) % (totalSlides4 - visibleSlides4 + 1);
+    currentIndex4 = (currentIndex4 - 1 + totalSlides4) % totalSlides4;
     updateCarousel4();
 }
 
-// Automação: Mudar automaticamente os slides a cada 3 segundos (3000 milissegundos)
-setInterval(nextSlide4, 3000);
+// Automação: Mudar automaticamente os slides a cada 2.5 segundos (2500 milissegundos)
+setInterval(nextSlide4, 2500);
+
 
 function enviarWhatsapp() {
     // Obtenha os dados do formulário
