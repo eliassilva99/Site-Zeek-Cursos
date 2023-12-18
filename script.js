@@ -26,7 +26,7 @@ function abrirJanela(url) {
     var top = (screen.height - altura) / 2;
 
     // Abre a nova janela usando window.open
-    window.open(url, '_blank', "width=400,height=400");
+    window.open(url, '_blank', "width=1000,height=600");
 }
 
 
@@ -75,26 +75,26 @@ const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 
 let currentIndex = 0;
-const totalSlides = 7;
-const visibleSlides = 2; // Alterado para exibir apenas 2 imagens por vez
+const totalSlides = 6;
+
 
 function updateCarousel() {
-    const translateValue = -currentIndex * (100 / (totalSlides - visibleSlides + 1));
+    const translateValue = -currentIndex * (100 / totalSlides);
     carousel.style.transform = `translateX(${translateValue}%)`;
 }
 
 function nextSlide() {
-    currentIndex = (currentIndex + 1) % (totalSlides - visibleSlides + 3);
+    currentIndex = (currentIndex + 1) % totalSlides;
     updateCarousel();
 }
 
 function prevSlide() {
-    currentIndex = (currentIndex - 1 + totalSlides - visibleSlides + 3) % (totalSlides - visibleSlides + 1);
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
     updateCarousel();
 }
 
 // Automação: Mudar automaticamente os slides a cada 3 segundos (3000 milissegundos)
-setInterval(nextSlide, 2000);
+setInterval(nextSlide, 3500);
 
 const carousel2 = document.querySelector('.carousel2');
 const prevButton2 = document.querySelector('.prev2');

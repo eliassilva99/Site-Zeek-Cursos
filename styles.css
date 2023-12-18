@@ -278,25 +278,27 @@ a:hover {
 }
 
 .carousel-container {
-    width: 80%;
+    width: 100%;
     overflow: hidden;
     position: relative;
     margin: auto;
-  }
+}
 
-  .carousel {
+.carousel {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
+    width: 300%; /* Alterado para 600% para acomodar seis imagens */
+    transition: transform 3s ease-in-out;
+}
 
-  .carousel img {
-    width: 35%; /* Alterado para 50% para exibir apenas 2 imagens por vez */
+.carousel img {
+    width: 16.666%; /* Alterado para 16.666% para exibir seis imagens por vez */
     height: auto;
     transition: 0.8s;
-  }
+    padding-inline: 5px;
+}
 
   .carousel img:hover {
-    width: 37%; /* Alterado para 50% para exibir apenas 2 imagens por vez */
+    width: 17%; /* Alterado para 50% para exibir apenas 2 imagens por vez */
     transition: 0.8s;
 }
 
@@ -330,7 +332,7 @@ a:hover {
 
   .carousel2 {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1.2s ease-in-out;
   }
 
   .carousel2 img {
@@ -370,7 +372,7 @@ a:hover {
 
   .carousel3 {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1.2s ease-in-out;
   }
 
   .carousel3 img {
@@ -410,7 +412,7 @@ a:hover {
 
   .carousel4 {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1.2s ease-in-out;
   }
 
   .carousel4 img {
