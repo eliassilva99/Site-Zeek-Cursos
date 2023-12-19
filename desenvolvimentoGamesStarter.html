@@ -356,49 +356,67 @@
         <div class="fundoImagensDescalvado">
             <h1 class="tabelaFotosEscolaTituloCidade">DESCALVADO</h1>
             <div class="carousel-container2">
-                <div class="carousel2">
-                  <img src="./img/OndeVaiEstudar/descalvado1.jpg" alt="Imagem 1">
-                  <img src="./img/OndeVaiEstudar/descalvado2.jpg" alt="Imagem 2">
-                  <img src="./img/OndeVaiEstudar/descalvado3.jpg" alt="Imagem 3">
-                  <img src="./img/OndeVaiEstudar/descalvado4.jpg" alt="Imagem 4">
-                  <img src="./img/OndeVaiEstudar/descalvado5.jpg" alt="Imagem 5">
-                  <img src="./img/OndeVaiEstudar/descalvado6.jpg" alt="Imagem 6">
+                <div class="carousel2" onclick="openModal2(event)">
+                    <img src="./img/OndeVaiEstudar/descalvado1.jpg" alt="Imagem 1">
+                    <img src="./img/OndeVaiEstudar/descalvado2.jpg" alt="Imagem 2">
+                    <img src="./img/OndeVaiEstudar/descalvado3.jpg" alt="Imagem 3">
+                    <img src="./img/OndeVaiEstudar/descalvado1.jpg" alt="Imagem 4">
+                    <img src="./img/OndeVaiEstudar/descalvado2.jpg" alt="Imagem 5">
+                    <img src="./img/OndeVaiEstudar/descalvado3.jpg" alt="Imagem 6">
                 </div>
                 <button class="prev2" onclick="prevSlide2()">❮</button>
                 <button class="next2" onclick="nextSlide2()">❯</button>
-              </div><br>
+            </div><br>
+            <div id="modal2" class="modal">
+                <span class="close" onclick="closeModal2()">&times;</span>
+                <button class="prev2" onclick="prevImage2()">❮</button>
+                <img class="modal-content" id="modalImage2">
+                <button class="next2" onclick="nextImage2()">❯</button>
+            </div>
         </div>
         <br>
         <div class="fundoImagensIbate">
             <h1 class="tabelaFotosEscolaTituloCidade">IBATÉ</h1>
             <div class="carousel-container3">
-                <div class="carousel3">
-                  <img src="./img/OndeVaiEstudar/ibate1.jpg" alt="Imagem 1">
-                  <img src="./img/OndeVaiEstudar/ibate2.jpg" alt="Imagem 2">
-                  <img src="./img/OndeVaiEstudar/ibate3.jpg" alt="Imagem 3">
-                  <img src="./img/OndeVaiEstudar/ibate4.jpg" alt="Imagem 4">
-                  <img src="./img/OndeVaiEstudar/ibate5.jpg" alt="Imagem 5">
-                  <img src="./img/OndeVaiEstudar/ibate6.jpg" alt="Imagem 6">
+                <div class="carousel3" onclick="openModal3(event)">
+                    <img src="./img/OndeVaiEstudar/ibate1.jpg" alt="Imagem 1">
+                    <img src="./img/OndeVaiEstudar/ibate2.jpg" alt="Imagem 2">
+                    <img src="./img/OndeVaiEstudar/ibate3.jpg" alt="Imagem 3">
+                    <img src="./img/OndeVaiEstudar/ibate4.jpg" alt="Imagem 4">
+                    <img src="./img/OndeVaiEstudar/ibate5.jpg" alt="Imagem 5">
+                    <img src="./img/OndeVaiEstudar/ibate6.jpg" alt="Imagem 6">
                 </div>
                 <button class="prev3" onclick="prevSlide3()">❮</button>
                 <button class="next3" onclick="nextSlide3()">❯</button>
-              </div><br>
+            </div><br>
+            <div id="modal3" class="modal">
+                <span class="close" onclick="closeModal3()">&times;</span>
+                <button class="prev3" onclick="prevImage3()">❮</button>
+                <img class="modal-content" id="modalImage3">
+                <button class="next3" onclick="nextImage3()">❯</button>
+            </div>
         </div>
         <br>
         <div class="fundoImagensRibeirao">
             <h1 class="tabelaFotosEscolaTituloCidade">RIBEIRÃO BONITO</h1>
             <div class="carousel-container4">
-                <div class="carousel4">
-                  <img src="./img/OndeVaiEstudar/ribeirao1.jpg" alt="Imagem 1">
-                  <img src="./img/OndeVaiEstudar/ribeirao2.jpg" alt="Imagem 2">
-                  <img src="./img/OndeVaiEstudar/ribeirao3.jpg" alt="Imagem 3">
-                  <img src="./img/OndeVaiEstudar/ribeirao4.jpg" alt="Imagem 4">
-                  <img src="./img/OndeVaiEstudar/ribeirao5.jpg" alt="Imagem 5">
-                  <img src="./img/OndeVaiEstudar/ribeirao6.jpg" alt="Imagem 6">
+                <div class="carousel4" onclick="openModal4(event)">
+                    <img src="./img/OndeVaiEstudar/ribeirao1.jpg" alt="Imagem 1">
+                    <img src="./img/OndeVaiEstudar/ribeirao2.jpg" alt="Imagem 2">
+                    <img src="./img/OndeVaiEstudar/ribeirao3.jpg" alt="Imagem 3">
+                    <img src="./img/OndeVaiEstudar/ribeirao4.jpg" alt="Imagem 4">
+                    <img src="./img/OndeVaiEstudar/ribeirao5.jpg" alt="Imagem 5">
+                    <img src="./img/OndeVaiEstudar/ribeirao6.jpg" alt="Imagem 6">
                 </div>
                 <button class="prev4" onclick="prevSlide4()">❮</button>
                 <button class="next4" onclick="nextSlide4()">❯</button>
-              </div><br>
+            </div><br>
+            <div id="modal4" class="modal">
+                <span class="close" onclick="closeModal4()">&times;</span>
+                <button class="prev4" onclick="prevImage4()">❮</button>
+                <img class="modal-content" id="modalImage4">
+                <button class="next4" onclick="nextImage4()">❯</button>
+            </div>
         </div>
 
         <script src="carousel.js"></script>

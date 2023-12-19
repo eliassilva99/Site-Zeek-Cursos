@@ -77,6 +77,19 @@ const nextButton = document.querySelector('.next');
 let currentIndex = 0;
 const totalSlides = 6;
 
+function openModal(event) {
+    const clickedImage = event.target;
+    const modal = document.getElementById('myModal');
+    const modalImage = document.getElementById('modalImage');
+
+    modal.style.display = 'block';
+    modalImage.src = clickedImage.src;
+    currentIndex = Array.from(clickedImage.parentNode.children).indexOf(clickedImage);
+}
+
+function closeModal() {
+    document.getElementById('myModal').style.display = 'none';
+}
 
 function updateCarousel() {
     const translateValue = -currentIndex * (100 / totalSlides);
@@ -102,6 +115,9 @@ const nextButton2 = document.querySelector('.next2');
 
 let currentIndex2 = 0;
 const totalSlides2 = 6;
+let currentImageIndex2 = 0;
+let modalImages2 = [];
+
 
 function updateCarousel2() {
     const translateValue2 = -currentIndex2 * (100 / totalSlides2);
@@ -118,6 +134,54 @@ function prevSlide2() {
     updateCarousel2();
 }
 
+function openModal2(event) {
+    const clickedImage = event.target;
+    const modal = document.getElementById('modal2');
+    const modalImage = document.getElementById('modalImage2');
+
+    modal.style.display = 'block';
+    modalImage.src = clickedImage.src;
+    currentImageIndex2 = Array.from(clickedImage.parentNode.children).indexOf(clickedImage);
+    modalImages2 = Array.from(document.querySelector('.carousel2').children);
+    updateModalButtonsVisibility();
+}
+
+function closeModal2() {
+    document.getElementById('modal2').style.display = 'none';
+}
+
+function prevImage2() {
+        currentIndex2 = (currentIndex2 - 1 + totalSlides2) % totalSlides2;
+        updateModalImage2();
+        const modalImage = document.getElementById('modalImage2');
+    currentImageIndex2 = (currentImageIndex2 - 1 + 6) % 6;
+    modalImage.src = modalImages2[currentImageIndex2].src;
+    updateModalButtonsVisibility();
+    }
+
+    function nextImage2() {
+        currentIndex2 = (currentIndex2 + 1) % totalSlides2;
+        updateModalImage2();
+        const modalImage = document.getElementById('modalImage2');
+    currentImageIndex2 = (currentImageIndex2 + 1) % 6;
+    modalImage.src = modalImages2[currentImageIndex2].src;
+    updateModalButtonsVisibility();
+    }
+
+    function updateModalButtonsVisibility() {
+        const prevButton = document.querySelector('.prev2');
+        const nextButton = document.querySelector('.next2');
+    
+        // Mostrar ou ocultar os botões com base na posição da imagem atual
+        prevButton.style.display = currentImageIndex2 === 0 ? 'none' : 'block';
+        nextButton.style.display = currentImageIndex2 === 5 ? 'none' : 'block';
+    }
+
+    function updateModalImage2() {
+        const modalImage2 = document.getElementById('modalImage2');
+        modalImage2.src = document.querySelector('.carousel2 img:nth-child(' + (currentIndex2 + 1) + ')').src;
+    }
+
 // Automação: Mudar automaticamente os slides a cada 2.5 segundos (2500 milissegundos)
 setInterval(nextSlide2, 2500);
 
@@ -128,6 +192,8 @@ const nextButton3 = document.querySelector('.next3');
 
 let currentIndex3 = 0;
 const totalSlides3 = 6;
+let currentImageIndex3 = 0;
+let modalImages3 = [];
 
 function updateCarousel3() {
     const translateValue3 = -currentIndex3 * (100 / totalSlides3);
@@ -144,9 +210,56 @@ function prevSlide3() {
     updateCarousel3();
 }
 
+function openModal3(event) {
+    const clickedImage = event.target;
+    const modal = document.getElementById('modal3');
+    const modalImage = document.getElementById('modalImage3');
+
+    modal.style.display = 'block';
+    modalImage.src = clickedImage.src;
+    currentImageIndex3 = Array.from(clickedImage.parentNode.children).indexOf(clickedImage);
+    modalImages3 = Array.from(document.querySelector('.carousel3').children);
+    updateModalButtonsVisibility3();
+}
+
+function closeModal3() {
+    document.getElementById('modal3').style.display = 'none';
+}
+
+function prevImage3() {
+    currentIndex3 = (currentIndex3 - 1 + totalSlides3) % totalSlides3;
+    updateModalImage3();
+    const modalImage = document.getElementById('modalImage3');
+    currentImageIndex3 = (currentImageIndex3 - 1 + 6) % 6;
+    modalImage.src = modalImages3[currentImageIndex3].src;
+    updateModalButtonsVisibility3();
+}
+
+function nextImage3() {
+    currentIndex3 = (currentIndex3 + 1) % totalSlides3;
+    updateModalImage3();
+    const modalImage = document.getElementById('modalImage3');
+    currentImageIndex3 = (currentImageIndex3 + 1) % 6;
+    modalImage.src = modalImages3[currentImageIndex3].src;
+    updateModalButtonsVisibility3();
+}
+
+function updateModalButtonsVisibility3() {
+    const prevButton = document.querySelector('.prev3');
+    const nextButton = document.querySelector('.next3');
+
+    // Mostrar ou ocultar os botões com base na posição da imagem atual
+    prevButton.style.display = currentImageIndex3 === 0 ? 'none' : 'block';
+    nextButton.style.display = currentImageIndex3 === 5 ? 'none' : 'block';
+}
+
+function updateModalImage3() {
+    const modalImage3 = document.getElementById('modalImage3');
+    modalImage3.src = document.querySelector('.carousel3 img:nth-child(' + (currentIndex3 + 1) + ')').src;
+}
+
 // Automação: Mudar automaticamente os slides a cada 2.5 segundos (2500 milissegundos)
 setInterval(nextSlide3, 2500);
-
 
 const carousel4 = document.querySelector('.carousel4');
 const prevButton4 = document.querySelector('.prev4');
@@ -154,6 +267,8 @@ const nextButton4 = document.querySelector('.next4');
 
 let currentIndex4 = 0;
 const totalSlides4 = 6;
+let currentImageIndex4 = 0;
+let modalImages4 = [];
 
 function updateCarousel4() {
     const translateValue4 = -currentIndex4 * (100 / totalSlides4);
@@ -170,8 +285,57 @@ function prevSlide4() {
     updateCarousel4();
 }
 
+function openModal4(event) {
+    const clickedImage = event.target;
+    const modal = document.getElementById('modal4');
+    const modalImage = document.getElementById('modalImage4');
+
+    modal.style.display = 'block';
+    modalImage.src = clickedImage.src;
+    currentImageIndex4 = Array.from(clickedImage.parentNode.children).indexOf(clickedImage);
+    modalImages4 = Array.from(document.querySelector('.carousel4').children);
+    updateModalButtonsVisibility4();
+}
+
+function closeModal4() {
+    document.getElementById('modal4').style.display = 'none';
+}
+
+function prevImage4() {
+    currentIndex4 = (currentIndex4 - 1 + totalSlides4) % totalSlides4;
+    updateModalImage4();
+    const modalImage = document.getElementById('modalImage4');
+    currentImageIndex4 = (currentImageIndex4 - 1 + 6) % 6;
+    modalImage.src = modalImages4[currentImageIndex4].src;
+    updateModalButtonsVisibility4();
+}
+
+function nextImage4() {
+    currentIndex4 = (currentIndex4 + 1) % totalSlides4;
+    updateModalImage4();
+    const modalImage = document.getElementById('modalImage4');
+    currentImageIndex4 = (currentImageIndex4 + 1) % 6;
+    modalImage.src = modalImages4[currentImageIndex4].src;
+    updateModalButtonsVisibility4();
+}
+
+function updateModalButtonsVisibility4() {
+    const prevButton = document.querySelector('.prev4');
+    const nextButton = document.querySelector('.next4');
+
+    // Mostrar ou ocultar os botões com base na posição da imagem atual
+    prevButton.style.display = currentImageIndex4 === 0 ? 'none' : 'block';
+    nextButton.style.display = currentImageIndex4 === 5 ? 'none' : 'block';
+}
+
+function updateModalImage4() {
+    const modalImage4 = document.getElementById('modalImage4');
+    modalImage4.src = document.querySelector('.carousel4 img:nth-child(' + (currentIndex4 + 1) + ')').src;
+}
+
 // Automação: Mudar automaticamente os slides a cada 2.5 segundos (2500 milissegundos)
 setInterval(nextSlide4, 2500);
+
 
 
 function enviarWhatsapp() {
