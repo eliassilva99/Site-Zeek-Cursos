@@ -76,15 +76,19 @@ const nextButton = document.querySelector('.next');
 
 let currentIndex = 0;
 const totalSlides = 6;
+let currentImageIndex = 0;
+let modalImages = [];
 
 function openModal(event) {
     const clickedImage = event.target;
-    const modal = document.getElementById('myModal');
-    const modalImage = document.getElementById('modalImage');
+    const modal = document.getElementById('modal2');
+    const modalImage = document.getElementById('modalImage2');
 
     modal.style.display = 'block';
     modalImage.src = clickedImage.src;
-    currentIndex = Array.from(clickedImage.parentNode.children).indexOf(clickedImage);
+    currentImageIndex2 = Array.from(clickedImage.parentNode.children).indexOf(clickedImage);
+    modalImages2 = Array.from(document.querySelector('.carousel2').children);
+    updateModalButtonsVisibility();
 }
 
 function closeModal() {
@@ -105,6 +109,7 @@ function prevSlide() {
     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
     updateCarousel();
 }
+
 
 // Automação: Mudar automaticamente os slides a cada 3 segundos (3000 milissegundos)
 setInterval(nextSlide, 3500);

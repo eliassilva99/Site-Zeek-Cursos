@@ -869,7 +869,7 @@ section.slider {
 }
 
 .tabelaTodosOsCursosIngles {
-    width: 65%;
+    width: 55%;
     margin: auto;
     table-layout: fixed;
     border-collapse: separate;
@@ -916,7 +916,16 @@ section.slider {
 }
 
 .tabelaTodosOsCursosDoisCursos {
-    width: 45%;
+    width: 73%;
+    margin: auto;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 30px;
+    padding-bottom: 20px;
+}
+
+.tabelaTodosOsCursosAdministracaoDoisCursos{
+    width: 40%;
     margin: auto;
     table-layout: fixed;
     border-collapse: separate;
