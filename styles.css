@@ -2306,7 +2306,7 @@ section.slider {
     max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
-    background: #fff;
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -2375,4 +2375,36 @@ section.slider {
     width: 35%;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
+}
+
+.divtextoTimeLine{
+    margin: auto;
+    padding-inline: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    position: relative;
+    max-width: 95%;
+    margin: 50px auto;
+    padding-top: 50px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.textoTimeLine{
+    margin: auto;
+    padding-inline: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #00137a;
+}
+
+.textoTimeLineNegrito{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    color: black;
+}
+
+.imagemPessoasDepoimento{
+    width: 60%;
 }
