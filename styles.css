@@ -924,7 +924,7 @@ section.slider {
     padding-bottom: 20px;
 }
 
-.tabelaTodosOsCursosAdministracaoDoisCursos{
+.tabelaTodosOsCursosAdministracaoDoisCursos {
     width: 40%;
     margin: auto;
     table-layout: fixed;
@@ -2299,4 +2299,81 @@ section.slider {
     border: 2px solid #000000;
     border-radius: 20px;
     padding: 15px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: #3498db;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+}
+
+.timeline-item img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.timeline-item-content {
+    margin: auto;
+    max-width: 300px;
+    padding: 20px;
+    background: #0084ff;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+
+.timeline-item-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.timeline-item-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.scroll-reveal {
+    margin: auto;
+    display: flex;
+}
+
+.imagemTimeLine1,
+.imagemTimeLine3 {
+    margin: auto;
+    width: 25%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.imagemTimeLine2 {
+    width: 35%;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
 }
