@@ -2408,3 +2408,60 @@ section.slider {
 .imagemPessoasDepoimento{
     width: 60%;
 }
+
+.fundoCidadeContato{
+    margin: auto;
+    padding-inline: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    position: relative;
+    max-width: 100%;
+    margin: 50px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabelaContatoNova{
+    width: 90%;
+    margin: auto;
+    table-layout: fixed;
+}
+
+.mapaContato{
+    width: 100%;
+    height: 270px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.tituloCidadeContato{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: black;
+    margin: auto;
+    text-align: left;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.informacoesCidadeContato{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: black;
+    text-align: left;
+}
+
+.tabelainformacoesContato{
+    width: 100%;
+}
+
+.imagemLocalizacao{
+    width: 50px;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
