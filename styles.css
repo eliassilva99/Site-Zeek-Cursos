@@ -110,6 +110,7 @@ a:hover {
 
 .editarLink {
     text-decoration: none;
+    color: white;
 }
 
 .imagemPropaganda:hover {
@@ -2409,7 +2410,7 @@ section.slider {
     width: 60%;
 }
 
-.fundoCidadeContato{
+.fundoCidadeContatoDescalvado{
     margin: auto;
     padding-inline: 10%;
     font-family: 'Open Sans', sans-serif;
@@ -2419,7 +2420,37 @@ section.slider {
     margin: 50px auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #fff;
+    background-color: #0075FC;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fundoCidadeContatoIbate{
+    margin: auto;
+    padding-inline: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    position: relative;
+    max-width: 100%;
+    margin: 50px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #E93FB6;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fundoCidadeContatoRibeirao{
+    margin: auto;
+    padding-inline: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    position: relative;
+    max-width: 100%;
+    margin: 50px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #26C440;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -2433,16 +2464,16 @@ section.slider {
 .mapaContato{
     width: 100%;
     height: 270px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .tituloCidadeContato{
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
-    color: black;
+    color: white;
     margin: auto;
-    text-align: left;
+    text-align: center;
     padding-right: 30px;
     padding-top: 20px;
     padding-bottom: 40px;
@@ -2451,7 +2482,7 @@ section.slider {
 .informacoesCidadeContato{
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
-    color: black;
+    color: white;
     text-align: left;
 }
 
@@ -2464,4 +2495,18 @@ section.slider {
     margin: auto;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.mapaContato2{
+    width: 100%;
+    height: 270px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.informacoesCidadeContato2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: black;
+    text-align: right;
 }
