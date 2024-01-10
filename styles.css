@@ -737,16 +737,16 @@ a:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 10px;
     color: black;
 }
 
 .tabelaRodape h4 {
     font-family: 'Open Sans', sans-serif;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
     text-align: left;
     display: flex;
     align-items: center;
