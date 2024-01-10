@@ -725,6 +725,7 @@ a:hover {
 .tabelaRodape {
     width: 97%;
     table-layout: fixed;
+    margin: auto;
 }
 
 .tabelaRodape h2 {
@@ -737,16 +738,16 @@ a:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 10px;
     color: black;
 }
 
 .tabelaRodape h4 {
     font-family: 'Open Sans', sans-serif;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: left;
     display: flex;
     align-items: center;
