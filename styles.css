@@ -1074,7 +1074,7 @@ section.slider {
 }
 
 .tabelaCursoIndividual {
-    width: 85%;
+    width: 95%;
     margin: auto;
     border-collapse: separate;
     padding-top: 20px;
@@ -1206,7 +1206,7 @@ section.slider {
 }
 
 .fundoTabelaConteudoProgramatico {
-    width: 90%;
+    width: 95%;
     margin: auto;
     border-collapse: collapse;
     background-color: #0075fc;
