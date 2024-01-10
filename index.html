@@ -118,6 +118,34 @@
                     <a href="cursos.html" class="editarLink">VER TODOS OS CURSOS</a>
                 </button>
             </div><br>
+            <div class="scroll-reveal" id="item1">
+                <table class="tabelaIniciarMatricula">
+                    <tr>
+                        <td>
+                            <div class="bordaMatricula">
+                                <h1 class="facaSuaMatricula">
+                                    MATRICULE-SE!
+                                </h1>
+                                <h4 class="facaSuaMatriculasubtitulo">
+                                    Inicie o atendimento e tenha acesso a informações exclusivas com nossa consultora.
+                                </h4>
+                                <select id="seletorCidades" onchange="mostrarBotao()" class="selecionarCidade">
+                                    <option value="">Selecione sua cidade!</option>
+                                    <option value="descalvado">Descalvado</option>
+                                    <option value="ibate">Ibaté</option>
+                                    <option value="ribeirao_bonito">Ribeirão Bonito</option>
+                                </select>
+                                <br><br>
+                                <button class="botaoIniciarMatricula" id="btnIniciarMatricula" onclick="abrirMatricula()">
+                                    Iniciar Atendimento</button><br>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="./img/Pessoas/iniciarMatricula.png" class="imagemCursoIndividual">
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div class="fundoDiferenciais">
             <div class="scroll-reveal" id="item1">
@@ -218,34 +246,6 @@
             </div>
         </div>
         </table>
-        <div class="scroll-reveal" id="item1">
-            <table class="tabelaIniciarMatricula">
-                <tr>
-                    <td>
-                        <div class="bordaMatricula">
-                            <h1 class="facaSuaMatricula">
-                                MATRICULE-SE!
-                            </h1>
-                            <h4 class="facaSuaMatriculasubtitulo">
-                                Inicie o atendimento e tenha acesso a informações exclusivas com nossa consultora.
-                            </h4>
-                            <select id="seletorCidades" onchange="mostrarBotao()" class="selecionarCidade">
-                                <option value="">Selecione sua cidade!</option>
-                                <option value="descalvado">Descalvado</option>
-                                <option value="ibate">Ibaté</option>
-                                <option value="ribeirao_bonito">Ribeirão Bonito</option>
-                            </select>
-                            <br><br>
-                            <button class="botaoIniciarMatricula" id="btnIniciarMatricula" onclick="abrirMatricula()">
-                                Iniciar Atendimento</button><br>
-                        </div>
-                    </td>
-                    <td>
-                        <img src="./img/Pessoas/iniciarMatricula.png" class="imagemCursoIndividual">
-                    </td>
-                </tr>
-            </table>
-        </div>
     </main>
     <footer class="rodape">
         <div class="scroll-reveal" id="item1">
