@@ -848,14 +848,13 @@ section.slider {
 
 .escolhaEducacao {
     padding-top: 25px;
-    padding-bottom: 5px;
+    padding-bottom: 50px;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     color: black;
 }
 
 .tecnologiaEInformática {
-    padding-top: 25px;
     padding-bottom: 5px;
     font-size: 25px;
     color: #000d58;
@@ -1457,7 +1456,7 @@ section.slider {
 }
 
 .tabelaMenusCruzeiro {
-    width: 10%;
+    width: 5%;
     margin: auto;
     table-layout: fixed;
     border-collapse: separate;
@@ -1526,6 +1525,10 @@ section.slider {
     font-size: 20px;
     text-align: center;
     color: #000730;
+}
+
+.logoZeek {
+    width: 40%;
 }
 
 .selecionarCidade {
@@ -1603,6 +1606,12 @@ section.slider {
         border-radius: 10px;
     }
 
+    .tabela4pilares {
+        table-layout: fixed;
+        width: 100%;
+        margin: auto;
+    }
+
     .diferenciais {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -1650,6 +1659,15 @@ section.slider {
     .tabelaDepoimentosPrimeiro h3 {
         font-size: 10px;
         padding-left: 10%;
+    }
+
+    .tabelaTodosOsCursosAdministracaoDoisCursos {
+        width: 40%;
+        margin: auto;
+        table-layout: fixed;
+        border-collapse: separate;
+        border-spacing: 3px;
+        padding-bottom: 2px;
     }
 
     .tabelaIniciarMatricula {
@@ -1726,6 +1744,17 @@ section.slider {
 
     }
 
+    .tabelaImagensDiferenciais {
+        width: 95%;
+        padding-bottom: 20px;
+        padding-top: 0px;
+    }
+
+    .tabelaImagensDiferenciais2 {
+        width: 99%;
+        padding-bottom: 30px;
+    }
+
     .botaoIniciarAtendimento {
         width: 50px;
         height: 20px;
@@ -1746,21 +1775,22 @@ section.slider {
 
     .tabelaRodape {
         width: 100%;
+        margin: auto;
     }
 
     .tabelaRodape h2 {
-        font-size: 10px;
+        font-size: 12px;
         margin: auto;
     }
 
     .tabelaRodape h3 {
-        font-size: 8px;
+        font-size: 10px;
         padding-left: 1px;
         padding-right: 1px;
     }
 
     .tabelaRodape h4 {
-        font-size: 10px;
+        font-size: 8px;
         padding-left: 1px;
         padding-right: 1px;
     }
@@ -1774,13 +1804,52 @@ section.slider {
     }
 
     .escolhaEducacao {
-        padding-top: 20px;
-        font-size: 17px;
+        padding-top: 15px;
+        font-size: 12px;
         padding-inline: 30px;
+        padding-bottom: 10px;
+    }
+
+    .prev2,
+    .next2 {
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 1px;
+        margin-top: -22px;
+        font-size: 15px;
+    }
+
+    .prev3,
+    .next3 {
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 1px;
+        margin-top: -22px;
+        font-size: 15px;
+    }
+
+    .prev4,
+    .next4 {
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 1px;
+        margin-top: -22px;
+        font-size: 15px;
+    }
+
+    .imagensTabelaDiferenciais {
+        padding-top: 0px;
+        border-radius: 5px;
+    }
+
+    .logoZeek {
+        width: 80%;
     }
 
     .tecnologiaEInformática {
-        padding-top: 2px;
         font-size: 12px;
     }
 
@@ -1817,7 +1886,7 @@ section.slider {
     }
 
     .tabelaTodosOsCursosDoisCursos {
-        width: 48%;
+        width: 75%;
         border-spacing: 3px;
         padding-bottom: 1px;
     }
@@ -1896,6 +1965,22 @@ section.slider {
         background-color: #f0f0f0;
     }
 
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 1px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        transition: 0.6s ease;
+        border: none;
+        background: rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+
     .tituloCidade {
         padding-left: 17px;
         font-size: 15px;
@@ -1903,6 +1988,11 @@ section.slider {
 
     .tabelaContato {
         width: 97%;
+    }
+
+    .tituloTabelaDiferenciais {
+        font-size: 20px;
+        padding-top: 20px;
     }
 
     .espacamento {
@@ -1922,7 +2012,7 @@ section.slider {
     }
 
     .imagemContato {
-        width: 20px;
+        width: 25px;
     }
 
     .informacoesTabelaContato {
@@ -2092,6 +2182,23 @@ section.slider {
         width: 97%;
     }
 
+    .graduacao {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px !important;
+        background-color: #003B71;
+        border-radius: 10px;
+        width: 100% !important;
+        margin: auto;
+        padding: 5px;
+    }
+
+    .graduacao2 {
+        font-size: 12px!important;
+        border-radius: 10px!important;
+        padding: 1px!important;
+        width: 95% !important;
+    }
+
     .tabelaOqueVaiAprender h1 {
         font-size: 15px;
         padding-inline: 5px;
@@ -2169,10 +2276,6 @@ section.slider {
         border-radius: 40px;
     }
 
-    .numeroPagina {
-        font-size: 10px;
-        color: #000000;
-    }
 
     .imagemEmpresa {
         width: 100%;
@@ -2215,7 +2318,7 @@ section.slider {
     }
 
     .bordaVideosDiferenciais2 {
-        border-radius: 30px;
+        border-radius: 2%;
         padding: 0px 10px 10px 10px;
     }
 
@@ -2274,6 +2377,75 @@ section.slider {
         color: #000000;
     }
 
+    .tabelaGraduacao {
+        width: 100% !important;
+        margin: auto;
+    }
+
+    .opcoesGraduacao {
+        font-size: 10px !important;
+        padding-inline: 1px !important;
+    }
+
+    .bordaGraduacao {
+        width: 97% !important;
+        border-radius: 10px !important;
+    }
+
+    .formasIngressarCinza {
+        padding: 1px!important;
+        width: 95%!important;
+        height: 30vh!important;
+    }
+    .TituloformasIngressar {
+        font-size: 13px!important;
+        padding: 2px!important;
+        padding-inline: 5px!important;
+    }
+    
+    .SubTituloformasIngressar {
+        font-size: 8px!important;
+        padding-inline: 1px!important;
+    }
+    
+    .saibaMais {
+        font-size: 8px!important;
+        padding-inline: 2px!important;
+    }
+    
+    
+    .increvase {
+        width: 60%!important;
+        font-size: 8px!important;
+        padding: 2px!important;
+        border-radius: 5px!important;
+    }
+
+    .fundoPosGraduacao {
+        padding: 1px!important;
+        width: 97%!important;
+        height: 45vh!important;
+    }
+    .descricaoPosGraduação {
+        font-size: 9px!important;
+        padding: 10px!important;
+        padding-inline: 20px!important;
+    }
+    .textoPosGraduacao {
+        font-size: 8px!important;
+        padding-inline: 20px!important;
+    }
+    
+    .tituloPosGraduacao {
+        font-size: 12px!important;
+        padding-inline: 10px!important;
+    }
+    .increvasePosGraduacao {
+        width: 20%!important;
+        font-size: 8px!important;
+        padding: 5px!important;
+        border-radius: 5px!important;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -2379,7 +2551,7 @@ section.slider {
     transition: opacity 0.3s ease-in-out;
 }
 
-.divtextoTimeLine{
+.divtextoTimeLine {
     margin: auto;
     padding-inline: 10%;
     font-family: 'Open Sans', sans-serif;
@@ -2393,7 +2565,7 @@ section.slider {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.textoTimeLine{
+.textoTimeLine {
     margin: auto;
     padding-inline: 5%;
     font-family: 'Montserrat', sans-serif;
@@ -2401,17 +2573,17 @@ section.slider {
     color: #00137a;
 }
 
-.textoTimeLineNegrito{
+.textoTimeLineNegrito {
     font-family: 'Montserrat', sans-serif;
     font-size: 21px;
     color: black;
 }
 
-.imagemPessoasDepoimento{
+.imagemPessoasDepoimento {
     width: 60%;
 }
 
-.fundoCidadeContatoDescalvado{
+.fundoCidadeContatoDescalvado {
     margin: auto;
     padding-inline: 10%;
     font-family: 'Open Sans', sans-serif;
@@ -2426,7 +2598,7 @@ section.slider {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.fundoCidadeContatoIbate{
+.fundoCidadeContatoIbate {
     margin: auto;
     padding-inline: 10%;
     font-family: 'Open Sans', sans-serif;
@@ -2441,7 +2613,7 @@ section.slider {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.fundoCidadeContatoRibeirao{
+.fundoCidadeContatoRibeirao {
     margin: auto;
     padding-inline: 10%;
     font-family: 'Open Sans', sans-serif;
@@ -2456,20 +2628,20 @@ section.slider {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.tabelaContatoNova{
+.tabelaContatoNova {
     width: 90%;
     margin: auto;
     table-layout: fixed;
 }
 
-.mapaContato{
+.mapaContato {
     width: 100%;
     height: 270px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
-.tituloCidadeContato{
+.tituloCidadeContato {
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     color: white;
@@ -2480,34 +2652,193 @@ section.slider {
     padding-bottom: 40px;
 }
 
-.informacoesCidadeContato{
+.informacoesCidadeContato {
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     color: white;
     text-align: left;
 }
 
-.tabelainformacoesContato{
+.tabelainformacoesContato {
     width: 100%;
 }
 
-.imagemLocalizacao{
+.imagemLocalizacao {
     width: 50px;
     margin: auto;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.mapaContato2{
+.mapaContato2 {
     width: 100%;
     height: 270px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-.informacoesCidadeContato2{
+.informacoesCidadeContato2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     color: black;
     text-align: right;
+}
+
+.tabelaGraduacao {
+    width: 100%;
+    margin: auto;
+    table-layout: fixed;
+}
+
+.graduacao {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    background-color: #003B71;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+}
+
+.graduacao2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    background-color: #003B71;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    padding: 5px;
+}
+
+
+
+.editarLinkGraduacao {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.editarLinkGraduacaoMenor {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.opcoesGraduacao {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: black;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-inline: 15px;
+}
+
+.bordaGraduacao {
+    border: 1px solid #003B71;
+    width: 90%;
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+.formasIngressarCinza {
+    padding: 5px;
+    background-color: #F7F7F7;
+    margin: auto;
+    width: 85%;
+    height: 50vh;
+}
+
+.TituloformasIngressar {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #003B71;
+    padding: 10px;
+    padding-inline: 15px;
+    margin: auto;
+}
+
+.SubTituloformasIngressar {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: rgb(32, 32, 32);
+    padding-inline: 20px;
+    margin: auto;
+}
+
+.saibaMais {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: #0075FC;
+    padding-inline: 15px;
+    margin: auto;
+}
+
+.editarLinkSaibaMais {
+    text-decoration: none;
+    color: #0075FC;
+}
+
+.editarLinkInscrevase {
+    text-decoration: none;
+    color: white;
+}
+
+.increvase {
+    background-color: #0075FC;
+    width: 60%;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.fundoPosGraduacao {
+    padding: 5px;
+    background-color: #F7F7F7;
+    margin: auto;
+    width: 85%;
+    height: 55vh;
+}
+
+.descricaoPosGraduação {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    padding: 30px;
+    padding-inline: 90px;
+    border-radius: 5px;
+}
+
+.textoPosGraduacao {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    padding-inline: 70px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.tituloPosGraduacao {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    padding-inline: 70px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.editarLinkSaibaMais2 {
+    text-decoration: none;
+    color: #0075FC;
+    text-align: left
+}
+
+.increvasePosGraduacao {
+    background-color: #0075FC;
+    width: 20%;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 5px;
 }
