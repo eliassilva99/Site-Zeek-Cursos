@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/zeekinha.ico" type="image/x-icon">
+    <title>Zeek Cursos</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <table class="tabelaCabecalho">
+                <tr>
+                    <th>
+                        <a href="index.html">
+                            <img class="imagemLogo" src="./img/zeekLogo.png" alt="Zeek Cursos">
+                        </a>
+                    </th>
+                    <th>
+                        <div class="menuPrincipal">
+                            <a class="textoMenu" href="index.html">HOME</a>
+                            <a class="textoMenu" href="sobreNos.html">SOBRE NÓS</a>
+                            <a class="textoMenu" href="diferenciais.html">DIFERENCIAIS</a>
+                            <a class="textoMenu" href="cursos.html">CURSOS</a>
+                            <a class="textoMenu"
+                                href="javascript:abrirJanela('https://app3.evoluaeducacao.com.br')">ÁREA DO ALUNO</a>
+                            <a class="textoMenu" href="cruzeiroDoSul.html">POLOS CRUZEIRO DO SUL</a>
+                            <a class="textoMenu" href="contato.html">CONTATO</a>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <main>
+        <div class="fundoTabelaCursoIndividual">
+            <table class="tabelaCursoIndividual">
+                <td>
+                    <h1>
+                        INGLÊS ADULTOS
+                    </h1><br>
+                    <h3>Este curso é projetado para profissionais que buscam uma comunicação eficaz, leitura crítica de
+                        documentos empresariais e uma vantagem competitiva em um mundo de negócios cada vez mais
+                        internacional.
+                    </h3>
+                </td>
+                <td>
+                    <img src="./img/Imagens Módulos/inglesAdultos.jpg" class="imagemCursoIndividual">
+                </td>
+            </table>
+        </div>
+        <div>
+            <h1 class="informacoesCurso"><br>
+                INFORMAÇÕES DO CURSO
+            </h1><br>
+            <hr class="hrInformacoesCurso"><br>
+            <table class="informacoesCurso">
+                <td>
+                    <img src="./img/Pessoas/inglesAdulto.png" class="imagemPessoaCurso">
+                </td>
+                <td>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/ampulheta.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Horário Flexível
+                                <h4>
+                                    Manhã, tarde e noite.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/calendarioAzul.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Tempo de Duração
+                                <h4>
+                                    12 Meses.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/horarioFlexivelAzul.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Carga Horária
+                                <h4>
+                                    108 Horas.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/certificadoAzul.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Certificado
+                                <h4>
+                                    Qualificação profissional com validade nacional.
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                    <table class="informacoesCursoDentro">
+                        <td>
+                            <img src="./img/apostila.png" class="imagemInformacaoCurso">
+                        </td>
+                        <td>
+                            <h3>
+                                Material Didático
+                                <h4>
+                                    2 Livros <br>
+                                    2 Workbooks
+                                </h4>
+                            </h3>
+                        </td>
+                    </table><br>
+                </td>
+                <td>
+                    <div class="agendarAulaExperimental">
+                        <h1>AGENDE SUA AULA EXPERIMENTAL!</h1>
+                        <h4>Preencha o formulário abaixo e entraremos em contato com você!
+                        </h4>
+                        <div>
+                            <form class="formAtendimento" id="meuFormulario">
+                                <label class="labelAtendimentoAgendarAula" for="nome">Nome:</label>
+                                <input class="inputCaixa" type="text" id="nome" name="nome" required>
+
+                                <label class="labelAtendimentoAgendarAula" for="curso">Curso:</label>
+                                <input class="inputCaixa" type="text" id="curso" name="curso" required>
+
+                                <label class="labelAtendimentoAgendarAula" for="cidade">Cidade:</label>
+                                <select class="inputCaixa" id="cidade" name="cidade" required>
+                                    <option value="" disabled selected>Selecione a cidade</option>
+                                    <option value="descalvado">Descalvado</option>
+                                    <option value="ibate">Ibaté</option>
+                                    <option value="ribeirao_bonito">Ribeirão Bonito</option>
+                                </select>
+
+
+                                <div class="espacoBotaoIniciarAtendimento">
+                                    <button class="botaoIniciarAtendimento" type="button"
+                                        onclick="enviarWhatsapp()">Agendar!</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="espacamento">
+
+                        </div>
+                    </div>
+                </td>
+            </table>
+        </div>
+        <table class="fundoTabelaConteudoProgramatico">
+            <tr>
+                <td>
+                    <h1 class="tituloConteudoProgramatico"><br>
+                        CONTEÚDO PROGRAMÁTICO
+                    </h1><br>
+                    <hr class="hrInformacoesCurso"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="informacoesConteudoProgramatico">
+                        <tr>
+                            <td></td>
+                            <td>
+                                <img src="./img/Módulos/Abordagem Lúdica e Profissional.png"
+                                    class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Conversação Avançada e Vocabulário Expandido
+                                </h3>
+                            </td>
+                            <td>
+                                <img src="./img/Módulos/Habilidades Comunicativas.png"
+                                    class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Gramática Avançada e Uso Contextual
+                                </h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./img/Módulos/Integração de Tecnologia.png"
+                                    class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Leitura Crítica e Compreensão Auditiva Avançada
+                                </h3>
+                            </td>
+                            <td>
+                                <img src="./img/Módulos/Simulações Profissionais.png"
+                                    class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Estruturação de Textos
+                                </h3>
+                            </td>
+                            <td>
+                                <img src="./img/Módulos/Simulações Profissionais.png"
+                                    class="imagemConteudoProgramatico">
+                            </td>
+                            <td>
+                                <h3>
+                                    Cultura e Contexto Internacional
+                                </h3>
+                            </td>
+                        </tr>
+                    </table><br>
+                </td>
+            </tr>
+        </table>
+        <h1 class="informacoesCurso"><br>
+            O QUE VOCÊ VAI APRENDER?
+        </h1><br>
+        <hr class="hrInformacoesCurso"><br>
+        <table class="tabelaOqueVaiAprender">
+            <tr>
+                <td>
+                    <h1>Conversação Avançada e Vocabulário Expandido</h1><br>
+                    <h3>Este curso foca no desenvolvimento de habilidades avançadas de conversação, ampliando o
+                        vocabulário dos participantes para incluir termos mais complexos e expressões idiomáticas. Os
+                        alunos aprenderão a se expressar de maneira mais sofisticada e natural em diferentes contextos.
+                    </h3>
+                </td>
+                <td>
+                    <img src="./img/Imagens Módulos/inglesAdultos1.jpg" class="imagensOqueVaiAprender">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./img/Imagens Módulos/inglesAdultos2.jpg" class="imagensOqueVaiAprender">
+                </td>
+                <td>
+                    <h1>Gramática Avançada e Uso Contextual</h1><br>
+                    <h3> Os participantes aprimorarão suas habilidades gramaticais, explorando estruturas mais complexas
+                        e nuances da língua inglesa. O curso visa aprofundar a compreensão das regras gramaticais e sua
+                        aplicação prática em situações do dia a dia.</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>Leitura Crítica e Compreensão Auditiva Avançada</h1><br>
+                    <h3>O curso proporciona experiência em leitura de textos mais complexos, como artigos, ensaios e
+                        notícias, para desenvolver a capacidade de análise crítica. A compreensão auditiva será
+                        aprimorada com a exposição a diferentes sotaques e estilos de fala.</h3>
+                </td>
+                <td>
+                    <img src="./img/Imagens Módulos/inglesAdultos3.jpg" class="imagensOqueVaiAprender">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./img/Imagens Módulos/inglesAdultos4.jpg" class="imagensOqueVaiAprender">
+                </td>
+                <td>
+                    <h1>Estruturação de Textos</h1><br>
+                    <h3>Os participantes aprenderão a redigir textos mais elaborados, como relatórios, ensaios e
+                        correspondências formais. O foco estará na estruturação coerente, estilo apropriado e na
+                        expressão de ideias de maneira clara e persuasiva.</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>Cultura e Contexto Internacional</h1><br>
+                    <h3>Além do aprimoramento linguístico, os participantes serão expostos a diferentes aspectos da
+                        cultura e sociedade de países de língua inglesa. Isso inclui análise de obras literárias,
+                        discussões sobre eventos atuais e exploração de temas culturais contemporâneos.</h3>
+                </td>
+                <td>
+                    <img src="./img/Imagens Módulos/inglesAdultos5.jpg" class="imagensOqueVaiAprender">
+                </td>
+            </tr>
+        </table>
+        <table class="tabelaIniciarMatricula">
+            <tr>
+                <td>
+                    <div class="bordaMatricula">
+                        <h1 class="facaSuaMatricula">
+                            MATRICULE-SE!
+                        </h1>
+                        <h4 class="facaSuaMatriculasubtitulo">
+                            Inicie o atendimento e tenha acesso a informações exclusivas com nossa consultora.
+                        </h4>
+                        <select id="seletorCidades" onchange="mostrarBotao()" class="selecionarCidade">
+                            <option value="">Selecione sua cidade!</option>
+                            <option value="descalvado">Descalvado</option>
+                            <option value="ibate">Ibaté</option>
+                            <option value="ribeirao_bonito">Ribeirão Bonito</option>
+                        </select>
+                        <br><br>
+                        <button class="botaoIniciarMatricula" id="btnIniciarMatricula" onclick="abrirMatricula()">
+                            Iniciar Atendimento</button><br>
+                    </div>
+                </td>
+                <td>
+                    <img src="./img/Pessoas/iniciarMatricula.png" class="imagemCursoIndividual">
+                </td>
+            </tr>
+        </table>
+    </main>
+    <footer class="rodape">
+        <div class="tituloRodape">
+            <h1>CONTAMOS COM 3 POLOS!</h1><br>
+            <h4>Encontre a escola mais perto de você!</h4><br>
+            <hr><br>
+        </div>
+
+        <div class="fundoImagensDescalvado">
+            <h1 class="tabelaFotosEscolaTituloCidade">DESCALVADO</h1>
+            <div class="carousel-container2">
+                <div class="carousel2" onclick="openModal2(event)">
+                    <img src="./img/OndeVaiEstudar/descalvado1.jpg" alt="Imagem 1">
+                    <img src="./img/OndeVaiEstudar/descalvado2.jpg" alt="Imagem 2">
+                    <img src="./img/OndeVaiEstudar/descalvado3.jpg" alt="Imagem 3">
+                    <img src="./img/OndeVaiEstudar/descalvado1.jpg" alt="Imagem 4">
+                    <img src="./img/OndeVaiEstudar/descalvado2.jpg" alt="Imagem 5">
+                    <img src="./img/OndeVaiEstudar/descalvado3.jpg" alt="Imagem 6">
+                </div>
+                <button class="prev2" onclick="prevSlide2()">❮</button>
+                <button class="next2" onclick="nextSlide2()">❯</button>
+            </div><br>
+            <div id="modal2" class="modal">
+                <span class="close" onclick="closeModal2()">&times;</span>
+                <button class="prev2" onclick="prevImage2()">❮</button>
+                <img class="modal-content" id="modalImage2">
+                <button class="next2" onclick="nextImage2()">❯</button>
+            </div>
+        </div>
+        <br>
+        <div class="fundoImagensIbate">
+            <h1 class="tabelaFotosEscolaTituloCidade">IBATÉ</h1>
+            <div class="carousel-container3">
+                <div class="carousel3" onclick="openModal3(event)">
+                    <img src="./img/OndeVaiEstudar/ibate1.jpg" alt="Imagem 1">
+                    <img src="./img/OndeVaiEstudar/ibate2.jpg" alt="Imagem 2">
+                    <img src="./img/OndeVaiEstudar/ibate3.jpg" alt="Imagem 3">
+                    <img src="./img/OndeVaiEstudar/ibate4.jpg" alt="Imagem 4">
+                    <img src="./img/OndeVaiEstudar/ibate5.jpg" alt="Imagem 5">
+                    <img src="./img/OndeVaiEstudar/ibate6.jpg" alt="Imagem 6">
+                </div>
+                <button class="prev3" onclick="prevSlide3()">❮</button>
+                <button class="next3" onclick="nextSlide3()">❯</button>
+            </div><br>
+            <div id="modal3" class="modal">
+                <span class="close" onclick="closeModal3()">&times;</span>
+                <button class="prev3" onclick="prevImage3()">❮</button>
+                <img class="modal-content" id="modalImage3">
+                <button class="next3" onclick="nextImage3()">❯</button>
+            </div>
+        </div>
+        <br>
+        <div class="fundoImagensRibeirao">
+            <h1 class="tabelaFotosEscolaTituloCidade">RIBEIRÃO BONITO</h1>
+            <div class="carousel-container4">
+                <div class="carousel4" onclick="openModal4(event)">
+                    <img src="./img/OndeVaiEstudar/ribeirao1.jpg" alt="Imagem 1">
+                    <img src="./img/OndeVaiEstudar/ribeirao2.jpg" alt="Imagem 2">
+                    <img src="./img/OndeVaiEstudar/ribeirao3.jpg" alt="Imagem 3">
+                    <img src="./img/OndeVaiEstudar/ribeirao4.jpg" alt="Imagem 4">
+                    <img src="./img/OndeVaiEstudar/ribeirao5.jpg" alt="Imagem 5">
+                    <img src="./img/OndeVaiEstudar/ribeirao6.jpg" alt="Imagem 6">
+                </div>
+                <button class="prev4" onclick="prevSlide4()">❮</button>
+                <button class="next4" onclick="nextSlide4()">❯</button>
+            </div><br>
+            <div id="modal4" class="modal">
+                <span class="close" onclick="closeModal4()">&times;</span>
+                <button class="prev4" onclick="prevImage4()">❮</button>
+                <img class="modal-content" id="modalImage4">
+                <button class="next4" onclick="nextImage4()">❯</button>
+            </div>
+        </div>
+
+        <script src="carousel.js"></script>
+        <script>
+            initializeCarousel('carousel2', 'prev2', 'next2', 7, 2);
+            initializeCarousel('carousel3', 'prev3', 'next3', 7, 2);
+            initializeCarousel('carousel4', 'prev4', 'next4', 7, 2);
+        </script>
+        <br>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
