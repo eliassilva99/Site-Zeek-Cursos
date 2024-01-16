@@ -2842,3 +2842,70 @@ section.slider {
     padding: 7px;
     border-radius: 5px;
 }
+
+.capaBlog{
+    width: 100%;
+}
+
+.ultimasNoticias{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #000d58;
+}
+
+.imagemNoticiaMaior{
+    width: 95%;
+    border-radius: 20px;
+}
+
+.tabelaNoticias{
+    width: 90%;
+    table-layout: fixed;
+    margin: auto;
+}
+
+.tabelaNoticiasMaior{
+    width: 80%;
+    table-layout: fixed;
+    margin: auto;
+}
+
+.imagemNoticia{
+    width: 90%;
+    border-radius: 20px;
+}
+
+.tituloNoticia{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+.mensagemNoticia{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+.tituloNoticiaMaior{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    text-align: left;
+}
+
+.mensagemNoticiaMaior{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    text-align: left;
+}
