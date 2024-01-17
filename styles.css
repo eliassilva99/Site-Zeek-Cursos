@@ -2857,8 +2857,31 @@ section.slider {
 }
 
 .imagemNoticiaMaior{
-    width: 95%;
-    border-radius: 20px;
+    width: 100%;
+    margin: auto;
+    opacity: 100%;
+    transition: 1s;
+}
+
+.imagemNoticiaMaior:hover{
+    width: 101%;
+    margin: auto;
+    opacity: 80%;
+    transition: 1s;
+}
+
+.imagemNoticiaMaiorBlog{
+    width: 70%;
+    margin: auto;
+    opacity: 100%;
+    transition: 1s;
+}
+
+.imagemNoticiaMaiorBlog:hover{
+    width: 71%;
+    margin: auto;
+    opacity: 80%;
+    transition: 1s;
 }
 
 .tabelaNoticias{
@@ -2868,30 +2891,35 @@ section.slider {
 }
 
 .tabelaNoticiasMaior{
-    width: 80%;
+    width: 100%;
     table-layout: fixed;
     margin: auto;
+    background-color: #3b3b3b;
 }
 
 .imagemNoticia{
     width: 90%;
-    border-radius: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgb(5, 5, 10, 0.5);
 }
 
 .tituloNoticia{
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
+    font-size: 18px;
     padding-top: 5px;
     padding-bottom: 3px;
+    padding-inline: 30px;
     text-align: center;
 }
 
 .mensagemNoticia{
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     padding-top: 5px;
     padding-bottom: 3px;
+    padding-inline: 20px;
     text-align: center;
+    text-align: justify;
 }
 
 .tituloNoticiaMaior{
@@ -2900,6 +2928,7 @@ section.slider {
     padding-top: 5px;
     padding-bottom: 3px;
     text-align: left;
+    color: white;
 }
 
 .mensagemNoticiaMaior{
@@ -2908,4 +2937,46 @@ section.slider {
     padding-top: 5px;
     padding-bottom: 3px;
     text-align: left;
+    color: white;
+}
+
+.tituloBlog{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #000c4e;
+    margin: auto;
+}
+.subtituloBlog{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+.textoBlog{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+}
+
+.fundoBlog{
+    background-color: #f0f7ff;
+}
+
+.tabelaBlogAniversarioZeek{
+    width: 80%;
+    margin: auto;
+}
+
+.videoAniversarioZeek{
+    width: 350px;
+    margin: auto;
+    border: 3px solid #0075FC;
+    border-radius: 10px;
+}
+
+.tabelaImagensDestaqueBlog{
+    width: 100%;
+    margin: auto;
+    table-layout: fixed;
 }
