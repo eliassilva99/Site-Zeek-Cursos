@@ -2980,3 +2980,8 @@ section.slider {
     margin: auto;
     table-layout: fixed;
 }
+
+.imagemCursos{
+    width: 350px;
+    padding-inline: 20px;
+}
