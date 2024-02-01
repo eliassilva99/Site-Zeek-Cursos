@@ -2985,3 +2985,10 @@ section.slider {
     width: 350px;
     padding-inline: 20px;
 }
+
+@media(max-width: 768px) {
+    .imagemCursos{
+        width: 170px;
+        padding-inline: 2px;
+    }
+}
