@@ -2981,9 +2981,14 @@ section.slider {
     table-layout: fixed;
 }
 
+.section-cursos{
+    width: 100%;
+    margin: auto;
+}
+
 .imagemCursos{
-    width: 350px;
-    padding-inline: 20px;
+    width: 300px;
+    padding-inline: 15px;
 }
 
 @media(max-width: 768px) {
