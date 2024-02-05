@@ -2999,8 +2999,7 @@ section.slider {
 }
 
 .formularioGoogle{
-    width: 1366px;
-    height: 1000px;
     margin: auto;
     border: none;
+    background-color: #6cb8ff;
 }
