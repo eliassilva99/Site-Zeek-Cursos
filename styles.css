@@ -2997,3 +2997,8 @@ section.slider {
         padding-inline: 2px;
     }
 }
+
+.formularioGoogle{
+    width: 100%;
+    height: 1000px;
+}
