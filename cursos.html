@@ -1,265 +1,349 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-    <link rel="icon" href="./img/zeekinha.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zeek Cursos</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsivo.css" />
+
+    <link rel="icon" href="./img/zeekinha.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+
     <header>
-        <div>
-            <table class="tabelaCabecalho">
-                <tr>
-                    <th>
-                        <a href="index.html">
-                            <img class="imagemLogo" src="./img/zeekLogo.png" alt="Zeek Cursos">
-                        </a>
-                    </th>
-                    <th>
-                        <div class="menuPrincipal">
-                            <a class="textoMenu" href="index.html">HOME</a>
-                            <a class="textoMenu" href="sobreNos.html">SOBRE NÓS</a>
-                            <a class="textoMenu" href="diferenciais.html">DIFERENCIAIS</a>
-                            <a class="textoMenu" href="cursos.html">CURSOS</a>
-                            <a class="textoMenu"
-                                href="javascript:abrirJanela('https://app3.evoluaeducacao.com.br')">ÁREA DO ALUNO</a>
-                            <a class="textoMenu" href="cruzeiroDoSul.html">POLOS CRUZEIRO DO SUL</a>
-                            <a class="textoMenu" href="contato.html">CONTATO</a>
-                        </div>
-                    </th>
-                </tr>
-            </table>
+        <div class="container-cabecalho">
+            <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one">
+                <a class="navbar-brand wow fadeIn" href="index.html">
+                    <img src="./img/zeekLogo.png" class="logo-zeek" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto mr-auto">
+                        <li>
+                            <a href="index.html" class="menus-cabecalho link wow fadeIn delay-01s"><b>HOME</b></a>
+                        </li>
+                        <li>
+                            <a href="sobreNos.html" class="menus-cabecalho link wow fadeIn delay-02s"><b>SOBRE
+                                    NÓS</b></a>
+                        </li>
+                        <li>
+                            <a href="diferenciais.html"
+                                class="menus-cabecalho link wow fadeIn delay-03s"><b>DIFERENCIAIS</b></a>
+                        </li>
+                        <li>
+                            <a href="cursos.html" class="menus-cabecalho link wow fadeIn delay-04s"><b>CURSOS</b></a>
+                        </li>
+                        <li>
+                            <a href="https://app3.evoluaeducacao.com.br/" target="_blank"
+                                onclick="window.open(this.href, 'newwindow', 'width=1200, height=600'); return false;"
+                                class="menus-cabecalho link wow fadeIn delay-05s"><b>ÁREA DO ALUNO</b></a>
+                        </li>
+                        <li>
+                            <a href="polo.html" class="menus-cabecalho link wow fadeIn delay-06s"><b>POLOS CRUZEIRO DO
+                                    SUL</b></a>
+                        </li>
+                        <li>
+                            <a href="cruzeiroDoSul.html" class="menus-cabecalho link wow fadeIn delay-07s"><b>CONTATO</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
-    <main>
-        
-        <div class="todosOsCursos">
-            <h1 class="escolhaEducacao">ESCOLHA A EDUCAÇÃO E MUDE SEU FUTURO!</h1><br>
-            <section class="fundoTodosOsCursos">
-                <h1 class="tecnologiaEInformática">TECNOLOGIA E INFORMÁTICA</h1>
-                <table class="tabelaTodosOsCursosInformatica">
-                    <tr>
-                        <th>
-                            <a href="informaticaAplicada.html" class="editarLink">
-                                <img src="./img/Cursos/informaticaAplicada.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="informaticaComRotinas.html" class="editarLink">
-                                <img src="./img/Cursos/informaticaComRotinas.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="microsoftOffice.html" class="editarLink">
-                                <img src="./img/Cursos/microsoftOffice.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="ferramentasProdutividadeGoogle.html" class="editarLink">
-                                <img src="./img/Cursos/ferramentasProdutividadeGoogle.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="melhorIdadeConectada.html" class="editarLink">
-                                <img src="./img/Cursos/melhorIdadeConectada.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                    </tr>
-                </table>
-                <table class="tabelaTodosOsCursosInformatica">
-                    <tr>
-                        <th>
-                            <a href="excelAvancado.html" class="editarLink">
-                                <img src="./img/Cursos/excelAvancado.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="designDigital.html" class="editarLink">
-                                <img src="./img/Cursos/design.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="desenhistaPersonalCad.html" class="editarLink">
-                                <img src="./img/Cursos/desenhistaPersonalCad.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="montagemManutencaoComputadores.html" class="editarLink">
-                                <img src="./img/Cursos/assistenciaTecnicaComputadores.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="desenvolvedorSistemas.html" class="editarLink">
-                                <img src="./img/Cursos/desenvolvedorSistemas.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                    </tr>
-                </table>
-                <table class="tabelaTodosOsCursosDoisCursos">
-                    <tr>
-                        <th>
-                            <a href="desenvolvedorWeb.html" class="editarLink">
-                                <img src="./img/Cursos/desenvolvedorWeb.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="edicaoVideos.html" class="editarLink">
-                                <img src="./img/Cursos/edicaoVideos.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="powerBi.html" class="editarLink">
-                                <img src="./img/Cursos/PowerBi.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="marketingDigital.html" class="editarLink">
-                                <img src="./img/Cursos/marketingDigital.png" class="imagemTodosOsCursosDoisCursos">
-                            </a>
-                        </th>
-                    </tr>
-                </table>
-            </section>
-            
-            <section class="fundoTodosOsCursosAdministracao">
-                <h1 class="tecnologiaEInformática">ADMINISTRAÇÃO E NEGÓCIOS</h1>
-                <table class="tabelaTodosOsCursosAdministracao">
-                    <tr>
-                        <th>
-                            <a href="atendenteFarmacia.html" class="editarLink">
-                                <img src="./img/Cursos/atendenteFarmacia.png" class="imagemTodosOsCursos">
-
-                            </a>
-                        </th>
-                        <th>
-                            <a href="auxiliarAdministrativo.html" class="editarLink">
-                                <img src="./img/Cursos/auxiliarAdministrativo.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="auxiliarEscritorio.html" class="editarLink">
-                                <img src="./img/Cursos/auxiliarEscritorio.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="assistenteDeProducaoAcucarAlcool.html" class="editarLink">
-                                <img src="./img/Cursos/assistenteProducaoAcucarAlcool.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="empreendedorismo.html" class="editarLink">
-                                <img src="./img/Cursos/Empreendedorismo.png.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                    </tr>
-                </table>
-                <table class="tabelaTodosOsCursosAdministracao">
-                    <tr>   
-                        <th>
-                            <a href="gestorAdministrativo.html" class="editarLink">
-                                <img src="./img/Cursos/gestorAdministrativo.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="gestorFinanceiro.html" class="editarLink">
-                                <img src="./img/Cursos/gestorFinanceiro.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="operadorDeCaixa.html" class="editarLink">
-                                <img src="./img/Cursos/operadorCaixa.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="agentedehotelariaeturismo.html" class="editarLink">
-                                <img src="./img/Cursos/agentHotelariaTurismo.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="supervisorVendasLideranca.html" class="editarLink">
-                                <img src="./img/Cursos/supervisorVendasLideranca.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                    </tr>
-                </table>
-                <table class="tabelaTodosOsCursosAdministracaoDoisCursos">
-                    <tr>    
-                        <th>
-                            <a href="evolucaoProfissional.html" class="editarLink">
-                                <img src="./img/Cursos/evolucaoPessoalProfissional.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="recursosHumanosDepartamentoPessoal.html" class="editarLink">
-                                <img src="./img/Cursos/recursosHumanos.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                    </tr>
-                </table>
-            </section>
-            <section class="fundoTodosOsCursosRobotica">
-                <h1 class="tecnologiaEInformática">ROBÓTICA E GAMES</h1>
-                <table class="tabelaTodosOsCursosDoisCursos">
-                    <tr>
-                        <th>
-                            <a href="roboticaEducacional.html" class="editarLink">
-                                <img src="./img/Cursos/roboticaEducacional.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="roboticaArduino.html" class="editarLink">
-                                <img src="./img/Cursos/roboticaArduino.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="desenvolvimentoGamesStarter.html" class="editarLink">
-                                <img src="./img/Cursos/desenvolvimentoGamesStarter.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="desenvolvimentoGamesProfissional.html" class="editarLink">
-                                <img src="./img/Cursos/desenvolvimentoGamesProfissional.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                    </tr>
-                </table><br>
-            </section>
-            <section class="fundoTodosOsCursosIngles">
-                <h1 class="tecnologiaEInformática">INGLÊS</h1>
-                <table class="tabelaTodosOsCursosIngles">
-                    <tr>
-                        <th>
-                            <a href="inglesKids.html" class="editarLink">
-                                <img src="./img/Cursos/inglesKids.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="inglesJovens.html" class="editarLink">
-                                <img src="./img/Cursos/inglesJovens.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="inglesAdultos.html" class="editarLink">
-                                <img src="./img/Cursos/inglesAdultos.png" class="imagemTodosOsCursos">
-                            </a>
-                        </th>
-                    </tr>
-                </table>
-            </section>
+    <div class="row centralizar">
+        <div class="col-md-7">
+            <h1 class="wow fadeInLeft delay-02s"><b>SE TORNE UM PROFISSIONAL <br> DE DESTAQUE</b></h1>
+            <h2 class="wow fadeInLeft delay-04s">Prepare-se para o sucesso com uma formação de alta qualidade e reconhecida no mercado.</h2>
+        </div>
+        <div class="col-md-5">
+            <img src="./img/Pessoas/PessoaContato.png" class="pessoa-contato wow fadeInRight delay-04s">
         </div>
 
-        </footer>
-        <script src="script.js"></script>
+    
+    </div>
+    <br><br>
+    <div class="col-12 wow fadeInDown delay-07s">
+        <h1>
+            <b>TECNOLOGIA E INFORMÁTICA</b>
+        </h1>
+    </div>
+    <div class="tamanho-tela-cursos centralizar">
+        <div class="row">
+            <div class="col-12">
+                <a href="informaticaAplicada.html">
+                    <img src="./img/Cursos/informaticaAplicada.png" class="img-cursos wow fadeIn delay-01s">
+                </a>
+                <a href="informaticaComRotinas.html">
+                    <img src="./img/Cursos/informaticaComRotinas.png" class="img-cursos wow fadeIn delay-02s">
+                </a>
+                <a href="microsoftOffice.html">
+                    <img src="./img/Cursos/microsoftOffice.png" class="img-cursos  wow fadeIn delay-03s">
+                </a>
+                <a href="ferramentasProdutividadeGoogle.html">
+                    <img src="./img/Cursos/ferramentasProdutividadeGoogle.png" class="img-cursos wow fadeIn delay-04s">
+                </a>
+                <a href="melhorIdadeConectada.html">
+                    <img src="./img/Cursos/melhorIdadeConectada.png" class="img-cursos wow fadeIn delay-01s">
+                </a>
+                <a href="excelAvancado.html">
+                    <img src="./img/Cursos/excelAvancado.png" class="img-cursos wow fadeIn delay-02s">
+                </a>
+                <a href="designDigital.html">
+                    <img src="./img/Cursos/design.png" class="img-cursos wow fadeIn delay-03s">
+                </a>
+                <a href="desenhistaPersonalCad.html">
+                    <img src="./img/Cursos/desenhistaPersonalCad.png" class="img-cursos wow fadeIn delay-04s">
+                </a>
+                <a href="montagemManutencaoComputadores.html">
+                    <img src="./img/Cursos/assistenciaTecnicaComputadores.png" class="img-cursos wow fadeIn delay-01s">
+                </a>
+                <a href="desenvolvedorSistemas.html">
+                    <img src="./img/Cursos/desenvolvedorSistemas.png" class="img-cursos wow fadeIn delay-02s">
+                </a>
+                <a href="desenvolvedorWeb.html">
+                    <img src="./img/Cursos/desenvolvedorWeb.png" class="img-cursos wow fadeIn delay-03s">
+                </a>
+                <a href="edicaoVideos.html">
+                    <img src="./img/Cursos/edicaoVideos.png" class="img-cursos wow fadeIn delay-04s">
+                </a>
+                <a href="powerBi.html">
+                    <img src="./img/Cursos/PowerBi.png" class="img-cursos wow fadeIn delay-01s">
+                </a>
+                <a href="marketingDigital.html">
+                    <img src="./img/Cursos/marketingDigital.png" class="img-cursos wow fadeIn delay-02s">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 wow fadeInDown">
+        <h1>
+            <b>ADMINISTRAÇÃO E NEGÓCIOS</b>
+        </h1>
+    </div>
+    <div class="tamanho-tela centralizar">
+        <div class="row">
+            <div class="col-12">
+                <a href="atendenteFarmacia.html">
+                    <img src="./img/Cursos/atendenteFarmacia.png" class="img-cursos wow fadeIn delay-03s">
+                </a>
+                <a href="auxiliarAdministrativo.html">
+                    <img src="./img/Cursos/auxiliarAdministrativo.png" class="img-cursos wow fadeIn delay-04s">
+                </a>
+                <a href="auxiliarEscritorio.html">
+                    <img src="./img/Cursos/auxiliarEscritorio.png" class="img-cursos wow fadeIn delay-05s">
+                </a>
+                <a href="assistenteDeProducaoAcucarAlcool.html">
+                    <img src="./img/Cursos/assistenteProducaoAcucarAlcool.png" class="img-cursos wow fadeIn delay-06s">
+                </a>
+                <a href="empreendedorismo.html">
+                    <img src="./img/Cursos/Empreendedorismo.png.png" class="img-cursos wow fadeIn delay-03s">
+                </a>
+                <a href="gestorAdministrativo.html">
+                    <img src="./img/Cursos/gestorAdministrativo.png" class="img-cursos wow fadeIn delay-04s">
+                </a>
+                <a href="gestorFinanceiro.html">
+                    <img src="./img/Cursos/gestorFinanceiro.png" class="img-cursos wow fadeIn delay-05s">
+                </a>
+                <a href="operadorDeCaixa.html">
+                    <img src="./img/Cursos/operadorCaixa.png" class="img-cursos wow fadeIn delay-06s">
+                </a>
+                <a href="agentedehotelariaeturismo.html">
+                    <img src="./img/Cursos/agentHotelariaTurismo.png" class="img-cursos wow fadeIn delay-03s">
+                </a>
+                <a href="supervisorVendasLideranca.html">
+                    <img src="./img/Cursos/supervisorVendasLideranca.png" class="img-cursos wow fadeIn delay-04s">
+                </a>
+                <a href="evolucaoProfissional.html">
+                    <img src="./img/Cursos/evolucaoPessoalProfissional.png" class="img-cursos wow fadeIn delay-05s">
+                </a>
+                <a href="recursosHumanosDepartamentoPessoal.html">
+                    <img src="./img/Cursos/recursosHumanos.png" class="img-cursos wow fadeIn delay-06s">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 wow fadeInDown">
+        <h1>
+            <b>ROBÓTICA E GAMES</b>
+        </h1>
+    </div>
+    <div class="tamanho-tela centralizar">
+        <div class="row">
+            <div class="col-12">
+                <a href="roboticaEducacional.html">
+                    <img src="./img/Cursos/roboticaEducacional.png" class="img-cursos wow fadeIn delay-03s">
+                </a>
+                <a href="roboticaArduino.html">
+                    <img src="./img/Cursos/roboticaArduino.png" class="img-cursos wow fadeIn delay-04s">
+                </a>
+                <a href="desenvolvimentoGamesStarter.html">
+                    <img src="./img/Cursos/desenvolvimentoGamesStarter.png" class="img-cursos wow fadeIn delay-05s">
+                </a>
+                <a href="desenvolvimentoGamesProfissional.html">
+                    <img src="./img/Cursos/desenvolvimentoGamesProfissional.png"
+                        class="img-cursos wow fadeIn delay-06s">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 wow fadeInDown">
+        <h1>
+            <b>INGLÊS</b>
+        </h1>
+    </div>
+    <div class="tamanho-tela centralizar">
+        <div class="row">
+            <div class="col-12">
+                <a href="inglesKids.html">
+                    <img src="./img/Cursos/inglesKids.png" class="img-cursos wow fadeIn delay-03s">
+                </a>
+                <a href="inglesJovens.html">
+                    <img src="./img/Cursos/inglesJovens.png" class="img-cursos wow fadeIn delay-04s">
+                </a>
+                <a href="inglesAdultos.html">
+                    <img src="./img/Cursos/inglesAdultos.png" class="img-cursos wow fadeIn delay-05s">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 centralizar">
+        <img src="./img/NOVO LOGO 2024.png" class="img-logo wow fadeInUp delay-02s">
+    </div>
+
+
+    <footer class="rodape">
+        <div class="row margin-rodape centralizar">
+            <div class="col-md-4 wow fadeInUp">
+                <h1 class="text-white">DESCALVADO</h1><br>
+                <a href="https://maps.app.goo.gl/9F4GdX3nMCPKFCSY6" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/maps.png" class="img-rodape">
+                    <h5>Rua Coronel Rafael Tobias, nº 284 <br> Centro - Descalvado/SP</h5>
+                </a><br>
+                <a href="https://wa.me/19992671617" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/phone.png" class="img-rodape">
+                    <h5>(19) 99267-1617</h5>
+                </a><br>
+                <div class="display-flex centralizar-rodape">
+                    <a href="https://wa.me/19992671617" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.facebook.com/people/Zeek-Descalvado/pfbid0M8mMKPKpgyxzDXZ5BhFNNQkrUZ2KcD3YGah8L5RPdw6V8RnNYMteofnUhbGagj5jl/"
+                        class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/facebook.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.instagram.com/zeekdescalvado/" class="display-flex link-rodape"
+                        target="_blank">
+                        <img src="./img/Icones/instagram.png" class="img-rodape-social">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp">
+                <h1 class="text-white">IBATÉ</h1><br>
+                <a href="https://maps.app.goo.gl/6nW9ofPvqVHc3vgj6" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/maps.png" class="img-rodape">
+                    <h5>Rua Floriano Peixoto, nº 628 <br> Centro - Ibaté/SP</h5>
+                </a><br>
+                <a href="https://wa.me/16996294928" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/phone.png" class="img-rodape">
+                    <h5>(16) 99629-4928</h5>
+                </a><br>
+                <div class="display-flex centralizar-rodape">
+                    <a href="https://wa.me/16996294928" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.facebook.com/zeekcursosibate" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/facebook.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.instagram.com/zeekibate/" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/instagram.png" class="img-rodape-social">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp">
+                <h1 class="text-white">RIBEIRÃO BONITO</h1><br>
+                <a href="https://maps.app.goo.gl/q4CPbnLY83Bpin5QA" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/maps.png" class="img-rodape">
+                    <h5>Rua Jornalista Sebastião Macedo, nº 622 <br> Centro - Ribeirão Bonito/SP</h5>
+                </a><br>
+                <a href="https://wa.me/16999940880" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/phone.png" class="img-rodape">
+                    <h5>(16) 99994-0880</h5>
+                </a><br>
+                <div class="display-flex centralizar-rodape">
+                    <a href="https://wa.me/16999940880" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.facebook.com/zeek.rb.5" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/facebook.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.instagram.com/zeekribeiraobonito/" class="display-flex link-rodape"
+                        target="_blank">
+                        <img src="./img/Icones/instagram.png" class="img-rodape-social">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./js/modernizr-3.5.0.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/wow.min.js"></script>
+    <script type="text/javascript" src="./js/dados.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+
+    <script>new WOW().init();</script>
+
+    <script src="./js/matriculese.js"></script>
+    <script src="./js/depoimentos.js"></script>
+    <script src="./js/carrousel-zeek.js"></script>
+
 </body>
 
 </html>

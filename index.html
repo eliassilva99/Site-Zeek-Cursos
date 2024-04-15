@@ -1,444 +1,577 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zeek Cursos</title>
 
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsivo.css" />
 
     <link rel="icon" href="./img/zeekinha.ico" type="image/x-icon">
-    <title>Zeek Cursos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+
     <header>
-        <div>
-            <table class="tabelaCabecalho">
-                <tr>
-                    <th>
-                        <a href="index.html">
-                            <img class="imagemLogo" src="./img/zeekLogo.png" alt="Zeek Cursos">
-                        </a>
-                    </th>
-                    <th>
-                        <div class="menuPrincipal">
-                            <a class="textoMenu" href="index">HOME</a>
-                            <a class="textoMenu" href="sobreNos">SOBRE NÓS</a>
-                            <a class="textoMenu" href="diferenciais">DIFERENCIAIS</a>
-                            <a class="textoMenu" href="cursos">CURSOS</a>
-                            <a class="textoMenu"
-                                href="javascript:abrirJanela('https://app3.evoluaeducacao.com.br')">ÁREA DO ALUNO</a>
-                            <a class="textoMenu" href="cruzeiroDoSul">POLOS CRUZEIRO DO SUL</a>
-                            <a class="textoMenu" href="contato">CONTATO</a>
-                        </div>
-                    </th>
-                </tr>
-            </table>
+        <div class="container-cabecalho">
+            <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one">
+                <a class="navbar-brand wow fadeIn" href="index.html">
+                    <img src="./img/zeekLogo.png" class="logo-zeek" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto mr-auto">
+                        <li>
+                            <a href="index.html" class="menus-cabecalho link wow fadeIn delay-01s"><b>HOME</b></a>
+                        </li>
+                        <li>
+                            <a href="sobreNos.html" class="menus-cabecalho link wow fadeIn delay-02s"><b>SOBRE
+                                    NÓS</b></a>
+                        </li>
+                        <li>
+                            <a href="diferenciais.html"
+                                class="menus-cabecalho link wow fadeIn delay-03s"><b>DIFERENCIAIS</b></a>
+                        </li>
+                        <li>
+                            <a href="cursos.html" class="menus-cabecalho link wow fadeIn delay-04s"><b>CURSOS</b></a>
+                        </li>
+                        <li>
+                            <a href="https://app3.evoluaeducacao.com.br/" target="_blank"
+                                onclick="window.open(this.href, 'newwindow', 'width=1200, height=600'); return false;"
+                                class="menus-cabecalho link wow fadeIn delay-05s"><b>ÁREA DO ALUNO</b></a>
+                        </li>
+                        <li>
+                            <a href="cruzeiroDoSul.html" class="menus-cabecalho link wow fadeIn delay-06s"><b>POLOS
+                                    CRUZEIRO DO
+                                    SUL</b></a>
+                        </li>
+                        <li>
+                            <a href="contato.html" class="menus-cabecalho link wow fadeIn delay-07s"><b>CONTATO</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
-    <main>
-        <div class="scroll-reveal" id="item1">
-            <section class="slider">
-                <div class="slider-content">
 
-                    <input type="radio" name="btn-radio" id="radio1">
-                    <input type="radio" name="btn-radio" id="radio2">
-                    <input type="radio" name="btn-radio" id="radio3">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="powerBi.html">
+                    <img class="d-block w-100" src="./img/powerBi.png" alt="Primeiro Slide">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="roboticaArduino.html">
+                    <img class="d-block w-100" src="./img/roboticaArduino.png" alt="Segundo Slide">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="inglesKids.html">
+                    <img class="d-block w-100" src="./img/ingles.png" alt="Terceiro Slide">
+                </a>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
 
-                    <div class="slide-box primeiro">
-                        <a href="powerBi">
-                            <img class="img-desktop" src="./img/powerBi.png" alt="slide 1">
-                            <img class="img-mobile" src="./img/powerBi.png" alt="slide 1">
-                        </a>
-                    </div>
 
-                    <div class="slide-box">
-                        <a href="roboticaArduino">
-                            <img class="img-desktop" src="./img/roboticaArduino.png" alt="slide 3">
-                            <img class="img-mobile" src="./img/roboticaArduino.png" alt="slide 1">
-                        </a>
-                    </div>
-
-                    <div class="slide-box">
-                        <a href="powerBi"></a>
-                        <img class="img-desktop" src="./img/ingles.png" alt="slide 3">
-                        <img class="img-mobile" src="./img/ingles.png" alt="slide 3">
-                        </a>
-                    </div>
-
-                    <div class="nav-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                    </div>
-
-                    <div class="nav-manual">
-                        <label for="radio1" class="manual-btn"></label>
-                        <label for="radio2" class="manual-btn"></label>
-                        <label for="radio3" class="manual-btn"></label>
-                    </div>
-
+    <div class="col-12 wow fadeInDown">
+        <h1>
+            <b>ESCOLHA SUA PROFISSÃO</b>
+        </h1>
+    </div>
+    <div class="col-12 centralizar">
+        <a href="desenvolvimentoGamesStarter.html">
+            <img src="./img/Cursos/desenvolvimentoGamesStarter.png" class="cursos-destaque wow fadeInLeft">
+        </a>
+        <a href="atendenteFarmacia.html">
+            <img src="./img/Cursos/atendenteFarmacia.png" class="cursos-destaque wow fadeInUp">
+        </a>
+        <a href="marketingDigital.html">
+            <img src="./img/Cursos/marketingDigital.png" class="cursos-destaque wow fadeInRight">
+        </a>
+    </div>
+    <div class="col-12 centralizar">
+        <a href="" class="link">
+            <button class="botao wow fadeInDown">
+                <b>VER TODOS OS CURSOS</b>
+            </button>
+        </a>
+    </div>
+    <div class="container centralizar">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="centralizar borda-matricule-se wow fadeInLeft">
+                    <h1><b>MATRÍCULE-SE</b></h1>
+                    <h2><b>Inicie o atendimento e tenha acesso a informações exclusivas com nossa consultora.</b>
+                    </h2>
+                    <select id="citySelect" class="botao-selecionar-cidade">
+                        <option value="" disabled selected><b>Selecione a cidade</b></option>
+                        <option value="descalvado">Descalvado</option>
+                        <option value="ibate">Ibaté</option>
+                        <option value="ribeirao_bonito">Ribeirão Bonito</option>
+                    </select>
+                    <button id="startButton" class="botao-iniciar-atendimento centralizar" style="display: none;">
+                        <b>INICIAR ATENDIMENTO</b>
+                    </button>
                 </div>
-            </section>
+            </div>
+            <div class="col-md-6">
+                <img src="./img/Pessoas/iniciarMatricula.png" class="imagem-matricula wow fadeInRight">
+            </div>
         </div>
-        <div class="escolhaProfissao">
-            <div class="scroll-reveal" id="item1">
-                <h1>ESCOLHA SUA PROFISSÃO</h1>
+    </div>
+
+
+    <div class="background-diferenciais">
+        <h1 class="color-orange wow fadeInDown"><br>
+            <b>NOSSOS DIFERENCIAIS</b>
+            <hr>
+        </h1>
+        <div class="row centralizar">
+            <div class="col-md-4 centralizar">
+                <img src="./img/Diferenciais/escola.png" class="imagem-diferenciais wow fadeIn delay-01s">
+                <h2 class="text-white wow fadeIn delay-02s">Estrutura de Qualidade</h2>
+            </div>
+            <div class="col-md-4 centralizar">
+                <img src="./img/Diferenciais/instrutorQualificado.png" class="imagem-diferenciais wow fadeIn delay-03s">
+                <h2 class="text-white wow fadeIn delay-04s">Instrutores de Qualidade</h2>
+            </div>
+            <div class="col-md-4 centralizar">
+                <img src="./img/Diferenciais/certificado.png" class="imagem-diferenciais wow fadeIn delay-05s">
+                <h2 class="text-white wow fadeIn delay-06s">Certificação Reconhecida</h2>
+            </div>
+            <div class="col-md-4 centralizar">
+                <img src="./img/Diferenciais/acompanhamentoIndividual.png"
+                    class="imagem-diferenciais wow fadeIn delay-03s">
+                <h2 class="text-white wow fadeIn delay-04s">Acompanhamento Individual</h2>
+            </div>
+            <div class="col-md-4 centralizar">
+                <img src="./img/Diferenciais/horarioFlexivel.png" class="imagem-diferenciais wow fadeIn delay-01s">
+                <h2 class="text-white wow fadeIn delay-02s">Horário Flexível</h2>
             </div>
         </div>
 
-        <div>
-            <table class="tabelaCursosDestaque">
-                <tr>
-                    <th class="espacoTabela">
-                        <a href="desenvolvimentoGamesProfissional" class="editarLink">
-                            <img src="./img/Cursos/desenvolvimentoGamesProfissional.png" class="imagemPropaganda">
-                        </a>
-                    </th>
-                    <th class="espacoTabela">
-                        <a href="marketingDigital" class="editarLink">
-                            <img src="./img/Cursos/marketingDigital.png" class="imagemPropaganda">
-                        </a>
-                    </th>
-                    <th class="espacoTabela">
-                        <a href="empreendedorismo" class="editarLink">
-                            <img src="./img/Cursos/Empreendedorismo.png.png" class="imagemPropaganda">
-                        </a>
-                    </th>
-                </tr>
-            </table><br>
+        <div class="centralizar">
+            <video src="./img/Diferenciais/videoZeek.mp4" controls class="video-zeek wow bounceInUp delay-02s"></video>
+        </div>
+    </div>
+    </div>
 
-            <div class="scroll-reveal" id="item1">
-                <button class="botaoTodosOsCursos">
-                    <a href="cursos" class="editarLink">VER TODOS OS CURSOS</a>
-                </button>
-            </div><br>
-            <div class="scroll-reveal" id="item1">
-                <table class="tabelaIniciarMatricula">
-                    <tr>
-                        <td>
-                            <div class="bordaMatricula">
-                                <h1 class="facaSuaMatricula">
-                                    MATRICULE-SE!
-                                </h1>
-                                <h4 class="facaSuaMatriculasubtitulo">
-                                    Inicie o atendimento e tenha acesso a informações exclusivas com nossa consultora.
-                                </h4>
-                                <select id="seletorCidades" onchange="mostrarBotao()" class="selecionarCidade">
-                                    <option value="">Selecione sua cidade!</option>
-                                    <option value="descalvado">Descalvado</option>
-                                    <option value="ibate">Ibaté</option>
-                                    <option value="ribeirao_bonito">Ribeirão Bonito</option>
-                                </select>
-                                <br><br>
-                                <button class="botaoIniciarMatricula" id="btnIniciarMatricula" onclick="abrirMatricula()">
-                                    Iniciar Atendimento</button>
-                            </div>
-                        </td>
-                        <td>
-                            <img src="./img/Pessoas/iniciarMatricula.png" class="imagemCursoIndividual">
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="fundoDiferenciais">
-            <div class="scroll-reveal" id="item1">
-                <h1 class="diferenciais">NOSSOS DIFERENCIAIS</h1>
+    <div class="col-12 wow fadeInDown">
+        <h1 class="wow fadeInDown"><br>
+            <b>CONHEÇA OS 4 PILARES DA FORMAÇÃO COMPLETA</b>
+        </h1>
+    </div>
 
-                <table class="tabelaDiferenciais">
-                    <tr>
-                        <th>
-                            <img src="./img/escola.png" class="imagemDiferenciais">
-                        </th>
-                        <th>
-                            <img src="./img/instrutorQualificado.png" class="imagemDiferenciais">
-                        </th>
-                        <th>
-                            <img src="./img/certificado.png" class="imagemDiferenciais">
-                        </th>
-                        <th>
-                            <img src="./img/acompanhamentoIndividual.png" class="imagemDiferenciais">
-                        </th>
-                        <th>
-                            <img src="./img/horarioFlexivel.png" class="imagemDiferenciais">
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h1 class="tituloDiferenciais">ESTRUTURA DE QUALIDADE</h1>
-                        </td>
-                        <td>
-                            <h1 class="tituloDiferenciais">INSTRUTORES QUALIFICADOS</h1>
-                        </td>
-                        <td>
-                            <h1 class="tituloDiferenciais">CERTIFICAÇÃO RECONHECIDA</h1>
-                        </td>
-                        <td>
-                            <h1 class="tituloDiferenciais">ACOMPANHAMENTO INDIVIDUAL</h1>
-                        </td>
-                        <td>
-                            <h1 class="tituloDiferenciais">HORÁRIO FLEXÍVEL</h1>
-                        </td>
-                    </tr>
-                </table><br>
-            </div>
-            <div class="scroll-reveal" id="item1">
-                <table class="tabelaVideosDiferenciais">
-                    <tr>
-                        <th>
-                            <video width="100%" controls loop class="bordaVideosDiferenciais">
-                                <source src="./img/OndeVaiEstudar/videoZeek.mp4" type="video/mp4">
-                            </video>
-                        </th>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="scroll-reveal" id="item1">
-            <div class="depoimentos">
-                <h1>CONHEÇA OS 4 PILARES DA FORMAÇÃO COMPLETA</h1><br>
-                <table class="tabela4pilares">
-                    <tr>
-                        <td>
-                            <img src="./img/4pilares1.png" class="imagem4pilares">
-                        </td>
-                        <td>
-                            <img src="./img/4pilares2.png" class="imagem4pilares">
-                        </td>
-                        <td>
-                            <img src="./img/4pilares3.png" class="imagem4pilares">
-                        </td>
-                        <td>
-                            <img src="./img/4pilares4.png" class="imagem4pilares">
-                        </td>
-                    </tr>
-                </table>
-            </div><br>
-        </div>
-        <div class="scroll-reveal" id="item1">
-            <div class="depoimentos">
-                <h1>DEPOIMENTOS DE ALUNOS</h1><br>
-                <h4>Algumas histórias das milhares de vidas transformadas através da educação.</h4><br>
-            </div>
-            <div class="carousel-container">
-                <div class="carousel" onclick="openModal(event)">
-                    <img src="./img/Depoimentos/Sabrina Aquino.png" alt="Imagem 1">
-                    <img src="./img/Depoimentos/Maria Eduarda.png" alt="Imagem 2">
-                    <img src="./img/Depoimentos/Jocimar.png" alt="Imagem 3">
-                    <img src="./img/Depoimentos/Gilberto.png" alt="Imagem 4">
-                    <img src="./img/Depoimentos/Janaina Mira.png" alt="Imagem 5">
-                    <img src="./img/Depoimentos/DavidRigolao.png" alt="Imagem 6">
-                    <img src="./img/Depoimentos/Camila Meneguetti.png" alt="Imagem 7">
+    <div class="tamanho-tela centralizar">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="image-flip">
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <img src="./img/4 Pilares/4pilares1.png" class="imagem-pilares wow fadeIn delay-02s">
+                        </div>
+                        <div class="backside">
+                            <h2 class="backside-text"><b>Nosso compromisso é prepará-lo com as habilidades técnicas e
+                                    conhecimentos
+                                    necessários para prosperar em sua carreira. Explore nossos cursos e desenvolva seu
+                                    potencial ao máximo</b></h2>
+                        </div>
+                    </div>
                 </div>
-                <button class="prev" onclick="prevSlide()">❮</button>
-                <button class="next" onclick="nextSlide()">❯</button>
             </div>
 
-            <div id="myModal" class="modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <img class="modal-content" id="modalImage">
-            </div>
-        </div>
-        </table>
-    </main>
-    <footer class="rodape">
-        <div class="scroll-reveal" id="item1">
-            <div class="tituloRodape">
-                <h1>CONTAMOS COM 3 POLOS!</h1><br>
-                <h4>Encontre a escola mais perto de você!</h4><br>
-                <hr><br>
-            </div>
-        </div>
-        <div class="fundoImagensDescalvado">
-            <h1 class="tabelaFotosEscolaTituloCidade">DESCALVADO</h1>
-            <div class="carousel-container2">
-                <div class="carousel2" onclick="openModal2(event)">
-                    <img src="./img/OndeVaiEstudar/descalvado1.jpg" alt="Imagem 1">
-                    <img src="./img/OndeVaiEstudar/descalvado2.jpg" alt="Imagem 2">
-                    <img src="./img/OndeVaiEstudar/descalvado3.jpg" alt="Imagem 3">
-                    <img src="./img/OndeVaiEstudar/descalvado1.jpg" alt="Imagem 4">
-                    <img src="./img/OndeVaiEstudar/descalvado2.jpg" alt="Imagem 5">
-                    <img src="./img/OndeVaiEstudar/descalvado3.jpg" alt="Imagem 6">
+            <div class="col-md-3">
+                <div class="image-flip">
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <img src="./img/4 Pilares/4pilares2.png" class="imagem-pilares wow fadeIn delay-04s">
+                        </div>
+                        <div class="backside">
+                            <h2 class="backside-text"><b>Aprenda a liderar, a se comunicar efetivamente e a gerenciar
+                                    conflitos. Fortaleça
+                                    sua mentalidade e conquiste seus objetivos.</b></h2>
+                        </div>
+                    </div>
                 </div>
-                <button class="prev2" onclick="prevSlide2()">❮</button>
-                <button class="next2" onclick="nextSlide2()">❯</button>
-            </div><br>
-            <div id="modal2" class="modal">
-                <span class="close" onclick="closeModal2()">&times;</span>
-                <button class="prev2" onclick="prevImage2()">❮</button>
-                <img class="modal-content" id="modalImage2">
-                <button class="next2" onclick="nextImage2()">❯</button>
             </div>
-        </div>
-        <br>
-        <div class="fundoImagensIbate">
-            <h1 class="tabelaFotosEscolaTituloCidade">IBATÉ</h1>
-            <div class="carousel-container3">
-                <div class="carousel3" onclick="openModal3(event)">
-                    <img src="./img/OndeVaiEstudar/ibate1.jpg" alt="Imagem 1">
-                    <img src="./img/OndeVaiEstudar/ibate2.jpg" alt="Imagem 2">
-                    <img src="./img/OndeVaiEstudar/ibate3.jpg" alt="Imagem 3">
-                    <img src="./img/OndeVaiEstudar/ibate4.jpg" alt="Imagem 4">
-                    <img src="./img/OndeVaiEstudar/ibate5.jpg" alt="Imagem 5">
-                    <img src="./img/OndeVaiEstudar/ibate6.jpg" alt="Imagem 6">
-                </div>
-                <button class="prev3" onclick="prevSlide3()">❮</button>
-                <button class="next3" onclick="nextSlide3()">❯</button>
-            </div><br>
-            <div id="modal3" class="modal">
-                <span class="close" onclick="closeModal3()">&times;</span>
-                <button class="prev3" onclick="prevImage3()">❮</button>
-                <img class="modal-content" id="modalImage3">
-                <button class="next3" onclick="nextImage3()">❯</button>
-            </div>
-        </div>
-        <br>
-        <div class="fundoImagensRibeirao">
-            <h1 class="tabelaFotosEscolaTituloCidade">RIBEIRÃO BONITO</h1>
-            <div class="carousel-container4">
-                <div class="carousel4" onclick="openModal4(event)">
-                    <img src="./img/OndeVaiEstudar/ribeirao1.jpg" alt="Imagem 1">
-                    <img src="./img/OndeVaiEstudar/ribeirao2.jpg" alt="Imagem 2">
-                    <img src="./img/OndeVaiEstudar/ribeirao3.jpg" alt="Imagem 3">
-                    <img src="./img/OndeVaiEstudar/ribeirao4.jpg" alt="Imagem 4">
-                    <img src="./img/OndeVaiEstudar/ribeirao5.jpg" alt="Imagem 5">
-                    <img src="./img/OndeVaiEstudar/ribeirao6.jpg" alt="Imagem 6">
-                </div>
-                <button class="prev4" onclick="prevSlide4()">❮</button>
-                <button class="next4" onclick="nextSlide4()">❯</button>
-            </div><br>
-            <div id="modal4" class="modal">
-                <span class="close" onclick="closeModal4()">&times;</span>
-                <button class="prev4" onclick="prevImage4()">❮</button>
-                <img class="modal-content" id="modalImage4">
-                <button class="next4" onclick="nextImage4()">❯</button>
-            </div>
-        </div>
 
-        <div class="scroll-reveal" id="item1">
+            <div class="col-md-3">
+                <div class="image-flip">
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <img src="./img/4 Pilares/4pilares3.png" class="imagem-pilares wow fadeIn delay-06s">
+                        </div>
+                        <div class="backside">
+                            <h2 class="backside-text"><b>Amplie seus horizontes, conecte-se com pessoas de todo o mundo
+                                    e aumente suas
+                                    perspectivas profissionais. Comece sua jornada bilíngue conosco.</b></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="image-flip">
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <img src="./img/4 Pilares/4pilares4.png" class="imagem-pilares wow fadeIn delay-08s">
+                        </div>
+                        <div class="backside">
+                            <h2 class="backside-text"><b>Nosso foco é prepará-lo para o mercado de trabalho real,
+                                    fornecendo experiência
+                                    prática, orientação profissional e acesso a oportunidades de emprego. Juntos, vamos
+                                    transformar seu potencial em sucesso.</b></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="col-12 wow fadeInDown">
+        <h1 class="wow fadeInDown"><br>
+            <b class="color-green">DEPOIMENTOS DOS ALUNOS</b>
+            <h2>Algumas histórias das milhares de vidas transformadas através da educação.</h2><br>
+        </h1>
+    </div>
+    <div class="borda-depoimento wow fadeIn delay-01s">
+        <div class="centralizar-depoimentos centralizar">
+
+            <div id="depoimento1" class="depoimento-container active wow fadeIn delay-02s">
+
+                <h2><img src="./img/Depoimentos/Sabrina.png" class="img-depoimentos">Sabrina Aquino</h2>
+                <h4 class="padding-inline text-depoimentos">
+                    Estudar na Zeek foi e continua sendo uma experiência encantadora.
+                    <br>
+                    Os professores atenciosos e
+                    capacitados para nos ensinar e tirar todas as dúvidas.
+                    <br><br>
+                    Me ajudou muito para conseguir ingressar no
+                    mercado de trabalho.
+                </h4>
+            </div>
+
+            <div id="depoimento2" class="depoimento-container">
+                <h2><img src="./img/Depoimentos/Maria.png" class="img-depoimentos">Maria Eduarda</h2>
+                <h4 class="padding-inline text-depoimentos">
+                    A Zeek foi responsável por expandir minha visão de mercado de trabalho,pois com meu curso de
+                    informatica, eu consegui melhores chances para a a vaga de emprego que estou ocupando hoje,
+                    recomendo muito pois é uma escola eficiente, com bons profissionais em suas áreas, ambiente
+                    acolhedor e sempre visando o bem dos alunos.
+                </h4>
+            </div>
+            <div id="depoimento3" class="depoimento-container">
+                <h2><img src="./img/Depoimentos/Jocimar.png" class="img-depoimentos">Jocimar Gomes</h2>
+                <h4 class="padding-inline text-depoimentos">
+                    Sou Jocimar Gomes Lima e estou passando por aqui para parabenizar a Zeek Cursos, juntamente com
+                    o
+                    David, e toda equipe que trabalha incansavelmente. No ano de 2022, iniciei o meu curso “3 em 1”
+                    abrangendo Atendente de Farmácia, Rotinas Administrativas e Operador de Caixa. <br><br>
+                    Em abril de 2023, antes mesmo de concluir o curso, fui contratado como balconista na Farmácia
+                    Rosário de Ibaté.
+                    Atualmente, ocupo a posição de Operador de Caixa na filiar 1 da Farmácia Drogal, onde conclui
+                    minha
+                    formação em outubro desde ano. Glorifico a Deus pela conquista do emprego e quero aproveitar
+                    para
+                    estender um convite a todos de Ibaté e região. <br><br>
+                    A Zeek Cursos é uma porta de acesso a inúmeras oportunidades de emprego, proporcionando formação
+                    de
+                    profissionais competentes, responsáveis e muito amigos, que possuem amor pelas suas profissões.
+                    Além
+                    disso, é importante destacar o apoio constante que oferecem. Estou participando desde 2021 e já
+                    estou no meu terceiro curso extremamente feliz com este elenco maravilhoso.
+                    Convido a todos a se juntarem à Zeek Cursos. Não percam essa oportunidade incrível! Este é o meu
+                    depoimento, repleto de Alegria.
+                </h4>
+            </div>
+
+            <div id="depoimento4" class="depoimento-container">
+                <h2><img src="./img/Depoimentos/Gilberto.png" class="img-depoimentos">Gilberto Cardoso</h2>
+                <h4 class="padding-inline text-depoimentos">
+                    Estudar na Zeek foi muito bom, professores qualificados prontamente a sanar dúvidas. O curso
+                    muito
+                    didático, com aquela estrutura de amparo ao aluno simula muito o mercado de trabalho real.
+                    <br><br>
+                    Foi muito bom cursar na Zeek pois em relação ao trabalho já houve melhoras, pois está me
+                    ajudando
+                    muito, até mesmo que você fica preparado para desafios. <br><br>
+                    Se indico? Sempre, como falei a estrutura escolar, os professores e o aprendizado enfim tudo do
+                    início ao final muito bom.
+                </h4>
+            </div>
+
             <div>
-                <table class="tabelaRodape">
-                    <tr>
-                        <td>
-                            <h2><br>DESCALVADO</h2><br>
-                        </td>
-                        <td>
-                            <h2><br>IBATÉ</h2><br>
-                        </td>
-                        <td>
-                            <h2><br>RIBEIRÃO BONITO</h2><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="https://maps.app.goo.gl/AuobwytdeR5QUCxS6" target="_blank" class="editarLink">
-                                <h4><img src="./img/localizacao.png" class="imagemContato"> Rua Coronel Rafael
-                                    Tobias,
-                                    nº
-                                    284 <br>
-                                    Centro - Descalvado/SP</h4><br>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="https://maps.app.goo.gl/NENgL7pvuNTnQ3VV9" target="_blank" class="editarLink">
-                                <h4><img src="./img/localizacao.png" class="imagemContato"> Rua Floriano
-                                    Peixoto, nº
-                                    628
-                                    <br>
-                                    Centro - Ibaté/SP
-                                </h4><br>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="https://maps.app.goo.gl/zupSKidCFDRtYbKCA" target="_blank" class="editarLink">
-                                <h4><img src="./img/localizacao.png" class="imagemContato"> Rua Jornalista
-                                    Sebastião
-                                    Macedo,
-                                    nº
-                                    622 <br>
-                                    Centro - Ribeirão Bonito/SP</h4><br>
-                            </a>
-                        </td>
-                    <tr>
-                        <td>
-                            <a href="https://wa.me/19992671617" target="_blank" class="editarLink">
-                                <h4><img src="./img/telefone.png" class="imagemContato">(19) 99267-1617</h4>
-                            </a><br>
-                        </td>
-                        <td>
-                            <a href="https://wa.me/16996294928" target="_blank" class="editarLink">
-                                <h4><img src="./img/telefone.png" class="imagemContato">(16) 99629-4928</h4>
-                            </a><br>
-                        </td>
-                        <td>
-                            <a href="https://wa.me/16999940880" target="_blank" class="editarLink">
-                                <h4><img src="./img/telefone.png" class="imagemContato">(16) 99994-0880</h4>
-                            </a><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <hr><br>
-                        </td>
-                        <td>
-                            <hr><br>
-                        </td>
-                        <td>
-                            <hr><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>REDES SOCIAIS</h3>
-                            <a href="https://wa.me/19992671617" target="_blank" class="editarLink">
-                                <img src="./img/whatsapp.png" class="imagemContato">
-                            </a>
-                            <a href="https://www.facebook.com/profile.php?id=100082747466519" target="_blank"
-                                class="editarLink">
-                                <img src="./img/facebook.png" class="imagemContato">
-                            </a>
-                            <a href="https://www.instagram.com/zeekdescalvado/" target="_blank" class="editarLink">
-                                <img src="./img/instagram.png" class="imagemContato">
-                            </a>
-                        </td>
-                        <td>
-                            <h3>REDES SOCIAIS</h3>
-                            <a href="https://wa.me/16996294928" target="_blank" class="editarLink">
-                                <img src="./img/whatsapp.png" class="imagemContato">
-                            </a>
-                            <a href="https://www.facebook.com/zeekcursosibate" target="_blank" class="editarLink">
-                                <img src="./img/facebook.png" class="imagemContato">
-                            </a>
-                            <a href="https://www.instagram.com/zeekibate/" target="_blank" class="editarLink">
-                                <img src="./img/instagram.png" class="imagemContato">
-                            </a>
-                        </td>
-                        <td>
-                            <h3>REDES SOCIAIS</h3>
-                            <a href="https://wa.me/16999940880" target="_blank" class="editarLink">
-                                <img src="./img/whatsapp.png" class="imagemContato">
-                            </a>
-                            <a href="https://www.facebook.com/zeek.rb.5" target="_blank" class="editarLink">
-                                <img src="./img/facebook.png" class="imagemContato">
-                            </a>
-                            <a href="https://www.instagram.com/zeekribeiraobonito/" target="_blank" class="editarLink">
-                                <img src="./img/instagram.png" class="imagemContato">
-                            </a>
-                        </td>
-                    </tr>
-                </table>
+                <button id="botao1" class="botao-depoimentos background-green" onclick="mostrarDepoimento(1)">
+                </button>
+                <button id="botao2" class="botao-depoimentos" onclick="mostrarDepoimento(2)">
+                </button>
+                <button id="botao3" class="botao-depoimentos" onclick="mostrarDepoimento(3)">
+                </button>
+                <button id="botao4" class="botao-depoimentos" onclick="mostrarDepoimento(4)">
+                </button>
             </div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="tamanho-tela row centralizar background-blue-contagem">
+        <div class="col-md-12">
+            <h1><b class="color-white wow fadeInDown delay-02s">REALIZAÇÕES DE SUCESSO</b></h1>
+        </div>
+
+        <div class="col-md-3">
+            <div class="counter wow fadeInDown delay-03s" id="countup-polos">
+                <h1>0</h1>
+            </div>
+            <h2 class="color-white-contagem wow fadeInUp delay-04s">Unidades</h2>
+        </div>
+
+        <div class="col-md-3">
+            <div class="counter wow fadeInDown delay-03s" id="countup-idade">
+                <h1>0</h1>
+            </div>
+            <h2 class="color-white-contagem wow fadeInUp delay-04s">Desde 1996 Transformando Vidas</h2>
+        </div>
+
+        <div class="col-md-3">
+            <div class="counter wow fadeInDown delay-03s" id="countup-alunos">
+                <h1>0</h1>
+            </div>
+            <h2 class="color-white-contagem wow fadeInUp delay-04s">Alunos Formados</h2>
+        </div>
+
+        <div class="col-md-3">
+            <div class="counter wow fadeInDown delay-03s" id="countup-cursos">
+                <h1>0</h1>
+            </div>
+            <h2 class="color-white-contagem wow fadeInUp delay-04s">Cursos Disponíveis</h2>
+        </div>
+    </div>
+
+    <br>
+    <div class="col-12 wow fadeInDown">
+        <h1>
+            <b>CONTAMOS COM 3 POLOS</b>
+        </h1>
+    </div>
+    <br>
+    <div class="row centralizar">
+        <div class="col-md-4 borda-descalvado wow fadeInLeft">
+            <h1>
+                <b class="color-white">DESCALVADO</b>
+            </h1>
+            <div>
+                <img src="./img/Zeek Cursos/zeekDescalvado - Copia.png" id="mainImage1" class="main-img">
+            </div>
+            <div class="gallery">
+                <img src="./img/OndeVaiEstudar/descalvado1.jpg" class="thumbnail1" onclick="changeImage1(this)">
+                <img src="./img/OndeVaiEstudar/descalvado2.jpg" class="thumbnail1" onclick="changeImage1(this)">
+                <img src="./img/OndeVaiEstudar/descalvado3.jpg" class="thumbnail1" onclick="changeImage1(this)">
+                <img src="./img/OndeVaiEstudar/descalvado1.jpg" class="thumbnail1" onclick="changeImage1(this)">
+                <img src="./img/OndeVaiEstudar/descalvado2.jpg" class="thumbnail1" onclick="changeImage1(this)">
+            </div>
+        </div>
+        <div class="col-md-4 borda-ibate wow fadeInUp">
+            <h1>
+                <b class="color-white">IBATÉ</b>
+            </h1>
+            <div>
+                <img src="./img/Zeek Cursos/zeekDescalvado - Copia.png" id="mainImage2" class="main-img">
+            </div>
+            <div class="gallery">
+                <img src="./img/OndeVaiEstudar/ibate1.jpg" class="thumbnail2" onclick="changeImage2(this)">
+                <img src="./img/OndeVaiEstudar/ibate2.jpg" class="thumbnail2" onclick="changeImage2(this)">
+                <img src="./img/OndeVaiEstudar/ibate3.jpg" class="thumbnail2" onclick="changeImage2(this)">
+                <img src="./img/OndeVaiEstudar/ibate1.jpg" class="thumbnail2" onclick="changeImage2(this)">
+                <img src="./img/OndeVaiEstudar/ibate2.jpg" class="thumbnail2" onclick="changeImage2(this)">
+            </div>
+        </div>
+        <div class="col-md-4 borda-ribeirao wow fadeInRight">
+            <h1>
+                <b class="color-white">RIBEIRÃO BONITO</b>
+            </h1>
+            <div>
+                <img src="./img/Zeek Cursos/zeekDescalvado - Copia.png" id="mainImage3" class="main-img">
+            </div>
+            <div class="gallery">
+                <img src="./img/OndeVaiEstudar/ribeirao1.jpg" class="thumbnail3" onclick="changeImage3(this)">
+                <img src="./img/OndeVaiEstudar/ribeirao2.jpg" class="thumbnail3" onclick="changeImage3(this)">
+                <img src="./img/OndeVaiEstudar/ribeirao3.jpg" class="thumbnail3" onclick="changeImage3(this)">
+                <img src="./img/OndeVaiEstudar/ribeirao1.jpg" class="thumbnail3" onclick="changeImage3(this)">
+                <img src="./img/OndeVaiEstudar/ribeirao2.jpg" class="thumbnail3" onclick="changeImage3(this)">
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="rodape">
+        <div class="row margin-rodape centralizar">
+            <div class="col-md-4 wow fadeInUp">
+                <h1 class="text-white">DESCALVADO</h1><br>
+                <a href="https://maps.app.goo.gl/9F4GdX3nMCPKFCSY6" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/maps.png" class="img-rodape">
+                    <h5>Rua Coronel Rafael Tobias, nº 284 <br> Centro - Descalvado/SP</h5>
+                </a><br>
+                <a href="https://wa.me/19992671617" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/phone.png" class="img-rodape">
+                    <h5>(19) 99267-1617</h5>
+                </a><br>
+                <div class="display-flex centralizar-rodape">
+                    <a href="https://wa.me/19992671617" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.facebook.com/people/Zeek-Descalvado/pfbid0M8mMKPKpgyxzDXZ5BhFNNQkrUZ2KcD3YGah8L5RPdw6V8RnNYMteofnUhbGagj5jl/"
+                        class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/facebook.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.instagram.com/zeekdescalvado/" class="display-flex link-rodape"
+                        target="_blank">
+                        <img src="./img/Icones/instagram.png" class="img-rodape-social">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp">
+                <h1 class="text-white">IBATÉ</h1><br>
+                <a href="https://maps.app.goo.gl/6nW9ofPvqVHc3vgj6" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/maps.png" class="img-rodape">
+                    <h5>Rua Floriano Peixoto, nº 628 <br> Centro - Ibaté/SP</h5>
+                </a><br>
+                <a href="https://wa.me/16996294928" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/phone.png" class="img-rodape">
+                    <h5>(16) 99629-4928</h5>
+                </a><br>
+                <div class="display-flex centralizar-rodape">
+                    <a href="https://wa.me/16996294928" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.facebook.com/zeekcursosibate" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/facebook.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.instagram.com/zeekibate/" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/instagram.png" class="img-rodape-social">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp">
+                <h1 class="text-white">RIBEIRÃO BONITO</h1><br>
+                <a href="https://maps.app.goo.gl/q4CPbnLY83Bpin5QA" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/maps.png" class="img-rodape">
+                    <h5>Rua Jornalista Sebastião Macedo, nº 622 <br> Centro - Ribeirão Bonito/SP</h5>
+                </a><br>
+                <a href="https://wa.me/16999940880" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/phone.png" class="img-rodape">
+                    <h5>(16) 99994-0880</h5>
+                </a><br>
+                <div class="display-flex centralizar-rodape">
+                    <a href="https://wa.me/16999940880" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.facebook.com/zeek.rb.5" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/facebook.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.instagram.com/zeekribeiraobonito/" class="display-flex link-rodape"
+                        target="_blank">
+                        <img src="./img/Icones/instagram.png" class="img-rodape-social">
+                    </a>
+                </div>
+            </div>
+
         </div>
     </footer>
-    <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./js/modernizr-3.5.0.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/wow.min.js"></script>
+    <script type="text/javascript" src="./js/dados.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+
+    <script>new WOW().init();</script>
+
+    <script src="./js/matriculese.js"></script>
+    <script src="./js/depoimentos.js"></script>
+    <script src="./js/carrousel-zeek.js"></script>
+    <script src="./js/contagemPolo.js"></script>
+
 </body>
 
 </html>

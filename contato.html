@@ -1,263 +1,218 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-    <link rel="icon" href="./img/zeekinha.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zeek Cursos</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsivo.css" />
+
+    <link rel="icon" href="./img/zeekinha.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+
     <header>
-        <div>
-            <table class="tabelaCabecalho">
-                <tr>
-                    <th>
-                        <a href="index.html">
-                            <img class="imagemLogo" src="./img/zeekLogo.png" alt="Zeek Cursos">
-                        </a>
-                    </th>
-                    <th>
-                        <div class="menuPrincipal">
-                            <a class="textoMenu" href="index.html">HOME</a>
-                            <a class="textoMenu" href="sobreNos.html">SOBRE NÓS</a>
-                            <a class="textoMenu" href="diferenciais.html">DIFERENCIAIS</a>
-                            <a class="textoMenu" href="cursos.html">CURSOS</a>
-                            <a class="textoMenu"
-                                href="javascript:abrirJanela('https://app3.evoluaeducacao.com.br')">ÁREA DO ALUNO</a>
-                            <a class="textoMenu" href="cruzeiroDoSul.html">POLOS CRUZEIRO DO SUL</a>
-                            <a class="textoMenu" href="contato.html">CONTATO</a>
-                        </div>
-                    </th>
-                </tr>
-            </table>
+        <div class="container-cabecalho">
+            <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one">
+                <a class="navbar-brand wow fadeIn" href="index.html">
+                    <img src="./img/zeekLogo.png" class="logo-zeek" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto mr-auto">
+                        <li>
+                            <a href="index.html" class="menus-cabecalho link wow fadeIn delay-01s"><b>HOME</b></a>
+                        </li>
+                        <li>
+                            <a href="sobreNos.html" class="menus-cabecalho link wow fadeIn delay-02s"><b>SOBRE
+                                    NÓS</b></a>
+                        </li>
+                        <li>
+                            <a href="diferenciais.html"
+                                class="menus-cabecalho link wow fadeIn delay-03s"><b>DIFERENCIAIS</b></a>
+                        </li>
+                        <li>
+                            <a href="cursos.html" class="menus-cabecalho link wow fadeIn delay-04s"><b>CURSOS</b></a>
+                        </li>
+                        <li>
+                            <a href="https://app3.evoluaeducacao.com.br/" target="_blank"
+                                onclick="window.open(this.href, 'newwindow', 'width=1200, height=600'); return false;"
+                                class="menus-cabecalho link wow fadeIn delay-05s"><b>ÁREA DO ALUNO</b></a>
+                        </li>
+                        <li>
+                            <a href="cruzeiroDoSul.html" class="menus-cabecalho link wow fadeIn delay-06s"><b>POLOS CRUZEIRO DO
+                                    SUL</b></a>
+                        </li>
+                        <li>
+                            <a href="contato.html" class="menus-cabecalho link wow fadeIn delay-07s"><b>CONTATO</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
-    <main>
-        <table class="tabelaContatoNova">
-            <tr>
-                <td>
-                    <div class="fundoCidadeContatoDescalvado">
-                        <h1 class="tituloCidadeContato">DESCALVADO</h1>
-                        <table class="tabelainformacoesContato">
-                            <tr>
-                                <td>
-                                    <img src="./img/Contato/maps.png" class="imagemLocalizacao">
-                                </td>
-                                <td>
-                                    <h2 class="informacoesCidadeContato">
-                                        <a href="https://www.google.com/maps/place/Av.+Cel.+Rafael+Tobias,+274+-+Centro,+Descalvado+-+SP,+13690-000/@-21.902347,-47.622076,16z/data=!4m5!3m4!1s0x94b80f41c092df57:0xd089d727443d611d!8m2!3d-21.9023466!4d-47.6220757?hl=pt-BR&entry=ttu"
-                                            target="_blank" class="editarLink">
-                                            Rua Coronel Rafael, nº 274 <br>
-                                            Centro - Descalvado/SP
-                                        </a>
-                                    </h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./img/Contato/WhatsApp.png" class="imagemLocalizacao">
-                                </td>
-                                <td>
-                                    <h2 class="informacoesCidadeContato">
-                                        <a href="https://wa.me/19992671617" target="_blank" class="editarLink">
-                                            (16) 99267-1617
-                                        </a>
-                                    </h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./img/Contato/facebookk.png" class="imagemLocalizacao">
-                                </td>
-                                <td>
-                                    <h2 class="informacoesCidadeContato">
-                                        <a href="https://www.facebook.com/profile.php?id=100082747466519"
-                                            target="_blank" class="editarLink">
-                                            Zeek Descalvado
-                                        </a>
-                                    </h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./img/Contato/instagram.png" class="imagemLocalizacao">
-                                </td>
-                                <td>
-                                    <h2 class="informacoesCidadeContato">
-                                        <a href="https://www.instagram.com/zeekdescalvado/" target="_blank"
-                                            class="editarLink">
-                                            @zeekdescalvado
-                                        </a>
-                                    </h2>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </td>
-                <td>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1850.918566159949!2d-47.622075699999996!3d-21.902346599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b80f41c092df57%3A0xd089d727443d611d!2sAv.%20Cel.%20Rafael%20Tobias%2C%20274%20-%20Centro%2C%20Descalvado%20-%20SP%2C%2013690-000!5e0!3m2!1spt-BR!2sbr!4v1697734314999!5m2!1spt-BR!2sbr"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" class="mapaContato"></iframe>
-                </td>
-            </tr>
-        </table>
+    <br>
 
-        <table class="tabelaContatoNova">
-            <tr>
-                <td>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.4082381923968!2d-47.99749589999999!3d-21.9572897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b865220190d0e9%3A0x16dbcd062ba7bb9e!2sZeek%20Cursos%20Ibat%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1697736347289!5m2!1spt-BR!2sbr"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" class="mapaContato2"></iframe>
-                </td>
-                <td>
-                    <div class="fundoCidadeContatoIbate">
-                        <h1 class="tituloCidadeContato">IBATÉ</h1>
-                        <table class="tabelainformacoesContato">
-                            <tr>
-                                <td>
-                                    <h2 class="informacoesCidadeContato2">
-                                        <a href="https://maps.app.goo.gl/gYaxWKYGjnertDju7" target="_blank"
-                                            class="editarLink">
-                                            Rua Floriano Peixoto, nº 628<br>
-                                            Centro - Ibaté/SP
-                                        </a>
-                                    </h2>
-                                </td>
-                                <td>
-                                    <img src="./img/Contato/maps.png" class="imagemLocalizacao">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h2 class="informacoesCidadeContato2">
-                                        <a href="https://wa.me/16996294928" target="_blank" class="editarLink">
-                                            (16) 99629-4928
-                                        </a>
-                                    </h2>
-                                </td>
-                                <td>
-                                    <img src="./img/Contato/WhatsApp.png" class="imagemLocalizacao">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h2 class="informacoesCidadeContato2">
-                                        <a href="https://www.facebook.com/zeekcursosibate" target="_blank"
-                                            class="editarLink">
-                                            Zeek Ibaté
-                                        </a>
-                                    </h2>
-                                </td>
-                                <td>
-                                    <img src="./img/Contato/facebookk.png" class="imagemLocalizacao">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h2 class="informacoesCidadeContato2">
-                                        <a href="https://www.instagram.com/zeekibate/" target="_blank"
-                                            class="editarLink">
-                                            @zeekibate
-                                        </a>
-                                    </h2>
-                                </td>
-                                <td>
-                                    <img src="./img/Contato/instagram.png" class="imagemLocalizacao">
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </td>
-            </tr>
-        </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1><b>ENTRE EM CONTATO CONOSCO <br> E INICIE SUA JORNADA PROFISSIONAL</br></h1>
+            </div>
+            <br>
+        </div>
+    </div>
+    <div class="row centralizar">
+        <div class="col-md-6">
+            <div class="background-blue-contato">
+                <h1><b class="color-white">DESCALVADO</b></h1>
+                <br>
+                <a href="https://maps.app.goo.gl/9F4GdX3nMCPKFCSY6" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/maps-color.png" class="img-rodape">
+                    <h5>Rua Coronel Rafael Tobias, nº 284 <br> Centro - Descalvado/SP</h5>
+                </a><br>
+                <a href="https://wa.me/19992671617" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/whatsApp.png" class="img-rodape">
+                    <h5>(19) 99267-1617</h5>
+                </a><br>
+                <a href="https://www.facebook.com/people/Zeek-Descalvado/pfbid0M8mMKPKpgyxzDXZ5BhFNNQkrUZ2KcD3YGah8L5RPdw6V8RnNYMteofnUhbGagj5jl/"
+                    class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/facebook.png" class="img-rodape">
+                    <h5>Zeek Descalvado</h5>
+                </a><br>
+                <a href="https://www.instagram.com/zeekdescalvado/" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/instagram.png" class="img-rodape">
+                    <h5>@zeekdescalvado</h5>
+                </a><br>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1850.918566159949!2d-47.622075699999996!3d-21.902346599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b80f41c092df57%3A0xd089d727443d611d!2sAv.%20Cel.%20Rafael%20Tobias%2C%20274%20-%20Centro%2C%20Descalvado%20-%20SP%2C%2013690-000!5e0!3m2!1spt-BR!2sbr!4v1697734314999!5m2!1spt-BR!2sbr"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="mapaContato"></iframe>
+        </div>
+    </div>
+
+    <div class="row centralizar">
+        <div class="col-md-6">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.4082381923968!2d-47.99749589999999!3d-21.9572897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b865220190d0e9%3A0x16dbcd062ba7bb9e!2sZeek%20Cursos%20Ibat%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1697736347289!5m2!1spt-BR!2sbr"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="mapaContato"></iframe>
+        </div>
+        <div class="col-md-6">
+            <div class="background-pink-contato">
+                <h1><b class="color-white">IBATÉ</b></h1>
+                <br>
+                <a href="https://maps.app.goo.gl/6nW9ofPvqVHc3vgj6" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/maps-color.png" class="img-rodape">
+                    <h5>Rua Floriano Peixoto, nº 628 <br> Centro - Ibaté/SP</h5>
+                </a><br>
+                <a href="https://wa.me/16996294928" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/whatsApp.png" class="img-rodape">
+                    <h5>(16) 99629-4928</h5>
+                </a><br>
+                <a href="https://www.facebook.com/zeekcursosibate" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/facebook.png" class="img-rodape">
+                    <h5>Zeek Ibaté</h5>
+                </a><br>
+                <a href="https://www.instagram.com/zeekibate/" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/instagram.png" class="img-rodape">
+                    <h5>@zeekibate</h5>
+                </a><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="row centralizar">
+        <div class="col-md-6">
+            <div class="background-green-contato">
+                <h1><b class="color-white">RIBEIRÃO BONITO</b></h1>
+                <br>
+                <a href="https://maps.app.goo.gl/q4CPbnLY83Bpin5QA" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/maps-color.png" class="img-rodape">
+                    <h5>Rua Jornalista Sebastião Macedo, nº 622 <br> Centro - Ribeirão Bonito/SP</h5>
+                </a><br>
+                <a href="https://wa.me/16999940880" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/whatsApp.png" class="img-rodape">
+                    <h5>(16) 99994-0880</h5>
+                </a><br>
+                <a href="https://www.facebook.com/zeek.rb.5" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/facebook.png" class="img-rodape">
+                    <h5>Zeek Ribeirão Bonito</h5>
+                </a><br>
+                <a href="https://www.instagram.com/zeekribeiraobonito/" class="display-flex link-rodape"
+                    target="_blank">
+                    <img src="./img/Icones/instagram.png" class="img-rodape">
+                    <h5>@zeekribeiraobonito</h5>
+                </a><br>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.5976021745296!2d-48.17604469999999!3d-22.064983299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b88524473053d5%3A0x86e8c7cda49a01c8!2sZeek%20Cursos%20-%20Ribeir%C3%A3o%20Bonito!5e0!3m2!1spt-BR!2sbr!4v1697736383314!5m2!1spt-BR!2sbr"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="mapaContato"></iframe>
+        </div>
+    </div>
+
+
+
+    <div class="col-md-12 centralizar">
+        <img src="./img/NOVO LOGO 2024.png" class="img-logo wow fadeInUp delay-02s">
+    </div>
 
 
 
 
 
-        <table class="tabelaContatoNova">
-            <tr>
-                <td>
-                    <div class="fundoCidadeContatoRibeirao">
-                        <h1 class="tituloCidadeContato">RIBEIRÃO BONITO</h1>
-                        <table class="tabelainformacoesContato">
-                            <tr>
-                                <td>
-                                    <img src="./img/Contato/maps.png" class="imagemLocalizacao">
-                                </td>
-                                <td>
-                                    <h2 class="informacoesCidadeContato">
-                                        <a href="https://maps.app.goo.gl/i5zZUpdPTpEwd4x59" target="_blank"
-                                            class="editarLink">
-                                            Rua Jornalista Sebastião Macedo, nº 622<br>
-                                            Centro - Ribeirão Bonito/SP
-                                        </a>
-                                    </h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./img/Contato/WhatsApp.png" class="imagemLocalizacao">
-                                </td>
-                                <td>
-                                    <h2 class="informacoesCidadeContato">
-                                        <a href="https://wa.me/16999940880" target="_blank" class="editarLink">
-                                            (16) 99994-0880
-                                        </a>
-                                    </h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./img/Contato/facebookk.png" class="imagemLocalizacao">
-                                </td>
-                                <td>
-                                    <h2 class="informacoesCidadeContato">
-                                        <a href="https://www.facebook.com/ZeekRB" target="_blank" class="editarLink">
-                                            Zeek Ribeirão Bonito
-                                        </a>
-                                    </h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./img/Contato/instagram.png" class="imagemLocalizacao">
-                                </td>
-                                <td>
-                                    <h2 class="informacoesCidadeContato">
-                                        <a href="https://www.instagram.com/zeekribeiraobonito/" target="_blank"
-                                            class="editarLink">
-                                            @zeekribeiraobonito
-                                        </a>
-                                    </h2>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </td>
-                <td>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.5976021745296!2d-48.17604469999999!3d-22.064983299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b88524473053d5%3A0x86e8c7cda49a01c8!2sZeek%20Cursos%20-%20Ribeir%C3%A3o%20Bonito!5e0!3m2!1spt-BR!2sbr!4v1697736383314!5m2!1spt-BR!2sbr"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" class="mapaContato"></iframe>
-                </td>
-            </tr>
-        </table>
 
-       
 
-    <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./js/modernizr-3.5.0.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/wow.min.js"></script>
+    <script type="text/javascript" src="./js/dados.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+
+    <script>new WOW().init();</script>
+
+    <script src="./js/matriculese.js"></script>
+    <script src="./js/depoimentos.js"></script>
+    <script src="./js/carrousel-zeek.js"></script>
+    <script src="./js/contagemPolo.js"></script>
+
 </body>
 
 </html>
