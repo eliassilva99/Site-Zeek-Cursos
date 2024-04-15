@@ -1,0 +1,28 @@
+
+/* Desktop (col-lg) 992px+ */
+@media (min-width: 992px) {
+    .logo-zeek {
+        width: 220px;
+    }
+}
+
+/* Desktop e Tablets (col-md) 768px a 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .logo-zeek {
+        width: 220px;
+    }
+}
+
+/* Tablets (col-sm) 576px a 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+    .logo-zeek {
+        width: 220px;
+    }
+}
+
+/* Tablets e Celulares (col) 0px a 767px */
+@media (max-width: 767px) {
+    .logo-zeek {
+        width: 200px;
+    }
+}
