@@ -232,7 +232,7 @@ body {
 }
 
 .logo-zeek {
-  width: 250px;
+  width: 2px;
 }
 
 .logo-zeek-sobrenos {
@@ -241,7 +241,7 @@ body {
 }
 
 .menus-cabecalho {
-  padding-inline: 25px;
+  padding-inline: 15px;
   text-align: center;
 }
 
@@ -755,47 +755,6 @@ button:hover {
   padding-top: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .image-flip:hover .backside,
 .image-flip.hover .backside {
   -webkit-transform: rotateY(0deg);
@@ -814,13 +773,13 @@ button:hover {
   transform: rotateY(180deg);
 }
 
-.backside-text{
+.backside-text {
   margin: auto;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 20px;
-  font-size: 20px!important;
+  font-size: 17px !important;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -860,6 +819,45 @@ button:hover {
   transition: 1s;
   transform-style: preserve-3d;
 }
+
+.barra-pesquisa {
+  display: none; 
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+  position: absolute; 
+  top: 70px; 
+  right: 5px; 
+  border-radius: 10px;
+  padding: 5px; 
+  z-index: 999;
+  width: 250px;
+}
+
+.espaco-pesquisa{
+  flex: 1;
+  margin: 5px;
+}
+
+.botao-pesquisar{
+  width: 50px;
+  flex: none;
+}
+
+.flex-pesquisa{
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1113,7 +1111,30 @@ img {
   position: relative;
 }
 
-.ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item {
+.ag-timeline-card_item2 {
+  display: inline-block;
+  width: 45%;
+  margin: -77px 0 0;
+  background-color: var(--color-light-blue);
+
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+  -o-box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+
+  -webkit-transition: -webkit-transform .5s, opacity .5s;
+  -moz-transition: -moz-transform .5s, opacity .5s;
+  -o-transition: -o-transform .5s, opacity .5s;
+  transition: transform .5s, opacity .5s;
+
+  position: relative;
+}
+
+.ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item .ag-timeline-card_item2 {
   -webkit-transform: translateX(-200%);
   -moz-transform: translateX(-200%);
   -ms-transform: translateX(-200%);
@@ -1226,6 +1247,11 @@ img {
   }
 
   .ag-timeline-card_item {
+    width: auto;
+    margin: -65px 0 0 75px
+  }
+
+  .ag-timeline-card_item2 {
     width: auto;
     margin: -65px 0 0 75px
   }

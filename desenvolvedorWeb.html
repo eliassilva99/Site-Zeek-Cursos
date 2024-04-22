@@ -67,6 +67,22 @@
                         <li>
                             <a href="contato.html" class="menus-cabecalho link wow fadeIn delay-07s"><b>CONTATO</b></a>
                         </li>
+                        <li>
+                            <a href="javascript:void(0);" class="menus-cabecalho link wow fadeIn delay-08s"
+                                onclick="showSearchBox()">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </li>
+
+                        <!-- Caixa de pesquisa -->
+                        <div id="searchBox" class="barra-pesquisa">
+                            <div class="flex-pesquisa">
+                                <input class="espaco-pesquisa" type="text" id="searchInput"
+                                    placeholder="Digite para pesquisar...">
+                                <button class="botao-pesquisar" onclick="searchPage()"><i
+                                        class="fas fa-search"></i></button>
+                            </div>
+                        </div>
                     </ul>
                 </div>
             </nav>
@@ -742,6 +758,7 @@
     <script src="./js/carrousel-zeek.js"></script>
     <script src="./js/atendimentoCurso.js"></script>
     <script src="./js/contagemPolo.js"></script>
+    <script src="./js/pesquisa.js"></script>
 
 </body>
 

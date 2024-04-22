@@ -68,9 +68,27 @@
                         <li>
                             <a href="contato.html" class="menus-cabecalho link wow fadeIn delay-07s"><b>CONTATO</b></a>
                         </li>
+                        <li>
+                            <a href="javascript:void(0);" class="menus-cabecalho link wow fadeIn delay-08s"
+                                onclick="showSearchBox()">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </li>
+
+                        <!-- Caixa de pesquisa -->
+                        <div id="searchBox" class="barra-pesquisa">
+                            <div class="flex-pesquisa">
+                                <input class="espaco-pesquisa" type="text" id="searchInput"
+                                    placeholder="Digite para pesquisar...">
+                                <button class="botao-pesquisar" onclick="searchPage()"><i
+                                        class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+
                     </ul>
                 </div>
             </nav>
+
         </div>
     </header>
 
@@ -300,7 +318,7 @@
 
             <div id="depoimento1" class="depoimento-container active wow fadeIn delay-02s">
 
-                <h2><img src="./img/Depoimentos/Sabrina.png" class="img-depoimentos">Sabrina Aquino</h2>
+                <h2><img src="./img/Depoimentos/Sabrina.png" class="img-depoimentos">Sabrina</h2>
                 <h4 class="padding-inline text-depoimentos">
                     Estudar na Zeek foi e continua sendo uma experiência encantadora.
                     <br>
@@ -322,7 +340,7 @@
                 </h4>
             </div>
             <div id="depoimento3" class="depoimento-container">
-                <h2><img src="./img/Depoimentos/Jocimar1.png" class="img-depoimentos">Jocimar Gomes</h2>
+                <h2><img src="./img/Depoimentos/Jocimar1.png" class="img-depoimentos">Jocimar</h2>
                 <h4 class="padding-inline text-depoimentos">
                     Sou Jocimar Gomes Lima e estou passando por aqui para parabenizar a Zeek Cursos, juntamente com
                     o David, e toda equipe que trabalha incansavelmente. No ano de 2022, iniciei o meu curso “3 em 1”
@@ -346,7 +364,7 @@
             </div>
 
             <div id="depoimento4" class="depoimento-container">
-                <h2><img src="./img/Depoimentos/Gilberto.png" class="img-depoimentos">Gilberto Cardoso</h2>
+                <h2><img src="./img/Depoimentos/Gilberto.png" class="img-depoimentos">Gilberto</h2>
                 <h4 class="padding-inline text-depoimentos">
                     Estudar na Zeek foi muito bom, professores qualificados prontamente a sanar dúvidas. O curso
                     muito
@@ -465,7 +483,7 @@
 
 
     <footer class="rodape">
-        <div class="row margin-rodape centralizar">
+        <div class="row centralizar">
             <div class="col-md-4 wow fadeInUp">
                 <h1 class="text-white">DESCALVADO</h1><br>
                 <a href="https://maps.app.goo.gl/9F4GdX3nMCPKFCSY6" class="display-flex link-rodape" target="_blank">
@@ -539,37 +557,23 @@
             </div>
 
         </div>
-    </footer>
 
 
+        <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="./js/modernizr-3.5.0.min.js"></script>
+        <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./js/popper.min.js"></script>
+        <script type="text/javascript" src="./js/wow.min.js"></script>
+        <script type="text/javascript" src="./js/dados.js"></script>
+        <script type="text/javascript" src="./js/app.js"></script>
 
+        <script>new WOW().init();</script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="./js/modernizr-3.5.0.min.js"></script>
-    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./js/popper.min.js"></script>
-    <script type="text/javascript" src="./js/wow.min.js"></script>
-    <script type="text/javascript" src="./js/dados.js"></script>
-    <script type="text/javascript" src="./js/app.js"></script>
-
-    <script>new WOW().init();</script>
-
-    <script src="./js/matriculese.js"></script>
-    <script src="./js/depoimentos.js"></script>
-    <script src="./js/carrousel-zeek.js"></script>
-    <script src="./js/contagemPolo.js"></script>
+        <script src="./js/matriculese.js"></script>
+        <script src="./js/depoimentos.js"></script>
+        <script src="./js/carrousel-zeek.js"></script>
+        <script src="./js/contagemPolo.js"></script>
+        <script src="./js/pesquisa.js"></script>
 
 </body>
 
