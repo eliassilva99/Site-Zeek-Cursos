@@ -244,6 +244,16 @@ body {
   padding-inline: 15px;
   text-align: center;
 }
+.menus-cabecalho2 {
+  right: 50px;
+  text-align: center;
+  position: absolute;
+}
+
+.tamanho-menu{
+  width: 50px
+  
+}
 
 .link {
   color: var(--color-white);

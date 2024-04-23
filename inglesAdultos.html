@@ -1,414 +1,720 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-    <link rel="icon" href="./img/zeekinha.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zeek Cursos</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsivo.css" />
+
+    <link rel="icon" href="./img/zeekinha.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+
     <header>
-        <div>
-            <table class="tabelaCabecalho">
-                <tr>
-                    <th>
-                        <a href="index.html">
-                            <img class="imagemLogo" src="./img/zeekLogo.png" alt="Zeek Cursos">
-                        </a>
-                    </th>
-                    <th>
-                        <div class="menuPrincipal">
-                            <a class="textoMenu" href="index.html">HOME</a>
-                            <a class="textoMenu" href="sobreNos.html">SOBRE NÓS</a>
-                            <a class="textoMenu" href="diferenciais.html">DIFERENCIAIS</a>
-                            <a class="textoMenu" href="cursos.html">CURSOS</a>
-                            <a class="textoMenu"
-                                href="javascript:abrirJanela('https://app3.evoluaeducacao.com.br')">ÁREA DO ALUNO</a>
-                            <a class="textoMenu" href="cruzeiroDoSul.html">POLOS CRUZEIRO DO SUL</a>
-                            <a class="textoMenu" href="contato.html">CONTATO</a>
-                        </div>
-                    </th>
-                </tr>
-            </table>
+        <div class="container-cabecalho">
+            <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one">
+                <a class="navbar-brand wow fadeIn" href="index.html">
+                    <img src="./img/zeekLogo.png" class="logo-zeek" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                    <span>
+                        <i class="fas fa-bars tamanho-menu"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto mr-auto">
+                        <li>
+                            <a href="index.html" class="menus-cabecalho link wow fadeIn delay-01s"><b>HOME</b></a>
+                        </li>
+                        <li>
+                            <a href="sobreNos.html" class="menus-cabecalho link wow fadeIn delay-02s"><b>SOBRE
+                                    NÓS</b></a>
+                        </li>
+                        <li>
+                            <a href="diferenciais.html"
+                                class="menus-cabecalho link wow fadeIn delay-03s"><b>DIFERENCIAIS</b></a>
+                        </li>
+                        <li>
+                            <a href="cursos.html" class="menus-cabecalho link wow fadeIn delay-04s"><b>CURSOS</b></a>
+                        </li>
+                        <li>
+                            <a href="https://app3.evoluaeducacao.com.br/" target="_blank"
+                                onclick="window.open(this.href, 'newwindow', 'width=1200, height=600'); return false;"
+                                class="menus-cabecalho link wow fadeIn delay-05s"><b>ÁREA DO ALUNO</b></a>
+                        </li>
+                        <li>
+                            <a href="cruzeiroDoSul.html" class="menus-cabecalho link wow fadeIn delay-06s"><b>POLOS
+                                    CRUZEIRO DO
+                                    SUL</b></a>
+                        </li>
+                        <li>
+                            <a href="contato.html" class="menus-cabecalho link wow fadeIn delay-07s"><b>CONTATO</b></a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0);" class="menus-cabecalho2 link wow fadeIn delay-08s"
+                    onclick="showSearchBox()">
+                    <i class="fas fa-search"></i>
+                </a>
+                <!-- Caixa de pesquisa -->
+                <div id="searchBox" class="barra-pesquisa">
+                    <div class="flex-pesquisa">
+                        <input class="espaco-pesquisa" type="text" id="searchInput"
+                            placeholder="Digite para pesquisar...">
+                        <button class="botao-pesquisar" onclick="searchPage()"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
-    <main>
-        <div class="fundoTabelaCursoIndividual">
-            <table class="tabelaCursoIndividual">
-                <td>
-                    <h1>
-                        INGLÊS ADULTOS
-                    </h1><br>
-                    <h3>Este curso é projetado para profissionais que buscam uma comunicação eficaz, leitura crítica de
-                        documentos empresariais e uma vantagem competitiva em um mundo de negócios cada vez mais
-                        internacional.
-                    </h3>
-                </td>
-                <td>
-                    <img src="./img/Imagens Módulos/inglesAdultos.jpg" class="imagemCursoIndividual">
-                </td>
-            </table>
+
+    <div class="row centralizar backgroung-blue">
+        <div class="col-md-6">
+            <div class="display-flex centralizar">
+                <div>
+                    <h1 class="title-cursos wow fadeInLeft delay-02s"><b>INGLÊS ADULTOS</b></h1>
+                    <h2 class="subtitle-cursos wow fadeInLeft delay-04s">Este curso é projetado para profissionais que
+                        buscam uma comunicação eficaz, leitura crítica de documentos empresariais e uma vantagem
+                        competitiva em um mundo de negócios cada vez mais internacional.</h2>
+                </div>
+            </div>
         </div>
-        <div>
-            <h1 class="informacoesCurso"><br>
-                INFORMAÇÕES DO CURSO
-            </h1><br>
-            <hr class="hrInformacoesCurso"><br>
-            <table class="informacoesCurso">
-                <td>
-                    <img src="./img/Pessoas/inglesAdulto.png" class="imagemPessoaCurso">
-                </td>
-                <td>
-                    <table class="informacoesCursoDentro">
-                        <td>
-                            <img src="./img/ampulheta.png" class="imagemInformacaoCurso">
-                        </td>
-                        <td>
-                            <h3>
-                                Horário Flexível
-                                <h4>
-                                    Manhã, tarde e noite.
-                                </h4>
-                            </h3>
-                        </td>
-                    </table><br>
-                    <table class="informacoesCursoDentro">
-                        <td>
-                            <img src="./img/calendarioAzul.png" class="imagemInformacaoCurso">
-                        </td>
-                        <td>
-                            <h3>
-                                Tempo de Duração
-                                <h4>
-                                    12 Meses.
-                                </h4>
-                            </h3>
-                        </td>
-                    </table><br>
+        <div class="col-md-6">
+            <div class="display-flex centralizar">
+                <div>
+                    <img src="./img/Módulos/inglesAdultos.jpg" class="img-pagina-cursos wow fadeInRight delay-05s">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container row fadeIn delay-02s centralizar background-green-salarial">
+        <div class="col-md-4">
+            <img src="./img/Icones/icon.png" class="icone-icon wow fadeInDown delay-02s">
+            <h1 class="color-white-salarial"><b class="title-salarial wow fadeIn delay-04s">Quanto ganha um profissional
+                    fluente em inglês?</b></h1><br>
+        </div>
+        <div class="col-md-4 wow fadeInDown delay-08s">
+            <svg width="100%" height="260" viewBox="0 -20 275 177" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-21.000000, -2306.000000)"><text font-family="Helvetica" font-size="14"
+                            font-weight="normal" letter-spacing="-0.319999993" fill="#FFFFFF">
+                            <tspan x="94.2761718" y="2460">Nível de experiência</tspan>
+                        </text><text font-family="Helvetica" font-size="14" font-weight="normal"
+                            letter-spacing="-0.319999993" fill="#FFFFFF">
+                            <tspan x="112.958418" y="2318">Valor mediano</tspan>
+                        </text>
+                        <path
+                            d="M47,2440 L272,2440 C272.552285,2440 273,2440.44772 273,2441 L273,2441 C273,2441.55228 272.552285,2442 272,2442 L47,2442 C46.4477153,2442 46,2441.55228 46,2441 L46,2441 C46,2440.44772 46.4477153,2440 47,2440 Z"
+                            fill="#FFFFFF"></path>
+                        <path class="baseLine" stroke="#FFFFFF" stroke-width="2"
+                            d="M264.979492,2336.32129,241.041016,2346.76562,211.020874,2358.05493,191.032959,2373.0957,155.977539,2369.03662,110.970703,2380.98633,95.2089844,2396.07031,54.6757812,2404.45898"
+                            fill-rule="nonzero"></path><text font-family="Helvetica" font-size="12" font-weight="normal"
+                            letter-spacing="-0.319999993" fill="#FFFFFF">
+                            <tspan x="20.9365625" y="2378">R$</tspan>
+                            <tspan x="35.6364062" y="2378" font-size="18"></tspan>
+                            <tspan x="40.3173828" y="2378" font-size="20">5.512</tspan>
+                        </text><text font-family="Helvetica" font-size="12" font-weight="normal"
+                            letter-spacing="-0.502857149" fill="#FFFFFF">
+                            <tspan x="119.314372" y="2344">R$</tspan>
+                            <tspan x="133.648501" y="2344" font-size="22" letter-spacing="-0.614603162"></tspan>
+                            <tspan x="139.146203" y="2344" font-size="20">10.665</tspan>
+                        </text><text font-family="Helvetica" font-size="12" font-weight="normal"
+                            letter-spacing="-0.319999993" fill="#FFFFFF">
+                            <tspan x="213.582734" y="2312">R$</tspan>
+                            <tspan x="228.282578" y="2312" font-size="18"></tspan>
+                            <tspan x="232.963555" y="2312" font-size="20">15.164</tspan>
+                        </text>
+                        <path class="lineAnimation" d="M55.5,2405.5 L55.5,2439.5" stroke="#FFFFFF" opacity="0.2"
+                            stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M60.5857143,2403.5 L60.5857143,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M65.6714286,2402.5 L65.6714286,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M70.7571429,2400.5 L70.7571429,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M76.3428571,2399.4875 L76.3428571,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M82.4285714,2398.48781 L82.4285714,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M88.5142857,2396.48837 L88.5142857,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M94.6,2394.48889 L94.6,2439.5" stroke="#FFFFFF" opacity="0.2"
+                            stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M100.685714,2389.5 L100.685714,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M106.771429,2383.5 L106.771429,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M112.857143,2380.5 L112.857143,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M118.942857,2378.5 L118.942857,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M125.028571,2376.5 L125.028571,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M131.114286,2375.5 L131.114286,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M137.2,2373.5 L137.2,2439.5" stroke="#FFFFFF" opacity="0.2"
+                            stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M143.285714,2371.5 L143.285714,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M149.371429,2371.38245 L149.371429,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M155.457143,2371.5 L155.457143,2439.5" stroke="#FFFFFF"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5"></path>
+                        <path class="lineAnimation" d="M161.542857,2370.5 L161.542857,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M167.628571,2371.5 L167.628571,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M173.714286,2372.5 L173.714286,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M179.8,2372.5 L179.8,2439.5" stroke="#FFFFFF" opacity="0.2"
+                            stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M185.885714,2373.5 L185.885714,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M191.971429,2374.5 L191.971429,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M198.057143,2368.5 L198.057143,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M204.142857,2364.5 L204.142857,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M210.228571,2358.49383 L210.228571,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M216.314286,2356.49398 L216.314286,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M222.4,2354.49412 L222.4,2439.5" stroke="#FFFFFF" opacity="0.2"
+                            stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M228.485714,2352.49425 L228.485714,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M234.571429,2349.49444 L234.571429,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M240.657143,2346.4785 L240.657143,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M246.742857,2344.49474 L246.742857,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M252.828571,2342.49485 L252.828571,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M258.414286,2339.5 L258.414286,2439.5" stroke="#FFFFFF"
+                            opacity="0.2" stroke-linecap="square"></path>
+                        <path class="lineAnimation" d="M264.5,2334.5 L264.5,2439.5" stroke="#FFFFFF" opacity="0.2"
+                            stroke-linecap="square"></path>
+                        <path class="circleAnimation path-1"
+                            d="M59,2403.99951 C59,2406.20819 57.2072149,2408 54.9995142,2408 C52.78987,2408 51,2406.20819 51,2403.99951 C51,2401.79084 52.78987,2400 54.9995142,2400 C57.2072149,2400 59,2401.79084 59,2403.99951 Z"
+                            stroke="#FFFFFF" stroke-width="2" fill="#01AC4C"></path>
+                        <path class="circleAnimation path-2"
+                            d="M97,2395.99976 C97,2397.10409 96.1036074,2398 94.9997571,2398 C93.894935,2398 93,2397.10409 93,2395.99976 C93,2394.89542 93.894935,2394 94.9997571,2394 C96.1036074,2394 97,2394.89542 97,2395.99976 Z"
+                            stroke="#FFFFFF" fill="#01AC4C"></path>
+                        <path class="circleAnimation path-3"
+                            d="M113,2380.99976 C113,2382.10409 112.103607,2383 110.999757,2383 C109.894935,2383 109,2382.10409 109,2380.99976 C109,2379.89542 109.894935,2379 110.999757,2379 C112.103607,2379 113,2379.89542 113,2380.99976 Z"
+                            stroke="#FFFFFF" fill="#01AC4C"></path>
+                        <path class="circleAnimation path-4"
+                            d="M160,2368.99951 C160,2371.20819 158.207215,2373 155.999514,2373 C153.78987,2373 152,2371.20819 152,2368.99951 C152,2366.79084 153.78987,2365 155.999514,2365 C158.207215,2365 160,2366.79084 160,2368.99951 Z"
+                            stroke="#FFFFFF" stroke-width="2" fill="#01AC4C"></path>
+                        <path class="circleAnimation path-5"
+                            d="M193,2372.99976 C193,2374.10409 192.103607,2375 190.999757,2375 C189.894935,2375 189,2374.10409 189,2372.99976 C189,2371.89542 189.894935,2371 190.999757,2371 C192.103607,2371 193,2371.89542 193,2372.99976 Z"
+                            stroke="#FFFFFF" fill="#01AC4C"></path>
+                        <path class="circleAnimation path-6"
+                            d="M213,2357.99976 C213,2359.10409 212.103607,2360 210.999757,2360 C209.894935,2360 209,2359.10409 209,2357.99976 C209,2356.89542 209.894935,2356 210.999757,2356 C212.103607,2356 213,2356.89542 213,2357.99976 Z"
+                            stroke="#FFFFFF" fill="#01AC4C"></path>
+                        <path class="circleAnimation path-7"
+                            d="M269,2335.99951 C269,2338.20819 267.207215,2340 264.999514,2340 C262.78987,2340 261,2338.20819 261,2335.99951 C261,2333.79084 262.78987,2332 264.999514,2332 C267.207215,2332 269,2333.79084 269,2335.99951 Z"
+                            stroke="#FFFFFF" stroke-width="2" fill="#01AC4C"></path>
+                        <g transform="translate(221.000000, 2451.000000)" stroke="#FFFFFF">
+                            <path
+                                d="M9.68670588,4.84256471 C9.68670588,7.51668235 7.51729412,9.68609412 4.84317647,9.68609412 C2.16788235,9.68609412 0.000823529412,7.51668235 0.000823529412,4.84256471 C0.000823529412,2.16844706 2.16788235,0.000211764706 4.84317647,0.000211764706 C7.51729412,0.000211764706 9.68670588,2.16844706 9.68670588,4.84256471 Z"
+                                fill="#01AC4C"></path>
+                            <path d="M4.85341176,3.27268235 L4.85341176,6.43150588" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M6.43305882,4.85185882 L3.27305882,4.85185882" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </g>
+                        <g transform="translate(79.000000, 2451.000000)" stroke="#FFFFFF">
+                            <path
+                                d="M9.68694118,4.84256471 C9.68694118,7.51668235 7.51635294,9.68609412 4.84341176,9.68609412 C2.16811765,9.68609412 0.00105882353,7.51668235 0.00105882353,4.84256471 C0.00105882353,2.16844706 2.16811765,0.000211764706 4.84341176,0.000211764706 C7.51635294,0.000211764706 9.68694118,2.16844706 9.68694118,4.84256471 Z">
+                            </path>
+                            <path d="M6.43329412,4.85185882 L3.27329412,4.85185882" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <h2 class="color-white-salarial-descricao wow fadeInUp delay-06s">*Os salários foram calculados com base nos
+                valores informados pelos
+                candidatos
+                do site VAGAS.com. <br>
+                (Pesquisa realizada em 2024)</h2>
+        </div>
+    </div>
 
-                    <table class="informacoesCursoDentro">
-                        <td>
-                            <img src="./img/horarioFlexivelAzul.png" class="imagemInformacaoCurso">
-                        </td>
-                        <td>
-                            <h3>
-                                Carga Horária
-                                <h4>
-                                    96 Horas.
-                                </h4>
-                            </h3>
-                        </td>
-                    </table><br>
-                    <table class="informacoesCursoDentro">
-                        <td>
-                            <img src="./img/certificadoAzul.png" class="imagemInformacaoCurso">
-                        </td>
-                        <td>
-                            <h3>
-                                Certificado
-                                <h4>
-                                    Qualificação profissional com validade nacional.
-                                </h4>
-                            </h3>
-                        </td>
-                    </table><br>
-                    <table class="informacoesCursoDentro">
-                        <td>
-                            <img src="./img/apostila.png" class="imagemInformacaoCurso">
-                        </td>
-                        <td>
-                            <h3>
-                                Material Didático
-                                <h4>
-                                    2 Livros <br>
-                                    2 Workbooks
-                                </h4>
-                            </h3>
-                        </td>
-                    </table><br>
-                </td>
-                <td>
-                    <div class="agendarAulaExperimental">
-                        <h1>AGENDE SUA AULA EXPERIMENTAL!</h1>
-                        <h4>Preencha o formulário abaixo e entraremos em contato com você!
-                        </h4>
-                        <div>
-                            <form class="formAtendimento" id="meuFormulario">
-                                <label class="labelAtendimentoAgendarAula" for="nome">Nome:</label>
-                                <input class="inputCaixa" type="text" id="nome" name="nome" required>
 
-                                <label class="labelAtendimentoAgendarAula" for="curso">Curso:</label>
-                                <input class="inputCaixa" type="text" id="curso" name="curso" required>
+    <h1 class="wow fadeIn delay-03s"><b>INFORMAÇÕES DO CURSO</b></h1>
 
-                                <label class="labelAtendimentoAgendarAula" for="cidade">Cidade:</label>
-                                <select class="inputCaixa" id="cidade" name="cidade" required>
-                                    <option value="" disabled selected>Selecione a cidade</option>
-                                    <option value="descalvado">Descalvado</option>
-                                    <option value="ibate">Ibaté</option>
-                                    <option value="ribeirao_bonito">Ribeirão Bonito</option>
-                                </select>
+    <div class="row centralizar">
+        <div class="col-md-4">
+            <div class="display-flex centralizar">
+                <div>
+                    <img src="./img/Pessoas/inglesAdulto.png" class="img-pagina-cursos wow fadeInLeft delay-02s">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="display-flex align-left  wow fadeIn delay-02s">
+                <div class="tamanho-imagem-icone">
+                    <img src="./img/Icones/ampulheta.png" class="img-icone">
+                </div>
+                <div>
+                    <h1 class="title-icones">Horário Flexível</h1>
+                    <h2 class="subtitle-icones">Manhã, tarde e noite.</h2>
+                </div>
+            </div>
+            <div class="display-flex align-left wow fadeIn delay-03s">
+                <div class="tamanho-imagem-icone">
+                    <img src="./img/Icones/calendarioAzul.png" class="img-icone">
+                </div>
+                <div>
+                    <h1 class="title-icones">Tempo de Duração</h1>
+                    <h2 class="subtitle-icones">12 Meses.</h2>
+                </div>
+            </div>
+            <div class="display-flex align-left wow fadeIn delay-04s">
+                <div class="tamanho-imagem-icone">
+                    <img src="./img/Icones/horarioFlexivelAzul.png" class="img-icone">
+                </div>
+                <div>
+                    <h1 class="title-icones">Carga Horária</h1>
+                    <h2 class="subtitle-icones">96 Horas.</h2>
+                </div>
+            </div>
+            <div class="display-flex align-left wow fadeIn delay-05s">
+                <div class="tamanho-imagem-icone">
+                    <img src="./img/Icones/certificadoAzul.png" class="img-icone">
+                </div>c
+                <div>
+                    <h1 class="title-icones">Certificado</h1>
+                    <h2 class="subtitle-icones">Qualificação profissional com validade nacional.</h2>
+                </div>
+            </div>
+            <div class="display-flex align-left wow fadeIn delay-06s">
+                <div class="tamanho-imagem-icone">
+                    <img src="./img/Icones/apostila.png" class="img-icone">
+                </div>
+                <div>
+                    <h1 class="title-icones">
+                        Material Didático</h1>
+                    <h2 class="subtitle-icones">2 Livros <br> 2 Workbooks</h2>
+                </div>
+            </div>
+        </div>
 
-
-                                <div class="espacoBotaoIniciarAtendimento">
-                                    <button class="botaoIniciarAtendimento" type="button"
-                                        onclick="enviarWhatsapp()">Agendar!</button>
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="espacamento">
-
-                        </div>
+        <div class="col-md-4 wow fadeInRight background-yellow container-aula-experimental">
+            <div class="">
+                <h1><b>AGENDE SUA AULA EXPERIMENTAL!</b></h1>
+                <h2>Preencha o formulário abaixo e entraremos em contato com você!</h2>
+                <form id="atendimentoForm">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
                     </div>
-                </td>
-            </table>
+                    <div class="form-group">
+                        <label for="curso">Curso:</label>
+                        <select id="curso" name="curso" required>
+                            <option value="">Selecione o Curso</option>
+                            <option value="Agente de Hotelaria e Turismo">Agente de Hotelaria e Turismo</option>
+                            <option value="Assistência Técnica de Computadores">Assistência Técnica de Computadores
+                            </option>
+                            <option value="Assistente de Produção de Açúcar e Álcool">Assistente de Produção de Açúcar e
+                                Álcool</option>
+                            <option value="Atendente de Farmácia e Drogaria">Atendente de Farmácia e Drogaria</option>
+                            <option value="Auxiliar Administrativo (Secretariado)">Auxiliar Administrativo
+                                (Secretariado)</option>
+                            <option value="Auxiliar de Escritório">Auxiliar de Escritório</option>
+                            <option value="Desenhista Personal CAD">Desenhista Personal CAD</option>
+                            <option value="Desenvolvedor de Sistemas">Desenvolvedor de Sistemas</option>
+                            <option value="Desenvolvedor WEB">Desenvolvedor WEB</option>
+                            <option value="Desenvolvimento de Jogos - Gamer Starter">Desenvolvimento de Jogos - Gamer
+                                Starter</option>
+                            <option value="Desenvolvimento de Jogos - Profissional">Desenvolvimento de Jogos -
+                                Profissional</option>
+                            <option value="Design Digital">Design Digital</option>
+                            <option value="Edição de Vídeos">Edição de Vídeos</option>
+                            <option value="Empreendedorismo">Empreendedorismo</option>
+                            <option value="Evolução Pessoal e Profissional">Evolução Pessoal e Profissional</option>
+                            <option value="Excel Avançado">Excel Avançado</option>
+                            <option value="Ferramentas de Produtividade Google">Ferramentas de Produtividade Google
+                            </option>
+                            <option value="Gestor Administrativo">Gestor Administrativo</option>
+                            <option value="Gestor Financeiro">Gestor Financeiro</option>
+                            <option value="Informática Aplicada">Informática Aplicada</option>
+                            <option value="Informática com Rotinas Administrativas">Informática com Rotinas
+                                Administrativas</option>
+                            <option value="Inglês Adultos">Inglês Adultos</option>
+                            <option value="Inglês Jovens (A partir de 11 anos)">Inglês Jovens (A partir de 11 anos)
+                            </option>
+                            <option value="Inglês Kids (A partir de 8 anos)">Inglês Kids (A partir de 8 anos)</option>
+                            <option value="Marketing Digital">Marketing Digital</option>
+                            <option value="Melhor Idade Conectada">Melhor Idade Conectada</option>
+                            <option value="Microsoft Office">Microsoft Office</option>
+                            <option value="Operador de Caixa em Varejo">Operador de Caixa em Varejo</option>
+                            <option value="Power Bi">Power Bi</option>
+                            <option value="Recursos Humanos e Departamento Pessoal">Recursos Humanos e Departamento
+                                Pessoal</option>
+                            <option value="Robótica Arduino">Robótica Arduino</option>
+                            <option value="Robótica Educacional">Robótica Educacional</option>
+                            <option value="Supervisor em Vendas e Liderança">Supervisor em Vendas e Liderança</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="cidade">Cidade:</label>
+                        <select id="cidade" name="cidade" required>
+                            <option value="">Selecione a Cidade</option>
+                            <option value="Descalvado">Descalvado</option>
+                            <option value="Ibaté">Ibaté</option>
+                            <option value="Ribeirão Bonito">Ribeirão Bonito</option>
+                        </select>
+                    </div>
+                    <button type="submit">Iniciar Atendimento</button>
+                </form>
+            </div>
         </div>
-        <table class="fundoTabelaConteudoProgramatico">
-            <tr>
-                <td>
-                    <h1 class="tituloConteudoProgramatico"><br>
-                        CONTEÚDO PROGRAMÁTICO
-                    </h1><br>
-                    <hr class="hrInformacoesCurso"><br><br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table class="informacoesConteudoProgramatico">
-                        <tr>
-                            <td></td>
-                            <td>
-                                <img src="./img/Módulos/Abordagem Lúdica e Profissional.png"
-                                    class="imagemConteudoProgramatico">
-                            </td>
-                            <td>
-                                <h3>
-                                    Conversação Avançada e Vocabulário Expandido
-                                </h3>
-                            </td>
-                            <td>
-                                <img src="./img/Módulos/Habilidades Comunicativas.png"
-                                    class="imagemConteudoProgramatico">
-                            </td>
-                            <td>
-                                <h3>
-                                    Gramática Avançada e Uso Contextual
-                                </h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="./img/Módulos/Integração de Tecnologia.png"
-                                    class="imagemConteudoProgramatico">
-                            </td>
-                            <td>
-                                <h3>
-                                    Leitura Crítica e Compreensão Auditiva Avançada
-                                </h3>
-                            </td>
-                            <td>
-                                <img src="./img/Módulos/Simulações Profissionais.png"
-                                    class="imagemConteudoProgramatico">
-                            </td>
-                            <td>
-                                <h3>
-                                    Estruturação de Textos
-                                </h3>
-                            </td>
-                            <td>
-                                <img src="./img/Módulos/Simulações Profissionais.png"
-                                    class="imagemConteudoProgramatico">
-                            </td>
-                            <td>
-                                <h3>
-                                    Cultura e Contexto Internacional
-                                </h3>
-                            </td>
-                        </tr>
-                    </table><br>
-                </td>
-            </tr>
-        </table>
-        <h1 class="informacoesCurso"><br>
-            O QUE VOCÊ VAI APRENDER?
-        </h1><br>
-        <hr class="hrInformacoesCurso"><br>
-        <table class="tabelaOqueVaiAprender">
-            <tr>
-                <td>
-                    <h1>Conversação Avançada e Vocabulário Expandido</h1><br>
-                    <h3>Este curso foca no desenvolvimento de habilidades avançadas de conversação, ampliando o
-                        vocabulário dos participantes para incluir termos mais complexos e expressões idiomáticas. Os
-                        alunos aprenderão a se expressar de maneira mais sofisticada e natural em diferentes contextos.
-                    </h3>
-                </td>
-                <td>
-                    <img src="./img/Imagens Módulos/inglesAdultos1.jpg" class="imagensOqueVaiAprender">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="./img/Imagens Módulos/inglesAdultos2.jpg" class="imagensOqueVaiAprender">
-                </td>
-                <td>
-                    <h1>Gramática Avançada e Uso Contextual</h1><br>
-                    <h3> Os participantes aprimorarão suas habilidades gramaticais, explorando estruturas mais complexas
-                        e nuances da língua inglesa. O curso visa aprofundar a compreensão das regras gramaticais e sua
-                        aplicação prática em situações do dia a dia.</h3>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h1>Leitura Crítica e Compreensão Auditiva Avançada</h1><br>
-                    <h3>O curso proporciona experiência em leitura de textos mais complexos, como artigos, ensaios e
-                        notícias, para desenvolver a capacidade de análise crítica. A compreensão auditiva será
-                        aprimorada com a exposição a diferentes sotaques e estilos de fala.</h3>
-                </td>
-                <td>
-                    <img src="./img/Imagens Módulos/inglesAdultos3.jpg" class="imagensOqueVaiAprender">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="./img/Imagens Módulos/inglesAdultos4.jpg" class="imagensOqueVaiAprender">
-                </td>
-                <td>
-                    <h1>Estruturação de Textos</h1><br>
-                    <h3>Os participantes aprenderão a redigir textos mais elaborados, como relatórios, ensaios e
-                        correspondências formais. O foco estará na estruturação coerente, estilo apropriado e na
-                        expressão de ideias de maneira clara e persuasiva.</h3>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h1>Cultura e Contexto Internacional</h1><br>
-                    <h3>Além do aprimoramento linguístico, os participantes serão expostos a diferentes aspectos da
-                        cultura e sociedade de países de língua inglesa. Isso inclui análise de obras literárias,
-                        discussões sobre eventos atuais e exploração de temas culturais contemporâneos.</h3>
-                </td>
-                <td>
-                    <img src="./img/Imagens Módulos/inglesAdultos5.jpg" class="imagensOqueVaiAprender">
-                </td>
-            </tr>
-        </table>
-        <table class="tabelaIniciarMatricula">
-            <tr>
-                <td>
-                    <div class="bordaMatricula">
-                        <h1 class="facaSuaMatricula">
-                            MATRICULE-SE!
-                        </h1>
-                        <h4 class="facaSuaMatriculasubtitulo">
-                            Inicie o atendimento e tenha acesso a informações exclusivas com nossa consultora.
-                        </h4>
-                        <select id="seletorCidades" onchange="mostrarBotao()" class="selecionarCidade">
-                            <option value="">Selecione sua cidade!</option>
+
+        <div class="col-md-12 wow fadeIn background-blue">
+            <h1 class="color-white wow fadeIn delay-01s"><b>CONTEÚDO PROGRAMÁTICO</b></h1>
+            <hr>
+
+            <div class="row centralizar width-icon-modulos">
+                <div class="col-md-5">
+                    <img src="./img/Ícones Módulos/Abordagem Lúdica e Profissional.png"
+                        class="image-icons wow fadeIn delay-02s">
+                    <h2 class="text-white">Conversação Avançada e Vocabulário Expandido</h2>
+                </div>
+                <div class="col-md-5">
+                    <img src="./img/Ícones Módulos/Habilidades Comunicativas.png"
+                        class="image-icons wow fadeIn delay-03s">
+                    <h2 class="text-white">Gramática Avançada e Uso Contextual</h2>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/Ícones Módulos/Integração de Tecnologia.png"
+                        class="image-icons wow fadeIn delay-04s">
+                    <h2 class="text-white">Leitura Crítica e Compreensão Auditiva Avançada</h2>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/Ícones Módulos/Simulações Profissionais.png"
+                        class="image-icons wow fadeIn delay-05s">
+                    <h2 class="text-white">Estruturação de Textos</h2>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/Ícones Módulos/empreendedorDeSucesso.png" class="image-icons wow fadeIn delay-06s">
+                    <h2 class="text-white">Cultura e Contexto Internacional
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 wow fadeIn delay-02s">
+            <h1 class="color-black"><b>O QUE VOCÊ VAI APRENDER?</b></h1>
+            <hr>
+        </div>
+        <div class="row centralizar">
+            <div class="col-md-5 wow fadeInLeft delay-02s">
+                <h1 class="title-align-left"><b>Conversação Avançada e Vocabulário Expandido</b></h1>
+                <h2 class="text-align-left">Este curso foca no desenvolvimento de habilidades avançadas de conversação,
+                    ampliando o vocabulário dos participantes para incluir termos mais complexos e expressões
+                    idiomáticas. Os alunos aprenderão a se expressar de maneira mais sofisticada e natural em diferentes
+                    contextos.</h2>
+            </div>
+            <div class="col-md-5 wow fadeInRight delay-02s">
+                <img src="./img/Módulos/inglesAdultos1.jpg" class="img-modulos">
+            </div>
+
+            <div class="col-md-5  wow fadeInLeft delay-02s">
+                <img src="./img/Módulos/inglesAdultos2.jpg" class="img-modulos">
+            </div>
+            <div class="col-md-5  wow fadeInRight delay-02s">
+                <h1 class="title-align-left"><b>Gramática Avançada e Uso Contextual</b></h1>
+                <h2 class="text-align-left">Os participantes aprimorarão suas habilidades gramaticais, explorando
+                    estruturas mais complexas e nuances da língua inglesa. O curso visa aprofundar a compreensão das
+                    regras gramaticais e sua aplicação prática em situações do dia a dia.</h2>
+            </div>
+
+            <div class="col-md-5 wow fadeInLeft delay-02s">
+                <h1 class="title-align-left"><b>Leitura Crítica e Compreensão Auditiva Avançada</b></h1>
+                <h2 class="text-align-left">O curso proporciona experiência em leitura de textos mais complexos, como
+                    artigos, ensaios e notícias, para desenvolver a capacidade de análise crítica. A compreensão
+                    auditiva será aprimorada com a exposição a diferentes sotaques e estilos de fala.</h2>
+            </div>
+            <div class="col-md-5 wow fadeInRight delay-02s">
+                <img src="./img/Módulos/inglesAdultos3.jpg" class="img-modulos">
+            </div>
+
+            <div class="col-md-5  wow fadeInLeft delay-02s">
+                <img src="./img/Módulos/inglesAdultos4.jpg" class="img-modulos">
+            </div>
+            <div class="col-md-5  wow fadeInRight delay-02s">
+                <h1 class="title-align-left"><b>Estruturação de Textos</b></h1>
+                <h2 class="text-align-left">Os participantes aprenderão a redigir textos mais elaborados, como
+                    relatórios, ensaios e correspondências formais. O foco estará na estruturação coerente, estilo
+                    apropriado e na expressão de ideias de maneira clara e persuasiva.</h2>
+            </div>
+
+            <div class="col-md-5 wow fadeInLeft delay-02s">
+                <h1 class="title-align-left"><b>Cultura e Contexto Internacional</b></h1>
+                <h2 class="text-align-left">Além do aprimoramento linguístico, os participantes serão expostos a
+                    diferentes aspectos da cultura e sociedade de países de língua inglesa. Isso inclui análise de obras
+                    literárias, discussões sobre eventos atuais e exploração de temas culturais contemporâneos.</h2>
+            </div>
+            <div class="col-md-5 wow fadeInRight delay-02s">
+                <img src="./img/Módulos/inglesAdultos5.jpg" class="img-modulos">
+            </div>
+
+        </div>
+        <div class="container centralizar">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="centralizar borda-matricule-se wow fadeInLeft">
+                        <h1><b>MATRÍCULE-SE</b></h1>
+                        <h2><b>Inicie o atendimento e tenha acesso a informações exclusivas com nossa consultora.</b>
+                        </h2>
+                        <select id="citySelect" class="botao-selecionar-cidade">
+                            <option value="" disabled selected><b>Selecione a cidade</b></option>
                             <option value="descalvado">Descalvado</option>
                             <option value="ibate">Ibaté</option>
                             <option value="ribeirao_bonito">Ribeirão Bonito</option>
                         </select>
-                        <br><br>
-                        <button class="botaoIniciarMatricula" id="btnIniciarMatricula" onclick="abrirMatricula()">
-                            Iniciar Atendimento</button><br>
+                        <button id="startButton" class="botao-iniciar-atendimento centralizar" style="display: none;">
+                            <b>INICIAR ATENDIMENTO</b>
+                        </button>
                     </div>
-                </td>
-                <td>
-                    <img src="./img/Pessoas/iniciarMatricula.png" class="imagemCursoIndividual">
-                </td>
-            </tr>
-        </table>
-    </main>
+                </div>
+                <div class="col-md-6">
+                    <img src="./img/Pessoas/iniciarMatricula.png" class="imagem-matricula wow fadeInRight">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="tamanho-tela row centralizar background-blue-contagem">
+        <div class="col-md-12">
+            <h1><b class="color-white wow fadeInDown delay-02s">REALIZAÇÕES DE SUCESSO</b></h1>
+        </div>
+
+        <div class="col-md-3">
+            <div class="counter wow fadeInDown delay-03s" id="countup-polos">
+                <h1>0</h1>
+            </div>
+            <h2 class="color-white-contagem wow fadeInUp delay-04s">Unidades</h2>
+        </div>
+
+        <div class="col-md-3">
+            <div class="counter wow fadeInDown delay-03s" id="countup-idade">
+                <h1>0</h1>
+            </div>
+            <h2 class="color-white-contagem wow fadeInUp delay-04s">Desde 1996 Transformando Vidas</h2>
+        </div>
+
+        <div class="col-md-3">
+            <div class="counter wow fadeInDown delay-03s" id="countup-alunos">
+                <h1>0</h1>
+            </div>
+            <h2 class="color-white-contagem wow fadeInUp delay-04s">Alunos Formados</h2>
+        </div>
+
+        <div class="col-md-3">
+            <div class="counter wow fadeInDown delay-03s" id="countup-cursos">
+                <h1>0</h1>
+            </div>
+            <h2 class="color-white-contagem wow fadeInUp delay-04s">Cursos Disponíveis</h2>
+        </div>
+    </div>
+
+
+
+
+
+
+    <br>
+    <div class="col-12 wow fadeInDown">
+        <h1>
+            <b>CONTAMOS COM 3 POLOS</b>
+        </h1>
+    </div>
+    <br>
+    <div class="row centralizar">
+        <div class="col-md-4 borda-descalvado wow fadeInLeft">
+            <h1>
+                <b>DESCALVADO</b>
+            </h1>
+            <div>
+                <img src="./img/Zeek Cursos/zeekDescalvado - Copia.png" id="mainImage1" class="main-img">
+            </div>
+            <div class="gallery">
+                <img src="./img/OndeVaiEstudar/descalvado1.jpg" class="thumbnail1" onclick="changeImage1(this)">
+                <img src="./img/OndeVaiEstudar/descalvado2.jpg" class="thumbnail1" onclick="changeImage1(this)">
+                <img src="./img/OndeVaiEstudar/descalvado3.jpg" class="thumbnail1" onclick="changeImage1(this)">
+                <img src="./img/OndeVaiEstudar/descalvado1.jpg" class="thumbnail1" onclick="changeImage1(this)">
+                <img src="./img/OndeVaiEstudar/descalvado2.jpg" class="thumbnail1" onclick="changeImage1(this)">
+            </div>
+        </div>
+        <div class="col-md-4 borda-ibate wow fadeInUp">
+            <h1>
+                <b>IBATÉ</b>
+            </h1>
+            <div>
+                <img src="./img/Zeek Cursos/zeekDescalvado - Copia.png" id="mainImage2" class="main-img">
+            </div>
+            <div class="gallery">
+                <img src="./img/OndeVaiEstudar/ibate1.jpg" class="thumbnail2" onclick="changeImage2(this)">
+                <img src="./img/OndeVaiEstudar/ibate2.jpg" class="thumbnail2" onclick="changeImage2(this)">
+                <img src="./img/OndeVaiEstudar/ibate3.jpg" class="thumbnail2" onclick="changeImage2(this)">
+                <img src="./img/OndeVaiEstudar/ibate1.jpg" class="thumbnail2" onclick="changeImage2(this)">
+                <img src="./img/OndeVaiEstudar/ibate2.jpg" class="thumbnail2" onclick="changeImage2(this)">
+            </div>
+        </div>
+        <div class="col-md-4 borda-ribeirao wow fadeInRight">
+            <h1>
+                <b>RIBEIRÃO BONITO</b>
+            </h1>
+            <div>
+                <img src="./img/Zeek Cursos/zeekDescalvado - Copia.png" id="mainImage3" class="main-img">
+            </div>
+            <div class="gallery">
+                <img src="./img/OndeVaiEstudar/ribeirao1.jpg" class="thumbnail3" onclick="changeImage3(this)">
+                <img src="./img/OndeVaiEstudar/ribeirao2.jpg" class="thumbnail3" onclick="changeImage3(this)">
+                <img src="./img/OndeVaiEstudar/ribeirao3.jpg" class="thumbnail3" onclick="changeImage3(this)">
+                <img src="./img/OndeVaiEstudar/ribeirao1.jpg" class="thumbnail3" onclick="changeImage3(this)">
+                <img src="./img/OndeVaiEstudar/ribeirao2.jpg" class="thumbnail3" onclick="changeImage3(this)">
+            </div>
+        </div>
+    </div>
+
+
     <footer class="rodape">
-        <div class="tituloRodape">
-            <h1>CONTAMOS COM 3 POLOS!</h1><br>
-            <h4>Encontre a escola mais perto de você!</h4><br>
-            <hr><br>
-        </div>
+        <div class="row margin-rodape centralizar">
+            <div class="col-md-4 wow fadeInUp">
+                <h1 class="text-white">DESCALVADO</h1><br>
+                <a href="https://maps.app.goo.gl/9F4GdX3nMCPKFCSY6" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/maps.png" class="img-rodape">
+                    <h5>Rua Coronel Rafael Tobias, nº 284 <br> Centro - Descalvado/SP</h5>
+                </a><br>
+                <a href="https://wa.me/19992671617" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/phone.png" class="img-rodape">
+                    <h5>(19) 99267-1617</h5>
+                </a><br>
+                <div class="display-flex centralizar-rodape">
+                    <a href="https://wa.me/19992671617" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.facebook.com/people/Zeek-Descalvado/pfbid0M8mMKPKpgyxzDXZ5BhFNNQkrUZ2KcD3YGah8L5RPdw6V8RnNYMteofnUhbGagj5jl/"
+                        class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/facebook.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.instagram.com/zeekdescalvado/" class="display-flex link-rodape"
+                        target="_blank">
+                        <img src="./img/Icones/instagram.png" class="img-rodape-social">
+                    </a>
+                </div>
+            </div>
 
-        <div class="fundoImagensDescalvado">
-            <h1 class="tabelaFotosEscolaTituloCidade">DESCALVADO</h1>
-            <div class="carousel-container2">
-                <div class="carousel2" onclick="openModal2(event)">
-                    <img src="./img/OndeVaiEstudar/descalvado1.jpg" alt="Imagem 1">
-                    <img src="./img/OndeVaiEstudar/descalvado2.jpg" alt="Imagem 2">
-                    <img src="./img/OndeVaiEstudar/descalvado3.jpg" alt="Imagem 3">
-                    <img src="./img/OndeVaiEstudar/descalvado1.jpg" alt="Imagem 4">
-                    <img src="./img/OndeVaiEstudar/descalvado2.jpg" alt="Imagem 5">
-                    <img src="./img/OndeVaiEstudar/descalvado3.jpg" alt="Imagem 6">
+            <div class="col-md-4 wow fadeInUp">
+                <h1 class="text-white">IBATÉ</h1><br>
+                <a href="https://maps.app.goo.gl/6nW9ofPvqVHc3vgj6" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/maps.png" class="img-rodape">
+                    <h5>Rua Floriano Peixoto, nº 628 <br> Centro - Ibaté/SP</h5>
+                </a><br>
+                <a href="https://wa.me/16996294928" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/phone.png" class="img-rodape">
+                    <h5>(16) 99629-4928</h5>
+                </a><br>
+                <div class="display-flex centralizar-rodape">
+                    <a href="https://wa.me/16996294928" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.facebook.com/zeekcursosibate" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/facebook.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.instagram.com/zeekibate/" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/instagram.png" class="img-rodape-social">
+                    </a>
                 </div>
-                <button class="prev2" onclick="prevSlide2()">❮</button>
-                <button class="next2" onclick="nextSlide2()">❯</button>
-            </div><br>
-            <div id="modal2" class="modal">
-                <span class="close" onclick="closeModal2()">&times;</span>
-                <button class="prev2" onclick="prevImage2()">❮</button>
-                <img class="modal-content" id="modalImage2">
-                <button class="next2" onclick="nextImage2()">❯</button>
             </div>
-        </div>
-        <br>
-        <div class="fundoImagensIbate">
-            <h1 class="tabelaFotosEscolaTituloCidade">IBATÉ</h1>
-            <div class="carousel-container3">
-                <div class="carousel3" onclick="openModal3(event)">
-                    <img src="./img/OndeVaiEstudar/ibate1.jpg" alt="Imagem 1">
-                    <img src="./img/OndeVaiEstudar/ibate2.jpg" alt="Imagem 2">
-                    <img src="./img/OndeVaiEstudar/ibate3.jpg" alt="Imagem 3">
-                    <img src="./img/OndeVaiEstudar/ibate4.jpg" alt="Imagem 4">
-                    <img src="./img/OndeVaiEstudar/ibate5.jpg" alt="Imagem 5">
-                    <img src="./img/OndeVaiEstudar/ibate6.jpg" alt="Imagem 6">
-                </div>
-                <button class="prev3" onclick="prevSlide3()">❮</button>
-                <button class="next3" onclick="nextSlide3()">❯</button>
-            </div><br>
-            <div id="modal3" class="modal">
-                <span class="close" onclick="closeModal3()">&times;</span>
-                <button class="prev3" onclick="prevImage3()">❮</button>
-                <img class="modal-content" id="modalImage3">
-                <button class="next3" onclick="nextImage3()">❯</button>
-            </div>
-        </div>
-        <br>
-        <div class="fundoImagensRibeirao">
-            <h1 class="tabelaFotosEscolaTituloCidade">RIBEIRÃO BONITO</h1>
-            <div class="carousel-container4">
-                <div class="carousel4" onclick="openModal4(event)">
-                    <img src="./img/OndeVaiEstudar/ribeirao1.jpg" alt="Imagem 1">
-                    <img src="./img/OndeVaiEstudar/ribeirao2.jpg" alt="Imagem 2">
-                    <img src="./img/OndeVaiEstudar/ribeirao3.jpg" alt="Imagem 3">
-                    <img src="./img/OndeVaiEstudar/ribeirao4.jpg" alt="Imagem 4">
-                    <img src="./img/OndeVaiEstudar/ribeirao5.jpg" alt="Imagem 5">
-                    <img src="./img/OndeVaiEstudar/ribeirao6.jpg" alt="Imagem 6">
-                </div>
-                <button class="prev4" onclick="prevSlide4()">❮</button>
-                <button class="next4" onclick="nextSlide4()">❯</button>
-            </div><br>
-            <div id="modal4" class="modal">
-                <span class="close" onclick="closeModal4()">&times;</span>
-                <button class="prev4" onclick="prevImage4()">❮</button>
-                <img class="modal-content" id="modalImage4">
-                <button class="next4" onclick="nextImage4()">❯</button>
-            </div>
-        </div>
 
-        <script src="carousel.js"></script>
-        <script>
-            initializeCarousel('carousel2', 'prev2', 'next2', 7, 2);
-            initializeCarousel('carousel3', 'prev3', 'next3', 7, 2);
-            initializeCarousel('carousel4', 'prev4', 'next4', 7, 2);
-        </script>
-        <br>
+            <div class="col-md-4 wow fadeInUp">
+                <h1 class="text-white">RIBEIRÃO BONITO</h1><br>
+                <a href="https://maps.app.goo.gl/q4CPbnLY83Bpin5QA" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/maps.png" class="img-rodape">
+                    <h5>Rua Jornalista Sebastião Macedo, nº 622 <br> Centro - Ribeirão Bonito/SP</h5>
+                </a><br>
+                <a href="https://wa.me/16999940880" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/phone.png" class="img-rodape">
+                    <h5>(16) 99994-0880</h5>
+                </a><br>
+                <div class="display-flex centralizar-rodape">
+                    <a href="https://wa.me/16999940880" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.facebook.com/zeek.rb.5" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/facebook.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.instagram.com/zeekribeiraobonito/" class="display-flex link-rodape"
+                        target="_blank">
+                        <img src="./img/Icones/instagram.png" class="img-rodape-social">
+                    </a>
+                </div>
+            </div>
+
+        </div>
     </footer>
-    <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./js/modernizr-3.5.0.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/wow.min.js"></script>
+    <script type="text/javascript" src="./js/dados.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+
+    <script>new WOW().init();</script>
+
+    <script src="./js/matriculese.js"></script>
+    <script src="./js/depoimentos.js"></script>
+    <script src="./js/carrousel-zeek.js"></script>
+    <script src="./js/atendimentoCurso.js"></script>
+    <script src="./js/contagemPolo.js"></script>
+    <script src="./js/pesquisa.js"></script>
+
 </body>
 
 </html>

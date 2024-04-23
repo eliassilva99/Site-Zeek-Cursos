@@ -32,11 +32,11 @@
         <div class="container-cabecalho">
             <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one">
                 <a class="navbar-brand wow fadeIn" href="index.html">
-                    <img src="./img/zeekLogo.png" class="logo-zeek" />
+                    <img src="./img/zeekLogo.png" class="logo-zeek"/>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
-                    <span class="navbar-toggler-icon">
-                        <i class="fas fa-bars"></i>
+                    <span>
+                        <i class="fas fa-bars tamanho-menu"></i>
                     </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -68,23 +68,17 @@
                         <li>
                             <a href="contato.html" class="menus-cabecalho link wow fadeIn delay-07s"><b>CONTATO</b></a>
                         </li>
-                        <li>
-                            <a href="javascript:void(0);" class="menus-cabecalho link wow fadeIn delay-08s"
-                                onclick="showSearchBox()">
-                                <i class="fas fa-search"></i>
-                            </a>
-                        </li>
-
-                        <!-- Caixa de pesquisa -->
-                        <div id="searchBox" class="barra-pesquisa">
-                            <div class="flex-pesquisa">
-                                <input class="espaco-pesquisa" type="text" id="searchInput"
-                                    placeholder="Digite para pesquisar...">
-                                <button class="botao-pesquisar" onclick="searchPage()"><i
-                                        class="fas fa-search"></i></button>
-                            </div>
-                        </div>
                     </ul>
+                </div>
+                <a href="javascript:void(0);" class="menus-cabecalho2 link wow fadeIn delay-08s" onclick="showSearchBox()">
+                    <i class="fas fa-search"></i>
+                </a>
+                <!-- Caixa de pesquisa -->
+                <div id="searchBox" class="barra-pesquisa">
+                    <div class="flex-pesquisa">
+                    <input class="espaco-pesquisa" type="text" id="searchInput" placeholder="Digite para pesquisar...">
+                    <button class="botao-pesquisar" onclick="searchPage()"><i class="fas fa-search"></i></button>
+                    </div>
                 </div>
             </nav>
         </div>

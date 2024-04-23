@@ -29,14 +29,14 @@
 <body>
 
     <header>
-        <div class="container-cabecalho">
+        <div class="container-cabecalho ">
             <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one">
                 <a class="navbar-brand wow fadeIn" href="index.html">
                     <img src="./img/zeekLogo.png" class="logo-zeek" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
-                    <span class="navbar-toggler-icon">
-                        <i class="fas fa-bars"></i>
+                    <span>
+                        <i class="fas fa-bars tamanho-menu"></i>
                     </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -68,24 +68,19 @@
                         <li>
                             <a href="contato.html" class="menus-cabecalho link wow fadeIn delay-07s"><b>CONTATO</b></a>
                         </li>
-                        <li>
-                            <a href="javascript:void(0);" class="menus-cabecalho link wow fadeIn delay-08s"
-                                onclick="showSearchBox()">
-                                <i class="fas fa-search"></i>
-                            </a>
-                        </li>
-
-                        <!-- Caixa de pesquisa -->
-                        <div id="searchBox" class="barra-pesquisa">
-                            <div class="flex-pesquisa">
-                                <input class="espaco-pesquisa" type="text" id="searchInput"
-                                    placeholder="Digite para pesquisar...">
-                                <button class="botao-pesquisar" onclick="searchPage()"><i
-                                        class="fas fa-search"></i></button>
-                            </div>
-                        </div>
-
                     </ul>
+                </div>
+                <a href="javascript:void(0);" class="menus-cabecalho2 link wow fadeIn delay-08s"
+                    onclick="showSearchBox()">
+                    <i class="fas fa-search"></i>
+                </a>
+                <!-- Caixa de pesquisa -->
+                <div id="searchBox" class="barra-pesquisa">
+                    <div class="flex-pesquisa">
+                        <input class="espaco-pesquisa" type="text" id="searchInput"
+                            placeholder="Digite para pesquisar...">
+                        <button class="botao-pesquisar" onclick="searchPage()"><i class="fas fa-search"></i></button>
+                    </div>
                 </div>
             </nav>
 
@@ -344,14 +339,14 @@
                 <h4 class="padding-inline text-depoimentos">
                     Sou Jocimar Gomes Lima e estou passando por aqui para parabenizar a Zeek Cursos, juntamente com
                     o David, e toda equipe que trabalha incansavelmente. No ano de 2022, iniciei o meu curso “3 em 1”
-                    abrangendo Atendente de Farmácia, Rotinas Administrativas e Operador de Caixa. <br><br>
+                    abrangendo Atendente de Farmácia, Rotinas Administrativas e Operador de Caixa. <br>
                     Em abril de 2023, antes mesmo de concluir o curso, fui contratado como balconista na Farmácia
                     Rosário de Ibaté.
                     Atualmente, ocupo a posição de Operador de Caixa na filiar 1 da Farmácia Drogal, onde conclui
                     minha
                     formação em outubro desde ano. Glorifico a Deus pela conquista do emprego e quero aproveitar
                     para
-                    estender um convite a todos de Ibaté e região. <br><br>
+                    estender um convite a todos de Ibaté e região. <br>
                     A Zeek Cursos é uma porta de acesso a inúmeras oportunidades de emprego, proporcionando formação
                     de
                     profissionais competentes, responsáveis e muito amigos, que possuem amor pelas suas profissões.
@@ -439,7 +434,7 @@
                 <b class="color-white">DESCALVADO</b>
             </h1>
             <div>
-                <img src="./img/Zeek Cursos/zeekDescalvado - Copia.png" id="mainImage1" class="main-img">
+                <img src="./img/Zeek Cursos/zeekDescalvado.png" id="mainImage1" class="main-img">
             </div>
             <div class="gallery">
                 <img src="./img/OndeVaiEstudar/descalvado1.jpg" class="thumbnail1" onclick="changeImage1(this)">
@@ -454,7 +449,7 @@
                 <b class="color-white">IBATÉ</b>
             </h1>
             <div>
-                <img src="./img/Zeek Cursos/zeekDescalvado - Copia.png" id="mainImage2" class="main-img">
+                <img src="./img/Zeek Cursos/zeekIbate.png" id="mainImage2" class="main-img">
             </div>
             <div class="gallery">
                 <img src="./img/OndeVaiEstudar/ibate1.jpg" class="thumbnail2" onclick="changeImage2(this)">
@@ -469,7 +464,7 @@
                 <b class="color-white">RIBEIRÃO BONITO</b>
             </h1>
             <div>
-                <img src="./img/Zeek Cursos/zeekDescalvado - Copia.png" id="mainImage3" class="main-img">
+                <img src="./img/Zeek Cursos/zeekRibeiraoBonito.png" id="mainImage3" class="main-img">
             </div>
             <div class="gallery">
                 <img src="./img/OndeVaiEstudar/ribeirao1.jpg" class="thumbnail3" onclick="changeImage3(this)">
@@ -555,25 +550,24 @@
                     </a>
                 </div>
             </div>
-
         </div>
+    </footer>
 
+    <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./js/modernizr-3.5.0.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/wow.min.js"></script>
+    <script type="text/javascript" src="./js/dados.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
 
-        <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
-        <script type="text/javascript" src="./js/modernizr-3.5.0.min.js"></script>
-        <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="./js/popper.min.js"></script>
-        <script type="text/javascript" src="./js/wow.min.js"></script>
-        <script type="text/javascript" src="./js/dados.js"></script>
-        <script type="text/javascript" src="./js/app.js"></script>
+    <script>new WOW().init();</script>
 
-        <script>new WOW().init();</script>
-
-        <script src="./js/matriculese.js"></script>
-        <script src="./js/depoimentos.js"></script>
-        <script src="./js/carrousel-zeek.js"></script>
-        <script src="./js/contagemPolo.js"></script>
-        <script src="./js/pesquisa.js"></script>
+    <script src="./js/matriculese.js"></script>
+    <script src="./js/depoimentos.js"></script>
+    <script src="./js/carrousel-zeek.js"></script>
+    <script src="./js/contagemPolo.js"></script>
+    <script src="./js/pesquisa.js"></script>
 
 </body>
 
