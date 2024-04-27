@@ -249,10 +249,16 @@ body {
   padding: 30px;
 }
 
-.menus-cabecalho {
-  padding-inline: 15px;
+.navbar-nav{
+  margin: auto;
   text-align: center;
 }
+
+.menus-cabecalho {
+  padding-inline: 20px;
+  margin: auto;
+}
+
 .menus-cabecalho2 {
   right: 50px;
   text-align: center;

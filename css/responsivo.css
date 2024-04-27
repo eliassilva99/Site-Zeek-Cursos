@@ -3,6 +3,9 @@
     .logo-zeek {
         width: 180px;
     }
+    .navbar-nav{
+        text-align: center;
+      }
 }
 
 /* Desktop e Tablets (col-md) 768px a 991px */
