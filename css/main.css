@@ -206,6 +206,15 @@ h5 {
   padding-bottom: 30px;
 }
 
+.centralizar-menu {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .align-left {
   float: left;
   justify-content: left;
