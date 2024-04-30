@@ -3,9 +3,10 @@
     .logo-zeek {
         width: 180px;
     }
-    .navbar-nav{
+
+    .navbar-nav {
         text-align: center;
-      }
+    }
 }
 
 /* Desktop e Tablets (col-md) 768px a 991px */
@@ -60,14 +61,17 @@
     .text-white {
         font-size: 10px;
     }
+
     .video-zeek {
         width: 100%;
-      }
+    }
 
-      .text-white{
+    .text-white {
         font-size: 30px;
-      }
-      .navbar-nav{
+    }
+
+    .navbar-nav {
         text-align: left;
-      }
+    }
+
 }
