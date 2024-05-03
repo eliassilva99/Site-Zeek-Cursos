@@ -3,6 +3,7 @@
   --color-blue: #020085;
   --color-blue-hover: #0603a9;
   --color-light-blue: #008bfc;
+  --color-blue-diferenciais: #008CFF;
   --color-orange: #fcac00;
   --color-yellow: #e3fc00;
   --color-green: #26C440;
@@ -453,7 +454,7 @@ select {
 }
 
 .video-zeek {
-  width: 40%;
+  width: 80%;
   border: none;
   border-radius: 20px;
 }
@@ -872,6 +873,130 @@ button:hover {
 .flex-pesquisa{
   display: flex;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.our-team-main
+{
+	width:100%;
+	height:auto;
+	background: var(--color-blue-diferenciais);
+	text-align:center;
+	border-radius:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+}
+
+.our-team-main p
+{
+	margin-bottom:0;
+}
+
+.team-back
+{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	text-align:left;
+	background:#fff;
+  padding: 5px;
+}
+
+.team-front
+{
+	width:100%;
+	height:auto;
+	position:relative;
+	z-index:10;
+	background: var(--color-blue-diferenciais);
+	bottom:0px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover .team-front
+{
+	bottom:-200px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover
+{
+	transition:0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

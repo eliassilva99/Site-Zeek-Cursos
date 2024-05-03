@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zeek Cursos</title>
@@ -24,10 +24,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 </head>
 
 <body>
-
     <header>
         <div class="container-cabecalho">
             <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one centralizar-menu">
@@ -47,10 +48,6 @@
                         <li>
                             <a href="sobreNos.html" class="menus-cabecalho link wow fadeIn delay-02s"><b>SOBRE
                                     NÓS</b></a>
-                        </li>
-                        <li>
-                            <a href="diferenciais.html"
-                                class="menus-cabecalho link wow fadeIn delay-03s"><b>DIFERENCIAIS</b></a>
                         </li>
                         <li>
                             <a href="cursos.html" class="menus-cabecalho link wow fadeIn delay-04s"><b>CURSOS</b></a>
@@ -175,33 +172,114 @@
             <hr>
         </h1>
         <div class="row centralizar">
-            <div class="col-md-4">
-                <img src="./img/Diferenciais/escola.png" class="imagem-diferenciais wow fadeIn delay-01s">
-                <h2 class="text-white wow fadeIn delay-02s">Estrutura de Qualidade</h2>
+            <div class="col-lg-3">
+                <div class="our-team-main">
+                    <div class="team-front">
+                        <img src="./img/Diferenciais/escola.png" class="imagem-diferenciais wow fadeIn delay-01s">
+                        <h2 class="text-white wow fadeIn delay-02s">Estrutura Moderna e Recursos Tecnológicos</h2>
+                    </div>
+
+                    <div class="team-back">
+                        <h4>
+                            Salas equipadas com tecnologia atualizada e recursos que permitem uma aprendizagem mais
+                            dinâmica e interativa.
+                        </h4>
+                    </div>
+
+                </div>
             </div>
-            <div class="col-md-4">
-                <img src="./img/Diferenciais/instrutorQualificado.png" class="imagem-diferenciais wow fadeIn delay-03s">
-                <h2 class="text-white wow fadeIn delay-04s">Instrutores de Qualidade</h2>
+            <div class="col-lg-3">
+                <div class="our-team-main">
+                    <div class="team-front">
+                        <img src="./img/Diferenciais/instrutorQualificado.png"
+                            class="imagem-diferenciais wow fadeIn delay-01s">
+                        <h2 class="text-white wow fadeIn delay-02s">Corpo Docente Qualificado</h2>
+                    </div>
+
+                    <div class="team-back">
+                        <h4>
+                            Professores com experiência prática e conhecimento sólido na área, proporcionando aos alunos
+                            uma educação de qualidade.
+                        </h4>
+                    </div>
+
+                </div>
             </div>
-            <div class="col-md-4">
-                <img src="./img/Diferenciais/certificado.png" class="imagem-diferenciais wow fadeIn delay-05s">
-                <h2 class="text-white wow fadeIn delay-06s">Certificação Reconhecida</h2>
+            <div class="col-lg-3">
+                <div class="our-team-main">
+                    <div class="team-front">
+                        <img src="./img/Diferenciais/certificado.png" class="imagem-diferenciais wow fadeIn delay-01s">
+                        <h2 class="text-white wow fadeIn delay-02s">Certificações Reconhecidas</h2>
+                    </div>
+
+                    <div class="team-back">
+                        <h4>
+                            Sua garantia de qualidade profissional reconhecida em todo o Brasil, abrindo portas para
+                            oportunidades em diversas regiões do país.
+                        </h4>
+                    </div>
+
+                </div>
             </div>
-            <div class="col-md-4">
-                <img src="./img/Diferenciais/acompanhamentoIndividual.png"
-                    class="imagem-diferenciais wow fadeIn delay-03s">
-                <h2 class="text-white wow fadeIn delay-04s">Acompanhamento Individual</h2>
+            <div class="col-lg-3">
+                <div class="our-team-main">
+                    <div class="team-front">
+                        <img src="./img/Diferenciais/acompanhamentoIndividual.png"
+                            class="imagem-diferenciais wow fadeIn delay-01s">
+                        <h2 class="text-white wow fadeIn delay-02s">Acompanhamento Individualizado</h2>
+                    </div>
+
+                    <div class="team-back">
+                        <h4>
+                            Oferta de suporte individualizado aos alunos, com orientação acadêmica e profissional para
+                            ajudá-los a alcançar seus objetivos.
+                        </h4>
+                    </div>
+
+                </div>
             </div>
-            <div class="col-md-4">
-                <img src="./img/Diferenciais/horarioFlexivel.png" class="imagem-diferenciais wow fadeIn delay-01s">
-                <h2 class="text-white wow fadeIn delay-02s">Horário Flexível</h2>
+            <div class="col-lg-3">
+                <div class="our-team-main">
+                    <div class="team-front">
+                        <img src="./img/Diferenciais/horarioFlexivel.png"
+                            class="imagem-diferenciais wow fadeIn delay-01s">
+                        <h2 class="text-white wow fadeIn delay-02s">Horário Flexível</h2>
+                    </div>
+
+                    <div class="team-back">
+                        <h4>
+                            Opções de horários flexíveis para atender às necessidades de alunos que trabalham ou têm
+                            outros compromissos.
+                        </h4>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="centralizar">
+                    <video src="./img/Diferenciais/videoZeek.mp4" controls
+                        class="video-zeek wow bounceInUp delay-02s"></video>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="our-team-main">
+                    <div class="team-front">
+                        <img src="./img/metodologia.png" class="imagem-diferenciais wow fadeIn delay-01s">
+                        <h2 class="text-white wow fadeIn delay-02s">Metodologia Inovadora</h2>
+                    </div>
+
+                    <div class="team-back">
+                        <h4>
+                            Utilização de métodos de ensino que vão além das aulas tradicionais, incorporando práticas
+                            hands-on, estudos de caso e simulações.
+                        </h4>
+                    </div>
+
+                </div>
             </div>
         </div>
-        <div class="centralizar">
-            <video src="./img/Diferenciais/videoZeek.mp4" controls class="video-zeek wow bounceInUp delay-02s"></video>
-        </div>
     </div>
-    </div>
+
 
     <div class="col-12 wow fadeInDown">
         <h1 class="wow fadeInDown"><br>
@@ -565,6 +643,7 @@
     <script src="./js/carrousel-zeek.js"></script>
     <script src="./js/contagemPolo.js"></script>
     <script src="./js/pesquisa.js"></script>
+    <script src="./js/diferenciais.js"></script>
 
 </body>
 
