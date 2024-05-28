@@ -536,18 +536,29 @@
                 <div class="col-md-6">
                     <div class="centralizar borda-matricule-se wow fadeInLeft">
                         <h1><b>MATRÍCULE-SE</b></h1>
-                        <h2><b>Inicie o atendimento e tenha acesso a informações exclusivas com nossa consultora.</b>
-                        </h2>
-                        <select id="citySelect" class="botao-selecionar-cidade">
+                        <h2><b>Inicie o atendimento e tenha acesso a informações exclusivas com nossa consultora.</b></h2>
+                        
+                        <input type="text" id="nameInput" placeholder="Digite seu nome" class="botao-digitar-nome" required>
+                        <select id="citySelect" class="botao-selecionar-cidade" required>
                             <option value="" disabled selected><b>Selecione a cidade</b></option>
                             <option value="descalvado">Descalvado</option>
                             <option value="ibate">Ibaté</option>
                             <option value="ribeirao_bonito">Ribeirão Bonito</option>
                         </select>
+                        
+                        <select id="courseTypeSelect" class="botao-selecionar-metodo" required>
+                            <option value="" disabled selected><b>Selecione a forma do curso</b></option>
+                            <option value="Presencial">Presencial</option>
+                            <option value="Semipresencial">Semipresencial</option>
+                            <option value="Online">Online</option>
+                        </select>
+                        
                         <button id="startButton" class="botao-iniciar-atendimento centralizar" style="display: none;">
                             <b>INICIAR ATENDIMENTO</b>
                         </button>
                     </div>
+                    
+                    
                 </div>
                 <div class="col-md-6">
                     <img src="./img/Pessoas/iniciarMatricula.png" class="imagem-matricula wow fadeInRight">

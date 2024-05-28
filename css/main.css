@@ -380,8 +380,25 @@ body {
   background-color: var(--color-yellow);
   color: var(--color-black-heavy);
   text-align: center;
-  padding: 10px;
-  width: 300px;
+  margin: 10px;
+  width: 42%;
+  border-color: var(--color-yellow);
+}
+
+.botao-digitar-nome {
+  color: var(--color-black-heavy);
+  text-align: center;
+  margin: 10px;
+  width: 90%;
+  border: 1.5px solid var(--color-blue);
+}
+
+.botao-selecionar-metodo {
+  background-color: var(--color-yellow);
+  color: var(--color-black-heavy);
+  text-align: center;
+  margin: 10px;
+  width: 42%;
   border-color: var(--color-yellow);
 }
 
@@ -407,7 +424,8 @@ select {
 }
 
 .botao-iniciar-atendimento:hover {
-  background-color: var(--color-ligth-green);
+  background-color: var(--color-icones);
+  color: var(--color-white);
   transition: 0.8s;
 }
 
