@@ -1,81 +1,105 @@
-// Mapeamento dos nomes dos cursos na URL para os nomes personalizados
-var nomesCursosPersonalizados = {
-  "agentedehotelariaeturismo": "Agente de Hotelaria e Turismo",
-  "assistenteDeProducaoAcucarAlcool": "Assistente de Produção de Açúcar e Álcool",
-  "atendenteFarmacia": "Atendente de Farmácia",
-  "auxiliarAdministrativo": "Auxiliar Administrativo",
-  "auxiliarEscritorio": "Auxiliar de Escritório",
-  "desenhistaPersonalCad": "Desenhista Personal CAD",
-  "desenvolvedorSistemas": "Desenvolvedor de Sistemas",
-  "desenvolvedorWeb": "Desenvolvedor WEB",
-  "desenvolvimentoGamesProfissional": "Desenvolvimento de Games - Profissional",
-  "desenvolvimentoGamesStarter": "Desenvolvimento de Games - Starter",
-  "designDigital": "Design Digital",
-  "edicaoVideos": "Edição de Vídeos",
-  "empreendedorismo": "Empreendedorismo",
-  "evolucaoProfissional": "Evolução Pessoal e Profissional",
-  "excelAvancado": "Excel Avançado",
-  "ferramentasProdutividadeGoogle": "Ferramentas de Produtividade Google",
-  "gestorAdministrativo": "Gestor Administrativo",
-  "gestorFinanceiro": "Gestor Financeiro",
-  "informaticaAplicada": "Informática Aplicada",
-  "informaticaComRotinas": "Informática com Rotinas Administrativas",
-  "inglesAdultos": "Inglês - Adultos",
-  "inglesJovens": "Inglês - Jovens",
-  "inglesKids": "Inglês - Kids",
-  "marketingDigital": "Marketing Digital",
-  "melhorIdadeConectada": "Melhor Idade Conectada",
-  "microsoftOffice": "Microsoft Office",
-  "montagemManutencaoComputadores": "Montagem e Manutenção de Computadores",
-  "operadorDeCaixa": "Operador de Caixa",
-  "powerBi": "Power Bi",
-  "recursosHumanosDepartamentoPessoal": "Recursos Humanos e Departamento Pessoal",
-  "roboticaArduino": "Robótica Arduino",
-  "roboticaEducacional": "Robótica Educacional",
-  "supervisorVendasLideranca": "Supervisor em Vendas e Liderança",
-};
+document.addEventListener('DOMContentLoaded', function() {
+  // Mapeamento dos nomes das cidades
+  const nomesCidades = {
+    "descalvado": "Descalvado",
+    "ibate": "Ibaté",
+    "ribeirao_bonito": "Ribeirão Bonito"
+  };
 
-document.getElementById("atendimentoForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // previne o envio padrão do formulário
+  // Mapeamento dos nomes dos cursos na URL para os nomes personalizados
+  const nomesCursosPersonalizados = {
+    "agentedehotelariaeturismo": "Agente de Hotelaria e Turismo",
+    "assistenteDeProducaoAcucarAlcool": "Assistente de Produção de Açúcar e Álcool",
+    "atendenteFarmacia": "Atendente de Farmácia",
+    "auxiliarAdministrativo": "Auxiliar Administrativo",
+    "auxiliarEscritorio": "Auxiliar de Escritório",
+    "desenhistaPersonalCad": "Desenhista Personal CAD",
+    "desenvolvedorSistemas": "Desenvolvedor de Sistemas",
+    "desenvolvedorWeb": "Desenvolvedor WEB",
+    "desenvolvimentoGamesProfissional": "Desenvolvimento de Games - Profissional",
+    "desenvolvimentoGamesStarter": "Desenvolvimento de Games - Starter",
+    "designDigital": "Design Digital",
+    "edicaoVideos": "Edição de Vídeos",
+    "empreendedorismo": "Empreendedorismo",
+    "evolucaoProfissional": "Evolução Pessoal e Profissional",
+    "evolucaoProfissionalteste": "Evolução Pessoal e Profissional",
+    "excelAvancado": "Excel Avançado",
+    "ferramentasProdutividadeGoogle": "Ferramentas de Produtividade Google",
+    "gestorAdministrativo": "Gestor Administrativo",
+    "gestorFinanceiro": "Gestor Financeiro",
+    "informaticaAplicada": "Informática Aplicada",
+    "informaticaComRotinas": "Informática com Rotinas Administrativas",
+    "inglesAdultos": "Inglês - Adultos",
+    "inglesJovens": "Inglês - Jovens",
+    "inglesKids": "Inglês - Kids",
+    "marketingDigital": "Marketing Digital",
+    "melhorIdadeConectada": "Melhor Idade Conectada",
+    "microsoftOffice": "Microsoft Office",
+    "montagemManutencaoComputadores": "Montagem e Manutenção de Computadores",
+    "operadorDeCaixa": "Operador de Caixa",
+    "powerBi": "Power Bi",
+    "recursosHumanosDepartamentoPessoal": "Recursos Humanos e Departamento Pessoal",
+    "roboticaArduino": "Robótica Arduino",
+    "roboticaEducacional": "Robótica Educacional",
+    "supervisorVendasLideranca": "Supervisor em Vendas e Liderança"
+  };
 
-  var nome = document.getElementById("nome").value;
-  var cidade = document.getElementById("cidade").value;
-  var curso = getCursoFromURL(); // obtém o nome do curso da URL
+  // Função para obter o curso da URL
+  function getCursoFromURL() {
+    const url = window.location.href;
+    const ultimoBarraIndex = url.lastIndexOf("/");
+    let nomeArquivo = url.substr(ultimoBarraIndex + 1);
+    
+    // Remove a extensão .html, se presente
+    if (nomeArquivo.endsWith(".html")) {
+      nomeArquivo = nomeArquivo.slice(0, -5);
+    }
 
-  // Verifica se o nome do curso está mapeado nos nomes personalizados
-  var cursoPersonalizado = nomesCursosPersonalizados[curso];
-  if (!cursoPersonalizado) {
-    alert("Nome do curso não encontrado.");
-    return;
+    // Substitui os traços por nada e retorna
+    return nomeArquivo.replace(/-/g, "");
   }
 
-  // Abre o link do WhatsApp baseado na cidade selecionada
-  switch (cidade) {
-    case "Ibaté":
-      window.open("https://wa.me/5516996294928?text=Olá, me chamo " + encodeURIComponent(nome) + ". Vim pelo site e gostaria de agendar uma aula experimental para o curso de " + encodeURIComponent(cursoPersonalizado) + " em " + encodeURIComponent(cidade) + "!");
-      break;
-    case "Descalvado":
-      window.open("https://wa.me/5519992671617?text=Olá, me chamo " + encodeURIComponent(nome) + ". Vim pelo site e gostaria de agendar uma aula experimental para o curso de " + encodeURIComponent(cursoPersonalizado) + " em " + encodeURIComponent(cidade) + "!");
-      break;
-    case "Ribeirão Bonito":
-      window.open("https://wa.me/5516999940880?text=Olá, me chamo " + encodeURIComponent(nome) + ". Vim pelo site e gostaria de agendar uma aula experimental para o curso de " + encodeURIComponent(cursoPersonalizado) + " em " + encodeURIComponent(cidade) + "!");
-      break;
-    default:
+  // Função para iniciar atendimento
+  function iniciarAtendimento(event) {
+    event.preventDefault(); // Previene o envio padrão do formulário
+
+    const nome = document.getElementById("campoNome").value.trim();
+    const cidadeKey = document.getElementById("campoCidade").value.trim().toLowerCase();
+    const cursoKey = getCursoFromURL();
+
+    // Verifica se o nome do curso está mapeado nos nomes personalizados
+    const cursoPersonalizado = nomesCursosPersonalizados[cursoKey];
+    if (!cursoPersonalizado) {
+      alert("Nome do curso não encontrado.");
+      return;
+    }
+
+    // Verifica se a cidade está mapeada nos nomes de cidades
+    const cidade = nomesCidades[cidadeKey];
+    if (!cidade) {
       alert("Selecione uma cidade válida.");
+      return;
+    }
+
+    let whatsappNumber = '';
+    switch (cidadeKey) {
+      case 'descalvado':
+        whatsappNumber = '5519992671617'; // Número de telefone do WhatsApp de Descalvado
+        break;
+      case 'ibate':
+        whatsappNumber = '5516996294928'; // Número de telefone do WhatsApp de Ibaté
+        break;
+      case 'ribeirao_bonito':
+        whatsappNumber = '5516999940880'; // Número de telefone do WhatsApp de Ribeirão Bonito
+        break;
+    }
+
+    if (whatsappNumber) {
+      const message = `Olá, me chamo ${nome}. Vim pelo site e gostaria de agendar uma aula experimental em ${cidade} para o curso de ${cursoPersonalizado}!`;
+      const encodedMessage = encodeURIComponent(message);
+      window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`);
+    }
   }
+
+  document.getElementById("formularioContato").addEventListener("submit", iniciarAtendimento);
 });
-
-function getCursoFromURL() {
-  // Obtém o nome do arquivo HTML atual
-  var url = window.location.href;
-  var ultimoBarraIndex = url.lastIndexOf("/");
-  var nomeArquivo = url.substr(ultimoBarraIndex + 1);
-
-  // Remove a extensão .html, se presente
-  if (nomeArquivo.endsWith(".html")) {
-    nomeArquivo = nomeArquivo.slice(0, -5);
-  }
-
-  // Substitui os traços por espaços e retorna
-  return nomeArquivo.replace(/-/g, " ");
-}
