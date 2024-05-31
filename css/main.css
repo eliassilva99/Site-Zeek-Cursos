@@ -1228,26 +1228,26 @@ button:hover {
 }
 
 .modalidade-title{
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .modalidade-title-presencial{
-  font-size: 40px;
+  font-size: 35px;
   color: var(--color-dark-green);
 }
 
 .modalidade-title-semi{
-  font-size: 35px;
+  font-size: 25px;
   color: var(--color-orange-presencial);
 }
 
 .valor-curso-presencial{
-  font-size: 40px;
+  font-size: 35px;
   color: var(--color-dark-green);
 }
 
 .valor-curso-semi{
-  font-size: 40px;
+  font-size: 30px;
   color: var(--color-orange-presencial);
 }
 
