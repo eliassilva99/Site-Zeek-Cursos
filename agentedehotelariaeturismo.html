@@ -129,12 +129,12 @@
                             letter-spacing="-0.319999993" fill="#FFFFFF">
                             <tspan x="20.9365625" y="2378">R$</tspan>
                             <tspan x="35.6364062" y="2378" font-size="18"></tspan>
-                            <tspan x="40.3173828" y="2378" font-size="20">1.620</tspan>
+                            <tspan x="40.3173828" y="2378" font-size="20">1.412</tspan>
                         </text><text font-family="Helvetica" font-size="12" font-weight="normal"
                             letter-spacing="-0.502857149" fill="#FFFFFF">
                             <tspan x="119.314372" y="2344">R$</tspan>
                             <tspan x="133.648501" y="2344" font-size="22" letter-spacing="-0.614603162"></tspan>
-                            <tspan x="139.146203" y="2344" font-size="20">2.036</tspan>
+                            <tspan x="139.146203" y="2344" font-size="20">1.636</tspan>
                         </text><text font-family="Helvetica" font-size="12" font-weight="normal"
                             letter-spacing="-0.319999993" fill="#FFFFFF">
                             <tspan x="213.582734" y="2312">R$</tspan>
@@ -324,21 +324,21 @@
             <div class="">
                 <h1><b>AGENDE SUA AULA EXPERIMENTAL!</b></h1>
                 <h2>Preencha o formulário abaixo e entraremos em contato com você!</h2>
-                <form id="atendimentoForm">
+                <form id="formularioContato">
                     <div class="form-group">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
+                        <label for="campoNome">Nome:</label>
+                        <input type="text" id="campoNome" name="campoNome" required>
                     </div>
                     <div class="form-group">
-                        <label for="cidade">Cidade:</label>
-                        <select id="cidade" name="cidade" required>
+                        <label for="campoCidade">Cidade:</label>
+                        <select id="campoCidade" name="campoCidade" required>
                             <option value="">Selecione a Cidade</option>
-                            <option value="Descalvado">Descalvado</option>
-                            <option value="Ibaté">Ibaté</option>
-                            <option value="Ribeirão Bonito">Ribeirão Bonito</option>
+                            <option value="descalvado">Descalvado</option>
+                            <option value="ibate">Ibaté</option>
+                            <option value="ribeirao_bonito">Ribeirão Bonito</option>
                         </select>
                     </div>
-                    <button type="submit">Iniciar Atendimento</button>
+                    <button type="submit" id="iniciarAtendimento">Iniciar Atendimento</button>
                 </form>
             </div>
         </div>
@@ -365,11 +365,6 @@
                     <h2 class="text-white">Operador de Caixa</h2>
                 </div>
                 <div class="col-md-4">
-                    <img src="./img/Ícones Módulos/evolucao.png" class="image-icons wow fadeIn delay-06s">
-                    <h2 class="text-white">
-                        Evolução Profissional</h2>
-                </div>
-                <div class="col-md-4">
                     <img src="./img/Ícones Módulos/agenteVendas.png" class="image-icons wow fadeIn delay-07s">
                     <h2 class="text-white">
                         Agente de Vendas</h2>
@@ -377,6 +372,126 @@
                 <div class="col-md-4">
                     <img src="./img/Ícones Módulos/hotelariaTurismo.png" class="image-icons wow fadeIn delay-08s">
                     <h2 class="text-white">Hotelaria e Turismo</h2>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/Ícones Módulos/evolucao.png" class="image-icons wow fadeIn delay-06s">
+                    <h2 class="text-white">Evolução Profissional - Primeiros Passo</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 centralizar">
+            <h1><b>ESCOLHA SUA MODALIDADE!</b></h1>
+            <div class="tamanho-tela centralizar">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box-modalidade">
+                            <h1 class="modalidade-title"><b>ONLINE</b></h1>
+                            <br>
+                            <h3>Mensalidades a partir de</h3>
+                            <h1 class="valor-curso tachado"><b>R$ 110,00</b></h1>
+                            <p class="p-modalidade">Parcelamento: <b>Cartão de Crédito</b> ou <b>Boleto</b></p>
+    
+                            <button id="Online" class="botao-iniciar-atendimento-online centralizar">
+                                <b>Matricule-se</b>
+                            </button>
+                            <hr class="hr-modalidade">
+                            <p class="p-modalidade"><a href="#modal-cartao-modalidades" class="editarLink">Saiba mais sobre
+                                    essa
+                                    modalidade.</a></p>
+    
+                            <div id="modal-cartao-modalidades" class="modal">
+                                <div class="modal-content-modalidades">
+                                    <span class="close">&times;</span>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img src="./img/modalidades.jpeg" class="img-modalidades">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="box-modalidade-presencial">
+                            <div class="mais-vendido">
+                                Mais vendido!
+                            </div>
+                            <h1 class="modalidade-title-presencial"><b>PRESENCIAL</b></h1>
+                            <br>
+                            <h3>Mensalidades a partir de</h3>
+                            <h1 class="valor-curso-presencial tachado"><b>R$ 253,00</b></h1>
+                            <p class="p-modalidade">Parcelamento: <b>Cartão de Crédito</b> ou <b>Boleto</b></p>
+    
+                            <button id="Presencial" class="botao-iniciar-atendimento-presencial centralizar">
+                                <b>Matricule-se</b>
+                            </button>
+                            <hr class="hr-modalidade-presencial">
+                            <p class="p-modalidade"><a href="#modal-cartao-modalidades" class="editarLink">Saiba mais sobre
+                                    essa
+                                    modalidade.</a></p>
+    
+                            <div id="modal-cartao-modalidades" class="modal">
+                                <div class="modal-content-modalidades">
+                                    <span class="close">&times;</span>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img src="./img/modalidades.jpeg" class="img-modalidades">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="box-modalidade-semi">
+                            <h1 class="modalidade-title-semi"><b>SEMI-PRESENCIAL</b></h1>
+                            <br>
+                            <h3>Mensalidades a partir de</h3>
+                            <h1 class="valor-curso-semi tachado"><b>R$ 202,00</b></h1>
+                            <p class="p-modalidade">Parcelamento: <b>Cartão de Crédito</b> ou <b>Boleto</b></p>
+    
+                            <button id="Semipresencial" class="botao-iniciar-atendimento-semi centralizar">
+                                <b>Matricule-se</b>
+                            </button>
+                            <hr class="hr-modalidade-semi">
+                            <p class="p-modalidade"><a href="#modal-cartao-modalidades" class="editarLink">Saiba mais sobre
+                                    essa
+                                    modalidade.</a></p>
+    
+                            <div id="modal-cartao-modalidades" class="modal">
+                                <div class="modal-content-modalidades">
+                                    <span class="close">&times;</span>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img src="./img/modalidades.jpeg" class="img-modalidades">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="matriculaModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <input type="text" id="modalNameInput" placeholder="Digite seu nome">
+                        <select id="modalCitySelect">
+                            <option value="" disabled selected>Escolha sua cidade</option>
+                            <option value="descalvado">Descalvado</option>
+                            <option value="ibate">Ibaté</option>
+                            <option value="ribeirao_bonito">Ribeirão Bonito</option>
+                        </select>
+                        <button id="modalSendButton">Enviar</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -433,37 +548,62 @@
             </div>
 
             <div class="col-md-5 wow fadeInLeft delay-02s">
-                <h1 class="title-align-left"><b>Excelência no Atendimento ao Cliente</b></h1>
-                <h2 class="text-align-justfy">Oferece técnicas comprovadas para construir relacionamentos positivos,
-                    resolver problemas de forma eficaz e elevar o padrão de atendimento. Desde a comunicação empática
-                    até estratégias de resolução de conflitos, os participantes aprenderão a criar experiências
-                    memoráveis para os clientes. Com instrutores experientes, este curso é a chave para transformar o
-                    atendimento ao cliente em um diferencial competitivo, impulsionando a satisfação e fidelização.</h2>
-            </div>
-            <div class="col-md-5 wow fadeInRight delay-02s">
-                <img src="./img/Módulos/excelenciaNoAtendimentoAoCliente.jpg" class="img-modulos">
-            </div>
-
-            <div class="col-md-5 wow fadeInLeft delay-02s">
-                <img src="./img/Módulos/agenteVendas.jpg" class="img-modulos">
-            </div>
-            <div class="col-md-5 wow fadeInRight delay-02s">
                 <h1 class="title-align-left"><b>Agente de Vendas</b></h1>
                 <h2 class="text-align-justfy">Os alunos aprendem técnicas de prospecção, negociação, fechamento de
                     vendas
                     e atendimento ao cliente. Além disso, o curso aborda estratégias de comunicação eficaz, construção
                     de relacionamentos, utilização de tecnologias de vendas e a compreensão do mercado.</h2>
             </div>
+            <div class="col-md-5 wow fadeInRight delay-02s">
+                <img src="./img/Módulos/agenteVendas.jpg" class="img-modulos">
+            </div>
 
             <div class="col-md-5 wow fadeInLeft delay-02s">
+                <img src="./img/Módulos/excelEssencial.jpg" class="img-modulos">
+            </div>
+            <div class="col-md-5 wow fadeInRight delay-02s">
                 <h1 class="title-align-left"><b>Hotelaria e Turismo</b></h1>
                 <h2 class="text-align-left">Os alunos serão capacitados em atendimento ao cliente, gestão de reservas,
                     técnicas de recepção, habilidades de comunicação intercultural, e padrões de excelência em serviços
                     hoteleiros. Além disso, o curso aborda a compreensão das tendências do setor e a utilização
                     eficiente de sistemas de reservas e ferramentas tecnológicas.</h2>
+            </div>      
+
+            <div class="col-md-5 wow fadeInLeft delay-02s">
+                <h1 class="title-align-left"><b>Desenvolvimento Profissional</b></h1>
+                <h2 class="text-align-left">Oferecemos ferramentas e estratégias para aprimorar habilidades
+                    interpessoais, liderança, comunicação eficaz e gestão do tempo. Desenvolva uma mentalidade proativa
+                    e construa uma base sólida para o sucesso em sua carreira. Com instrutores especializados e
+                    abordagem prática, nosso curso proporciona uma jornada de autodescoberta e crescimento profissional.
+                    Esteja preparado para se destacar no mercado de trabalho e alcançar seus objetivos com confiança.
+                </h2>
             </div>
             <div class="col-md-5 wow fadeInRight delay-02s">
-                <img src="./img/Módulos/excelEssencial.jpg" class="img-modulos">
+                <img src="./img/Módulos/desenvolvimentoProfissional.jpg " class="img-modulos">
+            </div>
+
+            <div class="col-md-5  wow fadeInLeft delay-02s">
+                <img src="./img/Módulos/compromissoComOSucesso.jpg" class="img-modulos">
+            </div>
+            <div class="col-md-5  wow fadeInRight delay-02s">
+                <h1 class="title-align-left"><b>Compromisso com o Sucesso</b></h1>
+                <h2 class="text-align-left">Oferece estratégias comprovadas para definir metas, superar desafios e
+                    construir uma mentalidade de sucesso. Desde a definição de objetivos claros até a gestão eficaz do
+                    tempo e o desenvolvimento de habilidades de resiliência, este curso capacita os participantes a
+                    alcançarem o sucesso em suas vidas pessoais e profissionais. Seja o arquiteto do seu próprio sucesso
+                    com este curso envolvente e prático, projetado para inspirar e capacitar.</h2>
+            </div>
+
+            <div class="col-md-5 wow fadeInLeft delay-02s">
+                <h1 class="title-align-left"><b>Empreendedor de Sucesso</b></h1>
+                <h2 class="text-align-left">Oferece uma jornada prática para desenvolver as habilidades essenciais para
+                    prosperar no mundo dos negócios. Desde a concepção de ideias inovadoras até a gestão eficiente de
+                    recursos e estratégias de marketing, este curso proporciona as ferramentas necessárias para
+                    construir e expandir empreendimentos com confiança. Guiado por especialistas experientes, prepare-se
+                    para transformar sua visão em realidade e se destacar como um empreendedor de sucesso.</h2>
+            </div>
+            <div class="col-md-5 wow fadeInRight delay-02s">
+                <img src="./img/Módulos/empreendedorDeSucesso.jpg" class="img-modulos">
             </div>
         </div>
         <div class="container centralizar">
@@ -685,12 +825,13 @@
 
     <script>new WOW().init();</script>
 
-    <script src="./js/matriculese.js"></script>
+    <script src="./js/matriculeseModalidade.js"></script>
     <script src="./js/depoimentos.js"></script>
     <script src="./js/carrousel-zeek.js"></script>
     <script src="./js/atendimentoCurso.js"></script>
     <script src="./js/contagemPolo.js"></script>
     <script src="./js/pesquisa.js"></script>
+    <script src="./js/modalPagamento.js"></script>
 
 </body>
 

@@ -130,17 +130,17 @@
                             letter-spacing="-0.319999993" fill="#FFFFFF">
                             <tspan x="20.9365625" y="2378">R$</tspan>
                             <tspan x="35.6364062" y="2378" font-size="18"></tspan>
-                            <tspan x="40.3173828" y="2378" font-size="20">3.773</tspan>
+                            <tspan x="40.3173828" y="2378" font-size="20">2.100</tspan>
                         </text><text font-family="Helvetica" font-size="12" font-weight="normal"
                             letter-spacing="-0.502857149" fill="#FFFFFF">
                             <tspan x="119.314372" y="2344">R$</tspan>
                             <tspan x="133.648501" y="2344" font-size="22" letter-spacing="-0.614603162"></tspan>
-                            <tspan x="139.146203" y="2344" font-size="20">6.102</tspan>
+                            <tspan x="139.146203" y="2344" font-size="20">3.004</tspan>
                         </text><text font-family="Helvetica" font-size="12" font-weight="normal"
                             letter-spacing="-0.319999993" fill="#FFFFFF">
                             <tspan x="213.582734" y="2312">R$</tspan>
                             <tspan x="228.282578" y="2312" font-size="18"></tspan>
-                            <tspan x="232.963555" y="2312" font-size="20">10.176</tspan>
+                            <tspan x="232.963555" y="2312" font-size="20">1.108</tspan>
                         </text>
                         <path class="lineAnimation" d="M55.5,2405.5 L55.5,2439.5" stroke="#FFFFFF" opacity="0.2"
                             stroke-linecap="square"></path>
@@ -289,7 +289,7 @@
                 </div>
                 <div>
                     <h1 class="title-icones">Tempo de Duração</h1>
-                    <h2 class="subtitle-icones">18 Meses.</h2>
+                    <h2 class="subtitle-icones">14 Meses.</h2>
                 </div>
             </div>
             <div class="display-flex align-left wow fadeIn delay-04s">
@@ -298,7 +298,7 @@
                 </div>
                 <div>
                     <h1 class="title-icones">Carga Horária</h1>
-                    <h2 class="subtitle-icones">144 Horas.</h2>
+                    <h2 class="subtitle-icones">112 Horas.</h2>
                 </div>
             </div>
             <div class="display-flex align-left wow fadeIn delay-05s">
@@ -326,21 +326,21 @@
             <div class="">
                 <h1><b>AGENDE SUA AULA EXPERIMENTAL!</b></h1>
                 <h2>Preencha o formulário abaixo e entraremos em contato com você!</h2>
-                <form id="atendimentoForm">
+                <form id="formularioContato">
                     <div class="form-group">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
+                        <label for="campoNome">Nome:</label>
+                        <input type="text" id="campoNome" name="campoNome" required>
                     </div>
                     <div class="form-group">
-                        <label for="cidade">Cidade:</label>
-                        <select id="cidade" name="cidade" required>
+                        <label for="campoCidade">Cidade:</label>
+                        <select id="campoCidade" name="campoCidade" required>
                             <option value="">Selecione a Cidade</option>
-                            <option value="Descalvado">Descalvado</option>
-                            <option value="Ibaté">Ibaté</option>
-                            <option value="Ribeirão Bonito">Ribeirão Bonito</option>
+                            <option value="descalvado">Descalvado</option>
+                            <option value="ibate">Ibaté</option>
+                            <option value="ribeirao_bonito">Ribeirão Bonito</option>
                         </select>
                     </div>
-                    <button type="submit">Iniciar Atendimento</button>
+                    <button type="submit" id="iniciarAtendimento">Iniciar Atendimento</button>
                 </form>
             </div>
         </div>
@@ -368,7 +368,7 @@
                 </div>
                 <div class="col-md-4">
                     <img src="./img/Ícones Módulos/photoshop.png" class="image-icons wow fadeIn delay-04s">
-                    <h2 class="text-white">Adobe Photoshop - Avançado</h2>
+                    <h2 class="text-white">Adobe Photoshop - Intermediário</h2>
                 </div>
                 <div class="col-md-4">
                     <img src="./img/Ícones Módulos/youtuber.png" class="image-icons wow fadeIn delay-05s">
@@ -377,6 +377,122 @@
                 <div class="col-md-4">
                     <img src="./img/Ícones Módulos/premiere.png" class="image-icons wow fadeIn delay-06s">
                     <h2 class="text-white">Adobe Premiere</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 centralizar">
+            <h1><b>ESCOLHA SUA MODALIDADE!</b></h1>
+            <div class="tamanho-tela centralizar">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box-modalidade">
+                            <h1 class="modalidade-title"><b>ONLINE</b></h1>
+                            <br>
+                            <h3>Mensalidades a partir de</h3>
+                            <h1 class="valor-curso tachado"><b>R$ 120,00</b></h1>
+                            <p class="p-modalidade">Parcelamento: <b>Cartão de Crédito</b> ou <b>Boleto</b></p>
+    
+                            <button id="Online" class="botao-iniciar-atendimento-online centralizar">
+                                <b>Matricule-se</b>
+                            </button>
+                            <hr class="hr-modalidade">
+                            <p class="p-modalidade"><a href="#modal-cartao-modalidades" class="editarLink">Saiba mais sobre
+                                    essa
+                                    modalidade.</a></p>
+    
+                            <div id="modal-cartao-modalidades" class="modal">
+                                <div class="modal-content-modalidades">
+                                    <span class="close">&times;</span>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img src="./img/modalidades.jpeg" class="img-modalidades">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="box-modalidade-presencial">
+                            <div class="mais-vendido">
+                                Mais vendido!
+                            </div>
+                            <h1 class="modalidade-title-presencial"><b>PRESENCIAL</b></h1>
+                            <br>
+                            <h3>Mensalidades a partir de</h3>
+                            <h1 class="valor-curso-presencial tachado"><b>R$ 275,00</b></h1>
+                            <p class="p-modalidade">Parcelamento: <b>Cartão de Crédito</b> ou <b>Boleto</b></p>
+    
+                            <button id="Presencial" class="botao-iniciar-atendimento-presencial centralizar">
+                                <b>Matricule-se</b>
+                            </button>
+                            <hr class="hr-modalidade-presencial">
+                            <p class="p-modalidade"><a href="#modal-cartao-modalidades" class="editarLink">Saiba mais sobre
+                                    essa
+                                    modalidade.</a></p>
+    
+                            <div id="modal-cartao-modalidades" class="modal">
+                                <div class="modal-content-modalidades">
+                                    <span class="close">&times;</span>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img src="./img/modalidades.jpeg" class="img-modalidades">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="box-modalidade-semi">
+                            <h1 class="modalidade-title-semi"><b>SEMI-PRESENCIAL</b></h1>
+                            <br>
+                            <h3>Mensalidades a partir de</h3>
+                            <h1 class="valor-curso-semi tachado"><b>R$ 220,00</b></h1>
+                            <p class="p-modalidade">Parcelamento: <b>Cartão de Crédito</b> ou <b>Boleto</b></p>
+    
+                            <button id="Semipresencial" class="botao-iniciar-atendimento-semi centralizar">
+                                <b>Matricule-se</b>
+                            </button>
+                            <hr class="hr-modalidade-semi">
+                            <p class="p-modalidade"><a href="#modal-cartao-modalidades" class="editarLink">Saiba mais sobre
+                                    essa
+                                    modalidade.</a></p>
+    
+                            <div id="modal-cartao-modalidades" class="modal">
+                                <div class="modal-content-modalidades">
+                                    <span class="close">&times;</span>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img src="./img/modalidades.jpeg" class="img-modalidades">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="matriculaModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <input type="text" id="modalNameInput" placeholder="Digite seu nome">
+                        <select id="modalCitySelect">
+                            <option value="" disabled selected>Escolha sua cidade</option>
+                            <option value="descalvado">Descalvado</option>
+                            <option value="ibate">Ibaté</option>
+                            <option value="ribeirao_bonito">Ribeirão Bonito</option>
+                        </select>
+                        <button id="modalSendButton">Enviar</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -419,18 +535,15 @@
                 <img src="./img/Imagens Módulos/photoshop.jpg" class="img-modulos">
             </div>
 
-            <div class="col-md-5 wow fadeInLeft delay-02s">
-                <img src="./img/Imagens Módulos/photoshopAvancado.jpg" class="img-modulos">
+            <div class="col-md-5  wow fadeInLeft delay-02s">
+                <img src="./img/Módulos/photoshopIntermediario.png" class="img-modulos">
             </div>
-            <div class="col-md-5 wow fadeInRight delay-02s">
-                <h1 class="title-align-left"><b>Adobe Photoshop - Avançado</b></h1>
-                <h2 class="text-align-justfy">O curso de Photoshop Avançado é projetado para usuários que buscam
-                    aprofundar seus conhecimentos em edição de imagens e design digital. Os participantes aprenderão
-                    técnicas avançadas de retoque de fotos, manipulação de camadas, uso eficiente de máscaras, criação
-                    de efeitos especiais e composições complexas. O curso aborda também a integração de ferramentas 3D,
-                    automação de tarefas com scripts, e estratégias avançadas para trabalhar com diferentes tipos de
-                    projetos. Ao final do curso, os alunos estarão aptos a realizar edições sofisticadas e criar
-                    composições visuais impactantes no Adobe Photoshop.</h2>
+            <div class="col-md-5  wow fadeInRight delay-02s">
+                <h1 class="title-align-left"><b>Adobe Photoshop - Intermediário</b></h1>
+                <h2 class="text-align-left">Mergulhe mais fundo no mundo da edição de imagens e aprimore suas
+                    habilidades no uso desta poderosa ferramenta. Aprenda a dominar técnicas avançadas de retoque,
+                    aperfeiçoamento de cores e manipulação de camadas. Explore métodos avançados de recorte, aprimorando
+                    suas habilidades para criar composições visualmente impactantes.</h2>
             </div>
 
             <div class="col-md-5 wow fadeInLeft delay-02s">
@@ -679,12 +792,13 @@
 
     <script>new WOW().init();</script>
 
-    <script src="./js/matriculese.js"></script>
+    <script src="./js/matriculeseModalidade.js"></script>
     <script src="./js/depoimentos.js"></script>
     <script src="./js/carrousel-zeek.js"></script>
     <script src="./js/atendimentoCurso.js"></script>
     <script src="./js/contagemPolo.js"></script>
     <script src="./js/pesquisa.js"></script>
+    <script src="./js/modalPagamento.js"></script>
 
 </body>
 

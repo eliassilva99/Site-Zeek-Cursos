@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Adicionar evento de clique para abrir o modal quando clicar no botão "Matricule-se"
-    const startButtons = document.querySelectorAll('.botao-iniciar-atendimento,.botao-iniciar-atendimento-presencial');
+    const startButtons = document.querySelectorAll('.botao-iniciar-atendimento,.botao-iniciar-atendimento-presencial, .botao-iniciar-atendimento-semi,.botao-iniciar-atendimento-online');
     startButtons.forEach(function(button) {
         button.addEventListener('click', function() {
             modal.style.display = 'block';

@@ -129,17 +129,17 @@
                             letter-spacing="-0.319999993" fill="#FFFFFF">
                             <tspan x="20.9365625" y="2378">R$</tspan>
                             <tspan x="35.6364062" y="2378" font-size="18"></tspan>
-                            <tspan x="40.3173828" y="2378" font-size="20">1.809</tspan>
+                            <tspan x="40.3173828" y="2378" font-size="20">1.412</tspan>
                         </text><text font-family="Helvetica" font-size="12" font-weight="normal"
                             letter-spacing="-0.502857149" fill="#FFFFFF">
                             <tspan x="119.314372" y="2344">R$</tspan>
                             <tspan x="133.648501" y="2344" font-size="22" letter-spacing="-0.614603162"></tspan>
-                            <tspan x="139.146203" y="2344" font-size="20">2.265</tspan>
+                            <tspan x="139.146203" y="2344" font-size="20">1.625</tspan>
                         </text><text font-family="Helvetica" font-size="12" font-weight="normal"
                             letter-spacing="-0.319999993" fill="#FFFFFF">
                             <tspan x="213.582734" y="2312">R$</tspan>
                             <tspan x="228.282578" y="2312" font-size="18"></tspan>
-                            <tspan x="232.963555" y="2312" font-size="20">2.860</tspan>
+                            <tspan x="232.963555" y="2312" font-size="20">1.860</tspan>
                         </text>
                         <path class="lineAnimation" d="M55.5,2405.5 L55.5,2439.5" stroke="#FFFFFF" opacity="0.2"
                             stroke-linecap="square"></path>
@@ -289,7 +289,7 @@
                 </div>
                 <div>
                     <h1 class="title-icones">Tempo de Duração</h1>
-                    <h2 class="subtitle-icones">8 Meses.</h2>
+                    <h2 class="subtitle-icones">6 Meses.</h2>
                 </div>
             </div>
             <div class="display-flex align-left wow fadeIn delay-04s">
@@ -298,7 +298,7 @@
                 </div>
                 <div>
                     <h1 class="title-icones">Carga Horária</h1>
-                    <h2 class="subtitle-icones">64 Horas.</h2>
+                    <h2 class="subtitle-icones">48 Horas.</h2>
                 </div>
             </div>
             <div class="display-flex align-left wow fadeIn delay-05s">
@@ -326,21 +326,21 @@
             <div class="">
                 <h1><b>AGENDE SUA AULA EXPERIMENTAL!</b></h1>
                 <h2>Preencha o formulário abaixo e entraremos em contato com você!</h2>
-                <form id="atendimentoForm">
+                <form id="formularioContato">
                     <div class="form-group">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
+                        <label for="campoNome">Nome:</label>
+                        <input type="text" id="campoNome" name="campoNome" required>
                     </div>
                     <div class="form-group">
-                        <label for="cidade">Cidade:</label>
-                        <select id="cidade" name="cidade" required>
+                        <label for="campoCidade">Cidade:</label>
+                        <select id="campoCidade" name="campoCidade" required>
                             <option value="">Selecione a Cidade</option>
-                            <option value="Descalvado">Descalvado</option>
-                            <option value="Ibaté">Ibaté</option>
-                            <option value="Ribeirão Bonito">Ribeirão Bonito</option>
+                            <option value="descalvado">Descalvado</option>
+                            <option value="ibate">Ibaté</option>
+                            <option value="ribeirao_bonito">Ribeirão Bonito</option>
                         </select>
                     </div>
-                    <button type="submit">Iniciar Atendimento</button>
+                    <button type="submit" id="iniciarAtendimento">Iniciar Atendimento</button>
                 </form>
             </div>
         </div>
@@ -366,6 +366,122 @@
                 <div class="col-md-4">
                     <img src="./img/Ícones Módulos/planilhasGoogle.png" class="image-icons wow fadeIn delay-05s">
                     <h2 class="text-white">Planilhas Google</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 centralizar">
+            <h1><b>ESCOLHA SUA MODALIDADE!</b></h1>
+            <div class="tamanho-tela centralizar">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box-modalidade">
+                            <h1 class="modalidade-title"><b>ONLINE</b></h1>
+                            <br>
+                            <h3>Mensalidades a partir de</h3>
+                            <h1 class="valor-curso tachado"><b>R$ 110,00</b></h1>
+                            <p class="p-modalidade">Parcelamento: <b>Cartão de Crédito</b> ou <b>Boleto</b></p>
+    
+                            <button id="Online" class="botao-iniciar-atendimento-online centralizar">
+                                <b>Matricule-se</b>
+                            </button>
+                            <hr class="hr-modalidade">
+                            <p class="p-modalidade"><a href="#modal-cartao-modalidades" class="editarLink">Saiba mais sobre
+                                    essa
+                                    modalidade.</a></p>
+    
+                            <div id="modal-cartao-modalidades" class="modal">
+                                <div class="modal-content-modalidades">
+                                    <span class="close">&times;</span>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img src="./img/modalidades.jpeg" class="img-modalidades">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="box-modalidade-presencial">
+                            <div class="mais-vendido">
+                                Mais vendido!
+                            </div>
+                            <h1 class="modalidade-title-presencial"><b>PRESENCIAL</b></h1>
+                            <br>
+                            <h3>Mensalidades a partir de</h3>
+                            <h1 class="valor-curso-presencial tachado"><b>R$ 253,00</b></h1>
+                            <p class="p-modalidade">Parcelamento: <b>Cartão de Crédito</b> ou <b>Boleto</b></p>
+    
+                            <button id="Presencial" class="botao-iniciar-atendimento-presencial centralizar">
+                                <b>Matricule-se</b>
+                            </button>
+                            <hr class="hr-modalidade-presencial">
+                            <p class="p-modalidade"><a href="#modal-cartao-modalidades" class="editarLink">Saiba mais sobre
+                                    essa
+                                    modalidade.</a></p>
+    
+                            <div id="modal-cartao-modalidades" class="modal">
+                                <div class="modal-content-modalidades">
+                                    <span class="close">&times;</span>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img src="./img/modalidades.jpeg" class="img-modalidades">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="box-modalidade-semi">
+                            <h1 class="modalidade-title-semi"><b>SEMI-PRESENCIAL</b></h1>
+                            <br>
+                            <h3>Mensalidades a partir de</h3>
+                            <h1 class="valor-curso-semi tachado"><b>R$ 202,00</b></h1>
+                            <p class="p-modalidade">Parcelamento: <b>Cartão de Crédito</b> ou <b>Boleto</b></p>
+    
+                            <button id="Semipresencial" class="botao-iniciar-atendimento-semi centralizar">
+                                <b>Matricule-se</b>
+                            </button>
+                            <hr class="hr-modalidade-semi">
+                            <p class="p-modalidade"><a href="#modal-cartao-modalidades" class="editarLink">Saiba mais sobre
+                                    essa
+                                    modalidade.</a></p>
+    
+                            <div id="modal-cartao-modalidades" class="modal">
+                                <div class="modal-content-modalidades">
+                                    <span class="close">&times;</span>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img src="./img/modalidades.jpeg" class="img-modalidades">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="matriculaModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <input type="text" id="modalNameInput" placeholder="Digite seu nome">
+                        <select id="modalCitySelect">
+                            <option value="" disabled selected>Escolha sua cidade</option>
+                            <option value="descalvado">Descalvado</option>
+                            <option value="ibate">Ibaté</option>
+                            <option value="ribeirao_bonito">Ribeirão Bonito</option>
+                        </select>
+                        <button id="modalSendButton">Enviar</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -648,12 +764,13 @@
 
     <script>new WOW().init();</script>
 
-    <script src="./js/matriculese.js"></script>
+    <script src="./js/matriculeseModalidade.js"></script>
     <script src="./js/depoimentos.js"></script>
     <script src="./js/carrousel-zeek.js"></script>
     <script src="./js/atendimentoCurso.js"></script>
     <script src="./js/contagemPolo.js"></script>
     <script src="./js/pesquisa.js"></script>
+    <script src="./js/modalPagamento.js"></script>
 
 </body>
 

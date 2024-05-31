@@ -5,10 +5,13 @@
   --color-light-blue: #008bfc;
   --color-blue-diferenciais: #008CFF;
   --color-orange: #fcac00;
+  --color-orange-presencial: #FBC200;
+  --color-dark-orange: #fc6900;
   --color-yellow: #e3fc00;
   --color-green: #26C440;
   --color-dark-green: #006e12;
   --color-pink: #E93FB6;
+  --color-dark-pink: #ac067a;
   --color-ligth-green: #82df90;
 
   --color-ligth-green2:rgb(188, 255, 198)0;
@@ -446,6 +449,25 @@ select {
   transition: 0.8s;
 }
 
+.botao-iniciar-atendimento-semi {
+  border: none;
+  background-color: var(--color-orange-presencial);
+  color: var(--color-white);
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 250px;
+  padding: 15px;
+  transition: 1s;
+}
+
+.botao-iniciar-atendimento:hover {
+  background-color: var(--color-icones);
+  color: var(--color-white);
+  transition: 0.8s;
+}
+
 .botao-iniciar-atendimento-presencial {
   border: none;
   background-color: var(--color-dark-green);
@@ -460,6 +482,25 @@ select {
 }
 
 .botao-iniciar-atendimento-presencial:hover {
+  background-color: var(--color-icones);
+  color: var(--color-white);
+  transition: 0.8s;
+}
+
+.botao-iniciar-atendimento-online {
+  border: none;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 250px;
+  padding: 15px;
+  transition: 1s;
+}
+
+.botao-iniciar-atendimento:hover {
   background-color: var(--color-icones);
   color: var(--color-white);
   transition: 0.8s;
@@ -1171,6 +1212,15 @@ button:hover {
   color: var(--color-icones);
 }
 
+.box-modalidade-semi{
+  margin: auto;
+  text-align: center;
+  background-color: var(--color-gray);
+  border: 3px solid var(--color-orange-presencial);
+  border-radius: 20px;
+  color: var(--color-icones);
+}
+
 .tachado {
   text-decoration: line-through;
   font-size: 20px;
@@ -1186,11 +1236,20 @@ button:hover {
   color: var(--color-dark-green);
 }
 
+.modalidade-title-semi{
+  font-size: 35px;
+  color: var(--color-orange-presencial);
+}
+
 .valor-curso-presencial{
   font-size: 40px;
   color: var(--color-dark-green);
 }
 
+.valor-curso-semi{
+  font-size: 40px;
+  color: var(--color-orange-presencial);
+}
 
 .valor-curso{
   font-size: 30px;
@@ -1199,6 +1258,15 @@ button:hover {
 .hr-modalidade{
   width: 100%;
   border: 1px solid var(--color-blue);
+}
+
+.hr-modalidade-semi{
+  width: 100%;
+  border: 1px solid var(--color-orange-presencial);
+}
+.hr-modalidade-presencial{
+  width: 100%;
+  border: 1px solid var(--color-dark-green);
 }
 
 .p-modalidade{
@@ -1253,7 +1321,7 @@ button:hover {
 .modal-content {
   background-color: var(--color-gray);
   border-radius: 20px;
-  margin: 15% auto;
+  margin: auto;
   padding: 20px;
   width: 80%;
   max-width: 400px;
@@ -1264,9 +1332,9 @@ button:hover {
   background-color: var(--color-gray);
   border-radius: 20px;
   margin: auto;
-  padding: 20px;
-  width: 80%;
-  max-width: 800px;
+  padding: 10px;
+  width: 100%;
+  max-width: 750px;
   min-height: 600px;
 }
 
@@ -1284,6 +1352,19 @@ button:hover {
   cursor: pointer;
 }
 
+.cartao-credito{
+  color: var(--color-dark-orange);
+  border-bottom: 1px solid var(--color-dark-orange);
+}
+
+.cartao-boleto{
+  color: var(--color-dark-pink);
+  border-bottom: 1px solid var(--color-dark-pink);
+}
+
+.img-modalidades{
+  width: 600px;
+}
 
 
 

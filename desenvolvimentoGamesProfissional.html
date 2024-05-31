@@ -328,21 +328,21 @@
             <div class="">
                 <h1><b>AGENDE SUA AULA EXPERIMENTAL!</b></h1>
                 <h2>Preencha o formulário abaixo e entraremos em contato com você!</h2>
-                <form id="atendimentoForm">
+                <form id="formularioContato">
                     <div class="form-group">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
+                        <label for="campoNome">Nome:</label>
+                        <input type="text" id="campoNome" name="campoNome" required>
                     </div>
                     <div class="form-group">
-                        <label for="cidade">Cidade:</label>
-                        <select id="cidade" name="cidade" required>
+                        <label for="campoCidade">Cidade:</label>
+                        <select id="campoCidade" name="campoCidade" required>
                             <option value="">Selecione a Cidade</option>
-                            <option value="Descalvado">Descalvado</option>
-                            <option value="Ibaté">Ibaté</option>
-                            <option value="Ribeirão Bonito">Ribeirão Bonito</option>
+                            <option value="descalvado">Descalvado</option>
+                            <option value="ibate">Ibaté</option>
+                            <option value="ribeirao_bonito">Ribeirão Bonito</option>
                         </select>
                     </div>
-                    <button type="submit">Iniciar Atendimento</button>
+                    <button type="submit" id="iniciarAtendimento">Iniciar Atendimento</button>
                 </form>
             </div>
         </div>
@@ -371,6 +371,122 @@
                 <div class="col-md-4">
                     <img src="./img/Ícones Módulos/games3D.png" class="image-icons wow fadeIn delay-06s">
                     <h2 class="text-white">Desenvolvimento de Games 3D - II</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 centralizar">
+            <h1><b>ESCOLHA SUA MODALIDADE!</b></h1>
+            <div class="tamanho-tela centralizar">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box-modalidade">
+                            <h1 class="modalidade-title"><b>ONLINE</b></h1>
+                            <br>
+                            <h3>Mensalidades a partir de</h3>
+                            <h1 class="valor-curso tachado"><b>R$ 129,00</b></h1>
+                            <p class="p-modalidade">Parcelamento: <b>Cartão de Crédito</b> ou <b>Boleto</b></p>
+    
+                            <button id="Online" class="botao-iniciar-atendimento-online centralizar">
+                                <b>Matricule-se</b>
+                            </button>
+                            <hr class="hr-modalidade">
+                            <p class="p-modalidade"><a href="#modal-cartao-modalidades" class="editarLink">Saiba mais sobre
+                                    essa
+                                    modalidade.</a></p>
+    
+                            <div id="modal-cartao-modalidades" class="modal">
+                                <div class="modal-content-modalidades">
+                                    <span class="close">&times;</span>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img src="./img/modalidades.jpeg" class="img-modalidades">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="box-modalidade-presencial">
+                            <div class="mais-vendido">
+                                Mais vendido!
+                            </div>
+                            <h1 class="modalidade-title-presencial"><b>PRESENCIAL</b></h1>
+                            <br>
+                            <h3>Mensalidades a partir de</h3>
+                            <h1 class="valor-curso-presencial tachado"><b>R$ 297,00</b></h1>
+                            <p class="p-modalidade">Parcelamento: <b>Cartão de Crédito</b> ou <b>Boleto</b></p>
+    
+                            <button id="Presencial" class="botao-iniciar-atendimento-presencial centralizar">
+                                <b>Matricule-se</b>
+                            </button>
+                            <hr class="hr-modalidade-presencial">
+                            <p class="p-modalidade"><a href="#modal-cartao-modalidades" class="editarLink">Saiba mais sobre
+                                    essa
+                                    modalidade.</a></p>
+    
+                            <div id="modal-cartao-modalidades" class="modal">
+                                <div class="modal-content-modalidades">
+                                    <span class="close">&times;</span>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img src="./img/modalidades.jpeg" class="img-modalidades">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="box-modalidade-semi">
+                            <h1 class="modalidade-title-semi"><b>SEMI-PRESENCIAL</b></h1>
+                            <br>
+                            <h3>Mensalidades a partir de</h3>
+                            <h1 class="valor-curso-semi tachado"><b>R$ 238,00</b></h1>
+                            <p class="p-modalidade">Parcelamento: <b>Cartão de Crédito</b> ou <b>Boleto</b></p>
+    
+                            <button id="Semipresencial" class="botao-iniciar-atendimento-semi centralizar">
+                                <b>Matricule-se</b>
+                            </button>
+                            <hr class="hr-modalidade-semi">
+                            <p class="p-modalidade"><a href="#modal-cartao-modalidades" class="editarLink">Saiba mais sobre
+                                    essa
+                                    modalidade.</a></p>
+    
+                            <div id="modal-cartao-modalidades" class="modal">
+                                <div class="modal-content-modalidades">
+                                    <span class="close">&times;</span>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img src="./img/modalidades.jpeg" class="img-modalidades">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="matriculaModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <input type="text" id="modalNameInput" placeholder="Digite seu nome">
+                        <select id="modalCitySelect">
+                            <option value="" disabled selected>Escolha sua cidade</option>
+                            <option value="descalvado">Descalvado</option>
+                            <option value="ibate">Ibaté</option>
+                            <option value="ribeirao_bonito">Ribeirão Bonito</option>
+                        </select>
+                        <button id="modalSendButton">Enviar</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -667,12 +783,13 @@
 
     <script>new WOW().init();</script>
 
-    <script src="./js/matriculese.js"></script>
+    <script src="./js/matriculeseModalidade.js"></script>
     <script src="./js/depoimentos.js"></script>
     <script src="./js/carrousel-zeek.js"></script>
     <script src="./js/atendimentoCurso.js"></script>
     <script src="./js/contagemPolo.js"></script>
     <script src="./js/pesquisa.js"></script>
+    <script src="./js/modalPagamento.js"></script>
 
 </body>
 
