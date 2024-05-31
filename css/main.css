@@ -762,6 +762,10 @@ select {
   text-align: left;
 }
 
+.selo{
+  width: 220px;
+}
+
 .img-pagina-cursos {
   width: 600px;
   border-radius: 30px;
@@ -1286,6 +1290,7 @@ button:hover {
 .hidden {
   display: none;
 }
+
 
 
 
