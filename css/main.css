@@ -143,7 +143,7 @@ hr {
 }
 
 .tamanho-tela-cursos {
-  width: 90%;
+  width: 95%;
 }
 
 .display-flex {
@@ -743,11 +743,7 @@ select {
   transition: 1s;
 }
 
-.img-cursos {
-  width: 300px;
-  padding-inline: 20px;
-  padding-top: 40px;
-}
+
 
 .title-cursos {
   color: var(--color-white);
@@ -764,6 +760,19 @@ select {
 
 .selo{
   width: 220px;
+}
+
+.selo-curso{
+  position: absolute;
+  width: 62px;
+  top: 5px;
+  left: 258px;
+}
+
+.img-cursos {
+  width: 300px;
+  padding-inline: 20px;
+  padding-top: 30px;
 }
 
 .img-pagina-cursos {
