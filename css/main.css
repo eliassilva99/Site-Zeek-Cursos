@@ -1340,16 +1340,16 @@ button:hover {
   width: 80%;
   max-width: 400px;
   min-height: 250px;
+  top: 20%;
 }
 
 .modal-content-modalidades {
   background-color: var(--color-gray);
   border-radius: 20px;
   margin: auto;
-  padding: 10px;
-  width: 100%;
-  max-width: 750px;
-  min-height: 600px;
+  padding: 20px;
+  max-width: 55%;
+  margin-top: 30px;
 }
 
 .close {
@@ -1377,7 +1377,8 @@ button:hover {
 }
 
 .img-modalidades{
-  width: 600px;
+  width: 100%;
+  top: 10%;
 }
 
 
