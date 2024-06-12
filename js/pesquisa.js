@@ -81,9 +81,9 @@ function searchPage() {
     "farmacia e drogaria": "atendenteFarmacia.html",
     "farmacia": "atendenteFarmacia.html",
 
-    "auxiliar administrativo": "auxiliarAdministrativo.html",
-    "administracao": "auxiliarAdministrativo.html",
-    "adm": "auxiliarAdministrativo.html",
+    "assistente administrativo": "assistenteAdministrativo.html",
+    "administracao": "assistenteAdministrativo.html",
+    "adm": "assistenteAdministrativo.html",
 
     "auxiliar de escritorio": "auxiliarEscritorio.html",
     "escritorio": "auxiliarEscritorio.html",
