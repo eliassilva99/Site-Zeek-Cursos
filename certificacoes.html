@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeek Cursos</title>
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/fontawesome.css" />
+  <link rel="stylesheet" href="./css/animate.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/responsivo.css" />
+
+  <link rel="icon" href="./img/zeekinha.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="container-cabecalho">
+      <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one centralizar-menu">
+        <a class="navbar-brand wow fadeIn" href="index.html">
+          <img src="./img/zeekLogo.png" class="logo-zeek" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+          <span>
+            <i class="fas fa-bars tamanho-menu"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li>
+              <a href="index.html" class="menus-cabecalho link wow fadeIn delay-01s"><b>HOME</b></a>
+            </li>
+            <li>
+              <a href="sobreNos.html" class="menus-cabecalho link wow fadeIn delay-02s"><b>SOBRE
+                  NÓS</b></a>
+            </li>
+            <li>
+              <a href="cursos.html" class="menus-cabecalho link wow fadeIn delay-04s"><b>CURSOS</b></a>
+            </li>
+            <li>
+              <a href="https://app3.evoluaeducacao.com.br/" target="_blank"
+                onclick="window.open(this.href, 'newwindow', 'width=1200, height=600'); return false;"
+                class="menus-cabecalho link wow fadeIn delay-05s"><b>ÁREA DO ALUNO</b></a>
+            </li>
+            <li>
+              <a href="cruzeiroDoSul.html" class="menus-cabecalho link wow fadeIn delay-06s"><b>POLOS
+                  CRUZEIRO DO
+                  SUL</b></a>
+            </li>
+            <li>
+              <a href="contato.html" class="menus-cabecalho link wow fadeIn delay-07s"><b>CONTATO</b></a>
+            </li>
+          </ul>
+        </div>
+        <a href="javascript:void(0);" class="menus-cabecalho2 link wow fadeIn delay-08s" onclick="showSearchBox()">
+          <i class="fas fa-search"></i>
+        </a>
+        <div id="searchBox" class="barra-pesquisa">
+          <div class="flex-pesquisa">
+            <input class="espaco-pesquisa" type="text" id="searchInput" placeholder="Digite para pesquisar...">
+            <button class="botao-pesquisar" onclick="searchPage()"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+  <div class="row centralizar">
+    <div class="col-md-6">
+      <h1 class="trilha-de-carreira wow fadeInLeft delay-02s"><b>TRILHA DE CARREIRA</b></h1>
+      <img src="./img/zeekLogo.png" width="350px" class="wow fadeInLeft delay-04s">
+    </div>
+    <div class="col-md-6 wow fadeInRight delay-03s">
+      <img src="./img/Selos/certificado.png" class="img-caixa-oculta wow fadeInRight delay-02s">
+    </div>
+  </div>
+
+  <div class="row centralizar">
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="row centralizar">
+    <div class="col-md-12">
+      <h2>Não achou resposta para a sua dúvida?</h2>
+    </div>
+    <div class="col-md-12">
+      <select id="citySelect" class="botao-selecionar-cidade-whats">
+        <option value="" disabled selected><b>Selecione a cidade</b></option>
+        <option value="descalvado">Descalvado</option>
+        <option value="ibate">Ibaté</option>
+        <option value="ribeirao_bonito">Ribeirão Bonito</option>
+      </select>
+      <button id="startButton" class="botao-whats centralizar">
+        <b>Clique e fale no WhatsApp</b>
+      </button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="col-md-12 centralizar">
+    <img src="./img/NOVO LOGO 2024.png" class="img-logo wow fadeInUp delay-02s">
+  </div>
+
+
+  <footer class="rodape">
+    <div class="row centralizar">
+      <div class="col-md-4 wow fadeInUp">
+        <h1 class="text-white">DESCALVADO</h1><br>
+        <a href="https://maps.app.goo.gl/9F4GdX3nMCPKFCSY6" class="display-flex link-rodape" target="_blank">
+          <img src="./img/Icones/maps.png" class="img-rodape">
+          <h5>Rua Coronel Rafael Tobias, nº 284 <br> Centro - Descalvado/SP</h5>
+        </a><br>
+        <a href="https://wa.me/19992671617" class="display-flex link-rodape" target="_blank">
+          <img src="./img/Icones/phone.png" class="img-rodape">
+          <h5>(19) 99267-1617</h5>
+        </a><br>
+        <div class="display-flex centralizar-rodape">
+          <a href="https://wa.me/19992671617" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+          </a>
+          <a href="https://www.facebook.com/people/Zeek-Descalvado/pfbid0M8mMKPKpgyxzDXZ5BhFNNQkrUZ2KcD3YGah8L5RPdw6V8RnNYMteofnUhbGagj5jl/"
+            class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/facebook.png" class="img-rodape-social">
+          </a>
+          <a href="https://www.instagram.com/zeekdescalvado/" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/instagram.png" class="img-rodape-social">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 wow fadeInUp">
+        <h1 class="text-white">IBATÉ</h1><br>
+        <a href="https://maps.app.goo.gl/6nW9ofPvqVHc3vgj6" class="display-flex link-rodape" target="_blank">
+          <img src="./img/Icones/maps.png" class="img-rodape">
+          <h5>Rua Floriano Peixoto, nº 628 <br> Centro - Ibaté/SP</h5>
+        </a><br>
+        <a href="https://wa.me/16996294928" class="display-flex link-rodape" target="_blank">
+          <img src="./img/Icones/phone.png" class="img-rodape">
+          <h5>(16) 99629-4928</h5>
+        </a><br>
+        <div class="display-flex centralizar-rodape">
+          <a href="https://wa.me/16996294928" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+          </a>
+          <a href="https://www.facebook.com/zeekcursosibate" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/facebook.png" class="img-rodape-social">
+          </a>
+          <a href="https://www.instagram.com/zeekibate/" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/instagram.png" class="img-rodape-social">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 wow fadeInUp">
+        <h1 class="text-white">RIBEIRÃO BONITO</h1><br>
+        <a href="https://maps.app.goo.gl/q4CPbnLY83Bpin5QA" class="display-flex link-rodape" target="_blank">
+          <img src="./img/Icones/maps.png" class="img-rodape">
+          <h5>Rua Jornalista Sebastião Macedo, nº 622 <br> Centro - Ribeirão Bonito/SP</h5>
+        </a><br>
+        <a href="https://wa.me/16999940880" class="display-flex link-rodape" target="_blank">
+          <img src="./img/Icones/phone.png" class="img-rodape">
+          <h5>(16) 99994-0880</h5>
+        </a><br>
+        <div class="display-flex centralizar-rodape">
+          <a href="https://wa.me/16999940880" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+          </a>
+          <a href="https://www.facebook.com/zeek.rb.5" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/facebook.png" class="img-rodape-social">
+          </a>
+          <a href="https://www.instagram.com/zeekribeiraobonito/" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/instagram.png" class="img-rodape-social">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="./js/modernizr-3.5.0.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/popper.min.js"></script>
+<script type="text/javascript" src="./js/wow.min.js"></script>
+<script type="text/javascript" src="./js/dados.js"></script>
+<script type="text/javascript" src="./js/app.js"></script>
+<script type="text/javascript" src="./js/caixa-ocultatrilha.js"></script>
+
+<script>new WOW().init();</script>
+
+<script src="./js/duvidas.js"></script>
+<script src="./js/depoimentos.js"></script>
+<script src="./js/carrousel-zeek.js"></script>
+<script src="router.js"></script>
+<script>
+  (function ($) {
+    $(function () {
+
+
+      $(window).on('scroll', function () {
+        fnOnScroll();
+      });
+
+      $(window).on('resize', function () {
+        fnOnResize();
+      });
+
+
+      var agTimeline = $('.js-timeline'),
+        agTimelineLine = $('.js-timeline_line'),
+        agTimelineLineProgress = $('.js-timeline_line-progress'),
+        agTimelinePoint = $('.js-timeline-card_point-box'),
+        agTimelineItem = $('.js-timeline_item'),
+        agOuterHeight = $(window).outerHeight(),
+        agHeight = $(window).height(),
+        f = -1,
+        agFlag = false;
+
+      function fnOnScroll() {
+        agPosY = $(window).scrollTop();
+
+        fnUpdateFrame();
+      }
+
+      function fnOnResize() {
+        agPosY = $(window).scrollTop();
+        agHeight = $(window).height();
+
+        fnUpdateFrame();
+      }
+
+      function fnUpdateWindow() {
+        agFlag = false;
+
+        agTimelineLine.css({
+          top: agTimelineItem.first().find(agTimelinePoint).offset().top - agTimelineItem.first().offset().top,
+          bottom: agTimeline.offset().top + agTimeline.outerHeight() - agTimelineItem.last().find(agTimelinePoint).offset().top
+        });
+
+        f !== agPosY && (f = agPosY, agHeight, fnUpdateProgress());
+      }
+
+      function fnUpdateProgress() {
+        var agTop = agTimelineItem.last().find(agTimelinePoint).offset().top;
+
+        i = agTop + agPosY - $(window).scrollTop();
+        a = agTimelineLineProgress.offset().top + agPosY - $(window).scrollTop();
+        n = agPosY - a + agOuterHeight / 2;
+        i <= agPosY + agOuterHeight / 2 && (n = i - a);
+        agTimelineLineProgress.css({ height: n + "px" });
+
+        agTimelineItem.each(function () {
+          var agTop = $(this).find(agTimelinePoint).offset().top;
+
+          (agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight ? $(this).addClass('js-ag-active') : $(this).removeClass('js-ag-active');
+        })
+      }
+
+      function fnUpdateFrame() {
+        agFlag || requestAnimationFrame(fnUpdateWindow);
+        agFlag = true;
+      }
+
+
+    });
+  })(jQuery);
+
+
+</script>
+</body>
+
+</html>
