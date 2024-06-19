@@ -29,58 +29,67 @@
 <body>
   <header>
     <div class="container-cabecalho">
-      <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one centralizar-menu">
-        <a class="navbar-brand wow fadeIn" href="index.html">
-          <img src="./img/zeekLogo.png" class="logo-zeek" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
-          <span>
-            <i class="fas fa-bars tamanho-menu"></i>
-          </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li>
-              <a href="index.html" class="menus-cabecalho link wow fadeIn delay-01s"><b class="titulo-cabecalho">HOME</b></a>
-            </li>
-            <li>
-              <a href="sobreNos.html" class="menus-cabecalho link wow fadeIn delay-02s"><b class="titulo-cabecalho">SOBRE
-                  NÓS</b></a>
-            </li>
-            <li>
-              <a href="cursos.html" class="menus-cabecalho link wow fadeIn delay-04s"><b class="titulo-cabecalho">CURSOS</b></a>
-            </li>
-            <li>
-              <a href="certificacoes.html" class="menus-cabecalho link wow fadeIn delay-05s"><b class="titulo-cabecalho">CERTIFICAÇÕES</b></a>
-            </li>
-            <li>
-              <a href="https://app3.evoluaeducacao.com.br/" target="_blank"
-                onclick="window.open(this.href, 'newwindow', 'width=1200, height=600'); return false;"
-                class="menus-cabecalho link wow fadeIn delay-05s"><b class="titulo-cabecalho">ÁREA DO ALUNO</b></a>
-            </li>
-            <li>
-              <a href="cruzeiroDoSul.html" class="menus-cabecalho link wow fadeIn delay-06s"><b class="titulo-cabecalho">POLOS
-                  CRUZEIRO DO
-                  SUL</b></a>
-            </li>
-            <li>
-              <a href="contato.html" class="menus-cabecalho link wow fadeIn delay-07s"><b class="titulo-cabecalho">CONTATO</b></a>
-            </li>
-          </ul>
-        </div>
-        <a href="javascript:void(0);" class="menus-cabecalho2 link wow fadeIn delay-08s" onclick="showSearchBox()">
-          <i class="fas fa-search"></i>
-        </a>
-        <div id="searchBox" class="barra-pesquisa">
-          <div class="flex-pesquisa">
-            <input class="espaco-pesquisa" type="text" id="searchInput" placeholder="Digite para pesquisar...">
-            <button class="botao-pesquisar" onclick="searchPage()"><i class="fas fa-search"></i></button>
-          </div>
-        </div>
-      </nav>
+        <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one centralizar-menu">
+            <a class="navbar-brand wow fadeIn" href="index.html">
+                <img src="./img/zeekLogo.png" class="logo-zeek" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                <span>
+                    <i class="fas fa-bars tamanho-menu"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="index.html" class="menus-cabecalho link wow fadeIn delay-01s"><b
+                                class="titulo-cabecalho">HOME</b></a>
+                    </li>
+                    <li>
+                        <a href="sobreNos.html" class="menus-cabecalho link wow fadeIn delay-02s"><b
+                                class="titulo-cabecalho">SOBRE
+                                NÓS</b></a>
+                    </li>
+                    <li>
+                        <a href="cursos.html" class="menus-cabecalho link wow fadeIn delay-04s"><b
+                                class="titulo-cabecalho">CURSOS</b></a>
+                    </li>
+                    <li>
+                        <a href="certificacoes.html" class="menus-cabecalho link wow fadeIn delay-05s"><b
+                                class="titulo-cabecalho">CERTIFICAÇÕES</b></a>
+                    </li>
+                    <li>
+                        <a href="https://app3.evoluaeducacao.com.br/" target="_blank"
+                            onclick="window.open(this.href, 'newwindow', 'width=1200, height=600'); return false;"
+                            class="menus-cabecalho link wow fadeIn delay-05s"><b class="titulo-cabecalho">ÁREA DO
+                                ALUNO</b></a>
+                    </li>
+                    <li>
+                        <a href="cruzeiroDoSul.html" class="menus-cabecalho link wow fadeIn delay-06s"><b
+                                class="titulo-cabecalho">POLOS
+                                CRUZEIRO DO
+                                SUL</b></a>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="menus-cabecalho link wow fadeIn delay-07s"><b
+                                class="titulo-cabecalho">CONTATO</b></a>
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="menus-cabecalho2 link wow fadeIn delay-08s"
+                onclick="showSearchBox()">
+                <i class="fas fa-search"></i>
+            </a>
+            <div id="searchBox" class="barra-pesquisa">
+                <div class="flex-pesquisa">
+                    <input class="espaco-pesquisa" type="text" id="searchInput"
+                        placeholder="Digite para pesquisar...">
+                    <button class="botao-pesquisar" onclick="searchPage()"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </nav>
 
     </div>
-  </header>
+</header>
   <div class="row centralizar">
     <div class="col-md-6">
       <h1 class="wow fadeInLeft delay-02s"><b class="trilha-de-carreira">TRILHA DE CARREIRA</b></h1>
@@ -93,7 +102,7 @@
 
   <div class="row centralizar">
     <div class="container-trilha centralizar">
-      <div class="col-md-2 col-md-2-trilha">
+      <div class="col-md-2 col-md-2-trilha wow fadeInDown delay-02s">
         <div class="info-item" onclick="toggleContent(event, this)">
           <div class="info-title">
             <img src="./img/Selos/Standart.png" class="selos-trilha"><br><br>
@@ -110,9 +119,9 @@
         </div>
       </div>
 
-      <img src="./img/Selos/seta.png" class="seta-trilha">
+      <img src="./img/Selos/seta.png" class="seta-trilha  wow fadeInDown delay-03s">
 
-      <div class="col-md-2 col-md-2-trilha">
+      <div class="col-md-2 col-md-2-trilha wow fadeInDown delay-04s">
         <div class="info-item" onclick="toggleContent(event, this)">
           <div class="info-title">
             <img src="./img/Selos/Professional.png" class="selos-trilha"><br><br>
@@ -138,9 +147,9 @@
         </div>
       </div>
 
-      <img src="./img/Selos/seta.png" class="seta-trilha">
+      <img src="./img/Selos/seta.png" class="seta-trilha wow fadeInDown delay-05s">
       
-      <div class="col-md-2 col-md-2-trilha">
+      <div class="col-md-2 col-md-2-trilha wow fadeInDown delay-06s">
         <div class="info-item" onclick="toggleContent(event, this)">
           <div class="info-title">
             <img src="./img/Selos/Advanced.png" class="selos-trilha"><br><br>
@@ -160,9 +169,9 @@
         </div>
       </div>
 
-      <img src="./img/Selos/seta.png" class="seta-trilha">
+      <img src="./img/Selos/seta.png" class="seta-trilha wow fadeInDown delay-07s">
 
-      <div class="col-md-2 col-md-2-trilha">
+      <div class="col-md-2 col-md-2-trilha wow fadeInDown delay-08s">
         <div class="info-item" onclick="toggleContent(event, this)">
           <div class="info-title">
             <img src="./img/Selos/Premium.png" class="selos-trilha"><br><br>
@@ -220,17 +229,17 @@
 
 
   <div class="row centralizar">
-    <div class="col-md-12">
+    <div class="col-md-12 wow fadeInDown delay-02s">
       <h2>Não achou resposta para a sua dúvida?</h2>
     </div>
     <div class="col-md-12">
-      <select id="citySelect" class="botao-selecionar-cidade-whats">
+      <select id="citySelect" class="botao-selecionar-cidade-whats  wow fadeInDown delay-04s">
         <option value="" disabled selected><b>Selecione a cidade</b></option>
         <option value="descalvado">Descalvado</option>
         <option value="ibate">Ibaté</option>
         <option value="ribeirao_bonito">Ribeirão Bonito</option>
       </select>
-      <button id="startButton" class="botao-whats centralizar">
+      <button id="startButton" class="botao-whats centralizar  wow fadeInDown delay-06s">
         <b>Clique e fale no WhatsApp</b>
       </button>
     </div>
@@ -243,7 +252,7 @@
 
 
 
-  <div class="col-md-12 centralizar">
+  <div class="col-md-12 centralizar  wow fadeInDown delay-03s">
     <img src="./img/NOVO LOGO 2024.png" class="img-logo wow fadeInUp delay-02s">
   </div>
 
@@ -363,6 +372,7 @@
 <script type="text/javascript" src="./js/dados.js"></script>
 <script type="text/javascript" src="./js/app.js"></script>
 <script type="text/javascript" src="./js/ocultar-selos.js"></script>
+<script src="./js/pesquisa.js"></script>
 
 <script>new WOW().init();</script>
 

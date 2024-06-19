@@ -153,6 +153,11 @@ function searchPage() {
     
     "ingles adultos": "inglesAdultos.html",
     "adultos": "inglesAdultos.html",
+
+    "home": "index.html",
+    "curso": "cursos.html",
+    "cursos": "cursos.html",
+    "telefone": "contato.html",
   };
 
   // Verifica se o termo de pesquisa está no mapeamento
