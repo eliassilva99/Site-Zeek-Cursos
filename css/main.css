@@ -1507,7 +1507,15 @@ button:hover {
   margin: 50px;
 }
 
+.mb-xl-2{
+  text-align: left;
+  padding-left: 10%;
+}
 
+.accordion-body{
+  text-align: left;
+  align-items: justify;
+}
 
 
 
@@ -1671,6 +1679,7 @@ button:hover {
   display: block;
   width: 90%;
   max-width: 60%;
+  border-radius: 20px;
 }
 
 .-trilha-close {
@@ -1690,6 +1699,13 @@ button:hover {
   cursor: pointer;
 }
 
+.accordion-item, .accordion-button{
+  background-color: var(--color-white)!important;
+}
+
+.accordion-body{
+  background-color: var(--color-white);
+}
 
 
 
