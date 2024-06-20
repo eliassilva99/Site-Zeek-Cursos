@@ -299,6 +299,7 @@ body {
 .link {
   color: var(--color-white);
   position: relative;
+  
 }
 
 .link:hover {
