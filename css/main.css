@@ -1590,7 +1590,7 @@ button:hover {
   display: none;
   margin-top: 10px; 
   color: var(--color-blue-hover);
-  padding: 10px; 
+  padding: 5px; 
   border: 1px solid var(--color-gray-black); 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   width: 100%; 
@@ -1611,6 +1611,22 @@ button:hover {
 .cursos-selos {
   color: var(--color-black-heavy);
   border-bottom: 1px solid var(--color-gray-black);
+  padding-top: 7px;
+  transition: 0.8s;
+}
+
+
+.link-curso-trilha{
+  color: white!important;
+  width: 100%;
+  margin: auto;
+  border-radius: 5px;
+  transition: 0.8s;
+}
+
+.link-curso-trilha:hover{
+  color: white!important;
+  background-color: var(--color-light-blue)!important;
 }
 
 .seta-trilha {
@@ -1623,6 +1639,56 @@ button:hover {
   padding-inline: 5px;
 }
 
+.img-caixa-oculta {
+  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-caixa-oculta {
+  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Modal */
+.-trilha-modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 10px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+.-trilha-modal-content {
+  margin: auto;
+  display: block;
+  width: 90%;
+  max-width: 60%;
+}
+
+.-trilha-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.-trilha-close:hover,
+.-trilha-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
 
