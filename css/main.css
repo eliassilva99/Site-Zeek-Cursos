@@ -1558,6 +1558,7 @@ button:hover {
 .row.centralizar {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .col-md-2-trilha {
@@ -1573,6 +1574,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  width: 100%;
 }
 
 .info-item {
@@ -1638,8 +1640,8 @@ button:hover {
 }
 
 .seta-trilha {
-  margin-top: 120px;
-  width: 35px;
+  margin-top: 100px;
+  width: 80px;
 }
 
 .icones-desenvolvido{
@@ -1724,10 +1726,7 @@ button:hover {
 
 
 
-.selos-trilha {
-  width: 100%;
-  cursor: pointer;
-}
+
 
 
 
@@ -1761,7 +1760,8 @@ button:hover {
 }
 
 .selos-trilha {
-  width: 100%;
+  width: 400px;
+  cursor: pointer;
 }
 
 .faq_area {
