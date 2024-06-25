@@ -171,9 +171,9 @@ b {
 }
 
 h1 {
-  color: var(--color-blue)!important;
+  color: var(--color-blue) !important;
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold!important;
+  font-weight: bold !important;
   text-align: center;
   font-size: 35px;
   padding-top: 20px;
@@ -263,11 +263,11 @@ body {
   padding-left: 70px;
 }
 
-.carousel-control-next{
+.carousel-control-next {
   right: -50px;
 }
 
-.carousel-control-prev{
+.carousel-control-prev {
   left: -50px;
 }
 
@@ -412,12 +412,12 @@ body {
 }
 
 .botao-selecionar-cidade {
-  background-color: var(--color-yellow);
-  color: var(--color-black-heavy);
+  color: var(--color-icones);
   text-align: center;
   margin: 10px;
-  width: 42%;
-  border-color: var(--color-yellow);
+  width: 37%;
+  border: 1px solid var(--color-blue);
+  border-radius: 5px;
 }
 
 .botao-digitar-nome {
@@ -448,19 +448,20 @@ select {
 .botao-iniciar-atendimento {
   border: none;
   background-color: var(--color-light-blue);
-  color: var(--color-black-heavy);
+  color: var(--color-white);
   margin: auto;
   margin-top: 10px;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: pointer;
   width: 250px;
   padding: 15px;
-  transition: 1s;
+  transition: 0.8s;
 }
 
 .botao-iniciar-atendimento:hover {
-  background-color: var(--color-icones);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-blue-diferenciais);
+  border: 1px solid var(--color-blue-diferenciais);
   transition: 0.8s;
 }
 
@@ -475,12 +476,6 @@ select {
   width: 250px;
   padding: 15px;
   transition: 1s;
-}
-
-.botao-iniciar-atendimento:hover {
-  background-color: var(--color-icones);
-  color: var(--color-white);
-  transition: 0.8s;
 }
 
 .botao-iniciar-atendimento-presencial {
@@ -515,12 +510,6 @@ select {
   transition: 1s;
 }
 
-.botao-iniciar-atendimento:hover {
-  background-color: var(--color-icones);
-  color: var(--color-white);
-  transition: 0.8s;
-}
-
 .background-blue {
   background-color: var(--color-light-blue);
 }
@@ -546,7 +535,7 @@ select {
 }
 
 .background-green {
-  background-color: var(--color-green);
+  background-color: var(--color-green)!important;
 }
 
 .background-green-salarial {
@@ -641,10 +630,18 @@ select {
   width: 20px;
   height: 20px;
   padding: 0px;
-  border: 2px solid var(--color-blue);
   border-radius: 100%;
   cursor: pointer;
   display: inline-block;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-green);
+  transition: 0.8s;
+}
+
+.botao-depoimentos:hover {
+  border: 1px solid var(--color-green)!important;
+  background-color: var(--color-ligth-green)!important;
+  transition: 0.8s;
 }
 
 .numero-depoimentos {
@@ -1505,12 +1502,12 @@ button:hover {
   font-family: 'Open Sans', sans-serif !important;
   padding: 0px;
   margin-top: 5px;
-  color: var(--color-white)!important;
+  color: var(--color-white) !important;
 }
 
 .desenvolvido-por b {
   font-size: 25px !important;
-  color: var(--color-white)!important;
+  color: var(--color-white) !important;
   font-family: 'Open Sans', sans-serif !important;
   padding: 0px;
   margin: 50px;
@@ -1568,8 +1565,8 @@ button:hover {
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  margin-bottom: 0px!important;
-  padding-bottom: 0px!important;
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 .container-trilha {
@@ -1615,7 +1612,7 @@ button:hover {
 }
 
 .info-content:hover {
-  color: var(--color-white)!important;
+  color: var(--color-white) !important;
 }
 
 .saiba-mais-selo {
@@ -1636,7 +1633,7 @@ button:hover {
 }
 
 .cursos-selos:hover {
-  color: var(--color-white)!important;
+  color: var(--color-white) !important;
   transition: 0.5s;
 }
 
@@ -1725,11 +1722,11 @@ button:hover {
 .accordion-item,
 .accordion-button {
   background-color: var(--color-white) !important;
-  padding-inline: 0px!important;
-  margin: 0px!important;
+  padding-inline: 0px !important;
+  margin: 0px !important;
 }
 
-.accordion-header{
+.accordion-header {
   padding-inline: 0px;
 }
 
@@ -1737,20 +1734,20 @@ button:hover {
   background-color: var(--color-white);
   text-align: left;
   align-items: justify;
-  padding-inline: 5px!important;
-  padding-top: 0px!important;
+  padding-inline: 5px !important;
+  padding-top: 0px !important;
 }
 
 
 .accordion {
   border-bottom: 1px solid var(--color-gray-caixa);
-  padding: 0px!important;
-  margin: 0px!important;
+  padding: 0px !important;
+  margin: 0px !important;
 }
 
 .title-faq {
-  padding-top: 30px!important;
-  padding-bottom: 0px!important;
+  padding-top: 30px !important;
+  padding-bottom: 0px !important;
   font-size: 35px;
   color: var(--color-black) !important;
   margin: 0 !important;
@@ -1762,7 +1759,7 @@ button:hover {
   padding-top: 0px;
   color: var(--color-blue-faq) !important;
   font-size: 16px;
-  padding-inline: 0px!important;
+  padding-inline: 0px !important;
 }
 
 .row-equal-height {
@@ -1771,19 +1768,20 @@ button:hover {
   margin: auto;
   padding-inline: 40px;
 }
+
 .col-equal-height {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding-top: 0px!important;
+  padding-top: 0px !important;
 }
 
-.faq{
-  color: var(--color-black-heavy)!important;
-  font-size: 40px!important;
+.faq {
+  color: var(--color-black-heavy) !important;
+  font-size: 40px !important;
 }
 
-.img-faq{
+.img-faq {
   width: 90%;
   margin: auto;
 }
