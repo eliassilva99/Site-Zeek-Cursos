@@ -263,6 +263,14 @@ body {
   padding-left: 70px;
 }
 
+.carousel-control-next{
+  right: -50px;
+}
+
+.carousel-control-prev{
+  left: -50px;
+}
+
 .logo-zeek {
   width: 2px;
 }
