@@ -60,7 +60,7 @@ hr {
 }
 
 .color-white {
-  color: var(--color-white);
+  color: var(--color-white)!important;
   margin-top: 50px;
   margin-bottom: 20px;
 }
@@ -73,6 +73,7 @@ hr {
 .title-salarial {
   font-size: 27px;
   font-family: 'Montserrat', sans-serif;
+  color: var(--color-white);
 }
 
 .color-white-salarial {
@@ -695,6 +696,12 @@ select {
   background-color: var(--color-pink);
 }
 
+.borda-ibate b,
+.borda-descalvado b,
+.borda-ribeirao b{
+  color: var(--color-white);
+}
+
 .borda-ribeirao {
   background-color: var(--color-green);
 }
@@ -754,7 +761,7 @@ select {
 
 
 .title-cursos {
-  color: var(--color-white);
+  color: var(--color-white)!important;
   font-size: 40px;
   text-align: left;
   padding-left: 20px;
