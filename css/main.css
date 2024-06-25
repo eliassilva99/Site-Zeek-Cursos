@@ -1501,6 +1501,7 @@ button:hover {
   font-family: 'Open Sans', sans-serif !important;
   padding: 0px;
   margin-top: 5px;
+  color: var(--color-white)!important;
 }
 
 .desenvolvido-por b {
