@@ -760,6 +760,24 @@
 <script src="router.js"></script>
 <script src="./js/modal-trilha.js"></script>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener('click', function (event) {
+        var isClickInside = document.getElementById('faqAccount').contains(event.target);
+
+        if (!isClickInside) {
+            var openAccordion = document.querySelector('.accordion-collapse.show');
+            if (openAccordion) {
+                var bsCollapse = new bootstrap.Collapse(openAccordion, {
+                    toggle: true
+                });
+                bsCollapse.hide();
+            }
+        }
+    });
+</script>
+
 
 </body>
 

@@ -1360,7 +1360,7 @@ button:hover {
 }
 
 .modal-content-modalidades {
-    background-color: var(--color-gray);
+    background-color: var(--color-white);
     border-radius: 20px;
     margin: auto;
     padding: 20px;
