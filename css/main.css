@@ -142,7 +142,7 @@ hr {
 }
 
 .tamanho-tela {
-    width: 80%;
+    width: 80%!important;
 }
 
 .tamanho-tela-realizacoes {
@@ -769,15 +769,13 @@ select {
 
 .link-rodape {
     color: var(--color-white);
-    text-decoration: none;
-    transition: 1s;
+    transition: 0.8s;
 }
 
-.link-rodape:hover {
-    color: var(--color-white);
-    text-decoration: none;
-    opacity: 50%;
-    transition: 1s;
+.link-rodape h5:hover {
+    color: var(--color-gray-caixa);
+    margin: 5px;
+    transition: 0.8s;
 }
 
 
