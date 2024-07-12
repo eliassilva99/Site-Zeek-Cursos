@@ -7,6 +7,19 @@
     .navbar-nav {
         text-align: center;
     }
+
+
+    .img-convite {
+        width: 50%;
+    }
+
+    .centralizar-convite {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 /* Desktop e Tablets (col-md) 768px a 991px */
@@ -14,6 +27,7 @@
     .logo-zeek {
         width: 220px;
     }
+
 }
 
 /* Tablets (col-sm) 576px a 767px */
@@ -21,10 +35,16 @@
     .logo-zeek {
         width: 220px;
     }
+    .img-convite {
+        width: 100%;
+    }
 }
 
 /* Tablets e Celulares (col) 0px a 767px */
 @media (max-width: 767px) {
+    .img-convite {
+        width: 100%;
+    }
     .logo-zeek {
         width: 160px;
     }
