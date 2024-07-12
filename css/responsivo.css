@@ -43,7 +43,7 @@
 /* Tablets e Celulares (col) 0px a 767px */
 @media (max-width: 767px) {
     .img-convite {
-        width: 100%;
+        width: 95%;
     }
     .logo-zeek {
         width: 160px;
