@@ -38,12 +38,26 @@
     .img-convite {
         width: 95%;
     }
+    .centralizar-convite {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 /* Tablets e Celulares (col) 0px a 767px */
 @media (max-width: 767px) {
     .img-convite {
         width: 95%;
+    }
+    .centralizar-convite {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin: 0;
     }
     .logo-zeek {
         width: 160px;
