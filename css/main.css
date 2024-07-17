@@ -213,7 +213,7 @@ h4 {
 }
 
 h5 {
-    color: var(--color-white);
+    color: var(--color-white)!important;
     font-family: 'Open Sans', sans-serif;
     text-align: left;
     font-size: 17px;
@@ -780,20 +780,6 @@ select {
     text-decoration: none;
     color: inherit;
 }
-
-.link-rodape h5:hover {
-    color: var(--color-gray-caixa)!important;
-    transition: 0.8s;
-    text-decoration: none;
-}
-
-.link-rodape h5 {
-    color: var(--color-gray-caixa)!important;
-    transition: 0.8s;
-    text-decoration: none;
-}
-
-
 
 .title-cursos {
     color: var(--color-white) !important;
