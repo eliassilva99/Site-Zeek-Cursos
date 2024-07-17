@@ -826,9 +826,7 @@ select {
 }
 
 .img-pagina-cursos {
-    height: 100%;
-    max-height: 600px!important;
-    width: 100%;
+    max-height: 400px!important;
     border-radius: 30px;
 }
 
