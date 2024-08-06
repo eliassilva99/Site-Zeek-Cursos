@@ -1017,6 +1017,49 @@ button:hover {
     display: flex;
 }
 
+/* Estilo do modal */
+.modal-whats-cidade {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-whats-cidade-content {
+    background-color: #fefefe;
+    border-radius: 7px;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal-whats-cidade .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-whats-cidade .close:hover,
+.modal-whats-cidade .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.city-button {
+    margin: 10px 0;
+    width: 100%;
+}
+
 
 
 

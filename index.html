@@ -132,12 +132,25 @@
         </a>
     </div>
 
+    
     <div class="row">
-        <a href="https://api.whatsapp.com/send/?phone=5516996294928&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20melhores%20informa%C3%A7%C3%B5es%20das%20qualifica%C3%A7%C3%B5es!&type=phone_number&app_absent=0
-            " target="_blank">
-            <img src="./img/Contato/WhatsApppMaior.png" class="whats-contato wow fadeInRight delay-08s">
-        </a>
+        <img src="./img/Contato/WhatsApppMaior.png" class="whats-contato wow fadeInRight delay-08s" onclick="openWhatsModal()">
     </div>
+
+    <!-- Modal para seleção de cidade -->
+    <div id="modal-whats-cidade" class="modal-whats-cidade">
+        <div class="modal-whats-cidade-content">
+            <span class="close" onclick="closeWhatsModal()">&times;</span>
+            <h2><b>Escolha a cidade:</b></h>
+            <button class="city-button" onclick="openWhatsApp('Descalvado')">Descalvado</button>
+            <button class="city-button" onclick="openWhatsApp('Ibaté')">Ibaté</button>
+            <button class="city-button" onclick="openWhatsApp('Ribeirão Bonito')">Ribeirão Bonito</button>
+        </div>
+    </div>
+
+
+
+
     <div class="col-12 wow fadeInDown">
         <h1>
             <b>ESCOLHA SUA PROFISSÃO</b>
@@ -669,6 +682,7 @@
     <script type="text/javascript" src="./js/wow.min.js"></script>
     <script type="text/javascript" src="./js/dados.js"></script>
     <script type="text/javascript" src="./js/app.js"></script>
+    <script type="text/javascript" src="./js/modal-whats.js"></script>
 
     <script>new WOW().init();</script>
 
