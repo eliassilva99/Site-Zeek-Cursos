@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     "evolucaoProfissional": "Evolução Pessoal e Profissional",
     "evolucaoProfissionalteste": "Evolução Pessoal e Profissional",
     "excelAvancado": "Excel Avançado",
+    "excelAvancadoPowerBi": "Excel Avançado + Power Bi",
     "ferramentasProdutividadeGoogle": "Ferramentas de Produtividade Google",
     "gestorAdministrativo": "Gestor Administrativo",
     "gestorFinanceiro": "Gestor Financeiro",

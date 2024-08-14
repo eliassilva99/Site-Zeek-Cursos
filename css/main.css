@@ -805,6 +805,13 @@ select {
     left: 258px;
 }
 
+.selo-lancamento {
+    position: absolute;
+    width: 200px;
+    top: 5px;
+    right: 130px;
+}
+
 .img-cursos {
     width: 300px;
     padding-inline: 20px;
