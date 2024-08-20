@@ -31,56 +31,65 @@
     <header>
         <div class="container-cabecalho">
             <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one centralizar-menu">
-              <a class="navbar-brand wow fadeIn" href="index.html">
-                <img src="./img/zeekLogo.png" class="logo-zeek" />
-              </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
-                <span>
-                  <i class="fas fa-bars tamanho-menu"></i>
-                </span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li>
-                    <a href="index.html" class="menus-cabecalho link wow fadeIn delay-01s"><b class="titulo-cabecalho">HOME</b></a>
-                  </li>
-                  <li>
-                    <a href="sobreNos.html" class="menus-cabecalho link wow fadeIn delay-02s"><b class="titulo-cabecalho">SOBRE
-                        NÓS</b></a>
-                  </li>
-                  <li>
-                    <a href="cursos.html" class="menus-cabecalho link wow fadeIn delay-04s"><b class="titulo-cabecalho">CURSOS</b></a>
-                  </li>
-                  <li>
-                    <a href="certificacoes.html" class="menus-cabecalho link wow fadeIn delay-05s"><b class="titulo-cabecalho">CERTIFICAÇÕES</b></a>
-                  </li>
-                  <li>
-                    <a href="https://app3.evoluaeducacao.com.br/" target="_blank"
-                      onclick="window.open(this.href, 'newwindow', 'width=1200, height=600'); return false;"
-                      class="menus-cabecalho link wow fadeIn delay-05s"><b class="titulo-cabecalho">ÁREA DO ALUNO</b></a>
-                  </li>
-                  <li>
-                    <a href="cruzeiroDoSul.html" class="menus-cabecalho link wow fadeIn delay-06s"><b class="titulo-cabecalho">POLOS
-                        CRUZEIRO DO
-                        SUL</b></a>
-                  </li>
-                  <li>
-                    <a href="contato.html" class="menus-cabecalho link wow fadeIn delay-07s"><b class="titulo-cabecalho">CONTATO</b></a>
-                  </li>
-                </ul>
-              </div>
-              <a href="javascript:void(0);" class="menus-cabecalho2 link wow fadeIn delay-08s" onclick="showSearchBox()">
-                <i class="fas fa-search"></i>
-              </a>
-              <div id="searchBox" class="barra-pesquisa">
-                <div class="flex-pesquisa">
-                  <input class="espaco-pesquisa" type="text" id="searchInput" placeholder="Digite para pesquisar...">
-                  <button class="botao-pesquisar" onclick="searchPage()"><i class="fas fa-search"></i></button>
+                <a class="navbar-brand wow fadeIn" href="index.html">
+                    <img src="./img/zeekLogo.png" class="logo-zeek" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                    <span>
+                        <i class="fas fa-bars tamanho-menu"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="index.html" class="menus-cabecalho link wow fadeIn delay-01s"><b
+                                    class="titulo-cabecalho">HOME</b></a>
+                        </li>
+                        <li>
+                            <a href="sobreNos.html" class="menus-cabecalho link wow fadeIn delay-02s"><b
+                                    class="titulo-cabecalho">SOBRE
+                                    NÓS</b></a>
+                        </li>
+                        <li>
+                            <a href="cursos.html" class="menus-cabecalho link wow fadeIn delay-04s"><b
+                                    class="titulo-cabecalho">CURSOS</b></a>
+                        </li>
+                        <li>
+                            <a href="certificacoes.html" class="menus-cabecalho link wow fadeIn delay-05s"><b
+                                    class="titulo-cabecalho">CERTIFICAÇÕES</b></a>
+                        </li>
+                        <li>
+                            <a href="https://app3.evoluaeducacao.com.br/" target="_blank"
+                                onclick="window.open(this.href, 'newwindow', 'width=1200, height=600'); return false;"
+                                class="menus-cabecalho link wow fadeIn delay-05s"><b class="titulo-cabecalho">ÁREA DO
+                                    ALUNO</b></a>
+                        </li>
+                        <li>
+                            <a href="cruzeiroDoSul.html" class="menus-cabecalho link wow fadeIn delay-06s"><b
+                                    class="titulo-cabecalho">POLOS
+                                    CRUZEIRO DO
+                                    SUL</b></a>
+                        </li>
+                        <li>
+                            <a href="contato.html" class="menus-cabecalho link wow fadeIn delay-07s"><b
+                                    class="titulo-cabecalho">CONTATO</b></a>
+                        </li>
+                    </ul>
                 </div>
-              </div>
+                <a href="javascript:void(0);" class="menus-cabecalho2 link wow fadeIn delay-08s"
+                    onclick="showSearchBox()">
+                    <i class="fas fa-search"></i>
+                </a>
+                <div id="searchBox" class="barra-pesquisa">
+                    <div class="flex-pesquisa">
+                        <input class="espaco-pesquisa" type="text" id="searchInput"
+                            placeholder="Digite para pesquisar...">
+                        <button class="botao-pesquisar" onclick="searchPage()"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
             </nav>
-      
-          </div>
+
+        </div>
     </header>
     <br>
 
@@ -91,6 +100,23 @@
             </div>
             <br>
         </div>
+        
+
+        <div class="chat-container">
+            <div class="chatbox" id="chatbox">
+                <div class="chat-header">
+                    <button class="close-chat" onclick="toggleChatbox()">X</button>
+                </div>
+                <div class="chatlogs" id="chatlogs"></div>
+                <div class="chat-form">
+                    <input class="input-chat" type="text" id="userInput" placeholder="Digite sua pergunta...">
+                    <button class="button-chat" onclick="getResponse()">Enviar</button>
+                </div>
+            </div>
+            <img src="./img/Icones/chat.png" id="chatToggle" class="chat-toggle" alt="Abrir Chat">
+        </div>
+
+
     </div>
     <div class="row centralizar">
         <div class="col-md-6">
@@ -245,9 +271,9 @@
 
             <div class="col-md-4 wow fadeInUp">
                 <h1 class="text-white">RIBEIRÃO BONITO</h1><br>
-                <a href="https://maps.app.goo.gl/q4CPbnLY83Bpin5QA" class="display-flex link-rodape" target="_blank">
+                <a href="https://maps.app.goo.gl/5GPVn4SUHerbSWyi7" class="display-flex link-rodape" target="_blank">
                     <img src="./img/Icones/maps.png" class="img-rodape">
-                    <h5>Rua Jornalista Sebastião Macedo, nº 622 <br> Centro - Ribeirão Bonito/SP</h5>
+                    <h5>Rua São Paulo, nº 530 <br> Centro - Ribeirão Bonito/SP</h5>
                 </a><br>
                 <a href="https://wa.me/16999940880" class="display-flex link-rodape" target="_blank">
                     <img src="./img/Icones/phone.png" class="img-rodape">
@@ -309,6 +335,7 @@
     <script>new WOW().init();</script>
 
     <script src="./js/matriculese.js"></script>
+    <script src="./js/chatBot.js"></script>
     <script src="./js/depoimentos.js"></script>
     <script src="./js/carrousel-zeek.js"></script>
     <script src="./js/contagemPolo.js"></script>
