@@ -10,7 +10,7 @@ const nomesCursosPersonalizados = {
     "agentedehotelariaeturismo": "Agente de Hotelaria e Turismo",
     "assistenteDeProducaoAcucarAlcool": "Assistente de Produção de Açúcar e Álcool",
     "atendenteFarmacia": "Atendente de Farmácia",
-    "auxiliarAdministrativo": "Auxiliar Administrativo",
+    "assistenteAdministrativo": "Auxiliar Administrativo",
     "auxiliarEscritorio": "Auxiliar de Escritório",
     "desenhistaPersonalCad": "Desenhista Personal CAD",
     "desenvolvedorSistemas": "Desenvolvedor de Sistemas",
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 whatsappNumber = '5519992671617'; // Número de telefone do WhatsApp de Descalvado
                 break;
             case 'ibate':
-                whatsappNumber = '5516996294928'; // Número de telefone do WhatsApp de Ibaté
+                whatsappNumber = '5516999921250'; // Número de telefone do WhatsApp de Ibaté
                 break;
             case 'ribeirao_bonito':
                 whatsappNumber = '5516999940880'; // Número de telefone do WhatsApp de Ribeirão Bonito

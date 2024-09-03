@@ -16,7 +16,7 @@ function openWhatsApp(city) {
           message = 'Olá, vim pelo site e gostaria de melhores informações das qualificações!';
           break;
       case 'Ibaté':
-          phoneNumber = '5516996294928';
+          phoneNumber = '5516999921250';
           message = 'Olá, vim pelo site e gostaria de melhores informações das qualificações!';
           break;
       case 'Ribeirão Bonito':

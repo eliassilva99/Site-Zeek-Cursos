@@ -99,26 +99,31 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
+                <img class="d-block w-100" src="./img/AniversarioZeek.png" alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
                 <a href="excelAvancadoPowerBi.html">
-                    <img class="d-block w-100" src="./img/Excel e PowerBi.png" alt="Primeiro Slide">
+                    <img class="d-block w-100" src="./img/Excel e PowerBi.png" alt="Terceiro Slide">
                 </a>
             </div>
             <div class="carousel-item">
                 <a href="certificacoes.html">
-                    <img class="d-block w-100" src="./img/certificações.png" alt="Segundo Slide">
+                    <img class="d-block w-100" src="./img/certificações.png" alt="Quarto Slide">
                 </a>
             </div>
             <div class="carousel-item">
                 <a href="roboticaArduino.html">
-                    <img class="d-block w-100" src="./img/roboticaArduino.png" alt="Terceiro Slide">
+                    <img class="d-block w-100" src="./img/roboticaArduino.png" alt="Quinto Slide">
                 </a>
             </div>
             <div class="carousel-item">
                 <a href="inglesKids.html">
-                    <img class="d-block w-100" src="./img/ingles.png" alt="Quarto Slide">
+                    <img class="d-block w-100" src="./img/ingles.png" alt="Sexto Slide">
                 </a>
             </div>
         </div>
@@ -132,9 +137,10 @@
         </a>
     </div>
 
-    
+
     <div class="row">
-        <img src="./img/Contato/WhatsApppMaior.png" class="whats-contato wow fadeInRight delay-08s" onclick="openWhatsModal()">
+        <img src="./img/Contato/WhatsApppMaior.png" class="whats-contato wow fadeInRight delay-08s"
+            onclick="openWhatsModal()">
     </div>
 
     <!-- Modal para seleção de cidade -->
@@ -142,12 +148,18 @@
         <div class="modal-whats-cidade-content">
             <span class="close" onclick="closeWhatsModal()">&times;</span>
             <h2><b>Escolha a cidade:</b></h>
-            <button class="city-button" onclick="openWhatsApp('Descalvado')">Descalvado</button>
-            <button class="city-button" onclick="openWhatsApp('Ibaté')">Ibaté</button>
-            <button class="city-button" onclick="openWhatsApp('Ribeirão Bonito')">Ribeirão Bonito</button>
+                <button class="city-button" onclick="openWhatsApp('Descalvado')">Descalvado</button>
+                <button class="city-button" onclick="openWhatsApp('Ibaté')">Ibaté</button>
+                <button class="city-button" onclick="openWhatsApp('Ribeirão Bonito')">Ribeirão Bonito</button>
         </div>
     </div>
 
+    <div id="modal-propaganda" class="modal-propaganda">
+        <div class="modal-propaganda-content">
+            <span class="close-propaganda">&times;</span>
+            <img src="./img/modal-imagem.png" class="modal-imagem-propaganda">
+        </div>
+    </div>
 
 
 
@@ -619,12 +631,12 @@
                     <img src="./img/Icones/maps.png" class="img-rodape">
                     <h5>Rua Floriano Peixoto, nº 628 <br> Centro - Ibaté/SP</h5>
                 </a><br>
-                <a href="https://wa.me/16996294928" class="display-flex link-rodape" target="_blank">
+                <a href="https://wa.me/16999921250" class="display-flex link-rodape" target="_blank">
                     <img src="./img/Icones/phone.png" class="img-rodape">
-                    <h5>(16) 99629-4928</h5>
+                    <h5>(16) 99992-1250</h5>
                 </a><br>
                 <div class="display-flex centralizar-rodape">
-                    <a href="https://wa.me/16996294928" class="display-flex link-rodape" target="_blank">
+                    <a href="https://wa.me/16999921250" class="display-flex link-rodape" target="_blank">
                         <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
                     </a>
                     <a href="https://www.facebook.com/zeekcursosibate" class="display-flex link-rodape" target="_blank">
@@ -692,6 +704,12 @@
     <script src="./js/contagemPolo.js"></script>
     <script src="./js/pesquisa.js"></script>
     <script src="./js/diferenciais.js"></script>
+
+    <script>
+        document.querySelector('.close-propaganda').onclick = function () {
+            document.getElementById('modal-propaganda').style.display = 'none';
+        };
+    </script>
 
 </body>
 

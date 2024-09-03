@@ -81,5 +81,5 @@ function initializeCarousel(carouselClassName, prevButtonClassName, nextButtonCl
     // Automação: Mudar automaticamente os slides do carrossel a cada 3 segundos (3000 milissegundos)
     setInterval(function () {
         nextSlide();
-    }, 3000);
+    }, 8000);
 }
