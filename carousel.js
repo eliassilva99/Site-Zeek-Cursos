@@ -78,8 +78,7 @@ function initializeCarousel(carouselClassName, prevButtonClassName, nextButtonCl
         nextModalImage();
     });
 
-    // Automação: Mudar automaticamente os slides do carrossel a cada 3 segundos (3000 milissegundos)
     setInterval(function () {
         nextSlide();
-    }, 8000);
+    }, 8500);
 }
