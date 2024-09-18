@@ -14,7 +14,8 @@
     --color-dark-pink: #ac067a;
     --color-ligth-green: #82df90;
     --color-blue-faq: #007DFE;
-    --color-ligth-green2: rgb(188, 255, 198)0;
+    --color-ligth-green2: rgb(188, 255, 198);
+    --color-ligth-green3: rgb(218, 255, 224);
     --color-black: #2E2E2E;
     --color-black-heavy: #000000;
     --color-text: #4f4f4f;
@@ -3011,7 +3012,7 @@ img {
 
 .container-equipe {
     width: 90%;
-    margin:  auto;
+    margin: auto;
     padding: 20px;
 }
 
@@ -3072,18 +3073,21 @@ img {
     border-radius: 8px;
     margin: 5px 0;
     padding: 20px;
-    width: 48%; /* Ocupa 46% da largura da tela */
+    width: 48%;
+    /* Ocupa 46% da largura da tela */
     box-sizing: border-box;
 }
 
 .team-member-horizontal img {
-    width: 250px; /* Largura fixa para imagem */
+    width: 250px;
+    /* Largura fixa para imagem */
     border-radius: 5%;
     margin-right: 20px;
 }
 
 .team-member-horizontal .member-info {
-    max-width: calc(100% - 170px); /* Subtrai a largura da imagem e do margin */
+    max-width: calc(100% - 170px);
+    /* Subtrai a largura da imagem e do margin */
 }
 
 .intro {
@@ -3098,4 +3102,88 @@ img {
     color: #999;
     padding: 20px;
     border-top: 1px solid #ddd;
+}
+
+
+#wbot-header {
+    background: var(--color-blue-diferenciais) !important;
+}
+
+#wbot-footer {
+    background: var(--color-blue-diferenciais) !important;
+}
+
+#wbot-attach-file {
+    width: 50px;
+}
+
+#wbot-send-message {
+    width: 50px;
+}
+
+#wbot-close-chat {
+    width: 40px;
+}
+
+.wbot-menu {
+    text-align: right !important;
+}
+
+.wbot-menu button {
+    background-color: var(--color-blue-diferenciais) !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin: 5px !important;
+    text-align: left !important;
+    vertical-align: middle !important;
+    padding: 10px 20px !important;
+    line-height: normal !important;
+    text-align: right !important;
+}
+
+.wbot-menu b {
+    color: var(--color-black-heavy) !important;
+    margin: auto !important;
+    text-align: right !important;
+}
+
+.wbot-menu button div {
+    color: var(--color-white) !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: left !important;
+}
+
+.wbot-menu button div b{
+    color: var(--color-white) !important;
+}
+
+.wbot-content {
+    background-color: var(--color-gray-black) !important;
+    color: var(--color-black-heavy) !important;
+}
+
+.wbot-content p {
+    color: var(--color-black-heavy) !important;
+}
+
+.wbot-content p b {
+    color: var(--color-black-heavy) !important;
+}
+
+
+
+.wbot-avatar{
+    background-image: url('/img/Icones/chat.png')!important;
+}
+
+#wbot-open-chat{
+    background-image: url('/img/Icones/chat.png')!important;
+    width: 70px!important;
+    height: 70px!important;
+    border-radius: 100%!important;
+    margin: 0px!important;
+    padding: 0px!important;
 }
