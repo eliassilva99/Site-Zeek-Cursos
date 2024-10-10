@@ -1306,16 +1306,6 @@ button:hover {
 
 
 
-.imgBlog {
-    background-image: url('/img/Blog/capaBlog.png');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    margin: 0;
-    padding: 0;
-    padding-top: 100px;
-}
-
 .card {
     width: 280px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -2957,63 +2947,10 @@ img {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container-equipe {
-    width: 90%;
+    width: 100%;
     margin: auto;
-    padding: 20px;
+    padding: 0px;
 }
 
 .section-title {
@@ -3023,12 +2960,7 @@ img {
     padding-bottom: 5px;
 }
 
-.team-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: auto;
-}
+
 
 .team-member {
     background-color: #fff;
@@ -3052,47 +2984,24 @@ img {
     margin: 10px 0;
 }
 
-.team-member-horizontal h3 {
-    color: #007BFF;
-    margin: 5px 0;
-}
-
-.team-member p {
-    color: #555;
-}
-
-.team-member-horizontal p {
-    color: #555;
-}
-
 .team-member-horizontal {
     display: flex;
     align-items: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin: 5px 0;
-    padding: 20px;
-    width: 48%;
-    /* Ocupa 46% da largura da tela */
-    box-sizing: border-box;
+    margin: 5px;
 }
 
 .team-member-horizontal img {
-    width: 250px;
-    /* Largura fixa para imagem */
-    border-radius: 5%;
-    margin-right: 20px;
+    width: 100%;
 }
 
-.team-member-horizontal .member-info {
-    max-width: calc(100% - 170px);
-    /* Subtrai a largura da imagem e do margin */
+.member-info p {
+    padding-inline: 20px;
 }
 
 .intro {
     text-align: center;
     margin-top: 20px;
+    margin-inline: 50px;
     color: #666;
 }
 
@@ -3188,70 +3097,37 @@ img {
     padding: 0px!important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.row-equipe{
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    margin: 0!important;
+}
+
+.row-equipe p{
+    color: var(--color-text);
+    font-size: 15px;
+}
+
+.col-equipe{
+    border: 1px solid var(--color-gray-caixa);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.col-equipe img{
+    width: 250px;
+}
+
+.col-equipe h3{
+    margin: 5px;
+    color: var(--color-blue-diferenciais);
+}
+
+.centralizar-blog {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+}

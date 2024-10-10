@@ -99,7 +99,7 @@ function countup(start, end, elementId) {
   
   // Chamar a função para iniciar a contagem quando a parte desejada for visível
   startCountWhenVisible('countup-idade', () => {
-    countup(0, 27, 'countup-idade');
+    countup(0, 28, 'countup-idade');
   });
   
   startCountWhenVisible('countup-polos', () => {
