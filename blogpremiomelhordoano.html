@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeek Cursos</title>
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/fontawesome.css" />
+  <link rel="stylesheet" href="./css/animate.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/responsivo.css" />
+
+  <link rel="icon" href="./img/zeekinha.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/vendor.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+  <header>
+    <div class="container-cabecalho">
+      <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one centralizar-menu">
+        <a class="navbar-brand wow fadeIn" href="index.html">
+          <img src="./img/zeekLogo.png" class="logo-zeek" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+          <span>
+            <i class="fas fa-bars tamanho-menu"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li>
+              <a href="index.html" class="menus-cabecalho link wow fadeIn delay-01s"><b
+                  class="titulo-cabecalho">HOME</b></a>
+            </li>
+            <li>
+              <a href="sobreNos.html" class="menus-cabecalho link wow fadeIn delay-02s"><b
+                  class="titulo-cabecalho">SOBRE
+                  NÓS</b></a>
+            </li>
+            <li>
+              <a href="cursos.html" class="menus-cabecalho link wow fadeIn delay-04s"><b
+                  class="titulo-cabecalho">CURSOS</b></a>
+            </li>
+            <li>
+              <a href="certificacoes.html" class="menus-cabecalho link wow fadeIn delay-05s"><b
+                  class="titulo-cabecalho">CERTIFICAÇÕES</b></a>
+            </li>
+            <li>
+              <a href="https://app3.evoluaeducacao.com.br/" target="_blank"
+                onclick="window.open(this.href, 'newwindow', 'width=1200, height=600'); return false;"
+                class="menus-cabecalho link wow fadeIn delay-05s"><b class="titulo-cabecalho">ÁREA DO
+                  ALUNO</b></a>
+            </li>
+            <li>
+              <a href="cruzeiroDoSul.html" class="menus-cabecalho link wow fadeIn delay-06s"><b
+                  class="titulo-cabecalho">POLOS
+                  CRUZEIRO DO
+                  SUL</b></a>
+            </li>
+            <li>
+              <a href="contato.html" class="menus-cabecalho link wow fadeIn delay-07s"><b
+                  class="titulo-cabecalho">CONTATO</b></a>
+            </li>
+          </ul>
+        </div>
+        <a href="javascript:void(0);" class="menus-cabecalho2 link wow fadeIn delay-08s" onclick="showSearchBox()">
+          <i class="fas fa-search"></i>
+        </a>
+        <div id="searchBox" class="barra-pesquisa">
+          <div class="flex-pesquisa">
+            <input class="espaco-pesquisa" type="text" id="searchInput" placeholder="Digite para pesquisar...">
+            <button class="botao-pesquisar" onclick="searchPage()"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <body>
+    <div class="banner-area bg-black" id="banner">
+      <!-- banner area start -->
+      <div class="banner-inner pt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="thumb after-left-top">
+                <img src="./img/Blog/Placapremio2024.png" alt="img">
+              </div>
+            </div>
+            <div class="col-lg-6 align-self-center]">
+              <div class="banner-details mt-4 mt-lg-0">
+                <div class="post-meta-single mt-3">
+                  <ul>
+                    <a class="btn btn-blue-blog">BLOG ZEEK CURSOS</a>
+                  </ul>
+                </div>
+                <h2><b>Um reconhecimento que reafirma nossa dedicação e qualidade na educação.</b></h2>
+                <p>É com imensa alegria que anunciamos que a Zeek Cursos foi premiada pela segunda vez consecutiva como
+                  a Melhor Escola de Cursos Profissionalizantes e de Idiomas em Ibaté! Esse reconhecimento destaca nosso
+                  compromisso com a excelência e a qualidade no ensino.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row centralizar-blog">
+        <div class="col-md-7">
+          <h4 class="text-noticia-blog">
+            Estamos muito orgulhosos em anunciar que a Zeek Cursos foi reconhecida, pela segunda vez consecutiva, como a
+            Melhor Escola de Cursos Profissionalizantes e de Idiomas em Ibaté! Este prêmio é um reflexo do nosso
+            compromisso
+            com a excelência educacional, qualidade no atendimento e a constante busca por melhorias em nossos serviços.
+            <br><br>
+            Desde a nossa fundação, temos trabalhado arduamente para oferecer aos nossos alunos uma experiência de
+            aprendizado única e transformadora. Nossa equipe de professores qualificados, junto com uma estrutura
+            moderna e
+            cursos atualizados, tem sido fundamental para esse sucesso.
+            <br><br>
+            Este reconhecimento é também um tributo aos nossos alunos, que são a razão de nossa existência. Agradecemos
+            a
+            todos que fazem parte da nossa história e que, com seu empenho e dedicação, ajudam a construir a reputação
+            da
+            Zeek Cursos como uma referência em educação na região.
+            <br><br>
+            Continuaremos a nos esforçar para superar as expectativas e a oferecer oportunidades de aprendizado que
+            transformem vidas. Este prêmio é apenas o começo de uma nova fase de crescimento e conquistas para a nossa
+            escola. Vamos juntos rumo a novas vitórias!
+            <br><br>
+            Acompanhe nossas redes sociais para mais novidades e informações sobre os nossos cursos. Venha fazer parte
+            da
+            nossa família!
+          </h4>
+          <div class="row">
+          <div class="col-md-6">
+            <img src="./img/Blog/TaisENoemy.png" class="img-blog">
+          </div>
+          <div class="col-md-6">
+            <img src="./img/Blog/Placapremio2023.png" class="img-blog">
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 d-flex flex-column justify-content-start">
+          <div class="trending-post style-box">
+            <div class="section-title">
+              <h6 class="title">Trending News</h6>
+            </div>
+            <div class="single-post-list-wrap">
+              <div class="media">
+                <div class="media-left">
+                  <a href="">
+                  <img src="./img/post/list/1.png" alt="img">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <div class="details">
+                    <h6 class="title"><a href="#" class="title-trending">Important to rate more
+                        liquidity</a></h6>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="single-post-list-wrap">
+              <div class="media">
+                <div class="media-left">
+                  <img src="./img/post/list/2.png" alt="img">
+                </div>
+                <div class="media-body">
+                  <div class="details">
+                    <h6 class="title"><a href="#" class="title-trending">Sounds like John got the Josh</a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-post-list-wrap">
+              <div class="media">
+                <div class="media-left">
+                  <img src="./img/post/list/3.png" alt="img">
+                </div>
+                <div class="media-body">
+                  <div class="details">
+                    <h6 class="title"><a href="#" class="title-trending">Grayscale's and Bitcoin Trusts</a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-post-list-wrap">
+              <div class="media">
+                <div class="media-left">
+                  <img src="./img/post/list/4.png" alt="img">
+                </div>
+                <div class="media-body">
+                  <div class="details">
+                    <h6 class="title"><a href="#" class="title-trending">Sounds like John got the Josh</a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-post-list-wrap mb-0">
+              <div class="media">
+                <div class="media-left">
+                  <img src="./img/post/list/5.png" alt="img">
+                </div>
+                <div class="media-body">
+                  <div class="details">
+                    <h6 class="title"><a href="#" class="title-trending">Grayscale's and Bitcoin Trusts</a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-md-12 centralizar">
+      <img src="./img/NOVO LOGO 2024.png" class="img-logo wow fadeInUp delay-02s">
+    </div>
+
+
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="rodape">
+    <div class="row margin-rodape centralizar">
+      <div class="col-md-4 wow fadeInUp">
+        <h1 class="text-white">DESCALVADO</h1><br>
+        <a href="https://maps.app.goo.gl/9F4GdX3nMCPKFCSY6" class="display-flex link-rodape" target="_blank">
+          <img src="./img/Icones/maps.png" class="img-rodape">
+          <h5>Rua Coronel Rafael Tobias, nº 284 <br> Centro - Descalvado/SP</h5>
+        </a><br>
+        <div class="display-flex centralizar-rodape">
+          <a href="https://wa.me/16999921250" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+          </a>
+          <a href="https://www.facebook.com/people/Zeek-Descalvado/pfbid0M8mMKPKpgyxzDXZ5BhFNNQkrUZ2KcD3YGah8L5RPdw6V8RnNYMteofnUhbGagj5jl/"
+            class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/facebook.png" class="img-rodape-social">
+          </a>
+          <a href="https://www.instagram.com/zeekdescalvado/" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/instagram.png" class="img-rodape-social">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 wow fadeInUp">
+        <h1 class="text-white">IBATÉ</h1><br>
+        <a href="https://maps.app.goo.gl/6nW9ofPvqVHc3vgj6" class="display-flex link-rodape" target="_blank">
+          <img src="./img/Icones/maps.png" class="img-rodape">
+          <h5>Rua Floriano Peixoto, nº 628 <br> Centro - Ibaté/SP</h5>
+        </a><br>
+        <div class="display-flex centralizar-rodape">
+          <a href="https://wa.me/16999921250" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+          </a>
+          <a href="https://www.facebook.com/zeekcursosibate" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/facebook.png" class="img-rodape-social">
+          </a>
+          <a href="https://www.instagram.com/zeekibate/" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/instagram.png" class="img-rodape-social">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 wow fadeInUp">
+        <h1 class="text-white">RIBEIRÃO BONITO</h1><br>
+        <a href="https://maps.app.goo.gl/5GPVn4SUHerbSWyi7" class="display-flex link-rodape" target="_blank">
+          <img src="./img/Icones/maps.png" class="img-rodape">
+          <h5>Rua São Paulo, nº 530 <br> Centro - Ribeirão Bonito/SP</h5>
+        </a><br>
+        <div class="display-flex centralizar-rodape">
+          <a href="https://wa.me/16999921250" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+          </a>
+          <a href="https://www.facebook.com/zeek.rb.5" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/facebook.png" class="img-rodape-social">
+          </a>
+          <a href="https://www.instagram.com/zeekribeiraobonito/" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/instagram.png" class="img-rodape-social">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row centralizar">
+      <div class="col-md-12">
+        <h1 class="desenvolvido-por wow fadeInDown delay-01s">Desenvolvido por: <br></h1>
+        <h1 class="desenvolvido-por wow fadeInDown delay-02s"><b>Elias Marcelino</b></h1>
+        <a href="https://wa.me/5516992228707" target="_blank" class="wow fadeInUp delay-04s">
+          <img src="./img/Icones/whatsApp-white.png" class="icones-desenvolvido">
+        </a>
+        <a href="https://www.instagram.com/elias.silva99?igsh=NDN0Nm1ibHk4ZXBy" target="_blank"
+          class="wow fadeInUp delay-04s">
+          <img src="./img/Icones/instagram-white.png" class="icones-desenvolvido">
+        </a>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="./js/modernizr-3.5.0.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/popper.min.js"></script>
+  <script type="text/javascript" src="./js/wow.min.js"></script>
+  <script type="text/javascript" src="./js/dados.js"></script>
+  <script type="text/javascript" src="./js/app.js"></script>
+  <script type="text/javascript" src="./js/modal-whats.js"></script>
+
+  <script>new WOW().init();</script>
+
+  <script src="./js/matriculese.js"></script>
+  <script src="./js/depoimentos.js"></script>
+  <script src="./js/carrousel-zeek.js"></script>
+  <script src="./js/contagemPolo.js"></script>
+  <script src="./js/pesquisa.js"></script>
+  <script src="./js/diferenciais.js"></script>
+
+  <script src="./js/vendor.js"></script>
+  <script src="./js/main.js"></script>
+
+  <script>
+    document.querySelector('.close-propaganda').onclick = function () {
+      document.getElementById('modal-propaganda').style.display = 'none';
+    };
+  </script>
+  <script src="https://wbot.chat/index.js" token="fd40e925d254d789713b120c5d586428"></script>
+
+</body>
+
+</html>
