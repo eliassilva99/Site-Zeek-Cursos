@@ -230,12 +230,12 @@ h5 {
 }
 
 .centralizar {
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 30px;
+    margin: auto !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding-top: 25px !important;
+    padding-bottom: 30px !important;
 }
 
 .centralizar-menu {
@@ -2954,10 +2954,14 @@ img {
 }
 
 .section-title {
-    margin-top: 0px;
+    padding-top: 5px!important;
     color: #007BFF;
     border-bottom: 2px solid #007BFF;
-    padding-bottom: 5px;
+    padding-bottom: 10px!important;
+}
+
+.single-post-list-wrap{
+    padding-top: 10px;
 }
 
 
@@ -3065,7 +3069,7 @@ img {
     text-align: left !important;
 }
 
-.wbot-menu button div b{
+.wbot-menu button div b {
     color: var(--color-white) !important;
 }
 
@@ -3084,50 +3088,81 @@ img {
 
 
 
-.wbot-avatar{
-    background-image: url('/img/Icones/icon-chat.png')!important;
+.wbot-avatar {
+    background-image: url('/img/Icones/icon-chat.png') !important;
 }
 
-#wbot-open-chat{
-    background-image: url('/img/Icones/icon-chat.png')!important;
-    width: 70px!important;
-    height: 70px!important;
-    border-radius: 100%!important;
-    margin: 0px!important;
-    padding: 0px!important;
+#wbot-open-chat {
+    background-image: url('/img/Icones/icon-chat.png') !important;
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
 }
 
-.row-equipe{
+.row-equipe {
     margin: auto;
     justify-content: center;
     text-align: center;
-    margin: 0!important;
+    margin: 0 !important;
 }
 
-.row-equipe p{
+.row-equipe p {
     color: var(--color-text);
     font-size: 15px;
 }
 
-.col-equipe{
+.col-equipe {
     border: 1px solid var(--color-gray-caixa);
     border-radius: 10px;
     margin: 5px;
 }
 
-.col-equipe img{
+.col-equipe img {
     width: 250px;
 }
 
-.col-equipe h3{
+.col-equipe h3 {
     margin: 5px;
     color: var(--color-blue-diferenciais);
 }
 
-.centralizar-blog {
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 30px;
+.centralizar-blog{
+    justify-content: center !important;
 }
+
+.link-blog {
+    color: var(--color-blue-diferenciais);
+    transition: 0.8s;
+    text-decoration: none;
+}
+
+.btn-blue-blog {
+    color: var(--color-white) !important;
+}
+
+.text-noticia-blog {
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.tamanho-p-blog{
+    height: 80px;
+}
+
+.video-descalvado-blog{
+    width: 80%;
+}
+
+.img-blog{
+    padding-top: 20px;
+}
+
+.title-trending{
+    font-size: 15px!important;
+}
+
+
+  
