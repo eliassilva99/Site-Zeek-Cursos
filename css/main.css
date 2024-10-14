@@ -8,6 +8,8 @@
     --color-orange-presencial: #FBC200;
     --color-dark-orange: #fc6900;
     --color-yellow: #e3fc00;
+    --color-yellow-blog: #fcda00;
+    --color-red: #fc0000;
     --color-green: #26C440;
     --color-dark-green: #006e12;
     --color-pink: #E93FB6;
@@ -296,6 +298,14 @@ body {
 
 .titulo-cabecalho {
     font-size: 15px;
+}
+
+.titulo-cabecalho-blog {
+    font-size: 17px;
+    color: var(--color-white);
+    background-color: var(--color-red);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .menus-cabecalho {
