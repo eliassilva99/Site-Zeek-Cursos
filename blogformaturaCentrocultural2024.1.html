@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeek Cursos</title>
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/fontawesome.css" />
+  <link rel="stylesheet" href="./css/animate.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/responsivo.css" />
+
+  <link rel="icon" href="./img/zeekinha.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/vendor.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+  <header>
+    <div class="container-cabecalho">
+      <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one centralizar-menu">
+        <a class="navbar-brand wow fadeIn" href="index.html">
+          <img src="./img/zeekLogo.png" class="logo-zeek" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+          <span>
+            <i class="fas fa-bars tamanho-menu"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li>
+              <a href="index.html" class="menus-cabecalho link wow fadeIn delay-01s"><b
+                  class="titulo-cabecalho">HOME</b></a>
+            </li>
+            <li>
+              <a href="sobreNos.html" class="menus-cabecalho link wow fadeIn delay-02s"><b
+                  class="titulo-cabecalho">SOBRE
+                  NÓS</b></a>
+            </li>
+            <li>
+              <a href="cursos.html" class="menus-cabecalho link wow fadeIn delay-04s"><b
+                  class="titulo-cabecalho">CURSOS</b></a>
+            </li>
+            <li>
+              <a href="certificacoes.html" class="menus-cabecalho link wow fadeIn delay-05s"><b
+                  class="titulo-cabecalho">CERTIFICAÇÕES</b></a>
+            </li>
+            <li>
+              <a href="https://app3.evoluaeducacao.com.br/" target="_blank"
+                onclick="window.open(this.href, 'newwindow', 'width=1200, height=600'); return false;"
+                class="menus-cabecalho link wow fadeIn delay-05s"><b class="titulo-cabecalho">ÁREA DO
+                  ALUNO</b></a>
+            </li>
+            <li>
+              <a href="cruzeiroDoSul.html" class="menus-cabecalho link wow fadeIn delay-06s"><b
+                  class="titulo-cabecalho">POLOS
+                  CRUZEIRO DO
+                  SUL</b></a>
+            </li>
+            <li>
+              <a href="contato.html" class="menus-cabecalho link wow fadeIn delay-07s"><b
+                  class="titulo-cabecalho">CONTATO</b></a>
+            </li>
+          </ul>
+        </div>
+        <a href="javascript:void(0);" class="menus-cabecalho2 link wow fadeIn delay-08s" onclick="showSearchBox()">
+          <i class="fas fa-search"></i>
+        </a>
+        <div id="searchBox" class="barra-pesquisa">
+          <div class="flex-pesquisa">
+            <input class="espaco-pesquisa" type="text" id="searchInput" placeholder="Digite para pesquisar...">
+            <button class="botao-pesquisar" onclick="searchPage()"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <body>
+    <div class="banner-area bg-black" id="banner">
+      <!-- banner area start -->
+      <div class="banner-inner pt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="thumb after-left-top">
+                <img src="./img/Blog/Formatura Centro Cultural 2024 01/capa.png" alt="img">
+              </div>
+            </div>
+            <div class="col-lg-6 align-self-center]">
+              <div class="banner-details mt-4 mt-lg-0">
+                <div class="post-meta-single mt-3">
+                  <ul>
+                    <a class="btn btn-blue-blog" href="blog.html">BLOG ZEEK CURSOS</a>
+                  </ul>
+                </div>
+                <h2><b>Formatura dos Alunos do Centro Cultural</b></h2>
+                <p>A Zeek Cursos celebrou a formatura de seus alunos dos cursos de Informática, Administração, Excel e
+                  Robótica em uma emocionante cerimônia no Centro Cultural de Ibaté. Este momento especial marcou a
+                  conclusão de uma importante etapa na formação desses novos profissionais, prontos para enfrentar os
+                  desafios do mercado de trabalho.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row centralizar-blog">
+        <div class="col-md-7">
+          <h4 class="text-noticia-blog">
+            Realizamos uma cerimônia de formatura no Centro Cultural de Ibaté, celebrando
+            o sucesso dos alunos dos cursos de Informática, Administração, Excel e Robótica. O evento reuniu familiares,
+            amigos e a equipe da escola, em uma noite de muita emoção e conquistas. A formatura foi mais do que um marco
+            acadêmico.
+            <br><br>
+            Os cursos de Informática, Administração, Excel e Robótica são parte essencial da grade de ensino e cada um
+            deles desempenha um papel importante na capacitação profissional dos alunos. A cerimônia
+            destacou as habilidades adquiridas em cada área, desde a gestão administrativa até o domínio de tecnologias
+            avançadas, como a robótica. Os formandos de Excel, por exemplo, desenvolveram competências essenciais em
+            análise de dados e automatização de processos, enquanto os alunos de Robótica mostraram habilidades
+            inovadoras, construindo projetos e explorando o futuro da tecnologia.
+            <br><br>
+            Durante a cerimônia, os alunos foram homenageados com certificados, simbolizando sua dedicação e
+            comprometimento ao longo dos cursos. Professores e coordenadores da Zeek Cursos destacaram o crescimento de
+            cada aluno, reforçando a importância da educação continuada e o valor de se manter atualizado para enfrentar
+            os desafios profissionais.
+            <br><br>
+            A Zeek Cursos se orgulha de cada um dos formandos e reafirma seu compromisso em continuar oferecendo cursos
+            de alta qualidade que atendam às necessidades do mercado. Este foi apenas o primeiro de muitos passos que
+            esses alunos darão em suas jornadas profissionais, e temos certeza de que o futuro reserva grandes
+            conquistas para todos eles.
+            <br><br>
+            Parabéns a todos os formandos!
+          </h4>
+        </div>
+        <div class="col-lg-3 col-sm-6 d-flex flex-column justify-content-start">
+          <div class="trending-post style-box">
+            <div class="section-title">
+              <h6 class="title">Últimas Notícias...</h6>
+            </div>
+            <div class="single-post-list-wrap">
+              <div class="media">
+                <div class="media-left">
+                  <a href="blogpremiomelhordoano.html">
+                    <img src="./img/Blog/Premio melhores do ano/TaisENoemy.png" alt="img">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <div class="details">
+                    <h6 class="title"><a href="blogpremiomelhordoano.html" class="title-trending">Prêmio de
+                        Melhor Escola de Cursos
+                        Profissionalizantes e de Idiomas</a></h6>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="single-post-list-wrap">
+              <div class="media">
+                <div class="media-left">
+                  <a href="bloganiversarioibate.html">
+                    <img src="./img/Blog/Aniversário 28 anos ibaté/zeek28anos.png" alt="img">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <div class="details">
+                    <h6 class="title"><a href="bloganiversarioibate.html" class="title-trending">Zeek Cursos
+                        Completa 28 Anos em Ibaté!</a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-post-list-wrap">
+              <div class="media">
+                <div class="media-left">
+                  <a href="bloganiversariodescalvado.html">
+                    <img src="./img/Blog/Aniversário 2 Descalvado/zeek2anosdescalvado2.png" alt="img">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <div class="details">
+                    <h6 class="title"><a href="bloganiversariodescalvado" class="title-trending">Zeek
+                        Cursos
+                        Descalvado: 2 Anos Transformando Vidas!</a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-post-list-wrap">
+              <div class="media">
+                <div class="media-left">
+                  <a href="blogarraiazeek.html">
+                    <img src="./img/Blog/Arraía Zeek/arraiazeekcapa.png" alt="img">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <div class="details">
+                    <h6 class="title"><a href="blogarraiazeek.html" class="title-trending">Arraiá da
+                        Zeek Cursos: Uma Festa Junina Inesquecível!</a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-post-list-wrap mb-0">
+              <div class="media">
+                <div class="media-left">
+                  <a href="blogformaturaCentrocultural2024.1.html">
+                    <img src="./img/Blog/Formatura Centro Cultural 2024 01/capa.png" alt="img">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <div class="details">
+                    <h6 class="title"><a href="blogformaturaCentrocultural2024.1.html" class="title-trending">Formatura
+                        dos Alunos do Centro Cultural</a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row centralizar">
+      <div class="col-md-11">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/1.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/2.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/3.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/4.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/5.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/6.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/7.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/8.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/9.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/10.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/11.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/12.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/13.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/14.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/15.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/16.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/17.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/18.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/19.png" class="img-blog">
+          </div>
+          <div class="col-md-3">
+            <img src="./img/Blog/Formatura Centro Cultural 2024 01/20.png" class="img-blog">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 centralizar">
+      <img src="./img/NOVO LOGO 2024.png" class="img-logo wow fadeInUp delay-02s">
+    </div>
+
+
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="rodape">
+    <div class="row margin-rodape centralizar">
+      <div class="col-md-4 wow fadeInUp">
+        <h1 class="text-white">DESCALVADO</h1><br>
+        <a href="https://maps.app.goo.gl/9F4GdX3nMCPKFCSY6" class="display-flex link-rodape" target="_blank">
+          <img src="./img/Icones/maps.png" class="img-rodape">
+          <h5>Rua Coronel Rafael Tobias, nº 284 <br> Centro - Descalvado/SP</h5>
+        </a><br>
+        <div class="display-flex centralizar-rodape">
+          <a href="https://wa.me/16999921250" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+          </a>
+          <a href="https://www.facebook.com/people/Zeek-Descalvado/pfbid0M8mMKPKpgyxzDXZ5BhFNNQkrUZ2KcD3YGah8L5RPdw6V8RnNYMteofnUhbGagj5jl/"
+            class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/facebook.png" class="img-rodape-social">
+          </a>
+          <a href="https://www.instagram.com/zeekdescalvado/" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/instagram.png" class="img-rodape-social">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 wow fadeInUp">
+        <h1 class="text-white">IBATÉ</h1><br>
+        <a href="https://maps.app.goo.gl/6nW9ofPvqVHc3vgj6" class="display-flex link-rodape" target="_blank">
+          <img src="./img/Icones/maps.png" class="img-rodape">
+          <h5>Rua Floriano Peixoto, nº 628 <br> Centro - Ibaté/SP</h5>
+        </a><br>
+        <div class="display-flex centralizar-rodape">
+          <a href="https://wa.me/16999921250" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+          </a>
+          <a href="https://www.facebook.com/zeekcursosibate" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/facebook.png" class="img-rodape-social">
+          </a>
+          <a href="https://www.instagram.com/zeekibate/" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/instagram.png" class="img-rodape-social">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 wow fadeInUp">
+        <h1 class="text-white">RIBEIRÃO BONITO</h1><br>
+        <a href="https://maps.app.goo.gl/5GPVn4SUHerbSWyi7" class="display-flex link-rodape" target="_blank">
+          <img src="./img/Icones/maps.png" class="img-rodape">
+          <h5>Rua São Paulo, nº 530 <br> Centro - Ribeirão Bonito/SP</h5>
+        </a><br>
+        <div class="display-flex centralizar-rodape">
+          <a href="https://wa.me/16999921250" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+          </a>
+          <a href="https://www.facebook.com/zeek.rb.5" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/facebook.png" class="img-rodape-social">
+          </a>
+          <a href="https://www.instagram.com/zeekribeiraobonito/" class="display-flex link-rodape" target="_blank">
+            <img src="./img/Icones/instagram.png" class="img-rodape-social">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row centralizar">
+      <div class="col-md-12">
+        <h1 class="desenvolvido-por wow fadeInDown delay-01s">Desenvolvido por: <br></h1>
+        <h1 class="desenvolvido-por wow fadeInDown delay-02s"><b>Elias Marcelino</b></h1>
+        <a href="https://wa.me/5516992228707" target="_blank" class="wow fadeInUp delay-04s">
+          <img src="./img/Icones/whatsApp-white.png" class="icones-desenvolvido">
+        </a>
+        <a href="https://www.instagram.com/elias.silva99?igsh=NDN0Nm1ibHk4ZXBy" target="_blank"
+          class="wow fadeInUp delay-04s">
+          <img src="./img/Icones/instagram-white.png" class="icones-desenvolvido">
+        </a>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="./js/modernizr-3.5.0.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/popper.min.js"></script>
+  <script type="text/javascript" src="./js/wow.min.js"></script>
+  <script type="text/javascript" src="./js/dados.js"></script>
+  <script type="text/javascript" src="./js/app.js"></script>
+  <script type="text/javascript" src="./js/modal-whats.js"></script>
+
+  <script>new WOW().init();</script>
+
+  <script src="./js/matriculese.js"></script>
+  <script src="./js/depoimentos.js"></script>
+  <script src="./js/carrousel-zeek.js"></script>
+  <script src="./js/contagemPolo.js"></script>
+  <script src="./js/pesquisa.js"></script>
+  <script src="./js/diferenciais.js"></script>
+
+  <script src="./js/vendor.js"></script>
+  <script src="./js/main.js"></script>
+
+  <script>
+    document.querySelector('.close-propaganda').onclick = function () {
+      document.getElementById('modal-propaganda').style.display = 'none';
+    };
+  </script>
+  <script src="https://wbot.chat/index.js" token="fd40e925d254d789713b120c5d586428"></script>
+
+</body>
+
+</html>
