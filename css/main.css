@@ -271,7 +271,7 @@ body {
 
 .container-cabecalho {
     background-color: var(--color-blue);
-    padding-left: 70px;
+    padding-left: 30px;
 }
 
 .carousel-control-next {
@@ -309,7 +309,7 @@ body {
 }
 
 .menus-cabecalho {
-    padding-inline: 15px;
+    padding-inline: 12px;
     margin: auto;
 }
 
@@ -3159,7 +3159,7 @@ img {
 }
 
 .tamanho-p-blog{
-    height: 80px;
+    height: 90px;
 }
 
 .video-descalvado-blog{
