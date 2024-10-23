@@ -104,9 +104,15 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
+                <img class="d-block w-100" src="./img/halloween.png" alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
                 <img class="d-block w-100" src="./img/promocaodiadascriancasnovo.png" alt="Primeiro Slide">
             </div>
             <div class="carousel-item">
@@ -149,9 +155,9 @@
     </div>
 
 
-  
 
-   
+
+
 
 
 
@@ -160,17 +166,56 @@
             <b>ESCOLHA SUA PROFISSÃO</b>
         </h1>
     </div>
-    <div class="col-12 centralizar">
-        <a href="desenvolvimentoGamesStarter.html">
-            <img src="./img/Cursos/roboticaArduino.png" class="cursos-destaque wow fadeInLeft">
-        </a>
-        <a href="atendenteFarmacia.html">
-            <img src="./img/Cursos/auxiliarAdministrativo.png" class="cursos-destaque wow fadeInUp">
-        </a>
-        <a href="marketingDigital.html">
-            <img src="./img/Cursos/desenvolvedorSistemas.png" class="cursos-destaque wow fadeInRight">
-        </a>
+
+
+
+
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css'>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="atendenteFarmacia.html" target="_blank">
+                    <img src="./img/Cursos/atendenteFarmacia.png" />
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="desenvolvimentoGamesStarter.html" target="_blank">
+                    <img src="./img/Cursos/desenvolvimentoGamesStarter.png" />
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="inglesJovens.html" target="_blank">
+                    <img src="./img/Cursos/inglesJovens.png" />
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="desenhistaPersonalCad.html" target="_blank">
+                    <img src="./img/Cursos/desenhistaPersonalCad.png" />
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="recursosHumanosDepartamentoPessoal.html" target="_blank">
+                    <img src="./img/Cursos/recursosHumanos.png" />
+                </a>
+            </div>
+        </div>
+
     </div>
+    <script
+        src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js'></script>
+
+
+
+
+
+
+
+
+
     <div class="col-12 centralizar">
         <a href="cursos.html" class="link">
             <button class="botao wow fadeInDown">
@@ -685,6 +730,7 @@
     <script src="./js/contagemPolo.js"></script>
     <script src="./js/pesquisa.js"></script>
     <script src="./js/diferenciais.js"></script>
+    <script src="./js/carousel-cursos.js"></script>
 
     <script>
         document.querySelector('.close-propaganda').onclick = function () {
