@@ -31,73 +31,15 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-cabecalho">
-            <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one centralizar-menu">
-                <a class="navbar-brand wow fadeIn" href="index.html">
-                    <img src="./img/zeekLogo.png" class="logo-zeek" />
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
-                    <span>
-                        <i class="fas fa-bars tamanho-menu"></i>
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li>
-                            <a href="index.html" class="menus-cabecalho link wow fadeIn delay-01s"><b
-                                    class="titulo-cabecalho">HOME</b></a>
-                        </li>
-                        <li>
-                            <a href="sobreNos.html" class="menus-cabecalho link wow fadeIn delay-02s"><b
-                                    class="titulo-cabecalho">SOBRE
-                                    NÓS</b></a>
-                        </li>
-                        <li>
-                            <a href="cursos.html" class="menus-cabecalho link wow fadeIn delay-04s"><b
-                                    class="titulo-cabecalho">CURSOS</b></a>
-                        </li>
-                        <li>
-                            <a href="certificacoes.html" class="menus-cabecalho link wow fadeIn delay-05s"><b
-                                    class="titulo-cabecalho">CERTIFICAÇÕES</b></a>
-                        </li>
-                        <li>
-                            <a href="https://app3.evoluaeducacao.com.br/" target="_blank"
-                                onclick="window.open(this.href, 'newwindow', 'width=1200, height=600'); return false;"
-                                class="menus-cabecalho link wow fadeIn delay-05s"><b class="titulo-cabecalho">ÁREA DO
-                                    ALUNO</b></a>
-                        </li>
-                        <li>
-                            <a href="cruzeiroDoSul.html" class="menus-cabecalho link wow fadeIn delay-06s"><b
-                                    class="titulo-cabecalho">POLOS
-                                    CRUZEIRO DO
-                                    SUL</b></a>
-                        </li>
-                        <li>
-                            <a href="contato.html" class="menus-cabecalho link wow fadeIn delay-07s"><b
-                                    class="titulo-cabecalho">CONTATO</b></a>
-                        </li>
-                        <li>
-                            <a href="blog.html" class="menus-cabecalho link wow fadeIn delay-08s"><b
-                                    class="titulo-cabecalho-blog">BLOG</b></a>
-                        </li>
-                    </ul>
-                </div>
-                <a href="javascript:void(0);" class="menus-cabecalho2 link wow fadeIn delay-08s"
-                    onclick="showSearchBox()">
-                    <i class="fas fa-search"></i>
-                </a>
-                <div id="searchBox" class="barra-pesquisa">
-                    <div class="flex-pesquisa">
-                        <input class="espaco-pesquisa" type="text" id="searchInput"
-                            placeholder="Digite para pesquisar...">
-                        <button class="botao-pesquisar" onclick="searchPage()"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-            </nav>
-
-        </div>
-    </header>
+  <div id="header"></div>
+  <script>
+      fetch('header.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('header').innerHTML = data;
+          })
+          .catch(error => console.error('Erro ao carregar o cabeçalho:', error));
+  </script>
 
     <body>
         <div class="banner-area bg-black" id="banner">
@@ -158,6 +100,21 @@
                       </div>
           
                       <div class="scroll-container" style="height: 400px; overflow-y: auto;">
+
+                        <div class="single-post-list-wrap">
+                          <div class="media">
+                            <div class="media-left">
+                              <a href="bloghalloween.html">
+                                <img src="./img/Blog/Halloween/capa.png" alt="img">
+                              </a>
+                            </div>
+                            <div class="media-body">
+                              <div class="details">
+                                <h6 class="title"><a href="bloghalloween.html" class="title-trending">Halloween na Zeek Cursos: Uma Festa de Fantasias e Diversão para Crianças e Amigos!</a></h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
           
                         <div class="single-post-list-wrap">
                           <div class="media">
