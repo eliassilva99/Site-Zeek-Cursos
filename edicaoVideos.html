@@ -607,83 +607,15 @@
     </div>
 
 
-    <footer class="rodape">
-        <div class="row margin-rodape centralizar">
-            <div class="col-md-4 wow fadeInUp">
-                <h1 class="text-white">DESCALVADO</h1><br>
-                <a href="https://maps.app.goo.gl/9F4GdX3nMCPKFCSY6" class="display-flex link-rodape" target="_blank">
-                    <img src="./img/Icones/maps.png" class="img-rodape">
-                    <h5>Rua Coronel Rafael Tobias, nº 284 <br> Centro - Descalvado/SP</h5>
-                </a><br>
-                <div class="display-flex centralizar-rodape">
-                    <a href="https://wa.me/16999921250" class="display-flex link-rodape" target="_blank">
-                        <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
-                    </a>
-                    <a href="https://www.facebook.com/people/Zeek-Descalvado/pfbid0M8mMKPKpgyxzDXZ5BhFNNQkrUZ2KcD3YGah8L5RPdw6V8RnNYMteofnUhbGagj5jl/"
-                        class="display-flex link-rodape" target="_blank">
-                        <img src="./img/Icones/facebook.png" class="img-rodape-social">
-                    </a>
-                    <a href="https://www.instagram.com/zeekdescalvado/" class="display-flex link-rodape"
-                        target="_blank">
-                        <img src="./img/Icones/instagram.png" class="img-rodape-social">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-md-4 wow fadeInUp">
-                <h1 class="text-white">IBATÉ</h1><br>
-                <a href="https://maps.app.goo.gl/6nW9ofPvqVHc3vgj6" class="display-flex link-rodape" target="_blank">
-                    <img src="./img/Icones/maps.png" class="img-rodape">
-                    <h5>Rua Floriano Peixoto, nº 628 <br> Centro - Ibaté/SP</h5>
-                </a><br>
-                <div class="display-flex centralizar-rodape">
-                    <a href="https://wa.me/16999921250" class="display-flex link-rodape" target="_blank">
-                        <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
-                    </a>
-                    <a href="https://www.facebook.com/zeekcursosibate" class="display-flex link-rodape" target="_blank">
-                        <img src="./img/Icones/facebook.png" class="img-rodape-social">
-                    </a>
-                    <a href="https://www.instagram.com/zeekibate/" class="display-flex link-rodape" target="_blank">
-                        <img src="./img/Icones/instagram.png" class="img-rodape-social">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-md-4 wow fadeInUp">
-                <h1 class="text-white">RIBEIRÃO BONITO</h1><br>
-                <a href="https://maps.app.goo.gl/5GPVn4SUHerbSWyi7" class="display-flex link-rodape" target="_blank">
-                    <img src="./img/Icones/maps.png" class="img-rodape">
-                    <h5>Rua São Paulo, nº 530 <br> Centro - Ribeirão Bonito/SP</h5>
-                </a><br>
-                <div class="display-flex centralizar-rodape">
-                    <a href="https://wa.me/16999921250" class="display-flex link-rodape" target="_blank">
-                        <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
-                    </a>
-                    <a href="https://www.facebook.com/zeek.rb.5" class="display-flex link-rodape" target="_blank">
-                        <img src="./img/Icones/facebook.png" class="img-rodape-social">
-                    </a>
-                    <a href="https://www.instagram.com/zeekribeiraobonito/" class="display-flex link-rodape"
-                        target="_blank">
-                        <img src="./img/Icones/instagram.png" class="img-rodape-social">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row centralizar">
-            <div class="col-md-12">
-                <h1 class="desenvolvido-por wow fadeInDown delay-01s">Desenvolvido por: <br></h1>
-                <h1 class="desenvolvido-por wow fadeInDown delay-02s"><b>Elias Marcelino</b></h1>
-                <a href="https://wa.me/5516992228707" target="_blank" class="wow fadeInUp delay-04s">
-                    <img src="./img/Icones/whatsApp-white.png" class="icones-desenvolvido">
-                </a>
-                <a href="https://www.instagram.com/elias.silva99?igsh=NDN0Nm1ibHk4ZXBy" target="_blank"
-                    class="wow fadeInUp delay-04s">
-                    <img src="./img/Icones/instagram-white.png" class="icones-desenvolvido">
-                </a>
-            </div>
-        </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o rodapé:', error));
+    </script>
 
 
 
