@@ -701,11 +701,6 @@ a:hover {
     transition: 1s;
 }
 
-.rodape {
-    padding-top: 50px;
-    background: #d7f4f8;
-}
-
 .espacamento {
     padding-bottom: 50px;
 }
@@ -2415,7 +2410,7 @@ section.slider {
     
     
     .increvase {
-        width: 60%!important;
+        width: 100%!important;
         font-size: 8px!important;
         padding: 2px!important;
         border-radius: 5px!important;
@@ -2787,7 +2782,7 @@ section.slider {
 
 .increvase {
     background-color: #0075FC;
-    width: 60%;
+    width: 100%!important;
     margin: auto;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
@@ -2835,11 +2830,12 @@ section.slider {
 
 .increvasePosGraduacao {
     background-color: #0075FC;
-    width: 20%;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     padding: 7px;
+    padding-top: 0px!important;
     border-radius: 5px;
 }
 

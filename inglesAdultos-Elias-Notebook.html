@@ -28,89 +28,34 @@
 
 <body>
 
-    <header>
-        <div class="container-cabecalho">
-            <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one centralizar-menu">
-                <a class="navbar-brand wow fadeIn" href="index.html">
-                    <img src="./img/zeekLogo.png" class="logo-zeek" />
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
-                    <span>
-                        <i class="fas fa-bars tamanho-menu"></i>
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li>
-                            <a href="index.html" class="menus-cabecalho link wow fadeIn delay-01s"><b
-                                    class="titulo-cabecalho">HOME</b></a>
-                        </li>
-                        <li>
-                            <a href="sobreNos.html" class="menus-cabecalho link wow fadeIn delay-02s"><b
-                                    class="titulo-cabecalho">SOBRE
-                                    NÓS</b></a>
-                        </li>
-                        <li>
-                            <a href="cursos.html" class="menus-cabecalho link wow fadeIn delay-04s"><b
-                                    class="titulo-cabecalho">CURSOS</b></a>
-                        </li>
-                        <li>
-                            <a href="certificacoes.html" class="menus-cabecalho link wow fadeIn delay-05s"><b
-                                    class="titulo-cabecalho">CERTIFICAÇÕES</b></a>
-                        </li>
-                        <li>
-                            <a href="https://app3.evoluaeducacao.com.br/" target="_blank"
-                                onclick="window.open(this.href, 'newwindow', 'width=1200, height=600'); return false;"
-                                class="menus-cabecalho link wow fadeIn delay-05s"><b class="titulo-cabecalho">ÁREA DO
-                                    ALUNO</b></a>
-                        </li>
-                        <li>
-                            <a href="cruzeiroDoSul.html" class="menus-cabecalho link wow fadeIn delay-06s"><b
-                                    class="titulo-cabecalho">POLOS
-                                    CRUZEIRO DO
-                                    SUL</b></a>
-                        </li>
-                        <li>
-                            <a href="contato.html" class="menus-cabecalho link wow fadeIn delay-07s"><b
-                                    class="titulo-cabecalho">CONTATO</b></a>
-                        </li>
-                    </ul>
-                </div>
-                <a href="javascript:void(0);" class="menus-cabecalho2 link wow fadeIn delay-08s"
-                    onclick="showSearchBox()">
-                    <i class="fas fa-search"></i>
-                </a>
-                <div id="searchBox" class="barra-pesquisa">
-                    <div class="flex-pesquisa">
-                        <input class="espaco-pesquisa" type="text" id="searchInput"
-                            placeholder="Digite para pesquisar...">
-                        <button class="botao-pesquisar" onclick="searchPage()"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-            </nav>
-
-        </div>
-    </header>
+    <div id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o cabeçalho:', error));
+    </script>
 
     <div class="row centralizar backgroung-blue">
         <div class="col-md-2">
-            <img src="./img/Selos/Premium.png" class="selo wow fadeInLeft delay-01s">
+            <img src="./img/Selos/Advanced.png" class="selo wow fadeInLeft delay-01s">
         </div>
         <div class="col-md-5">
             <div class="display-flex centralizar">
                 <div>
-                    <h1 class="title-cursos wow fadeInLeft delay-02s"><b>EXCEL AVANÇADO + POWER BI</b></h1>
-                    <h2 class="subtitle-cursos wow fadeInLeft delay-04s">Dominar o Excel e o Power BI é essencial para
-                        qualquer profissional que busca eficiência e precisão na análise de dados. Essas ferramentas são
-                        amplamente utilizadas em diversas áreas, permitindo a criação de relatórios dinâmicos e a
-                        visualização de informações de forma clara e estratégica.</h2>
+                    <h1 class="title-cursos wow fadeInLeft delay-02s"><b>INGLÊS ADULTOS</b></h1>
+                    <h2 class="subtitle-cursos wow fadeInLeft delay-04s">Este curso é projetado para profissionais que
+                        buscam uma comunicação eficaz, leitura crítica de documentos empresariais e uma vantagem
+                        competitiva em um mundo de negócios cada vez mais internacional.</h2>
                 </div>
             </div>
         </div>
         <div class="col-md-5">
             <div class="display-flex centralizar">
                 <div>
-                    <img src="./img/Módulos/excelAvancadoPowerBi.png" class="img-pagina-cursos wow fadeInRight delay-05s">
+                    <img src="./img/Módulos/inglesAdultos.jpg" class="img-pagina-cursos wow fadeInRight delay-05s">
                 </div>
             </div>
         </div>
@@ -119,8 +64,8 @@
     <div class="container row fadeIn delay-02s centralizar background-green-salarial">
         <div class="col-md-4">
             <img src="./img/Icones/icon.png" class="icone-icon wow fadeInDown delay-02s">
-            <h1 class="color-white-salarial"><b class="title-salarial wow fadeIn delay-04s">Quanto ganha um
-                    profissional de Excel + Power Bi?</b></h1><br>
+            <h1 class="color-white-salarial"><b class="title-salarial wow fadeIn delay-04s">Quanto ganha um profissional
+                    fluente em inglês?</b></h1><br>
         </div>
         <div class="col-md-4 wow fadeInDown delay-08s">
             <svg width="100%" height="260" viewBox="0 -20 275 177" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -142,17 +87,17 @@
                             letter-spacing="-0.319999993" fill="#FFFFFF">
                             <tspan x="20.9365625" y="2378">R$</tspan>
                             <tspan x="35.6364062" y="2378" font-size="18"></tspan>
-                            <tspan x="40.3173828" y="2378" font-size="20">3.069</tspan>
+                            <tspan x="40.3173828" y="2378" font-size="20">1.512</tspan>
                         </text><text font-family="Helvetica" font-size="12" font-weight="normal"
                             letter-spacing="-0.502857149" fill="#FFFFFF">
                             <tspan x="119.314372" y="2344">R$</tspan>
                             <tspan x="133.648501" y="2344" font-size="22" letter-spacing="-0.614603162"></tspan>
-                            <tspan x="139.146203" y="2344" font-size="20">4.525</tspan>
+                            <tspan x="139.146203" y="2344" font-size="20">2.665</tspan>
                         </text><text font-family="Helvetica" font-size="12" font-weight="normal"
                             letter-spacing="-0.319999993" fill="#FFFFFF">
                             <tspan x="213.582734" y="2312">R$</tspan>
                             <tspan x="228.282578" y="2312" font-size="18"></tspan>
-                            <tspan x="232.963555" y="2312" font-size="20">6.479</tspan>
+                            <tspan x="232.963555" y="2312" font-size="20">3.164</tspan>
                         </text>
                         <path class="lineAnimation" d="M55.5,2405.5 L55.5,2439.5" stroke="#FFFFFF" opacity="0.2"
                             stroke-linecap="square"></path>
@@ -281,7 +226,7 @@
         <div class="col-md-4">
             <div class="display-flex centralizar">
                 <div>
-                    <img src="./img/Pessoas/excelAvancadoPowerBi.png" class="img-pagina-cursos wow fadeInLeft delay-02s">
+                    <img src="./img/Pessoas/inglesAdulto.png" class="img-pagina-cursos wow fadeInLeft delay-02s">
                 </div>
             </div>
         </div>
@@ -329,7 +274,7 @@
                 <div>
                     <h1 class="title-icones">
                         Material Didático</h1>
-                    <h2 class="subtitle-icones">7 Apostilas</h2>
+                    <h2 class="subtitle-icones">2 Livros <br> 2 Workbooks</h2>
                 </div>
             </div>
         </div>
@@ -363,33 +308,29 @@
 
             <div class="row centralizar width-icon-modulos">
                 <div class="col-md-3">
-                    <img src="./img/Ícones Módulos/excel.png" class="image-icons wow fadeIn delay-04s">
-                    <h2 class="text-white">Excel - Essencial</h2>
+                    <img src="./img/Ícones Módulos/Abordagem Lúdica e Profissional.png"
+                        class="image-icons wow fadeIn delay-02s">
+                    <h2 class="text-white">Conversação Avançada e Vocabulário Expandido</h2>
                 </div>
                 <div class="col-md-3">
-                    <img src="./img/Ícones Módulos/excel.png" class="image-icons wow fadeIn delay-05s">
-                    <h2 class="text-white">Excel - Intermediário</h2>
+                    <img src="./img/Ícones Módulos/Habilidades Comunicativas.png"
+                        class="image-icons wow fadeIn delay-03s">
+                    <h2 class="text-white">Gramática Avançada e Uso Contextual</h2>
                 </div>
                 <div class="col-md-3">
-                    <img src="./img/Ícones Módulos/excel.png" class="image-icons wow fadeIn delay-06s">
-                    <h2 class="text-white">Excel - Avançado</h2>
+                    <img src="./img/Ícones Módulos/Integração de Tecnologia.png"
+                        class="image-icons wow fadeIn delay-04s">
+                    <h2 class="text-white">Leitura Crítica e Compreensão Auditiva Avançada</h2>
                 </div>
                 <div class="col-md-3">
-                    <img src="./img/Ícones Módulos/matematica.png" class="image-icons wow fadeIn delay-06s">
-                    <h2 class="text-white">Matemática Financeira na HP 12C
+                    <img src="./img/Ícones Módulos/Simulações Profissionais.png"
+                        class="image-icons wow fadeIn delay-05s">
+                    <h2 class="text-white">Estruturação de Textos</h2>
+                </div>
+                <div class="col-md-3">
+                    <img src="./img/Ícones Módulos/empreendedorDeSucesso.png" class="image-icons wow fadeIn delay-06s">
+                    <h2 class="text-white">Cultura e Contexto Internacional
                     </h2>
-                </div>
-                <div class="col-md-3">
-                    <img src="./img/Ícones Módulos/powerBi.png" class="image-icons wow fadeIn delay-02s">
-                    <h2 class="text-white">Power Bi - Essencial</h2>
-                </div>
-                <div class="col-md-3">
-                    <img src="./img/Ícones Módulos/powerBi.png" class="image-icons wow fadeIn delay-03s">
-                    <h2 class="text-white">Power Bi - Intermediário</h2>
-                </div>
-                <div class="col-md-3">
-                    <img src="./img/Ícones Módulos/powerBi.png" class="image-icons wow fadeIn delay-04s">
-                    <h2 class="text-white">Power Bi - Avançado</h2>
                 </div>
             </div>
         </div>
@@ -397,37 +338,8 @@
         <div class="col-12 centralizar">
             <h1 class="wow fadeInDown delay-01s"><b>ESCOLHA SUA MODALIDADE!</b></h1>
             <div class="tamanho-tela centralizar">
-                <div class="row">
-                    <div class="col-md-4 wow fadeInLeft delay-01s">
-                        <div class="box-modalidade">
-                            <h1 class="modalidade-title"><b>ONLINE</b></h1>
-                            <br>
-                            <h3>Mensalidades a partir de</h3>
-                            <h1 class="valor-curso"><b>R$ 129,00</b></h1>
-                            <p class="p-modalidade">Parcelamento: <b>Cartão de Crédito</b> ou <b>Boleto</b></p>
-    
-                            <button id="Online" class="botao-iniciar-atendimento-online centralizar">
-                                <b>Matricule-se</b>
-                            </button>
-                            <hr class="hr-modalidade">
-                            <p class="p-modalidade"><a href="#modal-cartao-modalidades" class="editarLink">Saiba mais sobre
-                                    essa
-                                    modalidade.</a></p>
-    
-                            <div id="modal-cartao-modalidades" class="modal">
-                                <div class="modal-content-modalidades">
-                                    <span class="close">&times;</span>
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <img src="./img/modalidades.jpeg" class="img-modalidades">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row centralizar">
+                    
     
                     <div class="col-md-4 wow fadeInDown delay-01s">
                         <div class="box-modalidade-presencial">
@@ -437,7 +349,7 @@
                             <h1 class="modalidade-title-presencial"><b>PRESENCIAL</b></h1>
                             <br>
                             <h3>Mensalidades a partir de</h3>
-                            <h1 class="valor-curso-presencial tachado"><b>R$ 297,00</b></h1>
+                            <h1 class="valor-curso-presencial tachado"><b>R$ 275,00</b></h1>
                             <p class="p-modalidade">Parcelamento: <b>Cartão de Crédito</b> ou <b>Boleto</b></p>
     
                             <button id="Presencial" class="botao-iniciar-atendimento-presencial centralizar">
@@ -462,37 +374,10 @@
                             </div>
                         </div>
                     </div>
-    
-                    <div class="col-md-4 wow fadeInRight delay-01s">
-                        <div class="box-modalidade-semi">
-                            <h1 class="modalidade-title-semi"><b>SEMIPRESENCIAL</b></h1>
-                            <br>
-                            <h3>Mensalidades a partir de</h3>
-                            <h1 class="valor-curso-semi tachado"><b>R$ 238,00</b></h1>
-                            <p class="p-modalidade">Parcelamento: <b>Cartão de Crédito</b> ou <b>Boleto</b></p>
-    
-                            <button id="Semipresencial" class="botao-iniciar-atendimento-semi centralizar">
-                                <b>Matricule-se</b>
-                            </button>
-                            <hr class="hr-modalidade-semi">
-                            <p class="p-modalidade"><a href="#modal-cartao-modalidades" class="editarLink">Saiba mais sobre
-                                    essa
-                                    modalidade.</a></p>
-    
-                            <div id="modal-cartao-modalidades" class="modal">
-                                <div class="modal-content-modalidades">
-                                    <span class="close">&times;</span>
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <img src="./img/modalidades.jpeg" class="img-modalidades">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-4">
+                        <img src="./img/Pessoas/PessoaContato.png" class="pessoa-contato wow fadeInRight delay-04s">
                     </div>
+                    
                 </div>
                 <div id="matriculaModal" class="modal">
                     <div class="modal-content">
@@ -516,92 +401,58 @@
         </div>
         <div class="row centralizar">
             <div class="col-md-5 wow fadeInLeft delay-02s">
-                <h1 class="title-align-left"><b>Excel - Essencial</b></h1>
-                <h2 class="text-align-left">Explore a criação e formatação de planilhas, a utilização de fórmulas e
-                    funções para automatizar cálculos, a criação de gráficos e tabelas dinâmicas para visualizar dados
-                    de forma eficaz. Além disso, descubra como organizar dados, realizar análises estatísticas e
-                    resolver problemas do mundo real com o Excel.</h2>
+                <h1 class="title-align-left"><b>Conversação Avançada e Vocabulário Expandido</b></h1>
+                <h2 class="text-align-left">Este curso foca no desenvolvimento de habilidades avançadas de conversação,
+                    ampliando o vocabulário dos participantes para incluir termos mais complexos e expressões
+                    idiomáticas. Os alunos aprenderão a se expressar de maneira mais sofisticada e natural em diferentes
+                    contextos.</h2>
             </div>
             <div class="col-md-5 wow fadeInRight delay-02s">
-                <img src="./img/Módulos/excelEssencial.jpg" class="img-modulos">
+                <img src="./img/Módulos/inglesAdultos1.jpg" class="img-modulos">
             </div>
 
             <div class="col-md-5  wow fadeInLeft delay-02s">
-                <img src="./img/Módulos/excelIntermediario.jpg" class="img-modulos">
+                <img src="./img/Módulos/inglesAdultos2.jpg" class="img-modulos">
             </div>
             <div class="col-md-5  wow fadeInRight delay-02s">
-                <h1 class="title-align-left"><b>Excel - Intermediário</b></h1>
-                <h2 class="text-align-left">Os alunos aprenderão técnicas avançadas de formatação, a utilizar funções
-                    mais complexas, trabalhar com tabelas dinâmicas e gráficos avançados. Além disso, o curso aborda a
-                    automação de tarefas por meio de macros e fornece uma compreensão mais profunda das capacidades do
-                    Excel para análise de dados.</h2>
+                <h1 class="title-align-left"><b>Gramática Avançada e Uso Contextual</b></h1>
+                <h2 class="text-align-left">Os participantes aprimorarão suas habilidades gramaticais, explorando
+                    estruturas mais complexas e nuances da língua inglesa. O curso visa aprofundar a compreensão das
+                    regras gramaticais e sua aplicação prática em situações do dia a dia.</h2>
             </div>
 
             <div class="col-md-5 wow fadeInLeft delay-02s">
-                <h1 class="title-align-left"><b>Excel - Avançado</b></h1>
-                <h2 class="text-align-left">O curso de Excel Avançado é projetado para usuários experientes que buscam
-                    um domínio completo das funcionalidades avançadas do Excel. Os participantes aprenderão a criar
-                    modelos financeiros complexos, realizar análises de cenários, consolidar dados de várias fontes e
-                    usar ferramentas avançadas de solução de problemas. O curso também explora recursos avançados de
-                    automação, programação em VBA (Visual Basic for Applications) e estratégias para otimizar fluxos de
-                    trabalho complexos, capacitando os alunos a enfrentar desafios analíticos mais sofisticados.</h2>
+                <h1 class="title-align-left"><b>Leitura Crítica e Compreensão Auditiva Avançada</b></h1>
+                <h2 class="text-align-left">O curso proporciona experiência em leitura de textos mais complexos, como
+                    artigos, ensaios e notícias, para desenvolver a capacidade de análise crítica. A compreensão
+                    auditiva será aprimorada com a exposição a diferentes sotaques e estilos de fala.</h2>
             </div>
             <div class="col-md-5 wow fadeInRight delay-02s">
-                <img src="./img/Módulos/excelAvancado.jpg" class="img-modulos">
-            </div>
-
-            <div class="col-md-5 wow fadeInLeft delay-02s">
-                <img src="./img/Módulos/matematicaFinanceira.jpg" class="img-modulos">
-            </div>
-            <div class="col-md-5 wow fadeInRight delay-02s">
-                <h1 class="title-align-left"><b>Matemática Financeira na HP 12C</b></h1>
-                <h2 class="text-align-left">Você aprenderá a aplicar os princípios da Matemática Financeira utilizando a
-                    icônica calculadora HP 12C. Desde cálculos de juros simples e compostos até análise de fluxo de
-                    caixa, este curso proporcionará as habilidades essenciais para tomar decisões financeiras sólidas.
-                    Torne-se um especialista em finanças, dominando a ferramenta preferida pelos profissionais do setor.
-                </h2>
-            </div>
-
-            <div class="col-md-5 wow fadeInLeft delay-02s">
-                <h1 class="title-align-left"><b>Fundamentos do Power BI</b></h1>
-                <h2 class="text-align-left">Este módulo introdutório proporciona uma base sólida para o entendimento dos
-                    conceitos fundamentais do Power BI. Os participantes aprenderão a navegar pela interface, importar e
-                    transformar dados, criar visualizações básicas e entender as principais funcionalidades de modelagem
-                    de dados.</h2>
-            </div>
-            <div class="col-md-5 wow fadeInRight delay-02s">
-                <img src="./img/Módulos/powerBi2.jpg" class="img-modulos">
+                <img src="./img/Módulos/inglesAdultos3.jpg" class="img-modulos">
             </div>
 
             <div class="col-md-5  wow fadeInLeft delay-02s">
-                <img src="./img/Módulos/powerBi3.jpg" class="img-modulos">
+                <img src="./img/Módulos/inglesAdultos4.jpg" class="img-modulos">
             </div>
             <div class="col-md-5  wow fadeInRight delay-02s">
-                <h1 class="title-align-left"><b>Aprimorando as Habilidades de Visualização e Análise no Power BI</b>
-                </h1>
-                <h2 class="text-align-left">No segundo módulo, os participantes aprofundarão suas habilidades de
-                    visualização e análise de dados no Power BI. Abordaremos técnicas avançadas de design de relatórios,
-                    personalização de visualizações, criação de dashboards interativos e utilização de recursos
-                    avançados.</h2>
+                <h1 class="title-align-left"><b>Estruturação de Textos</b></h1>
+                <h2 class="text-align-left">Os participantes aprenderão a redigir textos mais elaborados, como
+                    relatórios, ensaios e correspondências formais. O foco estará na estruturação coerente, estilo
+                    apropriado e na expressão de ideias de maneira clara e persuasiva.</h2>
             </div>
 
             <div class="col-md-5 wow fadeInLeft delay-02s">
-                <h1 class="title-align-left"><b>Integração Avançada e Administração de Projetos no Power BI</b></h1>
-                <h2 class="text-align-left">O terceiro módulo destina-se a profissionais que desejam aprimorar suas
-                    habilidades de integração e colaboração no ambiente corporativo. Os participantes aprenderão a
-                    integrar o Power BI com outras ferramentas e serviços, configurar gateways de dados, compartilhar
-                    relatórios de forma segura e gerenciar o acesso aos recursos. Também abordaremos estratégias
-                    avançadas de administração de projetos, tais como automação de processos, controle de versões e boas
-                    práticas para colaboração em equipe.</h2>
+                <h1 class="title-align-left"><b>Cultura e Contexto Internacional</b></h1>
+                <h2 class="text-align-left">Além do aprimoramento linguístico, os participantes serão expostos a
+                    diferentes aspectos da cultura e sociedade de países de língua inglesa. Isso inclui análise de obras
+                    literárias, discussões sobre eventos atuais e exploração de temas culturais contemporâneos.</h2>
             </div>
             <div class="col-md-5 wow fadeInRight delay-02s">
-                <img src="./img/Módulos/powerBi4.jpg" class="img-modulos">
+                <img src="./img/Módulos/inglesAdultos5.jpg" class="img-modulos">
             </div>
-        </div>
-
 
         </div>
-
+        
     </div>
 
     <div class="tamanho-tela row centralizar background-blue-contagem">
@@ -653,40 +504,40 @@
     <div class="row centralizar">
         <div class="col-md-4 borda-descalvado">
             <h1>
-                <b>DESCALVADO</b>
+                <b class="color-white">DESCALVADO</b>
             </h1>
             <div>
-                <img src="./img/Zeek Cursos/zeekDescalvado - Copia.png" id="mainImage1" class="main-img">
+                <img src="./img/Zeek Cursos/zeekDescalvado.png" id="mainImage1" class="main-img">
             </div>
             <div class="gallery">
                 <img src="./img/OndeVaiEstudar/descalvado1.jpg" class="thumbnail1" onclick="changeImage1(this)">
                 <img src="./img/OndeVaiEstudar/descalvado2.jpg" class="thumbnail1" onclick="changeImage1(this)">
                 <img src="./img/OndeVaiEstudar/descalvado3.jpg" class="thumbnail1" onclick="changeImage1(this)">
-                <img src="./img/OndeVaiEstudar/descalvado1.jpg" class="thumbnail1" onclick="changeImage1(this)">
-                <img src="./img/OndeVaiEstudar/descalvado2.jpg" class="thumbnail1" onclick="changeImage1(this)">
+                <img src="./img/OndeVaiEstudar/descalvado4.jpg" class="thumbnail1" onclick="changeImage1(this)">
+                <img src="./img/OndeVaiEstudar/descalvado5.jpg" class="thumbnail1" onclick="changeImage1(this)">
             </div>
         </div>
         <div class="col-md-4 borda-ibate">
             <h1>
-                <b>IBATÉ</b>
+                <b class="color-white">IBATÉ</b>
             </h1>
             <div>
-                <img src="./img/Zeek Cursos/zeekDescalvado - Copia.png" id="mainImage2" class="main-img">
+                <img src="./img/Zeek Cursos/zeekIbate.png" id="mainImage2" class="main-img">
             </div>
             <div class="gallery">
                 <img src="./img/OndeVaiEstudar/ibate1.jpg" class="thumbnail2" onclick="changeImage2(this)">
                 <img src="./img/OndeVaiEstudar/ibate2.jpg" class="thumbnail2" onclick="changeImage2(this)">
                 <img src="./img/OndeVaiEstudar/ibate3.jpg" class="thumbnail2" onclick="changeImage2(this)">
-                <img src="./img/OndeVaiEstudar/ibate1.jpg" class="thumbnail2" onclick="changeImage2(this)">
-                <img src="./img/OndeVaiEstudar/ibate2.jpg" class="thumbnail2" onclick="changeImage2(this)">
+                <img src="./img/OndeVaiEstudar/ibate4.jpg" class="thumbnail2" onclick="changeImage2(this)">
+                <img src="./img/OndeVaiEstudar/ibate5.jpg" class="thumbnail2" onclick="changeImage2(this)">
             </div>
         </div>
         <div class="col-md-4 borda-ribeirao">
             <h1>
-                <b>RIBEIRÃO BONITO</b>
+                <b class="color-white">RIBEIRÃO BONITO</b>
             </h1>
             <div>
-                <img src="./img/Zeek Cursos/zeekDescalvado - Copia.png" id="mainImage3" class="main-img">
+                <img src="./img/Zeek Cursos/zeekRibeiraoBonito.png" id="mainImage3" class="main-img">
             </div>
             <div class="gallery">
                 <img src="./img/OndeVaiEstudar/ribeirao1.jpg" class="thumbnail3" onclick="changeImage3(this)">
@@ -699,95 +550,15 @@
     </div>
 
 
-    <footer class="rodape">
-        <div class="row margin-rodape centralizar">
-            <div class="col-md-4 wow fadeInUp">
-                <h1 class="text-white">DESCALVADO</h1><br>
-                <a href="https://maps.app.goo.gl/9F4GdX3nMCPKFCSY6" class="display-flex link-rodape" target="_blank">
-                    <img src="./img/Icones/maps.png" class="img-rodape">
-                    <h5>Rua Coronel Rafael Tobias, nº 284 <br> Centro - Descalvado/SP</h5>
-                </a><br>
-                <a href="https://wa.me/19992671617" class="display-flex link-rodape" target="_blank">
-                    <img src="./img/Icones/phone.png" class="img-rodape">
-                    <h5>(19) 99267-1617</h5>
-                </a><br>
-                <div class="display-flex centralizar-rodape">
-                    <a href="https://wa.me/19992671617" class="display-flex link-rodape" target="_blank">
-                        <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
-                    </a>
-                    <a href="https://www.facebook.com/people/Zeek-Descalvado/pfbid0M8mMKPKpgyxzDXZ5BhFNNQkrUZ2KcD3YGah8L5RPdw6V8RnNYMteofnUhbGagj5jl/"
-                        class="display-flex link-rodape" target="_blank">
-                        <img src="./img/Icones/facebook.png" class="img-rodape-social">
-                    </a>
-                    <a href="https://www.instagram.com/zeekdescalvado/" class="display-flex link-rodape"
-                        target="_blank">
-                        <img src="./img/Icones/instagram.png" class="img-rodape-social">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-md-4 wow fadeInUp">
-                <h1 class="text-white">IBATÉ</h1><br>
-                <a href="https://maps.app.goo.gl/6nW9ofPvqVHc3vgj6" class="display-flex link-rodape" target="_blank">
-                    <img src="./img/Icones/maps.png" class="img-rodape">
-                    <h5>Rua Floriano Peixoto, nº 628 <br> Centro - Ibaté/SP</h5>
-                </a><br>
-                <a href="https://wa.me/16999921250" class="display-flex link-rodape" target="_blank">
-                    <img src="./img/Icones/phone.png" class="img-rodape">
-                    <h5>(16) 99992-1250</h5>
-                </a><br>
-                <div class="display-flex centralizar-rodape">
-                    <a href="https://wa.me/16999921250" class="display-flex link-rodape" target="_blank">
-                        <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
-                    </a>
-                    <a href="https://www.facebook.com/zeekcursosibate" class="display-flex link-rodape" target="_blank">
-                        <img src="./img/Icones/facebook.png" class="img-rodape-social">
-                    </a>
-                    <a href="https://www.instagram.com/zeekibate/" class="display-flex link-rodape" target="_blank">
-                        <img src="./img/Icones/instagram.png" class="img-rodape-social">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-md-4 wow fadeInUp">
-                <h1 class="text-white">RIBEIRÃO BONITO</h1><br>
-                <a href="https://maps.app.goo.gl/5GPVn4SUHerbSWyi7" class="display-flex link-rodape" target="_blank">
-                    <img src="./img/Icones/maps.png" class="img-rodape">
-                    <h5>Rua São Paulo, nº 530 <br> Centro - Ribeirão Bonito/SP</h5>
-                </a><br>
-                <a href="https://wa.me/16999940880" class="display-flex link-rodape" target="_blank">
-                    <img src="./img/Icones/phone.png" class="img-rodape">
-                    <h5>(16) 99994-0880</h5>
-                </a><br>
-                <div class="display-flex centralizar-rodape">
-                    <a href="https://wa.me/16999940880" class="display-flex link-rodape" target="_blank">
-                        <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
-                    </a>
-                    <a href="https://www.facebook.com/zeek.rb.5" class="display-flex link-rodape" target="_blank">
-                        <img src="./img/Icones/facebook.png" class="img-rodape-social">
-                    </a>
-                    <a href="https://www.instagram.com/zeekribeiraobonito/" class="display-flex link-rodape"
-                        target="_blank">
-                        <img src="./img/Icones/instagram.png" class="img-rodape-social">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row centralizar">
-            <div class="col-md-12">
-                <h1 class="desenvolvido-por wow fadeInDown delay-01s">Desenvolvido por: <br></h1>
-                <h1 class="desenvolvido-por wow fadeInDown delay-02s"><b>Elias Marcelino</b></h1>
-                <a href="https://wa.me/5516992228707" target="_blank" class="wow fadeInUp delay-04s">
-                    <img src="./img/Icones/whatsApp-white.png" class="icones-desenvolvido">
-                </a>
-                <a href="https://www.instagram.com/elias.silva99?igsh=NDN0Nm1ibHk4ZXBy" target="_blank"
-                    class="wow fadeInUp delay-04s">
-                    <img src="./img/Icones/instagram-white.png" class="icones-desenvolvido">
-                </a>
-            </div>
-        </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o rodapé:', error));
+    </script>
 
 
 
@@ -822,6 +593,7 @@
     <script src="./js/pesquisa.js"></script>
     <script src="./js/modalPagamento.js"></script>
 
+    <script src="https://wbot.chat/index.js" token="fd40e925d254d789713b120c5d586428"></script>
 
 </body>
 
