@@ -12,15 +12,15 @@ function openWhatsApp(city) {
 
   switch (city) {
       case 'Descalvado':
-          phoneNumber = '5516999921250';
+          phoneNumber = '5519992671617';
           message = 'Olá, vim pelo site e gostaria de melhores informações das qualificações!';
           break;
       case 'Ibaté':
-          phoneNumber = '5516999921250';
+          phoneNumber = '5516996294928';
           message = 'Olá, vim pelo site e gostaria de melhores informações das qualificações!';
           break;
       case 'Ribeirão Bonito':
-          phoneNumber = '5516999921250';
+          phoneNumber = '5516999940880';
           message = 'Olá, vim pelo site e gostaria de melhores informações das qualificações!';
           break;
   }

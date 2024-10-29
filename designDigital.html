@@ -28,15 +28,60 @@
 
 <body>
 
-    <div id="header"></div>
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header').innerHTML = data;
-            })
-            .catch(error => console.error('Erro ao carregar o cabeçalho:', error));
-    </script>
+    <header>
+        <div class="container-cabecalho">
+            <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one centralizar-menu">
+              <a class="navbar-brand wow fadeIn" href="index.html">
+                <img src="./img/zeekLogo.png" class="logo-zeek" />
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                <span>
+                  <i class="fas fa-bars tamanho-menu"></i>
+                </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li>
+                    <a href="index.html" class="menus-cabecalho link wow fadeIn delay-01s"><b class="titulo-cabecalho">HOME</b></a>
+                  </li>
+                  <li>
+                    <a href="sobreNos.html" class="menus-cabecalho link wow fadeIn delay-02s"><b class="titulo-cabecalho">SOBRE
+                        NÓS</b></a>
+                  </li>
+                  <li>
+                    <a href="cursos.html" class="menus-cabecalho link wow fadeIn delay-04s"><b class="titulo-cabecalho">CURSOS</b></a>
+                  </li>
+                  <li>
+                    <a href="certificacoes.html" class="menus-cabecalho link wow fadeIn delay-05s"><b class="titulo-cabecalho">CERTIFICAÇÕES</b></a>
+                  </li>
+                  <li>
+                    <a href="https://app3.evoluaeducacao.com.br/" target="_blank"
+                      onclick="window.open(this.href, 'newwindow', 'width=1200, height=600'); return false;"
+                      class="menus-cabecalho link wow fadeIn delay-05s"><b class="titulo-cabecalho">ÁREA DO ALUNO</b></a>
+                  </li>
+                  <li>
+                    <a href="cruzeiroDoSul.html" class="menus-cabecalho link wow fadeIn delay-06s"><b class="titulo-cabecalho">POLOS
+                        CRUZEIRO DO
+                        SUL</b></a>
+                  </li>
+                  <li>
+                    <a href="contato.html" class="menus-cabecalho link wow fadeIn delay-07s"><b class="titulo-cabecalho">CONTATO</b></a>
+                  </li>
+                </ul>
+              </div>
+              <a href="javascript:void(0);" class="menus-cabecalho2 link wow fadeIn delay-08s" onclick="showSearchBox()">
+                <i class="fas fa-search"></i>
+              </a>
+              <div id="searchBox" class="barra-pesquisa">
+                <div class="flex-pesquisa">
+                  <input class="espaco-pesquisa" type="text" id="searchInput" placeholder="Digite para pesquisar...">
+                  <button class="botao-pesquisar" onclick="searchPage()"><i class="fas fa-search"></i></button>
+                </div>
+              </div>
+            </nav>
+      
+          </div>
+    </header>
 
     <div class="row centralizar backgroung-blue">
         <div class="col-md-2">
@@ -581,40 +626,40 @@
     <div class="row centralizar">
         <div class="col-md-4 borda-descalvado">
             <h1>
-                <b class="color-white">DESCALVADO</b>
+                <b>DESCALVADO</b>
             </h1>
             <div>
-                <img src="./img/Zeek Cursos/zeekDescalvado.png" id="mainImage1" class="main-img">
+                <img src="./img/Zeek Cursos/zeekDescalvado - Copia.png" id="mainImage1" class="main-img">
             </div>
             <div class="gallery">
                 <img src="./img/OndeVaiEstudar/descalvado1.jpg" class="thumbnail1" onclick="changeImage1(this)">
                 <img src="./img/OndeVaiEstudar/descalvado2.jpg" class="thumbnail1" onclick="changeImage1(this)">
                 <img src="./img/OndeVaiEstudar/descalvado3.jpg" class="thumbnail1" onclick="changeImage1(this)">
-                <img src="./img/OndeVaiEstudar/descalvado4.jpg" class="thumbnail1" onclick="changeImage1(this)">
-                <img src="./img/OndeVaiEstudar/descalvado5.jpg" class="thumbnail1" onclick="changeImage1(this)">
+                <img src="./img/OndeVaiEstudar/descalvado1.jpg" class="thumbnail1" onclick="changeImage1(this)">
+                <img src="./img/OndeVaiEstudar/descalvado2.jpg" class="thumbnail1" onclick="changeImage1(this)">
             </div>
         </div>
         <div class="col-md-4 borda-ibate">
             <h1>
-                <b class="color-white">IBATÉ</b>
+                <b>IBATÉ</b>
             </h1>
             <div>
-                <img src="./img/Zeek Cursos/zeekIbate.png" id="mainImage2" class="main-img">
+                <img src="./img/Zeek Cursos/zeekDescalvado - Copia.png" id="mainImage2" class="main-img">
             </div>
             <div class="gallery">
                 <img src="./img/OndeVaiEstudar/ibate1.jpg" class="thumbnail2" onclick="changeImage2(this)">
                 <img src="./img/OndeVaiEstudar/ibate2.jpg" class="thumbnail2" onclick="changeImage2(this)">
                 <img src="./img/OndeVaiEstudar/ibate3.jpg" class="thumbnail2" onclick="changeImage2(this)">
-                <img src="./img/OndeVaiEstudar/ibate4.jpg" class="thumbnail2" onclick="changeImage2(this)">
-                <img src="./img/OndeVaiEstudar/ibate5.jpg" class="thumbnail2" onclick="changeImage2(this)">
+                <img src="./img/OndeVaiEstudar/ibate1.jpg" class="thumbnail2" onclick="changeImage2(this)">
+                <img src="./img/OndeVaiEstudar/ibate2.jpg" class="thumbnail2" onclick="changeImage2(this)">
             </div>
         </div>
         <div class="col-md-4 borda-ribeirao">
             <h1>
-                <b class="color-white">RIBEIRÃO BONITO</b>
+                <b>RIBEIRÃO BONITO</b>
             </h1>
             <div>
-                <img src="./img/Zeek Cursos/zeekRibeiraoBonito.png" id="mainImage3" class="main-img">
+                <img src="./img/Zeek Cursos/zeekDescalvado - Copia.png" id="mainImage3" class="main-img">
             </div>
             <div class="gallery">
                 <img src="./img/OndeVaiEstudar/ribeirao1.jpg" class="thumbnail3" onclick="changeImage3(this)">
@@ -627,15 +672,95 @@
     </div>
 
 
-    <div id="footer"></div>
-    <script>
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer').innerHTML = data;
-            })
-            .catch(error => console.error('Erro ao carregar o rodapé:', error));
-    </script>
+    <footer class="rodape">
+        <div class="row margin-rodape centralizar">
+            <div class="col-md-4 wow fadeInUp">
+                <h1 class="text-white">DESCALVADO</h1><br>
+                <a href="https://maps.app.goo.gl/9F4GdX3nMCPKFCSY6" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/maps.png" class="img-rodape">
+                    <h5>Rua Coronel Rafael Tobias, nº 284 <br> Centro - Descalvado/SP</h5>
+                </a><br>
+                <a href="https://wa.me/19992671617" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/phone.png" class="img-rodape">
+                    <h5>(19) 99267-1617</h5>
+                </a><br>
+                <div class="display-flex centralizar-rodape">
+                    <a href="https://wa.me/19992671617" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.facebook.com/people/Zeek-Descalvado/pfbid0M8mMKPKpgyxzDXZ5BhFNNQkrUZ2KcD3YGah8L5RPdw6V8RnNYMteofnUhbGagj5jl/"
+                        class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/facebook.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.instagram.com/zeekdescalvado/" class="display-flex link-rodape"
+                        target="_blank">
+                        <img src="./img/Icones/instagram.png" class="img-rodape-social">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp">
+                <h1 class="text-white">IBATÉ</h1><br>
+                <a href="https://maps.app.goo.gl/6nW9ofPvqVHc3vgj6" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/maps.png" class="img-rodape">
+                    <h5>Rua Floriano Peixoto, nº 628 <br> Centro - Ibaté/SP</h5>
+                </a><br>
+                <a href="https://wa.me/16999921250" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/phone.png" class="img-rodape">
+                    <h5>(16) 99992-1250</h5>
+                </a><br>
+                <div class="display-flex centralizar-rodape">
+                    <a href="https://wa.me/16999921250" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.facebook.com/zeekcursosibate" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/facebook.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.instagram.com/zeekibate/" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/instagram.png" class="img-rodape-social">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp">
+                <h1 class="text-white">RIBEIRÃO BONITO</h1><br>
+                <a href="https://maps.app.goo.gl/5GPVn4SUHerbSWyi7" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/maps.png" class="img-rodape">
+                    <h5>Rua São Paulo, nº 530 <br> Centro - Ribeirão Bonito/SP</h5>
+                </a><br>
+                <a href="https://wa.me/16999940880" class="display-flex link-rodape" target="_blank">
+                    <img src="./img/Icones/phone.png" class="img-rodape">
+                    <h5>(16) 99994-0880</h5>
+                </a><br>
+                <div class="display-flex centralizar-rodape">
+                    <a href="https://wa.me/16999940880" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/whatsApp.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.facebook.com/zeek.rb.5" class="display-flex link-rodape" target="_blank">
+                        <img src="./img/Icones/facebook.png" class="img-rodape-social">
+                    </a>
+                    <a href="https://www.instagram.com/zeekribeiraobonito/" class="display-flex link-rodape"
+                        target="_blank">
+                        <img src="./img/Icones/instagram.png" class="img-rodape-social">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row centralizar">
+            <div class="col-md-12">
+                <h1 class="desenvolvido-por wow fadeInDown delay-01s">Desenvolvido por: <br></h1>
+                <h1 class="desenvolvido-por wow fadeInDown delay-02s"><b>Elias Marcelino</b></h1>
+                <a href="https://wa.me/5516992228707" target="_blank" class="wow fadeInUp delay-04s">
+                    <img src="./img/Icones/whatsApp-white.png" class="icones-desenvolvido">
+                </a>
+                <a href="https://www.instagram.com/elias.silva99?igsh=NDN0Nm1ibHk4ZXBy" target="_blank"
+                    class="wow fadeInUp delay-04s">
+                    <img src="./img/Icones/instagram-white.png" class="icones-desenvolvido">
+                </a>
+            </div>
+        </div>
+        </div>
+    </footer>
 
 
 
@@ -669,8 +794,6 @@
     <script src="./js/contagemPolo.js"></script>
     <script src="./js/pesquisa.js"></script>
     <script src="./js/modalPagamento.js"></script>
-
-    <script src="https://wbot.chat/index.js" token="fd40e925d254d789713b120c5d586428"></script>
 
 </body>
 

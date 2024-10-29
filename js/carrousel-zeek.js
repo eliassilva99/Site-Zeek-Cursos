@@ -1,5 +1,5 @@
 $('.carousel').carousel({
-    interval: 3000
+    interval: 2700
 })
 
 var thumbnails1 = document.getElementsByClassName("thumbnail1");

@@ -15,13 +15,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
       switch (citySelect.value) {
         case 'descalvado':
-          whatsappNumber = '5516999921250'; // Número de telefone do WhatsApp de Descalvado
+          whatsappNumber = '5519992671617'; // Número de telefone do WhatsApp de Descalvado
           break;
         case 'ibate':
-          whatsappNumber = '5516999921250'; // Número de telefone do WhatsApp de Ibaté
+          whatsappNumber = '5516996294928'; // Número de telefone do WhatsApp de Ibaté
           break;
         case 'ribeirao_bonito':
-          whatsappNumber = '5516999921250'; // Número de telefone do WhatsApp de Ribeirão Bonito
+          whatsappNumber = '5516999940880'; // Número de telefone do WhatsApp de Ribeirão Bonito
           break;
         default:
           whatsappNumber = ''; // Número de telefone padrão (caso nenhum selecionado)
